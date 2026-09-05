@@ -76,3 +76,11 @@ def test_run_demo_end_to_end(tmp_path: Path):
 def test_to_html_tables():
     html = to_html("| a | b |\n|---|---|\n| 1 | 2 |", "t")
     assert "<td>1</td>" in html
+
+
+def test_settings_tolerate_empty_env(monkeypatch):
+    monkeypatch.setenv("LOOKBACK_DAYS", "")
+    monkeypatch.setenv("SMTP_PORT", "")
+    monkeypatch.setenv("LLM_TIMEOUT", "")
+    s = load_settings()
+    assert s.lookback_days == 14 and s.mail.port == 465 and s.llm.timeout == 180

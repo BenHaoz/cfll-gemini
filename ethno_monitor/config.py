@@ -113,5 +113,5 @@ def load_settings(config_dir: Path | None = None) -> Settings:
         to=[x.strip() for x in to_raw.replace(";", ",").split(",") if x.strip()],
         use_ssl=(_env("SMTP_SSL", "auto").lower() in ("1", "true", "yes")) or (_env("SMTP_SSL", "auto") == "auto" and port == 465),
     )
-    lookback = int(_env("LOOKBACK_DAYS", str(sources.get("lookback_days", 14))))
+    lookback = int(_env("LOOKBACK_DAYS") or sources.get("lookback_days", 14))
     return Settings(sources=sources, keywords=keywords, guangxi=guangxi, llm=llm, mail=mail, lookback_days=lookback)

@@ -57,8 +57,8 @@ def test_run_demo_end_to_end(tmp_path: Path):
     s = load_settings()
     items, statuses = load_demo_items()
     res = run(s, today=date(2026, 9, 5), use_llm=False, send_email=False, items_override=items,
-              statuses_override=statuses, state_path=tmp_path / "state.json", report_dir=tmp_path / "reports")
-    assert res["new"] == 12 and res["mailed"] is False
+              statuses_override=statuses, state_path=tmp_path / "state.json", report_dir=tmp_path / "reports", docs_dir=tmp_path / "site")
+    assert res["new"] == 12 and res["mailed"] is False and res["site"].endswith("index.html")
     md = Path(res["md"]).read_text(encoding="utf-8")
     assert "民族学学科监测周报 · 2026年第36周" in md
     assert "四、研究分析与广西特色选题策划" in md and "| 序号 | 论文/课题题目 |" in md
@@ -67,7 +67,7 @@ def test_run_demo_end_to_end(tmp_path: Path):
     assert "<table>" in html and "示例" in html
     # 第二次运行：全部条目已见，新增为 0
     res2 = run(s, today=date(2026, 9, 12), use_llm=False, send_email=False, items_override=items,
-               statuses_override=statuses, state_path=tmp_path / "state.json", report_dir=tmp_path / "reports")
+               statuses_override=statuses, state_path=tmp_path / "state.json", report_dir=tmp_path / "reports", docs_dir=tmp_path / "site")
     assert res2["new"] == 0
     st = json.loads((tmp_path / "state.json").read_text(encoding="utf-8"))
     assert len(st["runs"]) == 2

@@ -14,11 +14,11 @@ from .collectors.llm_research import collect_llm_journals, collect_llm_projects
 from .collectors.notices import collect_notice_source
 from .collectors.rss import collect_rss
 from .collectors.skygb import collect_skygb
-from .config import REPORT_DIR, ROOT, Settings
+from .config import DOCS_DIR, REPORT_DIR, ROOT, Settings
 from .llm import make_client
 from .mailer import send_mail
 from .models import Item, SourceStatus
-from .report import ReportContext, period_label, period_slug, render_markdown, to_html
+from .report import ReportContext, period_label, period_slug, render_markdown, render_site, to_html
 from .state import State
 
 log = logging.getLogger(__name__)
@@ -115,7 +115,9 @@ def filter_and_merge(items: list[Item], settings: Settings) -> list[Item]:
 
 def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, send_email: bool = True,
         items_override: list[Item] | None = None, statuses_override: list[SourceStatus] | None = None,
-        state_path: Path | None = None, report_dir: Path | None = None, only: str | None = None) -> dict[str, Any]:
+        extra_items: list[Item] | None = None, analysis_override: str | None = None, analysis_label: str = "Claude 会话分析",
+        state_path: Path | None = None, report_dir: Path | None = None, docs_dir: Path | None = None,
+        only: str | None = None, build_site: bool = True) -> dict[str, Any]:
     today = today or date.today()
     report_dir = report_dir or REPORT_DIR
     report_dir.mkdir(parents=True, exist_ok=True)
@@ -126,14 +128,21 @@ def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, 
         raw, statuses = items_override, list(statuses_override or [])
     else:
         raw, statuses = collect_all(settings, today=today, use_llm=use_llm, only=only)
+    if extra_items:
+        raw = list(raw) + list(extra_items)
+        statuses.append(SourceStatus(name="外部补充条目（会话联网检索）", ok=True, count=len(extra_items),
+                                     message="由 Claude 会话检索并写入的条目", kind="llm"))
     items = filter_and_merge(raw, settings)
 
     state = State(state_path)
     new_items = [i for i in items if state.is_new(i)]
     log.info("collected %d items, %d new", len(items), len(new_items))
 
-    client = make_client(settings.llm) if use_llm else None
-    analysis_md, analysis_by = analyze(client, new_items, settings, today=today, period=period)
+    if analysis_override and len(analysis_override.strip()) > 200:
+        analysis_md, analysis_by = analysis_override.strip(), analysis_label
+    else:
+        client = make_client(settings.llm) if use_llm else None
+        analysis_md, analysis_by = analyze(client, new_items, settings, today=today, period=period)
 
     notes: list[str] = []
     if not any(s.ok and s.count for s in statuses if s.kind in ("journal", "llm")):
@@ -148,6 +157,12 @@ def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, 
     html_path.write_text(html, encoding="utf-8")
     (report_dir / "latest.md").write_text(md, encoding="utf-8")
     (report_dir / f"{slug}.items.json").write_text(json.dumps([i.to_dict() for i in new_items], ensure_ascii=False, indent=1), encoding="utf-8")
+    site_path = ""
+    if build_site:
+        try:
+            site_path = str(render_site(report_dir, docs_dir or DOCS_DIR, settings))
+        except Exception as exc:  # noqa: BLE001
+            log.error("build site failed: %s", exc)
 
     mailed = False
     mail_error = ""
@@ -171,9 +186,27 @@ def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, 
                       "mailed": mailed, "analysis_by": analysis_by,
                       "sources_ok": sum(1 for s in statuses if s.ok), "sources_total": len(statuses)})
     state.save()
-    return {"period": period, "md": str(md_path), "html": str(html_path), "items": len(items), "new": len(new_items),
+    return {"period": period, "md": str(md_path), "html": str(html_path), "site": site_path, "items": len(items), "new": len(new_items),
             "mailed": mailed, "mail_error": mail_error, "analysis_by": analysis_by,
             "statuses": [s.to_dict() for s in statuses]}
+
+
+def load_items_file(path: Path) -> list[Item]:
+    """读取外部条目 JSON（数组，或含 items 键的对象）。"""
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        data = data.get("items", [])
+    out = []
+    for d in data:
+        if isinstance(d, dict) and d.get("title"):
+            d.setdefault("kind", "paper")
+            out.append(Item.from_dict(d))
+    return out
+
+
+def dump_collected(items: list[Item], statuses: list[SourceStatus], path: Path) -> None:
+    path.write_text(json.dumps({"items": [i.to_dict() for i in items], "statuses": [s.to_dict() for s in statuses]},
+                               ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def load_demo_items() -> tuple[list[Item], list[SourceStatus]]:

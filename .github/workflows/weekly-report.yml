@@ -1,9 +1,9 @@
 name: 民族学学科监测周报
 
+# 说明：每周定时任务由 Claude Code 的 Routine（每周一 08:30 北京时间）承担，
+# 它会跑采集、撰写分析、推送到 Gmail 并提交报告。此工作流仅作为手动备用入口
+# （需自行配置 SMTP / LLM 密钥），避免与 Routine 同时运行导致 state.json 冲突。
 on:
-  schedule:
-    # 每周一 08:30 北京时间（UTC 00:30）
-    - cron: "30 0 * * 1"
   workflow_dispatch:
     inputs:
       no_email:
@@ -61,7 +61,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_FROM: ${{ secrets.MAIL_FROM }}
-          MAIL_TO: ${{ vars.MAIL_TO || '38064358@qq.com' }}
+          MAIL_TO: ${{ vars.MAIL_TO || 'aa1928@gmail.com' }}
           LOOKBACK_DAYS: ${{ inputs.lookback_days }}
         run: |
           ARGS=""
@@ -86,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports data/state.json
+          git add reports data/state.json docs
           if git diff --cached --quiet; then
             echo "无变更"
           else

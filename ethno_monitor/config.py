@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG_DIR = ROOT / "config"
 DATA_DIR = ROOT / "data"
 REPORT_DIR = ROOT / "reports"
+DOCS_DIR = ROOT / "docs"
 DEBUG_DIR = ROOT / "debug"
 
 DIRECTIONS = [
@@ -54,7 +55,7 @@ class MailSettings:
     user: str = ""
     password: str = ""
     sender: str = ""
-    to: list[str] = field(default_factory=lambda: ["38064358@qq.com"])
+    to: list[str] = field(default_factory=lambda: ["aa1928@gmail.com"])
     use_ssl: bool = True
 
     @property
@@ -102,7 +103,7 @@ def load_settings(config_dir: Path | None = None) -> Settings:
     )
 
     port = int(_env("SMTP_PORT", "465") or 465)
-    to_raw = _env("MAIL_TO", "38064358@qq.com")
+    to_raw = _env("MAIL_TO", "aa1928@gmail.com")
     mail = MailSettings(
         host=_env("SMTP_HOST"),
         port=port,

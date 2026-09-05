@@ -5,7 +5,12 @@
 1. **论文监测**：民族研究、中华民族共同体研究、中央民族大学学报、西北民族研究、广西民族研究、贵州民族研究、青海民族大学学报、广西民族大学学报、世界民族、青海民族研究等民族学类 C 刊的最新文章；
 2. **课题立项监测**：国家社科基金（年度项目、重大项目、铸牢中华民族共同体意识研究专项、后期资助等）、国家民委民族研究项目、教育部哲学社会科学研究重大课题攻关项目等；
 3. **每周研究分析报告**：四方向趋势分述、立项态势与申报启示、**结合广西区域特色（南岭走廊、十二个世居民族、中越跨境民族与东南亚民族研究、平陆运河与面向东盟开放等）的选题与论文题目策划**；
-4. **每周一自动发送到邮箱**（默认 38064358@qq.com），同时把 Markdown/HTML 报告归档到仓库 `reports/`。
+4. **每周一自动推送到 Gmail（aa1928@gmail.com）**，同时把报告归档到仓库 `reports/`，并更新观察站网页 https://benhaoz.github.io/cfll-gemini/ 。
+
+## 零、当前运行方式（无需你配置任何密钥）
+
+每周一 08:30（北京时间）由 Claude Code 的 **Routine** 自动开启一个会话，按 [`docs/WEEKLY_RUNBOOK.md`](WEEKLY_RUNBOOK.md) 执行：运行采集器 → 用联网检索补充最新论文与立项 → 由 Claude 撰写六节分析与广西特色选题 → 生成周报与网页并提交到 `main` → 通过已连接的 Gmail 发送到 aa1928@gmail.com。
+下文的 GitHub Actions 方案是**备用路径**（需自行配置 SMTP / LLM 密钥，仅手动触发）。
 
 示例报告见 [`docs/sample-report.md`](sample-report.md)（示例数据，非真实文献）。
 
@@ -28,7 +33,7 @@ GitHub Actions（每周一 08:30 北京时间）
    └─ 输出层：Markdown + HTML 周报 → SMTP 邮件 → 归档提交回仓库
 ```
 
-## 二、快速部署（GitHub Actions，零服务器）
+## 二、备用部署（GitHub Actions，需自行配置密钥）
 
 ### 1. 配置仓库 Secrets（Settings → Secrets and variables → Actions → *Secrets*）
 
@@ -46,7 +51,7 @@ GitHub Actions（每周一 08:30 北京时间）
 
 | 名称 | 默认值 | 说明 |
 |---|---|---|
-| `MAIL_TO` | `38064358@qq.com` | 收件人，多个用逗号分隔 |
+| `MAIL_TO` | `aa1928@gmail.com` | 收件人，多个用逗号分隔 |
 | `LLM_PROVIDER` | 自动 | `gemini` / `anthropic` / `none` |
 | `GEMINI_BASE_URL` | 官方地址 | **可填本仓库部署的 Deno 反代地址** `https://<你的项目名>.deno.dev`，解决 Gemini 访问问题 |
 | `GEMINI_MODEL` | `gemini-2.5-flash` | 也可用 `gemini-2.5-pro`（分析更深，成本更高） |
@@ -54,10 +59,10 @@ GitHub Actions（每周一 08:30 北京时间）
 
 ### 3. 启用并首次运行
 
-1. 合并本分支到默认分支（`main`）。**GitHub 的定时任务只在默认分支上生效。**
+1. 代码已在默认分支（`main`）。该工作流仅支持手动触发（定时任务由 Routine 承担，避免重复运行冲突）。
 2. 进入 Actions → "民族学学科监测周报" → *Run workflow* 手动触发一次（可勾选"只生成报告，不发送邮件"先看效果）。
 3. 运行结束后在该次运行页面下载 artifact `ethno-monitor-<n>`：包含 `reports/latest.md`、HTML 报告、`debug/` 下各数据源的原始页面快照。若某数据源状态为 ❌ 或条目为 0，用快照对照 `config/sources.yaml` 调整 URL / 正则即可，无需改代码。
-4. 之后每周一 08:30（北京时间）自动运行、发邮件、把报告提交到 `reports/`。
+4. 报告与状态会自动提交到 `reports/`、`data/state.json` 与 `docs/`。
 
 > 首次运行会把当前窗口内的全部条目视为"新增"；之后每周只报告 `data/state.json` 中未出现过的条目。
 
@@ -72,6 +77,10 @@ export GEMINI_API_KEY=... SMTP_HOST=smtp.qq.com SMTP_PORT=465 SMTP_USER=... SMTP
 python -m ethno_monitor test-email        # 验证邮箱配置
 python -m ethno_monitor run --no-email    # 真实采集 + 分析，不发邮件
 python -m ethno_monitor run               # 完整运行
+python -m ethno_monitor collect --out c.json                      # 采集结果落盘
+python -m ethno_monitor prompt --items-file c.json --items-file extra.json   # 导出分析提示词（供 Claude 会话撰写分析）
+python -m ethno_monitor run --no-llm --no-email --items-file extra.json --analysis-file analysis.md   # 用外部条目与分析生成周报
+python -m ethno_monitor site              # 仅重建 docs/ 观察站网页
 ```
 
 ## 四、配置文件

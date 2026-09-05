@@ -186,3 +186,10 @@ def fallback_analysis(items: list[Item], settings: Settings, *, today: date) -> 
     out.append("- 跟踪国家民委政府信息公开栏目关于民族研究项目立项、结项及研究基地的通知。")
     out.append("- 关注各民族学期刊最新一期上线情况及专题征稿。")
     return "\n".join(out)
+
+
+def build_prompt(items: list[Item], settings: Settings, *, today: date, period: str) -> str:
+    """导出完整分析提示词（供 Claude 会话等外部分析器使用）。"""
+    return SYSTEM + "\n\n=====\n\n" + ANALYSIS_PROMPT.format(
+        today=today.isoformat(), period=period, directions=directions_text(settings),
+        digest=build_digest(items), guangxi=guangxi_text(settings))

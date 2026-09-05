@@ -8,7 +8,9 @@ import sys
 from datetime import date
 
 from .config import load_settings
-from .pipeline import collect_all, load_demo_items, run
+from pathlib import Path
+
+from .pipeline import collect_all, dump_collected, filter_and_merge, load_demo_items, load_items_file, run
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -20,6 +22,10 @@ def main(argv: list[str] | None = None) -> int:
     p_run.add_argument("--no-llm", action="store_true", help="不调用 LLM（规则兜底）")
     p_run.add_argument("--date", help="指定运行日期 YYYY-MM-DD（默认今天）")
     p_run.add_argument("--only", help="只运行名称包含该字符串的数据源")
+    p_run.add_argument("--items-file", help="补充条目 JSON（如 Claude 会话联网检索结果），与采集结果合并")
+    p_run.add_argument("--analysis-file", help="外部撰写的分析 Markdown，替代 LLM/规则分析")
+    p_run.add_argument("--analysis-label", default="Claude 会话分析", help="分析引擎标签")
+    p_run.add_argument("--no-site", action="store_true", help="不重建 docs/ 观察站网页")
 
     p_demo = sub.add_parser("demo", help="使用示例数据演示完整流程（不联网抓取）")
     p_demo.add_argument("--email", action="store_true", help="演示时也发送邮件")
@@ -28,6 +34,14 @@ def main(argv: list[str] | None = None) -> int:
     p_col = sub.add_parser("collect", help="只采集并打印条目（调试数据源）")
     p_col.add_argument("--only", help="只运行名称包含该字符串的数据源")
     p_col.add_argument("--llm", action="store_true")
+    p_col.add_argument("--out", help="把采集结果（条目 + 数据源状态）写入 JSON 文件")
+
+    p_prompt = sub.add_parser("prompt", help="输出分析提示词（含本周新增条目摘要与广西知识库），供外部分析器使用")
+    p_prompt.add_argument("--items-file", action="append", default=[], help="条目 JSON，可多次指定")
+    p_prompt.add_argument("--date", help="运行日期 YYYY-MM-DD")
+    p_prompt.add_argument("--all", action="store_true", help="不按 state 过滤，把全部条目视为新增")
+
+    sub.add_parser("site", help="仅根据 reports/ 重建 docs/ 观察站网页")
 
     sub.add_parser("test-email", help="发送一封测试邮件验证 SMTP 配置")
 
@@ -37,18 +51,42 @@ def main(argv: list[str] | None = None) -> int:
 
     if a.cmd == "run":
         today = date.fromisoformat(a.date) if a.date else None
-        res = run(settings, today=today, use_llm=not a.no_llm, send_email=not a.no_email, only=a.only)
+        extra = load_items_file(Path(a.items_file)) if a.items_file else None
+        analysis = Path(a.analysis_file).read_text(encoding="utf-8") if a.analysis_file else None
+        res = run(settings, today=today, use_llm=not a.no_llm, send_email=not a.no_email, only=a.only,
+                  extra_items=extra, analysis_override=analysis, analysis_label=a.analysis_label, build_site=not a.no_site)
         print(json.dumps(res, ensure_ascii=False, indent=1))
+        return 0
+    if a.cmd == "prompt":
+        from .analysis import build_prompt
+        from .report import period_label
+        from .state import State
+        today = date.fromisoformat(a.date) if a.date else date.today()
+        raw = []
+        for f in a.items_file:
+            raw += load_items_file(Path(f))
+        items = filter_and_merge(raw, settings)
+        if not a.all:
+            st = State()
+            items = [i for i in items if st.is_new(i)]
+        print(build_prompt(items, settings, today=today, period=period_label(today)))
+        return 0
+    if a.cmd == "site":
+        from .config import DOCS_DIR, REPORT_DIR
+        from .report import render_site
+        print(render_site(REPORT_DIR, DOCS_DIR, settings))
         return 0
     if a.cmd == "demo":
         items, statuses = load_demo_items()
         from .config import DATA_DIR, REPORT_DIR
         res = run(settings, use_llm=a.llm, send_email=a.email, items_override=items, statuses_override=statuses,
-                  state_path=DATA_DIR / "state.demo.json", report_dir=REPORT_DIR / "demo")
+                  state_path=DATA_DIR / "state.demo.json", report_dir=REPORT_DIR / "demo", docs_dir=REPORT_DIR / "demo" / "site")
         print(json.dumps(res, ensure_ascii=False, indent=1))
         return 0
     if a.cmd == "collect":
         items, statuses = collect_all(settings, today=date.today(), use_llm=a.llm, only=a.only)
+        if a.out:
+            dump_collected(items, statuses, Path(a.out))
         for s in statuses:
             print(("OK " if s.ok else "ERR"), s.name, s.count, s.message)
         for it in items:

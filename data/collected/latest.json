@@ -1,11 +1,867 @@
 {
  "items": [
   {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "广西民族研究",
+   "date": "2026-11",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第6期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "习近平新时代 中国特色社会主义思想",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
+   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "建设中国特色新型智库",
+   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "外部资源导航",
+   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "学术网站导航",
+   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "社科机构导航",
+   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "toc"
+   }
+  },
+  {
    "kind": "notice",
-   "title": "2026年国家社会科学基金高校思想政治理论课研究专项申报公告",
-   "url": "https://www.nopss.gov.cn/n1/2026/0827/c431029-40787261.html",
+   "title": "研究阐释党的二十届四中全会精神国家社会科学基金重大专项立项名单公布",
+   "url": "http://www.nopss.gov.cn/n1/2026/0701/c431028-40751777.html",
+   "source": "全国哲学社会科学工作办公室·重大项目",
+   "date": "2026-07-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金重大项目",
+    "attachments": [
+     "http://download.people.com.cn/yunying4/sixteen17828965511.pdf"
+    ],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "研究阐释党的二十届四中全会精神国家社会科学基金重大专项立项名单公布",
+   "url": "https://www.nopss.gov.cn/n1/2026/0701/c431028-40751777.html",
+   "source": "全国哲学社会科学工作办公室·重大项目",
+   "date": "2026-07-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金重大项目",
+    "attachments": [
+     "http://download.people.com.cn/yunying4/sixteen17828965511.pdf"
+    ],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "2026年国家社科基金冷门绝学研究专项申报公告",
+   "url": "https://www.nopss.gov.cn/n1/2026/0716/c431029-40761983.html",
    "source": "全国哲学社会科学工作办公室·专项与后期资助",
-   "date": "2026-08-27",
+   "date": "2026-07-16",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -18,10 +874,26 @@
   },
   {
    "kind": "notice",
-   "title": "2026年国家社会科学基金高校思想政治理论课研究专项申报公告",
-   "url": "http://www.nopss.gov.cn/n1/2026/0827/c431029-40787261.html",
+   "title": "2026年国家社会科学基金后期资助暨优秀博士学位论文出版、优秀学术著作再版项目申报公告",
+   "url": "https://www.nopss.gov.cn/n1/2026/0708/c431030-40756095.html",
+   "source": "全国哲学社会科学工作办公室·专项与后期资助",
+   "date": "2026-07-08",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "关于开展国家社科基金重大项目中期检查评估和滚动资助工作的通知",
+   "url": "http://www.nopss.gov.cn/n1/2026/0717/c431028-40762925.html",
    "source": "全国哲学社会科学工作办公室·通知公告",
-   "date": "2026-08-27",
+   "date": "2026-07-17",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -34,10 +906,10 @@
   },
   {
    "kind": "notice",
-   "title": "突出红石榴文化符号，推动“铸牢”走深走实",
-   "url": "https://www.neac.gov.cn/seac/xxgk/202609/1194164.shtml",
-   "source": "国家民委·政府信息公开",
-   "date": "2026-09",
+   "title": "研究阐释党的二十届四中全会精神国家社会科学基金重大专项立项名单公布",
+   "url": "http://www.nopss.gov.cn/n1/2026/0701/c431028-40751777.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-07-01",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -45,13 +917,49 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "funder": "国家民委民族研究项目"
+    "funder": "国家社科基金",
+    "attachments": [
+     "http://download.people.com.cn/yunying4/sixteen17828965511.pdf"
+    ],
+    "projects_found": 0
    }
   },
   {
    "kind": "notice",
-   "title": "深化“铸牢”教育实践 夯实共有精神家园根基",
-   "url": "https://www.neac.gov.cn/seac/c103657/202608/1193858.shtml",
+   "title": "2026年国家社科基金冷门绝学研究专项申报公告",
+   "url": "http://www.nopss.gov.cn/n1/2026/0716/c431029-40761983.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-07-16",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "关于开展国家社科基金冷门绝学研究专项学术团队项目检查评估工作的通知",
+   "url": "http://www.nopss.gov.cn/n1/2026/0716/c431029-40761977.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-07-16",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "中国民族语文翻译中心（局）2026年公开招聘拟聘人员公示（第二批）",
+   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193459.shtml",
    "source": "国家民委·政府信息公开",
    "date": "2026-08",
    "authors": [],
@@ -61,13 +969,15 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "funder": "国家民委民族研究项目"
+    "funder": "国家民委民族研究项目",
+    "attachments": [],
+    "projects_found": 0
    }
   },
   {
    "kind": "notice",
-   "title": "大连民族大学：上好铸牢中华民族共同体意识的“大思政课”",
-   "url": "https://www.neac.gov.cn/seac/xwzx/202608/1193835.shtml",
+   "title": "民族文化宫2026年公开招聘拟聘人员公示",
+   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193457.shtml",
    "source": "国家民委·政府信息公开",
    "date": "2026-08",
    "authors": [],
@@ -77,15 +987,17 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "funder": "国家民委民族研究项目"
+    "funder": "国家民委民族研究项目",
+    "attachments": [],
+    "projects_found": 0
    }
   },
   {
    "kind": "notice",
-   "title": "坚持思想建党和制度治党同向发力 在强国建设、民族复兴新征程上，坚持思想建党和制度治党同向发力，对于克服管党治党宽松软状况，以党的自我革命锻造更加坚强有力的马克思主义执政党具有重大的理论价值和现实意义。 习近平总书记指出：“坚持思想建党和制度治党同向发力。思想理论是灵魂，制度建设是保障。我们既注重解决思想问题、拧紧‘总开关’",
-   "url": "https://www.sinoss.net/c/2026-09-03/666573.shtml",
-   "source": "中国高校人文社会科学信息网（sinoss）",
-   "date": "2026-09-03",
+   "title": "民族出版社2026年度专业技术人员补充招聘拟聘用人员公示",
+   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193455.shtml",
+   "source": "国家民委·政府信息公开",
+   "date": "2026-08",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -93,7 +1005,9 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "funder": "教育部人文社科项目"
+    "funder": "国家民委民族研究项目",
+    "attachments": [],
+    "projects_found": 0
    }
   }
  ],
@@ -101,9 +1015,9 @@
   {
    "name": "期刊站点·民族研究",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 11.960654020309448,
    "kind": "journal"
   },
   {
@@ -117,9 +1031,9 @@
   {
    "name": "期刊站点·中央民族大学学报（哲学社会科学版）",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 6.922060012817383,
    "kind": "journal"
   },
   {
@@ -133,57 +1047,57 @@
   {
    "name": "期刊站点·广西民族研究",
    "ok": true,
-   "count": 0,
-   "message": "目录解析 0 篇",
-   "elapsed": 3.229259967803955,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 5.804922103881836,
    "kind": "journal"
   },
   {
    "name": "期刊站点·贵州民族研究",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 4.930832862854004,
    "kind": "journal"
   },
   {
    "name": "期刊站点·青海民族大学学报（社会科学版）",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 5.166269540786743,
    "kind": "journal"
   },
   {
    "name": "期刊站点·广西民族大学学报（哲学社会科学版）",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 4.795067071914673,
    "kind": "journal"
   },
   {
    "name": "期刊站点·世界民族",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 4.121548652648926,
    "kind": "journal"
   },
   {
    "name": "期刊站点·青海民族研究",
    "ok": true,
-   "count": 0,
-   "message": "未配置目录页（依赖文献中心/LLM 检索）",
-   "elapsed": 0.0,
+   "count": 6,
+   "message": "目录解析 6 篇",
+   "elapsed": 5.260790109634399,
    "kind": "journal"
   },
   {
    "name": "国家哲学社会科学文献中心",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "message": "接口不可用或结构变化（请核对 search_url / 请求体）",
-   "elapsed": 15.560375928878784,
+   "message": "disabled",
+   "elapsed": 0.0,
    "kind": "journal"
   },
   {
@@ -191,31 +1105,31 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.7022733688354492,
+   "elapsed": 1.6172001361846924,
    "kind": "project"
   },
   {
    "name": "全国哲学社会科学工作办公室·重大项目",
    "ok": true,
-   "count": 0,
-   "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.236670970916748,
+   "count": 2,
+   "message": "通知 2 条，下钻得课题 0 条",
+   "elapsed": 2.0550696849823,
    "kind": "project"
   },
   {
    "name": "全国哲学社会科学工作办公室·专项与后期资助",
    "ok": true,
-   "count": 1,
-   "message": "通知 1 条，下钻得课题 0 条",
-   "elapsed": 0.7055327892303467,
+   "count": 2,
+   "message": "通知 2 条，下钻得课题 0 条",
+   "elapsed": 0.5791668891906738,
    "kind": "project"
   },
   {
    "name": "全国哲学社会科学工作办公室·通知公告",
    "ok": true,
-   "count": 1,
-   "message": "通知 1 条，下钻得课题 0 条",
-   "elapsed": 0.43956470489501953,
+   "count": 4,
+   "message": "通知 4 条，下钻得课题 0 条",
+   "elapsed": 0.6783859729766846,
    "kind": "project"
   },
   {
@@ -223,23 +1137,15 @@
    "ok": true,
    "count": 3,
    "message": "通知 3 条，下钻得课题 0 条",
-   "elapsed": 3.654071569442749,
+   "elapsed": 4.656773567199707,
    "kind": "project"
   },
   {
    "name": "教育部社会科学司·通知公告",
    "ok": true,
    "count": 0,
-   "message": "通知 0 条，下钻得课题 0 条；部分列表页失败: 1",
-   "elapsed": 12.911834478378296,
-   "kind": "project"
-  },
-  {
-   "name": "中国高校人文社会科学信息网（sinoss）",
-   "ok": true,
-   "count": 1,
-   "message": "通知 1 条，下钻得课题 0 条；部分列表页失败: 1",
-   "elapsed": 11.025367498397827,
+   "message": "通知 0 条，下钻得课题 0 条",
+   "elapsed": 3.045574903488159,
    "kind": "project"
   },
   {
@@ -247,7 +1153,7 @@
    "ok": true,
    "count": 0,
    "message": "检索 1 页",
-   "elapsed": 2.2584259510040283,
+   "elapsed": 3.2182564735412598,
    "kind": "project"
   }
  ]

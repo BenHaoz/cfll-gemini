@@ -88,7 +88,7 @@ def test_parse_toc_ncpssd():
     html = """<html><body><header><a href="https://m.ncpssd.cn/index">国家哲学社会科学文献中心</a></header>
     <div class="info">世界民族 2026 / 3</div>
     <ul>
-    <li><a href="javascript:void (0)" data-id="ABCDEF1234567890ABCD">全球化变局下的民族共同体建设</a><span>张三 李四</span><span>2026年第3期</span></li>
+    <li><a href="javascript:void (0)" data-id="0123456789abcdef0123456789abcdef">全球化变局下的民族共同体建设</a><span>张三 李四</span><span>2026年第3期</span></li>
     <li><a href="javascript:void (0)">超越“一族一国”：北马其顿国家建构困境与再想象的可能性</a><span>王五</span></li>
     <li><a href="javascript:void (0)">更多</a></li>
     <li><a href="https://www.ncpssd.cn/topics/detailsList?id=4">建设中国特色新型智库</a></li>
@@ -97,5 +97,5 @@ def test_parse_toc_ncpssd():
     assert [i.title for i in items] == ["全球化变局下的民族共同体建设", "超越“一族一国”：北马其顿国家建构困境与再想象的可能性"]
     assert items[0].authors == ["张三", "李四"] and items[1].authors == ["王五"]
     assert items[0].extra["issue"] == "2026年第3期" and items[0].date == "2026-05"
-    assert "id=ABCDEF1234567890ABCD" in items[0].url
+    assert "id=0123456789abcdef0123456789abcdef" in items[0].url
     assert items[1].url.startswith("https://m.ncpssd.cn/journal/details")

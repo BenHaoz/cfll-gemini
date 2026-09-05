@@ -40,6 +40,18 @@ def _diag_url(url: str, *, params: dict[str, Any] | None = None, link_regex: str
         shown += 1
         if shown >= 12:
             break
+    tables = soup.find_all("table")
+    if tables:
+        big = max(tables, key=lambda t: len(t.find_all("tr")))
+        rows = big.find_all("tr")
+        lines.append(f"  最大表格 {len(rows)} 行，前 4 行：")
+        for tr in rows[:4]:
+            lines.append("    | " + " | ".join(clean(td.get_text(" "))[:24] for td in tr.find_all(["td", "th"]))[:200])
+    forms = soup.find_all("form")
+    if forms and not anchors:
+        for f in forms[:2]:
+            names = [i.get("name") for i in f.find_all(["input", "select"]) if i.get("name")]
+            lines.append(f"  表单 action={f.get('action')} method={f.get('method')} 字段={names[:20]}")
     if not anchors:
         text = clean(soup.get_text(" "))
         lines.append(f"  页面正文前 300 字: {text[:300]!r}")

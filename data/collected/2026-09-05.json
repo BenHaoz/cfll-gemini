@@ -1,0 +1,254 @@
+{
+ "items": [
+  {
+   "kind": "notice",
+   "title": "2026年国家社会科学基金高校思想政治理论课研究专项申报公告",
+   "url": "https://www.nopss.gov.cn/n1/2026/0827/c431029-40787261.html",
+   "source": "全国哲学社会科学工作办公室·专项与后期资助",
+   "date": "2026-08-27",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "2026年国家社会科学基金高校思想政治理论课研究专项申报公告",
+   "url": "http://www.nopss.gov.cn/n1/2026/0827/c431029-40787261.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-08-27",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "突出红石榴文化符号，推动“铸牢”走深走实",
+   "url": "https://www.neac.gov.cn/seac/xxgk/202609/1194164.shtml",
+   "source": "国家民委·政府信息公开",
+   "date": "2026-09",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家民委民族研究项目"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "深化“铸牢”教育实践 夯实共有精神家园根基",
+   "url": "https://www.neac.gov.cn/seac/c103657/202608/1193858.shtml",
+   "source": "国家民委·政府信息公开",
+   "date": "2026-08",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家民委民族研究项目"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "大连民族大学：上好铸牢中华民族共同体意识的“大思政课”",
+   "url": "https://www.neac.gov.cn/seac/xwzx/202608/1193835.shtml",
+   "source": "国家民委·政府信息公开",
+   "date": "2026-08",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家民委民族研究项目"
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "坚持思想建党和制度治党同向发力 在强国建设、民族复兴新征程上，坚持思想建党和制度治党同向发力，对于克服管党治党宽松软状况，以党的自我革命锻造更加坚强有力的马克思主义执政党具有重大的理论价值和现实意义。 习近平总书记指出：“坚持思想建党和制度治党同向发力。思想理论是灵魂，制度建设是保障。我们既注重解决思想问题、拧紧‘总开关’",
+   "url": "https://www.sinoss.net/c/2026-09-03/666573.shtml",
+   "source": "中国高校人文社会科学信息网（sinoss）",
+   "date": "2026-09-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "教育部人文社科项目"
+   }
+  }
+ ],
+ "statuses": [
+  {
+   "name": "期刊站点·民族研究",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·中华民族共同体研究",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·中央民族大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·西北民族研究",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·广西民族研究",
+   "ok": true,
+   "count": 0,
+   "message": "目录解析 0 篇",
+   "elapsed": 3.229259967803955,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·贵州民族研究",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·青海民族大学学报（社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·广西民族大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·世界民族",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "期刊站点·青海民族研究",
+   "ok": true,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
+   "kind": "journal"
+  },
+  {
+   "name": "国家哲学社会科学文献中心",
+   "ok": false,
+   "count": 0,
+   "message": "接口不可用或结构变化（请核对 search_url / 请求体）",
+   "elapsed": 15.560375928878784,
+   "kind": "journal"
+  },
+  {
+   "name": "全国哲学社会科学工作办公室·年度项目",
+   "ok": true,
+   "count": 0,
+   "message": "通知 0 条，下钻得课题 0 条",
+   "elapsed": 1.7022733688354492,
+   "kind": "project"
+  },
+  {
+   "name": "全国哲学社会科学工作办公室·重大项目",
+   "ok": true,
+   "count": 0,
+   "message": "通知 0 条，下钻得课题 0 条",
+   "elapsed": 1.236670970916748,
+   "kind": "project"
+  },
+  {
+   "name": "全国哲学社会科学工作办公室·专项与后期资助",
+   "ok": true,
+   "count": 1,
+   "message": "通知 1 条，下钻得课题 0 条",
+   "elapsed": 0.7055327892303467,
+   "kind": "project"
+  },
+  {
+   "name": "全国哲学社会科学工作办公室·通知公告",
+   "ok": true,
+   "count": 1,
+   "message": "通知 1 条，下钻得课题 0 条",
+   "elapsed": 0.43956470489501953,
+   "kind": "project"
+  },
+  {
+   "name": "国家民委·政府信息公开",
+   "ok": true,
+   "count": 3,
+   "message": "通知 3 条，下钻得课题 0 条",
+   "elapsed": 3.654071569442749,
+   "kind": "project"
+  },
+  {
+   "name": "教育部社会科学司·通知公告",
+   "ok": true,
+   "count": 0,
+   "message": "通知 0 条，下钻得课题 0 条；部分列表页失败: 1",
+   "elapsed": 12.911834478378296,
+   "kind": "project"
+  },
+  {
+   "name": "中国高校人文社会科学信息网（sinoss）",
+   "ok": true,
+   "count": 1,
+   "message": "通知 1 条，下钻得课题 0 条；部分列表页失败: 1",
+   "elapsed": 11.025367498397827,
+   "kind": "project"
+  },
+  {
+   "name": "国家社科基金项目数据库",
+   "ok": true,
+   "count": 0,
+   "message": "检索 1 页",
+   "elapsed": 2.2584259510040283,
+   "kind": "project"
+  }
+ ]
+}

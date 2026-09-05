@@ -1,0 +1,96 @@
+name: 民族学学科监测周报
+
+on:
+  schedule:
+    # 每周一 08:30 北京时间（UTC 00:30）
+    - cron: "30 0 * * 1"
+  workflow_dispatch:
+    inputs:
+      no_email:
+        description: "只生成报告，不发送邮件"
+        type: boolean
+        default: false
+      no_llm:
+        description: "不调用 LLM（规则兜底）"
+        type: boolean
+        default: false
+      lookback_days:
+        description: "监测窗口天数（默认取 config/sources.yaml）"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ethno-monitor
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 单元测试（快速自检）
+        run: pip install pytest && python -m pytest -q
+
+      - name: 运行监测并生成周报
+        env:
+          # —— LLM（二选一即可；都不配则使用规则兜底）——
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_BASE_URL: ${{ vars.GEMINI_BASE_URL }}      # 可填你的 deno.dev 反代地址
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          # —— 邮件 ——
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ vars.MAIL_TO || '38064358@qq.com' }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.no_email }}" = "true" ]; then ARGS="$ARGS --no-email"; fi
+          if [ "${{ inputs.no_llm }}" = "true" ]; then ARGS="$ARGS --no-llm"; fi
+          python -m ethno_monitor run $ARGS | tee run-summary.json
+
+      - name: 上传调试快照与报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ethno-monitor-${{ github.run_number }}
+          path: |
+            reports/latest.md
+            reports/*.html
+            debug/
+            run-summary.json
+          retention-days: 30
+
+      - name: 提交报告与状态
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports data/state.json
+          if git diff --cached --quiet; then
+            echo "无变更"
+          else
+            git commit -m "chore(report): 民族学监测周报 $(date -u +%Y-%m-%d)"
+            git pull --rebase origin ${{ github.ref_name }} || true
+            git push origin HEAD:${{ github.ref_name }}
+          fi

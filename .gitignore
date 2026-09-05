@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+debug/*
+!debug/.gitkeep
+.env
+reports/demo/
+data/state.demo.json

@@ -1,0 +1,165 @@
+# 民族学学科监测系统 —— 数据源配置
+# 说明：
+#   * 每个数据源都是"尽力而为"，抓取失败不会中断整个流程，只会在周报的"数据源状态"表中标红。
+#   * 站点改版时，只需修改这里的 URL / 选择器 / 正则，不必改代码。
+#   * lookback_days: 只保留监测窗口内的条目（无法解析日期的条目也保留，但由 state 去重）。
+
+lookback_days: 14
+
+# ---------------------------------------------------------------------------
+# 一、期刊（民族学类 CSSCI 来源期刊）
+# ---------------------------------------------------------------------------
+journals:
+  - name: 民族研究
+    sponsor: 中国社会科学院民族学与人类学研究所
+    aliases: [民族研究]
+    # 官方网站（若有 CNKI 腾云采编系统或自建站点，可在此填写目录页）
+    toc_pages: []
+  - name: 中华民族共同体研究
+    sponsor: 中央民族大学
+    aliases: [中华民族共同体研究]
+    toc_pages: []
+  - name: 中央民族大学学报（哲学社会科学版）
+    sponsor: 中央民族大学
+    aliases: [中央民族大学学报, 中央民族大学学报(哲学社会科学版)]
+    toc_pages: []
+  - name: 西北民族研究
+    sponsor: 西北民族大学
+    aliases: [西北民族研究]
+    toc_pages: []
+  - name: 广西民族研究
+    sponsor: 广西壮族自治区民族宗教研究中心
+    aliases: [广西民族研究]
+    toc_pages:
+      - url: http://gxmzyj.cbpt.cnki.net/WKE/WebPublication/wkTextContent.aspx?colType=4
+        parser: cnki_tengyun
+  - name: 贵州民族研究
+    sponsor: 贵州省民族研究院
+    aliases: [贵州民族研究]
+    toc_pages: []
+  - name: 青海民族大学学报（社会科学版）
+    sponsor: 青海民族大学
+    aliases: [青海民族大学学报, 青海民族大学学报(社会科学版)]
+    toc_pages: []
+  - name: 广西民族大学学报（哲学社会科学版）
+    sponsor: 广西民族大学
+    aliases: [广西民族大学学报, 广西民族大学学报(哲学社会科学版)]
+    toc_pages: []
+  - name: 世界民族
+    sponsor: 中国社会科学院民族学与人类学研究所
+    aliases: [世界民族]
+    toc_pages: []
+  - name: 青海民族研究
+    sponsor: 青海民族大学民族学与社会学学院
+    aliases: [青海民族研究]
+    toc_pages: []
+  # 可按需追加：民族学刊、民族论坛、民族教育研究、民族艺术、民族语文、西南民族大学学报、云南民族大学学报、原生态民族文化学刊 等
+
+# 国家哲学社会科学文献中心（ncpssd.cn）—— 免费开放获取的期刊全文库，覆盖上述全部期刊。
+# 接口为站内 AJAX，未公开文档，可能变动；失败时仅记录状态。
+ncpssd:
+  enabled: true
+  search_url: https://www.ncpssd.cn/Literature/articlelist
+  # 每个期刊执行一次检索，按发表时间倒序
+  page_size: 30
+
+# ---------------------------------------------------------------------------
+# 二、课题立项 / 公告类来源（通知列表页，按关键词过滤后自动下钻抓取名单）
+# ---------------------------------------------------------------------------
+notice_sources:
+  - name: 全国哲学社会科学工作办公室·年度项目
+    funder: 国家社科基金
+    urls:
+      - http://www.nopss.gov.cn/GB/219469/431027/index.html
+      - http://www.nopss.gov.cn/GB/219469/431027/
+    url_date_regex: '/n1/(\d{4})/(\d{2})(\d{2})/'
+    link_regex: '/n1/\d{4}/\d{4}/c\d+-\d+\.html'
+    include_keywords: [立项, 名单, 公示, 公告, 铸牢, 民族, 专项, 结项]
+    drilldown_keywords: [立项, 名单, 公示]
+  - name: 全国哲学社会科学工作办公室·重大项目
+    funder: 国家社科基金重大项目
+    urls:
+      - http://www.nopss.gov.cn/GB/219469/431028/index.html
+      - https://www.nopss.gov.cn/GB/219469/431028/
+    url_date_regex: '/n1/(\d{4})/(\d{2})(\d{2})/'
+    link_regex: '/n1/\d{4}/\d{4}/c\d+-\d+\.html'
+    include_keywords: [立项, 名单, 公示, 招标, 选题, 民族, 铸牢]
+    drilldown_keywords: [立项, 名单, 公示]
+  - name: 全国哲学社会科学工作办公室·通知公告
+    funder: 国家社科基金
+    urls:
+      - http://www.nopss.gov.cn/GB/219469/index.html
+      - http://www.nopss.gov.cn/GB/219469/
+    url_date_regex: '/n1/(\d{4})/(\d{2})(\d{2})/'
+    link_regex: '/n1/\d{4}/\d{4}/c\d+-\d+\.html'
+    include_keywords: [铸牢中华民族共同体意识, 民族, 专项, 重大, 立项, 名单, 公示]
+    drilldown_keywords: [立项, 名单, 公示]
+  - name: 国家民委·政府信息公开
+    funder: 国家民委民族研究项目
+    urls:
+      - https://www.neac.gov.cn/seac/xxgk/index.shtml
+      - https://www.neac.gov.cn/seac/xwzx/tzgg.shtml
+    url_date_regex: '/(\d{4})(\d{2})/\d+\.shtml'
+    link_regex: '/seac/\w+/\d{6}/\d+\.shtml'
+    include_keywords: [民族研究项目, 课题, 立项, 结项, 招标, 研究基地, 智库, 铸牢]
+    drilldown_keywords: [立项, 名单, 公示]
+  - name: 教育部社会科学司·通知公告
+    funder: 教育部人文社科项目
+    urls:
+      - http://www.moe.gov.cn/s78/A13/tongzhi/
+      - http://www.moe.gov.cn/s78/A13/A13_gggs/
+    url_date_regex: '/t(\d{4})(\d{2})(\d{2})_'
+    link_regex: '/srcsite/A13/.*?/t\d{8}_\d+\.html'
+    include_keywords: [重大课题攻关, 重大项目, 立项, 名单, 公示, 民族, 铸牢, 哲学社会科学]
+    drilldown_keywords: [立项, 名单, 公示]
+  - name: 中国高校人文社会科学信息网（sinoss）
+    funder: 教育部人文社科项目
+    urls:
+      - https://www.sinoss.net/
+      - https://www.sinoss.net/xmgl/
+    url_date_regex: '(\d{4})[-/年](\d{1,2})[-/月](\d{1,2})'
+    link_regex: ''
+    include_keywords: [重大课题攻关, 立项, 名单, 公示, 民族, 铸牢]
+    drilldown_keywords: [立项, 名单]
+
+# 国家社科基金项目数据库（人民网承建，可按学科检索历年立项）
+skygb:
+  enabled: true
+  url: http://fz.people.com.cn/skygb/sk/index.php/Index/seach
+  # 检索参数（若站点表单字段变化，请按实际调整）
+  params:
+    xktype: 2
+    xkname: 民族学
+    nianfa: "{year}"
+  max_pages: 5
+  # 下钻时用于判定"民族学相关"的名单行关键词
+  row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 民族学]
+
+# 立项名单下钻：抓取公告正文中的表格/附件，抽取民族学相关条目
+drilldown:
+  enabled: true
+  max_pages: 12
+  row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 各民族, 少数民族, 民族地区, 民族学]
+
+# RSS / Atom 订阅（可选，任何支持 RSS 的学术资讯站均可加入）
+rss_feeds: []
+#  - name: 示例
+#    url: https://example.com/feed.xml
+#    kind: notice
+
+# ---------------------------------------------------------------------------
+# 三、LLM 联网检索兜底（Gemini google_search grounding / Claude web_search）
+#     用于弥补期刊网站反爬、站点改版导致的漏抓。产出条目会标注是否有来源链接支撑。
+# ---------------------------------------------------------------------------
+llm_research:
+  enabled: true
+  journals: true       # 逐刊检索最新一期目录
+  projects: true       # 检索最新立项公告
+  max_queries: 20
+  project_queries:
+    - "{year}年 国家社科基金年度项目 立项名单 民族学"
+    - "{year}年 国家社科基金 铸牢中华民族共同体意识研究专项 立项名单"
+    - "{year}年 国家社科基金重大项目 立项 民族 铸牢中华民族共同体意识"
+    - "国家民委民族研究项目 {year}年度 课题 立项名单"
+    - "{year}年 教育部哲学社会科学研究重大课题攻关项目 立项 民族"
+    - "{year}年 国家社科基金 冷门绝学 后期资助 立项 民族 人类学"

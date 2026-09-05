@@ -1,0 +1,22 @@
+{
+ "statuses": [
+  {"name": "国家哲学社会科学文献中心", "ok": true, "count": 6, "message": "示例数据", "elapsed": 1.2, "kind": "journal"},
+  {"name": "全国哲学社会科学工作办公室·通知公告", "ok": true, "count": 3, "message": "示例数据", "elapsed": 0.8, "kind": "project"},
+  {"name": "国家民委·政府信息公开", "ok": true, "count": 2, "message": "示例数据", "elapsed": 0.7, "kind": "project"},
+  {"name": "期刊站点·广西民族研究", "ok": false, "count": 0, "message": "示例：连接超时", "elapsed": 25.0, "kind": "journal"}
+ ],
+ "items": [
+  {"kind": "paper", "title": "（示例）铸牢中华民族共同体意识的历史逻辑与实践路径", "url": "https://example.org/p1", "source": "民族研究", "date": "2026-08", "authors": ["示例作者甲"], "extra": {"issue": "2026年第4期", "via": "demo"}},
+  {"kind": "paper", "title": "（示例）南岭走廊瑶族迁徙记忆与国家认同的建构", "url": "https://example.org/p2", "source": "广西民族研究", "date": "2026-08", "authors": ["示例作者乙", "示例作者丙"], "extra": {"issue": "2026年第4期", "via": "demo"}},
+  {"kind": "paper", "title": "（示例）中越边境跨境婚姻家庭的日常实践——基于东兴市的民族志", "url": "https://example.org/p3", "source": "世界民族", "date": "2026-08", "authors": ["示例作者丁"], "extra": {"issue": "2026年第4期", "via": "demo"}},
+  {"kind": "paper", "title": "（示例）民族区域自治制度的理论创新与法治保障", "url": "https://example.org/p4", "source": "中央民族大学学报（哲学社会科学版）", "date": "2026-07", "authors": ["示例作者戊"], "extra": {"issue": "2026年第4期", "via": "demo"}},
+  {"kind": "paper", "title": "（示例）京族哈节的海洋文化基因与非遗整体性保护", "url": "", "source": "广西民族大学学报（哲学社会科学版）", "date": "2026-08", "authors": ["示例作者己"], "verified": false, "extra": {"issue": "2026年第4期", "via": "llm"}},
+  {"kind": "paper", "title": "（示例）多物种民族志与人类学的本体论转向", "url": "https://example.org/p6", "source": "西北民族研究", "date": "2026-08", "authors": ["示例作者庚"], "extra": {"issue": "2026年第4期", "via": "demo"}},
+  {"kind": "project", "title": "（示例）边疆民族地区铸牢中华民族共同体意识的实践机制研究", "url": "https://example.org/n1", "source": "全国哲学社会科学工作办公室·通知公告", "date": "2026-08-28", "authors": ["示例负责人"], "affiliation": "广西民族大学", "extra": {"funder": "国家社科基金", "project_type": "专项", "pi": "示例负责人", "from_notice": "（示例）2026年国家社科基金铸牢中华民族共同体意识研究专项立项名单"}},
+  {"kind": "project", "title": "（示例）壮侗语族跨国分布格局下的族群认同比较研究", "url": "https://example.org/n1", "source": "全国哲学社会科学工作办公室·通知公告", "date": "2026-08-28", "authors": ["示例负责人二"], "affiliation": "云南大学", "extra": {"funder": "国家社科基金", "project_type": "一般项目", "pi": "示例负责人二"}},
+  {"kind": "project", "title": "（示例）民族政策百年演进与中国式现代化研究", "url": "https://example.org/n2", "source": "国家民委·政府信息公开", "date": "2026-08-25", "authors": ["示例负责人三"], "affiliation": "中央民族大学", "extra": {"funder": "国家民委民族研究项目", "project_type": "重点项目", "pi": "示例负责人三"}},
+  {"kind": "notice", "title": "（示例）2026年国家社科基金铸牢中华民族共同体意识研究专项立项名单", "url": "https://example.org/n1", "source": "全国哲学社会科学工作办公室·通知公告", "date": "2026-08-28", "extra": {"funder": "国家社科基金", "projects_found": 2}},
+  {"kind": "notice", "title": "（示例）国家民委办公厅关于国家民委民族研究项目2026年度课题立项的通知", "url": "https://example.org/n2", "source": "国家民委·政府信息公开", "date": "2026-08-25", "extra": {"funder": "国家民委民族研究项目", "projects_found": 1}},
+  {"kind": "notice", "title": "（示例）关于组织申报2027年度教育部哲学社会科学研究重大课题攻关项目的通知", "url": "https://example.org/n3", "source": "教育部社会科学司·通知公告", "date": "2026-08-30", "extra": {"funder": "教育部人文社科项目"}}
+ ]
+}

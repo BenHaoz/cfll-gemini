@@ -62,6 +62,61 @@ def parse_toc_generic(html: str, base_url: str, journal: str) -> list[Item]:
     return items
 
 
+NAV_TITLES = {"国家哲学社会科学文献中心", "习近平新时代 中国特色社会主义思想", "研究阐释宣传 党的二十大和二十届 历次全会精神", "建设中国特色新型智库",
+              "外部资源导航", "学术网站导航", "社科机构导航"}
+ISSUE_LOOSE_RE = re.compile(r"(20\d{2})\s*年?\s*第?\s*(\d{1,2})\s*期|(20\d{2})\s*/\s*(\d{1,2})\b")
+ID_RE = re.compile(r"([0-9a-fA-F-]{16,}|\d{6,})")
+
+
+def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
+    """国家哲学社会科学文献中心期刊详情页（m.ncpssd.cn/journal/details?gch=…）：
+    文章标题为 href="javascript:void (0)" 的锚点，作者在同一 li 内。"""
+    soup = soup_of(html)
+    for tag in soup.find_all(["script", "style", "header", "nav", "footer"]):
+        tag.decompose()
+    page_text = clean(soup.get_text(" "))
+    issue = issue_date = ""
+    m = ISSUE_LOOSE_RE.search(page_text)
+    if m:
+        y, n = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
+        issue, issue_date = f"{y}年第{int(n)}期", f"{y}-{max(1, min(12, int(n) * 2 - 1)):02d}"
+    items: list[Item] = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        if not a["href"].strip().lower().startswith("javascript"):
+            continue
+        title = clean(a.get("title") or a.get_text(" "))
+        if len(title) < 6 or not CJK.search(title) or title in NAV_TITLES or title in seen:
+            continue
+        if re.search(r"(更多|下载|全文|摘要|返回|首页|登录|注册|查看分类表|精确|模糊)$", title):
+            continue
+        seen.add(title)
+        container = a.find_parent(["li", "tr", "dd", "div"])
+        authors: list[str] = []
+        if container is not None:
+            ctx = clean(container.get_text(" "))
+            rest = ctx.split(title, 1)[1] if title in ctx else ""
+            rest = re.split(r"(摘要|关键词|下载|全文|收藏|引用)", rest)[0]
+            rest = re.sub(r"\d+\s*[-–]\s*\d+|\(\s*\d+\s*\)|\d{4}[^\d]{0,3}\d{1,2}\s*期?|页码?|\d+", " ", rest)
+            for tok in AUTHOR_SPLIT.split(rest):
+                tok = tok.strip("()（）[]【】 ,，;；")
+                if 2 <= len(tok) <= 4 and CJK.fullmatch(tok[0]) and tok not in ("作者", "期刊", "来源"):
+                    authors.append(tok)
+                if len(authors) >= 6:
+                    break
+        link = base_url
+        attrs = " ".join(str(v) for k, v in a.attrs.items() if k != "href") + " " + (a.get("onclick") or "")
+        mid = ID_RE.search(attrs)
+        if mid:
+            link = f"https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id={mid.group(1)}"
+        items.append(Item(kind="paper", title=title, url=link, source=journal, date=issue_date, authors=authors[:6],
+                          extra={"issue": issue, "via": "ncpssd_journal"}))
+    return items
+
+
+PARSERS = {"ncpssd_journal": parse_toc_ncpssd, "generic": parse_toc_generic}
+
+
 def collect_journal_toc(journal: dict[str, Any], *, lookback_days: int, today: date | None = None) -> tuple[list[Item], SourceStatus]:
     name = journal["name"]
     t0 = time.time()
@@ -73,7 +128,8 @@ def collect_journal_toc(journal: dict[str, Any], *, lookback_days: int, today: d
     for pg in pages:
         try:
             html = fetch_text(pg["url"], snapshot=f"toc_{name}")
-            items.extend(parse_toc_generic(html, pg["url"], name))
+            parser = PARSERS.get(pg.get("parser", "generic"), parse_toc_generic)
+            items.extend(parser(html, pg["url"], name))
         except Exception as exc:  # noqa: BLE001
             errors.append(str(exc)[:200])
     if not items and errors:

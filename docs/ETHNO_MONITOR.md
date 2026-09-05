@@ -5,7 +5,7 @@
 1. **论文监测**：民族研究、中华民族共同体研究、中央民族大学学报、西北民族研究、广西民族研究、贵州民族研究、青海民族大学学报、广西民族大学学报、世界民族、青海民族研究等民族学类 C 刊的最新文章；
 2. **课题立项监测**：国家社科基金（年度项目、重大项目、铸牢中华民族共同体意识研究专项、后期资助等）、国家民委民族研究项目、教育部哲学社会科学研究重大课题攻关项目等；
 3. **每周研究分析报告**：四方向趋势分述、立项态势与申报启示、**结合广西区域特色（南岭走廊、十二个世居民族、中越跨境民族与东南亚民族研究、平陆运河与面向东盟开放等）的选题与论文题目策划**；
-4. **每周一自动推送到 Gmail（aa1928@gmail.com）**，同时把报告归档到仓库 `reports/`，并更新观察站网页（Claude Artifact 页面；`docs/index.html` 亦可一键开启 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/docs` 目录，地址为 https://benhaoz.github.io/cfll-gemini/ ）。
+4. **每周一自动推送到 Gmail（aa1928@gmail.com）**，同时把报告归档到仓库 `reports/`，并更新观察站网页（Claude Artifact 页面 https://claude.ai/code/artifact/4deee0c5-bc00-4d00-9aec-c5511a4786fc ；`docs/index.html` 亦可一键开启 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/docs` 目录，地址为 https://benhaoz.github.io/cfll-gemini/ ）。
 
 ## 零、当前运行方式（无需你配置任何密钥）
 

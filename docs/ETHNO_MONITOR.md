@@ -5,12 +5,12 @@
 1. **论文监测**：民族研究、中华民族共同体研究、中央民族大学学报、西北民族研究、广西民族研究、贵州民族研究、青海民族大学学报、广西民族大学学报、世界民族、青海民族研究等民族学类 C 刊的最新文章；
 2. **课题立项监测**：国家社科基金（年度项目、重大项目、铸牢中华民族共同体意识研究专项、后期资助等）、国家民委民族研究项目、教育部哲学社会科学研究重大课题攻关项目等；
 3. **每周研究分析报告**：四方向趋势分述、立项态势与申报启示、**结合广西区域特色（南岭走廊、十二个世居民族、中越跨境民族与东南亚民族研究、平陆运河与面向东盟开放等）的选题与论文题目策划**；
-4. **每周一自动推送到 Gmail（aa1928@gmail.com）**，同时把报告归档到仓库 `reports/`，并更新观察站网页 https://benhaoz.github.io/cfll-gemini/ 。
+4. **每周一自动推送到 Gmail（aa1928@gmail.com）**，同时把报告归档到仓库 `reports/`，并更新观察站网页（Claude Artifact 页面；`docs/index.html` 亦可一键开启 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/docs` 目录，地址为 https://benhaoz.github.io/cfll-gemini/ ）。
 
 ## 零、当前运行方式（无需你配置任何密钥）
 
 1. **每周一 06:30（北京时间）** GitHub Actions 工作流「民族学监测·每周采集」（`.github/workflows/weekly-collect.yml`，无需密钥）在境外运行器上抓取各期刊与立项来源，把条目与数据源状态提交到 `data/collected/latest.json`，并在日志中输出页面结构诊断。
-2. **每周一 08:30（北京时间）** Claude Code 的 **Routine** 自动开启一个会话，按 [`docs/WEEKLY_RUNBOOK.md`](WEEKLY_RUNBOOK.md) 执行：读取采集结果 → 用联网检索补充 → 由 Claude 撰写六节分析与广西特色选题 → 生成周报与观察站网页并提交到 `main` → 通过已连接的 Gmail 发送到 aa1928@gmail.com。
+2. **每周一 08:30（北京时间）** Claude Code 的 **Routine** 自动开启一个会话，按 [`docs/WEEKLY_RUNBOOK.md`](WEEKLY_RUNBOOK.md) 执行：读取采集结果 → 用联网检索补充 → 由 Claude 撰写六节分析与广西特色选题 → 生成周报与观察站网页并提交到 `main` → 重新发布观察站 Artifact → 通过已连接的 Gmail 发送到 aa1928@gmail.com。
 下文的 GitHub Actions 方案是**备用路径**（需自行配置 SMTP / LLM 密钥，仅手动触发）。
 
 示例报告见 [`docs/sample-report.md`](sample-report.md)（示例数据，非真实文献）。

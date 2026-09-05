@@ -85,6 +85,15 @@ notice_sources:
     link_regex: '/n1/\d{4}/\d{4}/c\d+-\d+\.html'
     include_keywords: [立项, 名单, 公示, 招标, 选题, 民族, 铸牢]
     drilldown_keywords: [立项, 名单, 公示]
+  - name: 全国哲学社会科学工作办公室·专项与后期资助
+    funder: 国家社科基金
+    urls:
+      - https://www.nopss.gov.cn/GB/219469/431029/
+      - https://www.nopss.gov.cn/GB/219469/431030/
+    url_date_regex: '/n1/(\d{4})/(\d{2})(\d{2})/'
+    link_regex: '/n1/\d{4}/\d{4}/c\d+-\d+\.html'
+    include_keywords: [立项, 名单, 公示, 公告, 铸牢, 民族, 专项, 冷门绝学, 后期资助]
+    drilldown_keywords: [立项, 名单, 公示]
   - name: 全国哲学社会科学工作办公室·通知公告
     funder: 国家社科基金
     urls:
@@ -109,7 +118,7 @@ notice_sources:
       - http://www.moe.gov.cn/s78/A13/tongzhi/
       - http://www.moe.gov.cn/s78/A13/A13_gggs/
     url_date_regex: '/t(\d{4})(\d{2})(\d{2})_'
-    link_regex: '/srcsite/A13/.*?/t\d{8}_\d+\.html'
+    link_regex: '/A13/.*?/t\d{8}_\d+\.html'
     include_keywords: [重大课题攻关, 重大项目, 立项, 名单, 公示, 民族, 铸牢, 哲学社会科学]
     drilldown_keywords: [立项, 名单, 公示]
   - name: 中国高校人文社会科学信息网（sinoss）

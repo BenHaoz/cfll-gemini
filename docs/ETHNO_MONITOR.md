@@ -9,7 +9,8 @@
 
 ## 零、当前运行方式（无需你配置任何密钥）
 
-每周一 08:30（北京时间）由 Claude Code 的 **Routine** 自动开启一个会话，按 [`docs/WEEKLY_RUNBOOK.md`](WEEKLY_RUNBOOK.md) 执行：运行采集器 → 用联网检索补充最新论文与立项 → 由 Claude 撰写六节分析与广西特色选题 → 生成周报与网页并提交到 `main` → 通过已连接的 Gmail 发送到 aa1928@gmail.com。
+1. **每周一 06:30（北京时间）** GitHub Actions 工作流「民族学监测·每周采集」（`.github/workflows/weekly-collect.yml`，无需密钥）在境外运行器上抓取各期刊与立项来源，把条目与数据源状态提交到 `data/collected/latest.json`，并在日志中输出页面结构诊断。
+2. **每周一 08:30（北京时间）** Claude Code 的 **Routine** 自动开启一个会话，按 [`docs/WEEKLY_RUNBOOK.md`](WEEKLY_RUNBOOK.md) 执行：读取采集结果 → 用联网检索补充 → 由 Claude 撰写六节分析与广西特色选题 → 生成周报与观察站网页并提交到 `main` → 通过已连接的 Gmail 发送到 aa1928@gmail.com。
 下文的 GitHub Actions 方案是**备用路径**（需自行配置 SMTP / LLM 密钥，仅手动触发）。
 
 示例报告见 [`docs/sample-report.md`](sample-report.md)（示例数据，非真实文献）。

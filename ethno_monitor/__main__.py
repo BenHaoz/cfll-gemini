@@ -26,6 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     p_run.add_argument("--analysis-file", help="外部撰写的分析 Markdown，替代 LLM/规则分析")
     p_run.add_argument("--analysis-label", default="Claude 会话分析", help="分析引擎标签")
     p_run.add_argument("--no-site", action="store_true", help="不重建 docs/ 观察站网页")
+    p_run.add_argument("--collected-file", help="使用 collect --out 生成的采集结果，替代现场采集")
 
     p_demo = sub.add_parser("demo", help="使用示例数据演示完整流程（不联网抓取）")
     p_demo.add_argument("--email", action="store_true", help="演示时也发送邮件")
@@ -35,6 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     p_col.add_argument("--only", help="只运行名称包含该字符串的数据源")
     p_col.add_argument("--llm", action="store_true")
     p_col.add_argument("--out", help="把采集结果（条目 + 数据源状态）写入 JSON 文件")
+    p_col.add_argument("--diagnose", action="store_true", help="打印各数据源页面结构诊断（用于远程校正选择器）")
 
     p_prompt = sub.add_parser("prompt", help="输出分析提示词（含本周新增条目摘要与广西知识库），供外部分析器使用")
     p_prompt.add_argument("--items-file", action="append", default=[], help="条目 JSON，可多次指定")
@@ -53,7 +55,14 @@ def main(argv: list[str] | None = None) -> int:
         today = date.fromisoformat(a.date) if a.date else None
         extra = load_items_file(Path(a.items_file)) if a.items_file else None
         analysis = Path(a.analysis_file).read_text(encoding="utf-8") if a.analysis_file else None
+        items_ov = statuses_ov = None
+        if a.collected_file:
+            from .models import SourceStatus
+            data = json.loads(Path(a.collected_file).read_text(encoding="utf-8"))
+            items_ov = load_items_file(Path(a.collected_file))
+            statuses_ov = [SourceStatus(**{k: v for k, v in st.items() if k in SourceStatus.__dataclass_fields__}) for st in data.get("statuses", [])]
         res = run(settings, today=today, use_llm=not a.no_llm, send_email=not a.no_email, only=a.only,
+                  items_override=items_ov, statuses_override=statuses_ov,
                   extra_items=extra, analysis_override=analysis, analysis_label=a.analysis_label, build_site=not a.no_site)
         print(json.dumps(res, ensure_ascii=False, indent=1))
         return 0
@@ -91,6 +100,9 @@ def main(argv: list[str] | None = None) -> int:
             print(("OK " if s.ok else "ERR"), s.name, s.count, s.message)
         for it in items:
             print(f"[{it.kind}] {it.date} {it.source} | {it.title} | {'、'.join(it.authors)} | {it.url}")
+        if a.diagnose:
+            from .diagnose import diagnose
+            print(diagnose(settings))
         return 0
     if a.cmd == "test-email":
         from .mailer import send_mail

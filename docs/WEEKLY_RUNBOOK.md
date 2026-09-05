@@ -10,10 +10,18 @@ pip install -q -r requirements.txt
 mkdir -p /tmp/em && export TODAY=$(date +%F)
 ```
 
-## 1. 运行确定性采集（多数国内站点在本环境可能被拦截，失败属正常，状态会写进报告）
+## 1. 读取 GitHub Actions 的采集结果
+GitHub Actions 工作流「民族学监测·每周采集」在每周一 06:30（北京时间）已把采集结果提交到 `data/collected/latest.json`（含条目与各数据源状态）。
 ```bash
-timeout 900 python -m ethno_monitor collect --out /tmp/em/collected.json > /tmp/em/collect.log 2>&1 || true
-tail -30 /tmp/em/collect.log
+cp data/collected/latest.json /tmp/em/collected.json
+python - <<'PY'
+import json; d=json.load(open('/tmp/em/collected.json'))
+print(len(d['items']),'items'); [print('OK ' if s['ok'] else 'ERR', s['name'], s['count'], s['message'][:80]) for s in d['statuses']]
+PY
+```
+若该文件不存在或早于 3 天，可用 GitHub MCP 工具 `actions_run_trigger` 触发一次工作流 `weekly-collect.yml` 并等待约 5 分钟后 `git pull` 重试；若仍无结果，则以空采集继续（本环境自身无法直连国内站点）：
+```bash
+[ -f /tmp/em/collected.json ] || echo '{"items":[],"statuses":[]}' > /tmp/em/collected.json
 ```
 
 ## 2. 联网补充检索（会话自己用 WebSearch 完成，是本环境下的主要数据来源）
@@ -34,7 +42,7 @@ python -m ethno_monitor prompt --items-file /tmp/em/collected.json --items-file 
 
 ## 4. 生成周报、网页并提交
 ```bash
-python -m ethno_monitor run --no-llm --no-email --items-file /tmp/em/extra_items.json --analysis-file /tmp/em/analysis.md --date $TODAY | tee /tmp/em/run.json
+python -m ethno_monitor run --no-llm --no-email --collected-file /tmp/em/collected.json --items-file /tmp/em/extra_items.json --analysis-file /tmp/em/analysis.md --date $TODAY | tee /tmp/em/run.json
 git add reports data/state.json docs
 git -c user.name="ethno-monitor" -c user.email="ethno-monitor@users.noreply.github.com" commit -m "chore(report): 民族学监测周报 $TODAY" || true
 git push origin main

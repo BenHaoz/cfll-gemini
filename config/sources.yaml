@@ -15,8 +15,6 @@ journals:
     aliases: [民族研究]
     # 官方网站（若有 CNKI 腾云采编系统或自建站点，可在此填写目录页）
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=80294X&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=80294X&nav=1&langType=1
         parser: ncpssd_journal
   - name: 中华民族共同体研究
@@ -27,8 +25,6 @@ journals:
     sponsor: 中央民族大学
     aliases: [中央民族大学学报, 中央民族大学学报(哲学社会科学版)]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=96982A&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=96982A&nav=1&langType=1
         parser: ncpssd_journal
   - name: 西北民族研究
@@ -38,55 +34,42 @@ journals:
   - name: 广西民族研究
     sponsor: 广西壮族自治区民族宗教研究中心
     aliases: [广西民族研究]
-    toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=90751A&nav=1&langType=1
-        parser: ncpssd_journal
-      - url: https://m.ncpssd.cn/journal/details?gch=90751A&nav=1&langType=1
-        parser: ncpssd_journal
+    toc_pages: []   # 文献中心 gch=90751A 经核对并非本刊；知网采编系统有验证码。待补充可抓取目录页
   - name: 贵州民族研究
     sponsor: 贵州省民族研究院
     aliases: [贵州民族研究]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=91489X&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=91489X&nav=1&langType=1
         parser: ncpssd_journal
   - name: 青海民族大学学报（社会科学版）
     sponsor: 青海民族大学
     aliases: [青海民族大学学报, 青海民族大学学报(社会科学版)]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=82820A&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=82820A&nav=1&langType=1
         parser: ncpssd_journal
   - name: 广西民族大学学报（哲学社会科学版）
     sponsor: 广西民族大学
     aliases: [广西民族大学学报, 广西民族大学学报(哲学社会科学版)]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=80350A&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=80350A&nav=1&langType=1
         parser: ncpssd_journal
   - name: 世界民族
     sponsor: 中国社会科学院民族学与人类学研究所
     aliases: [世界民族]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=96988A&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=96988A&nav=1&langType=1
         parser: ncpssd_journal
   - name: 青海民族研究
     sponsor: 青海民族大学民族学与社会学学院
     aliases: [青海民族研究]
     toc_pages:
-      - url: https://www.ncpssd.cn/journal/details?gch=82637X&nav=1&langType=1
-        parser: ncpssd_journal
       - url: https://m.ncpssd.cn/journal/details?gch=82637X&nav=1&langType=1
         parser: ncpssd_journal
   # 可按需追加：民族学刊、民族论坛、民族教育研究、民族艺术、民族语文、西南民族大学学报、云南民族大学学报、原生态民族文化学刊 等
 
 # 国家哲学社会科学文献中心（ncpssd.cn）—— 免费开放获取的期刊全文库；各刊详情页编号（gch）已配置在上方 toc_pages。
-# 未找到编号：中华民族共同体研究、西北民族研究（91381A 为西北民族大学学报，非本刊）。
+# 未找到编号：中华民族共同体研究、西北民族研究（91381A 为西北民族大学学报，非本刊）、广西民族研究（90751A 非本刊）。
+# 页面为服务端渲染（文章标题锚点 href=javascript:void(0)），用 parser: ncpssd_journal 解析。
 # 接口为站内 AJAX，未公开文档，可能变动；失败时仅记录状态。
 ncpssd:
   enabled: false   # /Literature/articlelist 为前端渲染页，接口未公开；期刊页请见 journals[].toc_pages
@@ -145,7 +128,7 @@ notice_sources:
     url_date_regex: '/(\d{4})(\d{2})/\d+\.shtml'
     link_regex: '/seac/\w+/\d{6}/\d+\.shtml'
     include_keywords: [民族研究项目, 课题, 立项, 结项, 招标, 研究基地, 智库, 项目, 评审, 公示]
-    exclude_keywords: [检查情况公告, 政府网站]
+    exclude_keywords: [检查情况公告, 政府网站, 招聘, 拟聘, 录用, 遴选人员]
     drilldown_keywords: [立项, 名单, 公示]
   - name: 教育部社会科学司·通知公告
     funder: 教育部人文社科项目

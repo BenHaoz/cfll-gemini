@@ -29,6 +29,9 @@ def collect_skygb(cfg: dict[str, Any], *, today: date | None = None) -> tuple[li
             params = dict(base_params, p=p)
             html = fetch_text(cfg["url"], params=params, snapshot=f"skygb_p{p}")
             tables = parse_tables(soup_of(html))
+            if not tables or len(html) < 200:
+                html = fetch_text(cfg["url"], method="POST", data=params, snapshot=f"skygb_post_p{p}")
+                tables = parse_tables(soup_of(html))
             got = 0
             for rows in tables:
                 found = rows_to_projects(rows, source=SOURCE, funder="国家社科基金", url=cfg["url"],

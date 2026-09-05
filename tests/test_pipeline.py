@@ -84,3 +84,11 @@ def test_settings_tolerate_empty_env(monkeypatch):
     monkeypatch.setenv("LLM_TIMEOUT", "")
     s = load_settings()
     assert s.lookback_days == 14 and s.mail.port == 465 and s.llm.timeout == 180
+
+
+def test_guangxi_flag_ignores_journal_name():
+    s = load_settings()
+    clf = Classifier(s.keywords)
+    a = clf.annotate(Item(kind="paper", title="珠三角乡村都市化研究", source="广西民族研究"))
+    b = clf.annotate(Item(kind="paper", title="京族哈节的海洋文化基因", source="民族研究"))
+    assert a.guangxi_related is False and b.guangxi_related is True

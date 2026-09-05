@@ -65,7 +65,7 @@ def parse_toc_generic(html: str, base_url: str, journal: str) -> list[Item]:
 NAV_TITLES = {"国家哲学社会科学文献中心", "习近平新时代 中国特色社会主义思想", "研究阐释宣传 党的二十大和二十届 历次全会精神", "建设中国特色新型智库",
               "外部资源导航", "学术网站导航", "社科机构导航"}
 ISSUE_LOOSE_RE = re.compile(r"(20\d{2})\s*年?\s*第?\s*(\d{1,2})\s*期|(20\d{2})\s*/\s*(\d{1,2})\b")
-ID_RE = re.compile(r"([0-9a-fA-F-]{16,}|\d{6,})")
+ID_RE = re.compile(r"\b([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{24,})\b")
 
 
 def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
@@ -88,7 +88,7 @@ def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
         title = clean(a.get("title") or a.get_text(" "))
         if len(title) < 6 or not CJK.search(title) or title in NAV_TITLES or title in seen:
             continue
-        if re.search(r"(更多|下载|全文|摘要|返回|首页|登录|注册|查看分类表|精确|模糊)$", title):
+        if re.search(r"(更多|下载|全文|摘要|返回|首页|登录|注册|查看分类表|精确|模糊)$", title) or "详细简介" in title:
             continue
         seen.add(title)
         container = a.find_parent(["li", "tr", "dd", "div"])

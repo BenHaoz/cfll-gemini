@@ -49,7 +49,9 @@ class Classifier:
                          str(item.extra.get("summary", "")), str(item.extra.get("keywords", ""))])
         if not item.direction or item.direction not in self.rules:
             item.direction = self.classify_text(text)
-        item.guangxi_related = self.is_guangxi(text)
+        # 涉桂判定不看期刊名（否则广西刊物的全部文章都会被标记），只看题目/单位/摘要
+        gx_text = " ".join([item.title, item.affiliation, str(item.extra.get("summary", "")), str(item.extra.get("keywords", ""))])
+        item.guangxi_related = self.is_guangxi(gx_text)
         return item
 
     def annotate_all(self, items: Iterable[Item]) -> list[Item]:

@@ -71,7 +71,7 @@
 
 - 监测《民族研究》《中华民族共同体研究》《广西民族研究》《世界民族》等民族学类 C 刊最新论文；
 - 监测国家社科基金（年度 / 重大 / 铸牢中华民族共同体意识研究专项）、国家民委民族研究项目、教育部重大课题攻关项目等最新立项；
-- 每周一自动生成研究分析报告，结合广西区域特色（南岭走廊、十二个世居民族、东南亚民族研究）策划选题与论文题目，推送到 Gmail 并发布到观察站网页 https://benhaoz.github.io/cfll-gemini/ ；
+- 每周一自动生成研究分析报告，结合广西区域特色（南岭走廊、十二个世居民族、东南亚民族研究）策划选题与论文题目，推送到 Gmail 并发布到观察站网页（https://claude.ai/code/artifact/4deee0c5-bc00-4d00-9aec-c5511a4786fc）；
 - LLM 分析层默认使用 Gemini，可直接填入本仓库部署的反代地址作为 `GEMINI_BASE_URL`。
 
 部署与使用说明见 [`docs/ETHNO_MONITOR.md`](docs/ETHNO_MONITOR.md)，示例报告见 [`docs/sample-report.md`](docs/sample-report.md)。

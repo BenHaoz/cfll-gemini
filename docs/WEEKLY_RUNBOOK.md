@@ -47,7 +47,7 @@ git add reports data/state.json docs
 git -c user.name="ethno-monitor" -c user.email="ethno-monitor@users.noreply.github.com" commit -m "chore(report): 民族学监测周报 $TODAY" || true
 git push origin main
 ```
-观察站网页地址：https://benhaoz.github.io/cfll-gemini/ （GitHub Pages，来源 main 分支 /docs 目录）。
+观察站网页：`docs/index.html`。随后把它作为 Artifact 重新发布（与上一期使用同一文件路径以保持同一链接）；若仓库已开启 GitHub Pages（main 分支 /docs），地址为 https://benhaoz.github.io/cfll-gemini/ 。
 
 ## 5. 推送到 Gmail
 用 Gmail 连接器 `send_message` 发送到 **aa1928@gmail.com**：
@@ -55,7 +55,7 @@ git push origin main
 - `htmlBody`：`reports/latest.md` 对应的 HTML（`reports/<slug>.html` 文件内容，去掉 `<!DOCTYPE>`/`<html>`/`<head>` 外壳只保留 `<style>` 与 `<body>` 内容亦可）
 - `body`：`reports/latest.md` 的纯文本
 - 附件：`reports/<slug>.md`（text/markdown，base64）
-- 正文开头加一行观察站网页链接。
+- 正文开头加一行观察站网页（Artifact）链接。
 
 ## 6. 收尾
 在会话最后用中文简要汇报：新增条目数、数据源成功/失败情况、邮件是否发送成功、报告提交的 commit。若邮件发送失败，重试一次；仍失败则在汇报中说明原因。

@@ -2,8 +2,8 @@
  "items": [
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=80294X&nav=1&langType=1",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -14,13 +14,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "青藏高原特色优势企业与民族互嵌结构共进机制研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003001",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -31,13 +31,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "迈向数字新场域：网络民族工作的生成机理与治理逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003002",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -48,13 +48,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "解放区地理教科书的空间叙事与中国化的马克思主义民族地理书写",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003003",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -65,13 +65,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "族际通婚的代际影响及其世代差异——基于云南民族地区综合社会调查数据分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003004",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -82,13 +82,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "复合型原乡认同：闽东北礵岛海外移民的田野调查与分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003005",
    "source": "民族研究",
    "date": "2026-05",
    "authors": [],
@@ -99,13 +99,98 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "辽代隶宫州县的设置及其管理机制的演变",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003006",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "明代“西番诸卫”地区的差异化治理策略与边疆社会重塑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003007",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "清代循化厅田赋征收与边疆民族社会",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003008",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "扩展社会：本体论人类学的观点与论证",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003009",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "2025年中国西南民族研究学会年会综述",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003010",
+   "source": "民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=96982A&nav=1&langType=1",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -116,13 +201,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "畏兀儿亦都护家族所藏唐赐“第四王印”研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002001",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -133,13 +218,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "唐宋巴蜀僚人的华夏认同与民族交融",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002002",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -150,13 +235,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "清中后期滇南“自固藩篱”策略下的流土关系与界务危机",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002003",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -167,13 +252,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "大一统功业与元代昆仑山、黄河源的分置",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002004",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -184,13 +269,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "人—从—众：中华民族共同体建设的三重路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002005",
    "source": "中央民族大学学报（哲学社会科学版）",
    "date": "2026-03",
    "authors": [],
@@ -201,15 +286,15 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "马克思主义经典作家民族理论及其在中国的创新发展",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002006",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -217,16 +302,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "以“人类命运共同体”为主线构建世界民族研究自主知识体系",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002007",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -234,16 +319,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "世界民族研究在中国区域国别学学科建设中的定位刍议",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002008",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -251,16 +336,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "俄罗斯构建国家认同的“公民民族”路径及其论争",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002009",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -268,16 +353,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "跨越“低水平增长陷阱”：援助政策、企业家才能配置与中国区域协调发展",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002010",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -285,16 +370,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
-   "source": "广西民族研究",
-   "date": "2026-11",
+   "title": "国家级新区、要素价格差异与区域发展",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002011",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -302,14 +387,65 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第6期",
-    "via": "toc"
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "城乡交通一体化对居民消费结构升级的影响研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002012",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "试论金代景观文学的三种模式",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002013",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "乾隆朝清廷与巴勒提交涉考论——兼论清代书信教化逻辑的延伸",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002014",
+   "source": "中央民族大学学报（哲学社会科学版）",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=91489X&nav=1&langType=1",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -320,13 +456,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "以社会主义核心价值观引领构筑中华民族共有精神家园的内在理据与实践路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003001",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -337,13 +473,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "数字技术赋能铸牢中华民族共同体意识教育的价值、困境与路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003002",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -354,13 +490,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "长征文化赋能铸牢中华民族共同体意识：作用机理、功能阐释和实践进路",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003003",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -371,13 +507,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "“坚持中国特色解决民族问题的正确道路”专题研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003004",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -388,13 +524,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "新中国成立初期中国共产党民族团结话语体系建设的实践与经验",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003005",
    "source": "贵州民族研究",
    "date": "2026-05",
    "authors": [],
@@ -405,15 +541,15 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第3期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "新中国成立初期中国共产党对中华民族共同体建设的历史自觉",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003006",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -421,16 +557,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "抗战时期党领导中华民族共同体建设的历史与经验",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003007",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -438,16 +574,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "正确思想、科学方法与有效实践：中国特色解决民族问题正确道路的方法论根基",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003008",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -455,16 +591,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "“民族团结进步促进法”专题研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003009",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -472,16 +608,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "“序言”：《民族团结进步促进法》的政治立基与规范指引",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003010",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -489,16 +625,16 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
-   "source": "青海民族大学学报（社会科学版）",
-   "date": "2026-03",
+   "title": "铸牢中华民族共同体意识的港台之维——基于《民族团结进步促进法》第二十一条的思考",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003011",
+   "source": "贵州民族研究",
+   "date": "2026-05",
    "authors": [],
    "affiliation": "",
    "direction": "",
@@ -506,14 +642,592 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "issue": "2026年第2期",
-    "via": "toc"
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "铸牢中华民族共同体意识教育体系构建的法治保障——基于《民族团结进步促进法》第十八条的思考",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003012",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "民族地区全面推广普及国家通用语言文字的逻辑理路和规范内涵——以《民族团结进步促进法》第十五条为中心",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003013",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "数字赋能民族文化互鉴融通的逻辑机理与推进路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003014",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中华优秀传统文化传承的形式流变与内核坚守",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003015",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "模件化与程式化：清水江流域苗族刺绣结构基因的田野呈现",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003016",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "土家族仪式文化蕴含的中华民族观",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003017",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "民族文化资源赋能高校铸牢中华民族共同体意识教育体系建设研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003018",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "水族弦鼓文化的交往交流交融实践与中华民族共同体意识的建构——一项基于口述与民俗的研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003019",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "长江文化赋能铸牢中华民族共同体意识的内在逻辑与实践进路",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003020",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "旅游如何促进各民族交往交流交融？——基于空间生产视角的机制解释与治理路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003021",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "经世致用与史志互证：江应樑民族学研究的现实观照与研究新范式",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003022",
+   "source": "贵州民族研究",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=82820A&nav=1&langType=1",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中国式现代化与中华民族共同体建设协同推进研究综述",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003001",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "边疆民族人口聚居样态、跨越式情感融入与构建各民族交往交流交融新格局——基于新疆民族团结进步工作的案例分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003002",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中华文化符号赋能铸牢中华民族共同体意识教育的机理与路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003003",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "交往交流交融视域下民族地区外来随迁老人社区融入的逻辑机理与实践路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003004",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "交融共生与共同体形塑：青海省同仁市多民族交往交流交融的历史进程及当代实践研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003005",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "区域特色商品流通与多民族交往交流交融——基于青藏高原一个县域虫草经济的考察",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003006",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "论信息茧房对民族工作的挑战与治理路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003007",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "技术、记忆与产业发展：围绕普洱茶技术史与书写的反思",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003008",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "广西边境土地利用与边疆安全研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003009",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "新时代国家文化安全治理体系的内涵、特征及结构要素探析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003010",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中华人民共和国国有银行信贷管理体制的构建历程、演进特征与历史经验",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003011",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "算力赋能新质生产力驱动产业融合机制与效应研究——基于青海“四地”产业的实证分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003012",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "新质生产力、企业家创新精神与供应链韧性关系研究——基于西部地区上市公司的实证分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003013",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "高质量建设铸牢中华民族共同体意识教育教师队伍的价值、困境与路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003014",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "示范校助推学校铸牢中华民族共同体意识教育一体化的逻辑进路",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003015",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "以系统观念推进民族地区教育科技人才一体化发展的逻辑与路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003016",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "人的全面发展思想与新时代推广普通话的契合机理与实践路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003017",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "系统性保护视角下的京津冀非遗协同发展探析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003018",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "非遗传承赋能铸牢中华民族共同体意识教育的逻辑机理与实践进路：基于国家级非遗景颇族目瑙纵歌的分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003019",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "文旅融合视角下玉树马球文化的IP转化机制与实践路径研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003020",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "增强中华民族共同体凝聚力的宪法保障机制研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003021",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "论帮助行为正犯化的边界限定",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026003022",
+   "source": "青海民族大学学报（社会科学版）",
+   "date": "2026-05",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第3期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=80350A&nav=1&langType=1",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -524,13 +1238,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "珠三角乡村都市化：中国式现代化的区域实践与理论创新",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001001",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -541,13 +1255,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "对中国式现代化与民族地区现代化的认知与实践思考",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001002",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -558,13 +1272,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "云南人口较少民族共同富裕及其现代化的路径研究——基于“人才红利”的视角",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001003",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -575,13 +1289,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "文化线路的系统性构成框架建构及本土应用",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001004",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -592,13 +1306,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "论中华民族构成结构的复合性",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001005",
    "source": "广西民族大学学报（哲学社会科学版）",
    "date": "2026-01",
    "authors": [],
@@ -609,13 +1323,217 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第1期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "妈祖信俗仪式与台湾同胞中华文化认同建构",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001006",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中华民族共同体记忆的生成逻辑——以兰州黄河文化符号景观为例",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001007",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "非遗“项目制”管理铸牢中华民族共同体意识的理论逻辑与实现机制",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001008",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "意义阐释与嵌入装置：河西走廊民族志影像的实践过程",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001009",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "从白族原乡到乌托邦：影视人类学视域下的大理影像叙事",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001010",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "地方性和媒介化：节日影像志的文化语境与传播逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001011",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "影像阈限：二维和VR影像民族志的观看经验与文化反思",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001012",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "生态文明的数字赋能：民族地区生态环境智慧监测与保护",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001013",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "岷江上游地区传统生态认知体系及其风险应对的本土逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001014",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "乡村振兴背景下的多元行动主体与村庄共治",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001015",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "资源进村背景下的村庄公共性悬浮及其超越——基于社会参与挤压的视角",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001016",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "超越乡镇本位：县域统筹视角下的基层政权建设路径——新一轮乡镇体制改革的经验分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026001017",
+   "source": "广西民族大学学报（哲学社会科学版）",
+   "date": "2026-01",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第1期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=96988A&nav=1&langType=1",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -626,13 +1544,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "民族理论的谱系：20—21世纪初俄罗斯民族学中的“民族”（Этнос）概念演变",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004001",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -643,13 +1561,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "全球化变局下的民族共同体建设",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004002",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -660,13 +1578,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "“一带一路”沿线文明多样性治理：基于分布式文明形态与人工智能技术的融合逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004003",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -677,13 +1595,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "超越“一族一国”：北马其顿国家建构困境与再想象的可能性",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004004",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -694,13 +1612,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "德国移民问题政治化背景下联盟党的政策调适：从选择性开放到安全化治理",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004005",
    "source": "世界民族",
    "date": "2026-07",
    "authors": [],
@@ -711,13 +1629,98 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第4期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "习近平新时代 中国特色社会主义思想",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=1103&wfColumn=1&resourceType=0",
+   "title": "俄罗斯联邦制建设中的民族共和国治理——以“鞑靼斯坦模式”为例",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004006",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "“同时性”视角下的“正向强化”型跨国政治实践——美国秘鲁裔的双边制度参与",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004007",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "文明使命话语与20世纪初美国博览会上的“菲律宾人”",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004008",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "朝贡体系下明朝与朝鲜国之间的书籍交流及其影响",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004009",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "试论朝鲜王朝史库制度及其本土化创新",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026004010",
+   "source": "世界民族",
+   "date": "2026-07",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "收起详细简介",
+   "url": "https://m.ncpssd.cn/journal/details?gch=82637X&nav=1&langType=1",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -728,13 +1731,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "研究阐释宣传 党的二十大和二十届 历次全会精神",
-   "url": "https://www.ncpssd.cn/topics/details?id=1107&wfColumn=1&resourceType=203",
+   "title": "华夏文明与地中海文明的差异与互鉴",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002001",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -745,13 +1748,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "建设中国特色新型智库",
-   "url": "https://www.ncpssd.cn/topics/detailsList?id=4&wfColumn=1&resourceType=0",
+   "title": "中国史前“平等社会”中的“制度构建”及其历史价值",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002002",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -762,13 +1765,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "外部资源导航",
-   "url": "https://www.ncpssd.cn/service/index?id=11",
+   "title": "复杂社会演化路径：克里斯廷森—谢维扬两说比较",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002003",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -779,13 +1782,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "学术网站导航",
-   "url": "https://www.ncpssd.cn/service/index?id=15",
+   "title": "良渚文化神像与社会复杂化——宗教象征、权力结构与早期文明形态",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002004",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -796,13 +1799,13 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
    }
   },
   {
    "kind": "paper",
-   "title": "社科机构导航",
-   "url": "https://www.ncpssd.cn/service/index?id=17",
+   "title": "统一战线推进中华民族共同体建设的作用机制与实践路径",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002005",
    "source": "青海民族研究",
    "date": "2026-03",
    "authors": [],
@@ -813,7 +1816,347 @@
    "evidence": [],
    "extra": {
     "issue": "2026年第2期",
-    "via": "toc"
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "论协同推进中华民族共同体与周边命运共同体建设",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002006",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "从建设友爱合作的大家庭到建设牢不可破的中华民族共同体——以《民族团结进步促进法》为视角",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002007",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "教育生态理论视域下民族地区中小学铸牢教育的实践路径研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002008",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "以乐凝心：新疆多民族音乐铸牢中华民族共同体意识的逻辑与实践",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002009",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "昆仑神话的叙事认同与体系建构",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002010",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "论昆仑文化的符号建构、文化寻根与诗学表达",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002011",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "昆仑文化三重维度的符号学阐释",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002012",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "赋权抑或赋能——关于人与AI的互动",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002013",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "从文化主体性视角回溯中美文化百年交流",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002014",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "政策工具视角下我国西南边疆地区兴边富民行动政策研究——基于2000—2025年滇桂两省（区）的政策文本分析",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002015",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "情感治理的性别实践与场域互动——基于新疆一个村庄女性村干部的民族志研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002016",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "预期补偿与劣势对冲：农村差异化高额彩礼的生成机制与运作逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002017",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "双轨记账：数字时代乡村人情关系再生产机制研究——基于西北地区S村的田野调查",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002018",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "“生活—制度”互构：殡葬改革政策的差序化执行研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002019",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "以礼化俗：移风易俗实践的中介组织与礼俗再造研究——以鲁北友村丧葬习俗改革实践为例",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002020",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "藏文“中国”称谓演变的历史性考察",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002021",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "清乾嘉年间黄河南蒙藏关系与政府调控",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002022",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "盲而不道：无障碍基础设施的空间政治与城市包容性的困境",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002023",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "内蒙古高原牧区老年人群体质相关慢性疾病的生物性与社会文化因素研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002024",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "新时代民族价值观与构筑中华民族共有精神家园",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id=2026002025",
+   "source": "青海民族研究",
+   "date": "2026-03",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第2期",
+    "via": "ncpssd_journal"
    }
   },
   {
@@ -955,69 +2298,15 @@
    "extra": {
     "funder": "国家社科基金"
    }
-  },
-  {
-   "kind": "notice",
-   "title": "中国民族语文翻译中心（局）2026年公开招聘拟聘人员公示（第二批）",
-   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193459.shtml",
-   "source": "国家民委·政府信息公开",
-   "date": "2026-08",
-   "authors": [],
-   "affiliation": "",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "funder": "国家民委民族研究项目",
-    "attachments": [],
-    "projects_found": 0
-   }
-  },
-  {
-   "kind": "notice",
-   "title": "民族文化宫2026年公开招聘拟聘人员公示",
-   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193457.shtml",
-   "source": "国家民委·政府信息公开",
-   "date": "2026-08",
-   "authors": [],
-   "affiliation": "",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "funder": "国家民委民族研究项目",
-    "attachments": [],
-    "projects_found": 0
-   }
-  },
-  {
-   "kind": "notice",
-   "title": "民族出版社2026年度专业技术人员补充招聘拟聘用人员公示",
-   "url": "https://www.neac.gov.cn/seac/xxgk/202608/1193455.shtml",
-   "source": "国家民委·政府信息公开",
-   "date": "2026-08",
-   "authors": [],
-   "affiliation": "",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "funder": "国家民委民族研究项目",
-    "attachments": [],
-    "projects_found": 0
-   }
   }
  ],
  "statuses": [
   {
    "name": "期刊站点·民族研究",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 11.960654020309448,
+   "count": 11,
+   "message": "目录解析 11 篇",
+   "elapsed": 3.839423656463623,
    "kind": "journal"
   },
   {
@@ -1031,9 +2320,9 @@
   {
    "name": "期刊站点·中央民族大学学报（哲学社会科学版）",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 6.922060012817383,
+   "count": 15,
+   "message": "目录解析 15 篇",
+   "elapsed": 2.0844027996063232,
    "kind": "journal"
   },
   {
@@ -1047,49 +2336,49 @@
   {
    "name": "期刊站点·广西民族研究",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 5.804922103881836,
+   "count": 0,
+   "message": "未配置目录页（依赖文献中心/LLM 检索）",
+   "elapsed": 0.0,
    "kind": "journal"
   },
   {
    "name": "期刊站点·贵州民族研究",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 4.930832862854004,
+   "count": 23,
+   "message": "目录解析 23 篇",
+   "elapsed": 2.1611976623535156,
    "kind": "journal"
   },
   {
    "name": "期刊站点·青海民族大学学报（社会科学版）",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 5.166269540786743,
+   "count": 23,
+   "message": "目录解析 23 篇",
+   "elapsed": 2.12632417678833,
    "kind": "journal"
   },
   {
    "name": "期刊站点·广西民族大学学报（哲学社会科学版）",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 4.795067071914673,
+   "count": 18,
+   "message": "目录解析 18 篇",
+   "elapsed": 1.9196319580078125,
    "kind": "journal"
   },
   {
    "name": "期刊站点·世界民族",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 4.121548652648926,
+   "count": 11,
+   "message": "目录解析 11 篇",
+   "elapsed": 1.4527168273925781,
    "kind": "journal"
   },
   {
    "name": "期刊站点·青海民族研究",
    "ok": true,
-   "count": 6,
-   "message": "目录解析 6 篇",
-   "elapsed": 5.260790109634399,
+   "count": 26,
+   "message": "目录解析 26 篇",
+   "elapsed": 1.6832640171051025,
    "kind": "journal"
   },
   {
@@ -1105,7 +2394,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.6172001361846924,
+   "elapsed": 1.28220796585083,
    "kind": "project"
   },
   {
@@ -1113,7 +2402,7 @@
    "ok": true,
    "count": 2,
    "message": "通知 2 条，下钻得课题 0 条",
-   "elapsed": 2.0550696849823,
+   "elapsed": 0.8090524673461914,
    "kind": "project"
   },
   {
@@ -1121,7 +2410,7 @@
    "ok": true,
    "count": 2,
    "message": "通知 2 条，下钻得课题 0 条",
-   "elapsed": 0.5791668891906738,
+   "elapsed": 3.8067917823791504,
    "kind": "project"
   },
   {
@@ -1129,15 +2418,15 @@
    "ok": true,
    "count": 4,
    "message": "通知 4 条，下钻得课题 0 条",
-   "elapsed": 0.6783859729766846,
+   "elapsed": 0.4140312671661377,
    "kind": "project"
   },
   {
    "name": "国家民委·政府信息公开",
    "ok": true,
-   "count": 3,
-   "message": "通知 3 条，下钻得课题 0 条",
-   "elapsed": 4.656773567199707,
+   "count": 0,
+   "message": "通知 0 条，下钻得课题 0 条",
+   "elapsed": 4.104149103164673,
    "kind": "project"
   },
   {
@@ -1145,7 +2434,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 3.045574903488159,
+   "elapsed": 2.6197941303253174,
    "kind": "project"
   },
   {
@@ -1153,7 +2442,7 @@
    "ok": true,
    "count": 0,
    "message": "检索 1 页",
-   "elapsed": 3.2182564735412598,
+   "elapsed": 3.7667789459228516,
    "kind": "project"
   }
  ]

@@ -45,6 +45,16 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("site", help="仅根据 reports/ 重建 docs/ 观察站网页")
 
+    p_h = sub.add_parser("harvest", help="抓取核心期刊近三年文章（文献中心），补作者单位，写入 data/pubs/articles.jsonl")
+    p_h.add_argument("--years", type=int, default=3)
+    p_h.add_argument("--max-issues", type=int, default=60, help="本次最多抓取的期页数")
+    p_h.add_argument("--max-details", type=int, default=300, help="本次最多抓取的详情页数")
+    p_h.add_argument("--journal", help="只抓名称包含该字符串的期刊")
+    p_h.add_argument("--sleep", type=float, default=0.6)
+    p_h.add_argument("--projects", action="store_true", help="同时抓取国家社科基金项目数据库近三年民族问题研究立项")
+
+    sub.add_parser("stats", help="根据文章库输出博士点单位发文排名、学科指数（Markdown）")
+
     sub.add_parser("test-email", help="发送一封测试邮件验证 SMTP 配置")
 
     a = ap.parse_args(argv)
@@ -79,6 +89,20 @@ def main(argv: list[str] | None = None) -> int:
             st = State()
             items = [i for i in items if st.is_new(i)]
         print(build_prompt(items, settings, today=today, period=period_label(today)))
+        return 0
+    if a.cmd == "harvest":
+        from .harvest import harvest
+        res = harvest(years_back=a.years, max_issue_pages=a.max_issues, max_detail_pages=a.max_details, sleep_s=a.sleep, journals_filter=a.journal)
+        for row in res.pop("log", []):
+            print(row)
+        print(json.dumps(res, ensure_ascii=False))
+        if a.projects:
+            from .harvest import harvest_projects
+            print(json.dumps(harvest_projects(years_back=a.years), ensure_ascii=False))
+        return 0
+    if a.cmd == "stats":
+        from .sections import build_extra_sections
+        print(build_extra_sections(date.today()))
         return 0
     if a.cmd == "site":
         from .config import DOCS_DIR, REPORT_DIR

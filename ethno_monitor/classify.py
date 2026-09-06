@@ -17,6 +17,25 @@ class Classifier:
             self.rules[name] = [(kw["k"], int(kw.get("w", 1))) for kw in spec.get("keywords", [])]
         self.ethno_kw: list[str] = keywords_cfg.get("ethnology_keywords", ["民族"])
         self.gx_kw: list[str] = keywords_cfg.get("guangxi_keywords", ["广西"])
+        self.themes: dict[str, Any] = keywords_cfg.get("themes") or {}
+
+    def theme_tags(self, text: str, *, lang: str = "zh", source_theme: str = "") -> list[str]:
+        """专题标签：中文按 keywords_cn，英文按 keywords_en（可要求同时含民族语境词）。source_theme 为数据源预设专题。"""
+        tags: list[str] = []
+        low = text.lower()
+        for name, spec in self.themes.items():
+            hit = False
+            if lang == "zh":
+                hit = any(k in text for k in spec.get("keywords_cn", []))
+                if not hit and spec.get("keywords_cn_weak"):
+                    hit = any(k in text for k in spec["keywords_cn_weak"]) and any(k in text for k in spec.get("ethnic_context_cn", ["民族"]))
+            else:
+                hit = any(k.lower() in low for k in spec.get("keywords_en", []))
+                if hit and spec.get("require_ethnic_context_en"):
+                    hit = any(k.lower() in low for k in spec.get("ethnic_context_en", []))
+            if hit or source_theme == name:
+                tags.append(name)
+        return tags
 
     def score(self, text: str) -> dict[str, int]:
         scores: dict[str, int] = {}
@@ -52,6 +71,8 @@ class Classifier:
         # 涉桂判定不看期刊名（否则广西刊物的全部文章都会被标记），只看题目/单位/摘要
         gx_text = " ".join([item.title, item.affiliation, str(item.extra.get("summary", "")), str(item.extra.get("keywords", ""))])
         item.guangxi_related = self.is_guangxi(gx_text)
+        lang = str(item.extra.get("lang", "zh"))
+        item.extra["themes"] = self.theme_tags(f"{item.title} {item.extra.get('summary', '')}", lang=lang, source_theme=str(item.extra.get("source_theme", "")))
         return item
 
     def annotate_all(self, items: Iterable[Item]) -> list[Item]:

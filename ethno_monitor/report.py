@@ -24,6 +24,7 @@ class ReportContext:
     analysis_by: str
     llm_note: str = ""
     extra_notes: list[str] = field(default_factory=list)
+    extra_sections_md: str = ""
 
 
 def period_label(d: date) -> str:
@@ -125,7 +126,12 @@ def render_markdown(ctx: ReportContext) -> str:
     L.append(ctx.analysis_md.strip())
     L.append("")
 
-    L.append("## 五、数据源状态")
+    if ctx.extra_sections_md.strip():
+        L.append("## 五、博士点单位·学者·学科指数")
+        L.append("")
+        L.append(ctx.extra_sections_md.strip())
+        L.append("")
+    L.append("## 六、数据源状态" if ctx.extra_sections_md.strip() else "## 五、数据源状态")
     L.append("")
     L.append("| 数据源 | 状态 | 条目 | 说明 | 耗时 |")
     L.append("|---|---|---|---|---|")

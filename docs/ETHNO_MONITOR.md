@@ -98,6 +98,16 @@ python -m ethno_monitor site              # 仅重建 docs/ 观察站网页
 - **调整方向归类**：修改 `keywords.yaml` 中的关键词权重；`priority` 决定同分时的优先方向。
 - **调整选题风格**：修改 `guangxi.yaml` 的知识库条目或 `ethno_monitor/analysis.py` 中的提示词。
 
+## 四b、扩展板块（第五部分）
+
+| 板块 | 数据来源 | 机制 |
+|---|---|---|
+| 六、博士点单位发文排名 | `data/pubs/articles.jsonl`（GitHub Actions「三年发文抓取」按核心期刊×年×期抓取文献中心，补作者单位） | 按 `config/institutions.yaml` 单位别名匹配作者单位；近三年合计、年度、季度排名；口径为 `config/journals_core.yaml` 中 CSSCI/北大核心民族学类期刊 |
+| 七、主要学者最新观点 | `config/institutions.yaml` 学者名录 + 每周会话联网检索 → `data/pubs/scholars_latest.json` | 只收录有链接、近 60 天的成果/观点 |
+| 八、中华民族共同体学学科指数 | 单位属性（博士点、基地、人才）+ 文章库 + 立项库 | 仿软科五类指标归一化加权，权重见 `config/ranking.yaml`；缺数据指标不计分并注明 |
+| 九、各民族共同现代化专题 | 专题期刊（顶刊/985 学报）目录命中专题词 + 国外 RSS 命中 + 会话检索（中国式现代化研究院等） | 专题词见 `config/keywords.yaml → themes` |
+| 十、国外理论前沿 | 国外人类学理论类期刊 RSS（`config/sources.yaml → rss_feeds`） | 按期刊分组列出，理论要点在分析第八节 |
+
 ## 五、周报结构
 
 1. **本周概览**：论文/课题/公告/涉桂/待核实数量，四方向分布

@@ -146,10 +146,21 @@ skygb:
   url: http://fz.people.com.cn/skygb/sk/index.php/Index/seach
   # 检索参数（若站点表单字段变化，请按实际调整）
   params:
-    xktype: 2
-    xkname: 民族问题研究
-    nianfa: "{year}"
+    xktype: 民族问题研究
+    lxtime: "{year}"
+    xmtype: 0
+    pznum: ""
+    xmname: ""
+    xmleader: ""
+    zyzw: 0
+    gzdw: ""
+    dwtype: 0
+    szdq: 0
+    ssxt: ""
   max_pages: 5
+  max_pages_harvest: 40
+  disciplines: [民族学, 民族问题研究]   # 2024 年起学科名疑改为“民族学”，两者都查
+  page_param: p
   # 下钻时用于判定"民族学相关"的名单行关键词
   row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 民族学]
 
@@ -159,11 +170,6 @@ drilldown:
   max_pages: 12
   row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 各民族, 少数民族, 民族地区, 民族学]
 
-# RSS / Atom 订阅（可选，任何支持 RSS 的学术资讯站均可加入）
-rss_feeds: []
-#  - name: 示例
-#    url: https://example.com/feed.xml
-#    kind: notice
 
 # ---------------------------------------------------------------------------
 # 三、LLM 联网检索兜底（Gemini google_search grounding / Claude web_search）
@@ -181,3 +187,221 @@ llm_research:
     - "国家民委民族研究项目 {year}年度 课题 立项名单"
     - "{year}年 教育部哲学社会科学研究重大课题攻关项目 立项 民族"
     - "{year}年 国家社科基金 冷门绝学 后期资助 立项 民族 人类学"
+
+# ---------------------------------------------------------------------------
+# 四、专题期刊（顶刊 / 985 高校学报）：只保留命中专题词的文章（source_theme）；编号置信度见 gch_confidence，待核验
+# ---------------------------------------------------------------------------
+theme_journals:
+  - name: "中国社会科学"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81908X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "社会学研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80772X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "历史研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81900X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "政治学研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=82131X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "学术月刊"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=97001X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "开放时代"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81581X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "探索与争鸣"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=97673X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "中国人民大学学报"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=96478X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "北京大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81274X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "清华大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81449X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "复旦学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81270X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "浙江大学学报（人文社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81269X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "武汉大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=91357A&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "中山大学学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81463X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "四川大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80165X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "兰州大学学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80756X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "南京大学学报（哲学·人文科学·社会科学）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=83412X&nav=1&langType=1"
+        parser: ncpssd_journal
+
+# 国外期刊：通过 OpenAlex / Crossref 开放 API 按 ISSN 取最近文献（出版社 RSS 对数据中心 IP 返回 403，已弃用）
+# theory 类全部保留并标“国外理论前沿”；ethnic_china 类按专题词过滤（题名+摘要）
+foreign_journals:
+  - name: "American Anthropologist"
+    issn: ["0002-7294", "1548-1433"]
+    source_theme: 国外理论前沿
+  - name: "American Ethnologist"
+    issn: ["0094-0496", "1548-1425"]
+    source_theme: 国外理论前沿
+  - name: "Current Anthropology"
+    issn: ["0011-3204", "1537-5382"]
+    source_theme: 国外理论前沿
+  - name: "Cultural Anthropology"
+    issn: ["0886-7356", "1548-1360"]
+    source_theme: 国外理论前沿
+  - name: "HAU: Journal of Ethnographic Theory"
+    issn: ["2575-1433", "2049-1115"]
+    source_theme: 国外理论前沿
+  - name: "Anthropological Theory"
+    issn: ["1463-4996", "1741-2641"]
+    source_theme: 国外理论前沿
+  - name: "Annual Review of Anthropology"
+    issn: ["0084-6570", "1545-4290"]
+    source_theme: 国外理论前沿
+  - name: "Journal of the Royal Anthropological Institute"
+    issn: ["1359-0987", "1467-9655"]
+    source_theme: 国外理论前沿
+  - name: "Comparative Studies in Society and History"
+    issn: ["0010-4175", "1475-2999"]
+    source_theme: 国外理论前沿
+  - name: "Critique of Anthropology"
+    issn: ["0308-275X", "1460-3721"]
+    source_theme: 国外理论前沿
+  - name: "Anthropology Today"
+    issn: ["0268-540X", "1467-8322"]
+    source_theme: 国外理论前沿
+  - name: "Social Anthropology/Anthropologie Sociale"
+    issn: ["0964-0282", "1469-8676"]
+    source_theme: 国外理论前沿
+  - name: "Ethnic and Racial Studies"
+    issn: ["0141-9870", "1466-4356"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Nations and Nationalism"
+    issn: ["1354-5078", "1469-8129"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Ethnicities"
+    issn: ["1468-7968", "1741-2706"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Journal of Ethnic and Migration Studies"
+    issn: ["1369-183X", "1469-9451"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Asian Ethnicity"
+    issn: ["1463-1369", "1469-2953"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Inner Asia"
+    issn: ["1464-8172", "2210-5018"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "The China Quarterly"
+    issn: ["0305-7410", "1468-2648"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "The China Journal"
+    issn: ["1324-9347", "1835-8535"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Modern China"
+    issn: ["0097-7004", "1552-6836"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "China Information"
+    issn: ["0920-203X", "1741-590X"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Journal of Contemporary China"
+    issn: ["1067-0564", "1469-9400"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "positions: asia critique"
+    issn: ["1067-9847", "1527-8271"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Chinese Sociological Review"
+    issn: ["2162-0555", "2162-0563"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+
+# OpenAlex 主题检索式（跨期刊）：国外少数民族/土著现代化与发展研究、中国民族问题研究
+foreign_topics:
+  - name: 少数民族与现代化（国外）
+    search: "(ethnic minorities OR indigenous peoples) AND (modernization OR development OR urbanization OR poverty)"
+    source_theme: 各民族共同现代化
+    max: 30
+  - name: 中国民族问题（国外）
+    search: "China AND (ethnic minority OR Tibet OR Xinjiang OR Inner Mongolia OR Yunnan OR Guangxi) AND (ethnic OR nationality)"
+    source_theme: 各民族共同现代化
+    max: 30
+  - name: 人类学理论前沿（国外）
+    search: "anthropological theory OR ontological turn OR multispecies ethnography OR decolonizing anthropology"
+    source_theme: 国外理论前沿
+    max: 25

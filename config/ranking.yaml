@@ -1,0 +1,32 @@
+# 仿软科"中国最好学科排名"方法的中华民族共同体学学科自建指数
+# 说明：指标分五类，各指标先在参评单位间按最大值归一化为 0–100 分，再按权重加总。
+#      所有原始数据与来源见 data/pubs/ 与 config/institutions.yaml；数据缺失的指标不计入并在报告中注明。
+window_years: 3          # 统计口径：近三年（含当年）
+categories:
+  人才培养:
+    weight: 15
+    indicators:
+      ethnology_phd:     {weight: 6,  label: 民族学一级学科博士点,        source: institutions.yaml}
+      community_phd:     {weight: 9,  label: 中华民族共同体学博士点,       source: institutions.yaml}
+  平台基地:
+    weight: 15
+    indicators:
+      national_bases:    {weight: 10, label: 国家级铸牢/共同体研究基地数,   source: institutions.yaml.bases}
+      other_bases:       {weight: 5,  label: 其他省部级研究平台数,          source: institutions.yaml.other_bases}
+  科研项目:
+    weight: 25
+    indicators:
+      nsf_projects:      {weight: 15, label: 近三年国家社科基金民族类立项数, source: data/pubs/projects.jsonl}
+      major_projects:    {weight: 10, label: 近三年重大/专项立项数,          source: data/pubs/projects.jsonl}
+  学术论文:
+    weight: 35
+    indicators:
+      core_papers:       {weight: 15, label: 近三年北核/南核民族学期刊发文数, source: data/pubs/articles.jsonl}
+      top_papers:        {weight: 10, label: 近三年顶级刊发文数,            source: data/pubs/articles.jsonl}
+      community_papers:  {weight: 10, label: 近三年共同体主题论文数,        source: data/pubs/articles.jsonl}
+  高端人才:
+    weight: 10
+    indicators:
+      senior_talents:    {weight: 10, label: 学科领军人才数（长江/国家级人才等）, source: institutions.yaml.talents}
+# 顶级刊：计入 top_papers
+top_tier_journals: [民族研究, 中华民族共同体研究, 世界民族, 中央民族大学学报（哲学社会科学版）]

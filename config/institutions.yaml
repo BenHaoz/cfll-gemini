@@ -1,0 +1,879 @@
+notes: 【民族学博士点核实说明】已核实为true的依据：中央民族大学/中南民族大学/西南民族大学/云南大学/兰州大学/中山大学/厦门大学/四川大学（第四轮学科评估'博士授权'高校及各校学科页面）、云南民族大学（校新闻：民族学一级学科博士点+博士后流动站）、广西民族大学（2013年获民族学一级博士点）、内蒙古大学（学院简介：民族学博士一级学科）、宁夏大学（2011年民族学一级博士点）、西北民族大学（中华民族共同体学院2025年博士招生）、青海民族大学（2024民族学博士招生简章）、北方民族大学（2019年新增民族学一级博士点）、吉首大学（2023年度审核增列，2024年公布）、内蒙古师范大学（学院简介：民族学一级学科博士点）、中国社会科学院大学（民族学系依托民族学与人类学研究所）。标注unknown的：新疆大学（检索仅见2022年民族学学位点报告由历史学院调整至马克思主义学院，未能确认是否为博士点）、贵州民族大学（学院概况仅显示民族学一级硕士点+服务国家特殊需求博士项目）、西藏民族大学（民族研究院页面显示民族学、中国史两个硕士一级学科，博导2人）、湖北民族大学（有二级教授博导，但未见民族学博士点授权证据）、云南师范大学/西藏大学/新疆师范大学/青海师范大学（未检索到民族学博士点证据，很可能为false）、暨南大学（未见民族学博士点，但为中华民族共同体学交叉学科试点）。大连民族大学2018年仅获民族学硕士点，标false。【中华民族共同体学】目前以'交叉学科'（国务院学位办复函国家民委）与'民族学目录外二级学科'形式设置，尚非一级学科。试点格局'1+15'：中央民族大学（2024-05首个）；第二批（2025-04）中国人民大学、武汉大学、南京大学、山东大学、西安交通大学、暨南大学、新疆大学、内蒙古师范大学、延边大学、黑龙江大学、中南民族大学、西南民族大学、西北民族大学、云南民族大学、广西民族大学。这些高校community_phd标true（试点含博士培养，中央民族大学、中南民族大学、西北民族大学已招收博士）。其余单位标unknown。【研究基地】四部委首批(2020)研究基地10家：北京大学、东南大学、广西民族大学、华中科技大学、暨南大学、四川大学、新疆大学、云南大学、中国社会科学院、中央民族大学；培育基地5家：北京师范大学、清华大学、兰州大学、内蒙古大学、浙江大学。第二轮(2023—2025)共28家，检索确认含中南民族大学、南京大学、兰州大学、暨南大学、北京大学、中国传媒大学、西北大学等，完整名单未获取。第三批(2026-05公布)确认含宁夏大学、南京大学、同济大学、湖南师范大学，完整名单未获取。国家民委中华民族共同体研究基地(2024—2026周期)共50家，确认含云南民族大学、中南民族大学、中山大学、山东大学、海南大学、河南大学，完整名单未获取。【学者未核实单位】西南民族大学（检索结果被湖北民族大学页面混淆，未获得可靠姓名）、新疆大学、北方民族大学、吉首大学、贵州民族大学（仅见副教授陈文元）、大连民族大学、云南师范大学、西藏大学、新疆师范大学、青海师范大学、以及第二批试点中的中国人民大学/武汉大学/南京大学/山东大学/西安交大/延边大学/黑龙江大学未做学者检索。内蒙古师范大学两位学者仅见师资页面，职称未在摘要中显示。中南民族大学院长信息存在时间差异（陈祥军为现任院长页面）。搜索共使用45次，教育部/学位办PDF无法直接打开，仅依赖摘要。
+field_notes: ethnology_phd/community_phd 取 true/false/unknown（unknown 按 false 计分）；bases 为国家级/省部级研究基地名称；talents 为领军人才名单（null 表示未采集，不计分）；aliases 用于匹配论文作者单位。
+institutions:
+- name: 中央民族大学
+  province: 北京
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 中央统战部、中宣部、教育部、国家民委铸牢中华民族共同体意识研究基地（2020首批研究基地）
+  - 中华民族共同体学交叉学科建设首个试点（2024-05）
+  other_bases: []
+  talents: null
+  aliases:
+  - 中央民大
+  - 中央民族大学中华民族共同体学院
+  - 中央民族大学中国民族理论与民族政策研究院
+  - 中央民族大学民族学与社会学学院
+  - 中央民族大学民族学系
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+  - https://msy.muc.edu.cn/gk/jgsz1/jcjxzzsz/mzxx.htm
+  - https://www.neac.gov.cn/seac/xwzx/202404/1172435.shtml
+- name: 中南民族大学
+  province: 湖北
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2023—2025周期，中华民族共同体研究院）
+  - 国家民委中华民族共同体研究基地
+  - 湖北省铸牢中华民族共同体意识研究基地
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 中南民大
+  - 中南民族大学中华民族共同体学院
+  - 中南民族大学中华民族共同体研究院
+  - 中南民族大学民族学与社会学学院
+  - 中南民族大学铸牢中华民族共同体意识研究基地
+  evidence:
+  - https://www.scuec.edu.cn/ms/xkjs/bsd.htm
+  - https://www.neac.gov.cn/seac/c103427/202305/1163701.shtml
+  - https://www.scuec.edu.cn/gttyjy/xkjs/xkjj.htm
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 西南民族大学
+  province: 四川
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 西南民大
+  - 西南民族大学中华民族共同体学院
+  - 西南民族大学民族学与社会学学院
+  - 西南民族大学西南民族研究院
+  evidence:
+  - https://lxy.usst.edu.cn/_upload/article/files/d8/1d/bd44a14b4b5fbe03ae4d29046d97/42c484cf-fb25-4890-acd3-0436073006b6.doc
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://m.kaoyan.com/www/jieshao/5a50c54af31e5.html
+- name: 云南大学
+  province: 云南
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地）
+  other_bases: []
+  talents: null
+  aliases:
+  - 云南大学民族学与社会学学院
+  - 云南大学西南边疆少数民族研究中心
+  - 云南省民族研究院
+  evidence:
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+  - http://www.msxy.ynu.edu.cn/jgjsz/mzxx.htm
+  - https://m.kaoyan.com/www/jieshao/5a50c54af31e5.html
+- name: 兰州大学
+  province: 甘肃
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批培育基地；2023—2025周期研究基地）
+  - 教育部人文社科重点研究基地西北少数民族研究中心
+  other_bases: []
+  talents: null
+  aliases:
+  - 兰州大学历史文化学院
+  - 兰州大学民族学研究院
+  - 兰州大学西北少数民族研究中心
+  evidence:
+  - https://history.lzu.edu.cn/upload/default/20210913/c5ab596a24b1c5c365c26354f3f1286b.pdf
+  - https://rcenw.lzu.edu.cn/static/zhulaozhonghuaminzugongtongtiyishiyanjiupeiyujidi/
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+- name: 中山大学
+  province: 广东
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 中山大学铸牢中华民族共同体意识研究基地（国家民委基地，依托历史人类学研究中心）
+  other_bases: []
+  talents: null
+  aliases:
+  - 中山大学人类学系
+  - 中山大学历史人类学研究中心
+  - 中山大学社会学与人类学学院
+  evidence:
+  - https://www.sysu.edu.cn/szdw1/xkjs1/bsxwsqxk.htm
+  - https://ha.sysu.edu.cn/yjjd/about
+  - https://m.kaoyan.com/www/jieshao/5a50c54af31e5.html
+- name: 厦门大学
+  province: 福建
+  ethnology_phd: true
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 厦门大学人类学与民族学系
+  - 厦门大学人类学研究所
+  - 厦门大学社会与人类学院
+  evidence:
+  - https://anthro.xmu.edu.cn/bxjs1/bxjs.htm
+  - https://gk.xmu.edu.cn/virtual_attach_file.vsb?afc=9U4UAZMNr2U4TfU1zlDL8MfMzARUNWmfL8CsU8Cao7QVnmG0gihFp2hmCIa0LSy4nky4okhRUzlsLRLbMR6RM4CiU8rRMRGDnmCsLzL8MmfFMmQkUmfRMRVFL4WkM4CJv2nto4OeoD6KgDTJQty0LzGiMYy4MzNsL1bw62N8c&oid=1831381815&tid=1057&nid=35972&e=.pdf
+  - https://m.kaoyan.com/www/jieshao/5a50c54af31e5.html
+- name: 四川大学
+  province: 四川
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地）
+  - 四川大学中国藏学研究所（教育部人文社科重点研究基地）
+  other_bases: []
+  talents: null
+  aliases:
+  - 四川大学中国藏学研究所
+  - 四川大学历史文化学院
+  - 四川大学铸牢中华民族共同体意识研究基地
+  evidence:
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+  - https://cdbsc.xizang.gov.cn/xwzx/gzdt/202204/t20220411_292788.html
+  - https://m.kaoyan.com/www/jieshao/5a50c54af31e5.html
+- name: 云南民族大学
+  province: 云南
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 国家民委中华民族共同体研究基地（2024—2026周期，铸牢中华民族共同体意识研究院）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 云南民大
+  - 云南民族大学云南省民族研究所
+  - 云南民族大学民族学与历史学学院
+  - 云南民族大学社会学院
+  - 云南民族大学铸牢中华民族共同体意识研究院
+  evidence:
+  - https://www.ymu.edu.cn/info/1151/29251.htm
+  - https://web.ymu.edu.cn/kjc/info/1086/1414.htm
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 广西民族大学
+  province: 广西
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 广西民大
+  - 广西民族大学中华民族共同体学院
+  - 广西民族大学民族学与社会学学院
+  - 广西民族大学民族研究中心
+  evidence:
+  - https://baike.baidu.com/item/%E5%B9%BF%E8%A5%BF%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AD%A6/339309
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 内蒙古大学
+  province: 内蒙古
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批培育基地）
+  other_bases: []
+  talents: null
+  aliases:
+  - 内蒙古大学民族学与社会学学院
+  - 内蒙古大学蒙古学学院
+  - 内蒙古大学蒙古学研究中心
+  evidence:
+  - https://msy.imu.edu.cn/xygk/xyjj.htm
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+- name: 新疆大学
+  province: 新疆
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 新疆大学中华民族共同体研究院
+  - 新疆大学历史学院
+  - 新疆大学铸牢中华民族共同体意识研究基地
+  - 新疆大学马克思主义学院
+  evidence:
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://gs.xju.edu.cn/__local/4/4C/76/9F279ADD6824C60D05356010F0D_DF8F8937_80275.pdf
+- name: 宁夏大学
+  province: 宁夏
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（第三批，2026，宁夏大学铸牢中华民族共同体意识研究院）
+  other_bases: []
+  talents: null
+  aliases:
+  - 宁夏大学人文与民族学部
+  - 宁夏大学民族与历史学院
+  - 宁夏大学民族学与文化旅游产业研究院
+  - 宁夏大学西夏学研究院
+  - 宁夏大学铸牢中华民族共同体意识研究院
+  evidence:
+  - https://mzls.nxu.edu.cn/
+  - https://law.nxu.edu.cn/szdw/mzxbssds1.htm
+  - https://www.chinanews.com.cn/mz/2026/05-26/10628795.shtml
+- name: 西北民族大学
+  province: 甘肃
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 西北民族大学铸牢中华民族共同体意识研究基地
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 西北民大
+  - 西北民族大学中华民族共同体学院
+  - 西北民族大学民族学与社会学学院
+  - 西北民族大学西北民族研究院
+  evidence:
+  - https://www.xbmu.edu.cn/gttxy/info/1261/7621.htm
+  - https://www.neac.gov.cn/seac/xwzx/202111/1154807.shtml
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://www.xbmu.edu.cn/kyc/info/1241/2871.htm
+- name: 贵州民族大学
+  province: 贵州
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases:
+  - 贵州民族大学“中华民族共同体与多民族文化繁荣发展”高端智库
+  other_bases: []
+  talents: null
+  aliases:
+  - 贵州民大
+  - 贵州民族大学民族学与历史学学院
+  - 贵州民族大学民族学与社会学学院
+  - 贵州民族大学社会学院
+  evidence:
+  - https://mzshxy.gzmu.edu.cn/xyzg/xygk.htm
+  - https://mzshxy.gzmu.edu.cn/info/1115/3993.htm
+- name: 青海民族大学
+  province: 青海
+  ethnology_phd: true
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 青海民大
+  - 青海民族大学中华民族共同体研究院
+  - 青海民族大学民族学与社会学学院
+  - 青海民族大学青海民族研究所
+  evidence:
+  - https://yjsy.qhmu.edu.cn/info/1006/2312.htm
+  - https://www.gaoxiaojob.com/announcement/detail/418026.html
+- name: 西藏民族大学
+  province: 西藏（驻陕西咸阳）
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 西藏民大
+  - 西藏民族大学中华民族共同体学院
+  - 西藏民族大学民族研究院
+  - 西藏民族学院
+  evidence:
+  - http://www.tibetology.ac.cn/2021-10/13/content_41699465.htm
+  - https://www1.xzmu.edu.cn/myy/
+- name: 北方民族大学
+  province: 宁夏
+  ethnology_phd: true
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 北方民大
+  - 北方民族大学中华民族共同体学院
+  - 北方民族大学民族学学院
+  - 西北第二民族学院
+  evidence:
+  - https://baike.baidu.com/item/%E5%8C%97%E6%96%B9%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AD%A6/1115063
+  - https://yz.chsi.com.cn/kyzx/yxzc/202202/20220213/2164563406.html
+- name: 大连民族大学
+  province: 辽宁
+  ethnology_phd: false
+  community_phd: false
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 大连民大
+  - 大连民族大学东北少数民族研究院
+  - 大连民族大学中华民族共同体学院
+  - 大连民族大学中华民族共同体研究院
+  evidence:
+  - https://www.dlnu.edu.cn/info/1041/18937.htm
+  - https://gtt.dlnu.edu.cn/
+- name: 吉首大学
+  province: 湖南
+  ethnology_phd: true
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 吉首大学人文学院
+  - 吉首大学人类学与民族学研究所
+  - 吉首大学历史与文化学院
+  - 吉首大学民族学
+  evidence:
+  - http://www.moe.gov.cn/srcsite/A22/yjss_xwgl/moe_818/202411/W020241107528569554903.pdf
+  - http://www.moe.gov.cn/srcsite/A22/yjss_xwgl/moe_818/202411/t20241107_1161147.html
+  - https://lsywhxy.jsu.edu.cn/info/1137/6762.htm
+- name: 中国社会科学院大学（中国社会科学院民族学与人类学研究所）
+  province: 北京
+  ethnology_phd: true
+  community_phd: unknown
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地，中国社会科学院）
+  other_bases: []
+  talents: null
+  aliases:
+  - 中国社会科学院大学
+  - 中国社会科学院大学社会与民族学院
+  - 中国社会科学院民族学与人类学研究所
+  - 中国社会科学院民族所
+  - 中国社会科学院研究生院民族学系
+  - 中国社科院民族学与人类学研究所
+  evidence:
+  - https://www.ucass.edu.cn/info/1131/1614.htm
+  - http://iea.cssn.cn/
+  - https://news.sina.cn/2020-03-20/detail-iimxyqwa2034418.d.html
+- name: 云南师范大学
+  province: 云南
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases: []
+  evidence:
+  - https://graduate.ynnu.edu.cn/__local/9/B2/D1/D2A1A78E168652A65FD61C20B25_69500D88_1A76C.pdf
+- name: 湖北民族大学
+  province: 湖北
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 湖北民大
+  - 湖北民族大学中华民族共同体学院
+  - 湖北民族大学南方少数民族研究中心
+  - 湖北民族大学民族学与社会学学院
+  - 湖北民族学院
+  evidence:
+  - https://www.hbmzu.edu.cn/mzyjy/
+  - https://www.hbmzu.edu.cn/mzyjy/info/1031/2325.htm
+- name: 西藏大学
+  province: 西藏
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 西藏大学中华民族共同体研究院
+  - 西藏大学文学院
+  evidence: []
+- name: 新疆师范大学
+  province: 新疆
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 新疆师范大学历史与社会学院
+  - 新疆师范大学民族学与社会学学院
+  evidence: []
+- name: 内蒙古师范大学
+  province: 内蒙古
+  ethnology_phd: true
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 内蒙古师范大学中华民族共同体研究院
+  - 内蒙古师范大学民族学人类学学院
+  evidence:
+  - http://mr.imnu.edu.cn/
+  - https://yjsc.imnu.edu.cn/info/1034/1921.htm
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 青海师范大学
+  province: 青海
+  ethnology_phd: unknown
+  community_phd: unknown
+  bases: []
+  other_bases: []
+  talents: null
+  aliases:
+  - 青海师范大学民族师范学院
+  evidence:
+  - https://msy.qhnu.edu.cn/szdw/yjsds.htm
+- name: 暨南大学
+  province: 广东
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2020首批研究基地；首轮考核优秀，中华民族凝聚力研究院）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 暨南大学中华民族凝聚力研究院
+  - 暨南大学铸牢中华民族共同体意识研究基地
+  - 暨南大学马克思主义学院
+  evidence:
+  - https://news.jnu.edu.cn/content/202505/26/c4775.html
+  - https://mkszyxy.jnu.edu.cn/2020/0907/c25329a513121/page.htm
+  - https://zhmznjl.jnu.edu.cn/2023/0905/c31045a762657/page.htm
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 中国人民大学
+  province: 北京
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 中国人民大学铸牢中华民族共同体意识研究院
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 中国人民大学社会与人口学院
+  - 中国人民大学社会学院
+  - 中国人民大学铸牢中华民族共同体意识研究院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - http://zhulao.ruc.edu.cn/
+- name: 武汉大学
+  province: 湖北
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 武汉大学中华民族共同体研究院
+  - 武汉大学社会学院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 南京大学
+  province: 江苏
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 四部委铸牢中华民族共同体意识研究基地（2023—2025周期；第三批 民族与边疆研究中心）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 南京大学历史学院
+  - 南京大学民族与边疆研究中心
+  - 南京大学社会学院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://www.nju.edu.cn/info/1070/415621.htm
+  - https://www.nju.edu.cn/info/3341/470491.htm
+  - https://www.nju.edu.cn/info/1055/322451.htm
+- name: 山东大学
+  province: 山东
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 国家民委中华民族共同体研究基地（儒学高等研究院）
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 山东大学儒学高等研究院
+  - 山东大学历史文化学院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+  - https://www.rxgdyjy.sdu.edu.cn/kypt/gjmwzhmzgttyjjd.htm
+- name: 西安交通大学
+  province: 陕西
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 西安交通大学马克思主义学院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 延边大学
+  province: 吉林
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 延边大学人文社会科学学院
+  - 延边大学民族研究院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+- name: 黑龙江大学
+  province: 黑龙江
+  ethnology_phd: unknown
+  community_phd: true
+  bases:
+  - 中华民族共同体学交叉学科第二批试点（2025）
+  other_bases: []
+  talents: null
+  aliases:
+  - 黑龙江大学中华民族共同体研究院
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202504/1179584.shtml
+scholars:
+- name: 麻国庆
+  institution: 中央民族大学
+  title: 教授、博士生导师；中国民族学学会执行会长；《中华民族共同体研究》主编（民族学与社会学学院院长现为关凯）
+  fields:
+  - 社会人类学
+  - 中华民族共同体理论
+  - 民族学
+  evidence:
+  - https://www.muc.edu.cn/info/1257/4495.htm
+  - https://www.cssn.cn/mzx/202403/t20240325_5741089.shtml
+- name: 强世功
+  institution: 中央民族大学
+  title: 教授；中央民族大学校长；中国民族学学会会长（2026-07 会议报道）
+  fields:
+  - 中华民族共同体学
+  - 法理学与政治哲学
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202404/1172435.shtml
+- name: 严庆
+  institution: 中央民族大学
+  title: 二级教授、博士生导师；中国民族理论与民族政策研究院院长
+  fields:
+  - 民族理论与民族政策
+  - 铸牢中华民族共同体意识
+  evidence:
+  - https://www.neac.gov.cn/seac/xwzx/202404/1172435.shtml
+- name: 陈祥军
+  institution: 中南民族大学
+  title: 教授、博士生导师；民族学与社会学学院院长
+  fields:
+  - 民族学
+  - 生态人类学
+  evidence:
+  - https://www.scuec.edu.cn/ms/info/1076/2308.htm
+  - https://www.scuec.edu.cn/ms/xygk/xyld.htm
+- name: 李从浩
+  institution: 中南民族大学
+  title: 教授；中华民族共同体学院（研究院）院长
+  fields:
+  - 中华民族共同体学
+  - 马克思主义民族理论与政策
+  evidence:
+  - https://www.scuec.edu.cn/gttyjy/info/1024/2122.htm
+- name: 崔榕
+  institution: 中南民族大学
+  title: 教授、博士生导师（中华民族共同体学院，民族学专业）
+  fields:
+  - 民族学
+  - 中华民族共同体研究
+  evidence:
+  - https://www.scuec.edu.cn/gttyjy/info/1024/1020.htm
+- name: 李安辉
+  institution: 中南民族大学
+  title: 教授、中华民族共同体学博士生导师（中华民族共同体学院）
+  fields:
+  - 中华民族共同体学
+  - 民族理论与政策
+  evidence:
+  - https://www.scuec.edu.cn/gttyjy/info/1082/2171.htm
+  - https://www.scuec.edu.cn/gttyjy/szdw/bssds/zhmzgttxbd.htm
+- name: 何明
+  institution: 云南大学
+  title: 教授；民族学与社会学学院院长
+  fields:
+  - 民族学
+  - 人类学
+  evidence:
+  - http://www.msxy.ynu.edu.cn/jgjsz/yldbz.htm
+- name: 赵利生
+  institution: 兰州大学
+  title: 教授；西北少数民族研究中心主任
+  fields:
+  - 民族社会学
+  - 西北民族问题
+  evidence:
+  - https://rcenw.lzu.edu.cn/l/3/
+- name: 徐黎丽
+  institution: 兰州大学
+  title: 二级教授；西北少数民族研究中心民族学研究所所长、中国边疆安全与发展研究中心主任
+  fields:
+  - 边疆安全与发展
+  - 民族关系
+  - 民族学
+  evidence:
+  - http://rcenw.lzu.edu.cn/c/201807/461.html
+- name: 王力
+  institution: 兰州大学
+  title: 教授（西北少数民族研究中心）
+  fields:
+  - 中国少数民族史
+  - 民族关系
+  - 民族宗教与文化
+  evidence:
+  - https://rcenw.lzu.edu.cn/c/201807/462.html
+- name: 周传斌
+  institution: 兰州大学
+  title: 教授；西北少数民族研究中心副主任
+  fields:
+  - 民族学
+  - 民族关系
+  evidence:
+  - https://rcenw.lzu.edu.cn/l/3/
+- name: 段颖
+  institution: 中山大学
+  title: 教授、博士生导师；社会学与人类学学院人类学系主任
+  fields:
+  - 东南亚与海外华人研究
+  - 移民与族群
+  - 边疆与区域研究
+  evidence:
+  - https://ssa.sysu.edu.cn/teacher/2503
+- name: 陈志明
+  institution: 中山大学
+  title: 教授（社会学与人类学学院）
+  fields:
+  - 人类学
+  - 海外华人与族群研究
+  evidence:
+  - https://ssa.sysu.edu.cn/teacher/2491
+- name: 张先清
+  institution: 厦门大学
+  title: 教授；人类学与民族学系主任（2011年起）
+  fields:
+  - 历史人类学
+  - 宗教人类学
+  evidence:
+  - https://anthro.xmu.edu.cn/bxjs1/bxjs.htm
+- name: 张亚辉
+  institution: 厦门大学
+  title: 教授、博士生导师（人类学与民族学系）
+  fields:
+  - 宗教人类学
+  - 历史人类学
+  evidence:
+  - https://anthro.xmu.edu.cn/szll1/zrjs.htm
+- name: 霍巍
+  institution: 四川大学
+  title: 教授；铸牢中华民族共同体意识研究基地主任、中国藏学研究所所长
+  fields:
+  - 藏学
+  - 考古学
+  - 西南民族史
+  evidence:
+  - https://cdbsc.xizang.gov.cn/xwzx/gzdt/202204/t20220411_292788.html
+- name: 励轩
+  institution: 四川大学
+  title: 教授；铸牢中华民族共同体意识研究基地首席专家
+  fields:
+  - 中华民族共同体理论
+  - 民族史
+  evidence:
+  - https://cdbsc.xizang.gov.cn/xwzx/gzdt/202204/t20220411_292788.html
+- name: 阮朝奇
+  institution: 云南民族大学
+  title: 研究员；校党委书记、铸牢中华民族共同体意识研究院院长
+  fields:
+  - 铸牢中华民族共同体意识
+  - 民族理论与政策
+  evidence:
+  - https://zhmznjl.jnu.edu.cn/2025/0707/c31045a840030/page.htm
+- name: 黄彩文
+  institution: 云南民族大学
+  title: 云南省民族研究所所长（民族学与历史学学院院长）
+  fields:
+  - 民族学
+  - 西南民族文化
+  evidence:
+  - https://web.ymu.edu.cn/ynmzyjy/jgsz/ldbz.htm
+- name: 周建新
+  institution: 广西民族大学
+  title: 教授、博士生导师；民族学与社会学学院院长；民族学一级学科带头人、广西特聘专家
+  fields:
+  - 中国南方与东南亚跨国民族
+  - 民族学
+  evidence:
+  - http://school.freekaoyan.com/guangxi/gxun/daoshi/20140630/1404115085305761.shtml
+  - https://msy.gxmzu.edu.cn/
+- name: 齐木德道尔吉
+  institution: 内蒙古大学
+  title: 教授；民族学与社会学学院院长
+  fields:
+  - 蒙古学
+  - 民族史
+  evidence:
+  - https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%A4%A7%E5%AD%A6%E6%B0%91%E6%97%8F%E5%AD%A6%E4%B8%8E%E7%A4%BE%E4%BC%9A%E5%AD%A6%E5%AD%A6%E9%99%A2/3919627
+- name: 那顺巴依尔
+  institution: 内蒙古大学
+  title: 教授；民族学与社会学学院副院长兼民族学系主任
+  fields:
+  - 民族学
+  - 蒙古族社会文化
+  evidence:
+  - https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%A4%A7%E5%AD%A6%E6%B0%91%E6%97%8F%E5%AD%A6%E4%B8%8E%E7%A4%BE%E4%BC%9A%E5%AD%A6%E5%AD%A6%E9%99%A2/3919627
+- name: 杜建录
+  institution: 宁夏大学
+  title: 教授；人文与民族学部部长、民族与历史学院院长
+  fields:
+  - 西夏学
+  - 民族史
+  - 民族学
+  evidence:
+  - https://mzls.nxu.edu.cn/
+- name: 马忠才
+  institution: 西北民族大学
+  title: 教授、博士生导师；西北民族大学党委常委、副校长（原中华民族共同体学院院长）
+  fields:
+  - 民族社会学
+  - 民间文化
+  evidence:
+  - https://www.xbmu.edu.cn/gttxy/szdw.htm
+- name: 贺卫光
+  institution: 西北民族大学
+  title: 教授，民族学、中国语言文学博士生导师（中华民族共同体学院）
+  fields:
+  - 民族学
+  - 裕固族研究
+  evidence:
+  - https://www.xbmu.edu.cn/gttxy/szdw.htm
+- name: 冯瑞（热依曼）
+  institution: 西北民族大学
+  title: 教授、民族学博士；中华民族共同体学院业务副院长
+  fields:
+  - 民族学
+  - 民族关系
+  evidence:
+  - https://www.xbmu.edu.cn/gttxy/szdw.htm
+- name: 满珂
+  institution: 西北民族大学
+  title: 教授、硕/博士生导师（中华民族共同体学院）
+  fields:
+  - 民族学
+  - 文化人类学
+  evidence:
+  - https://www.xbmu.edu.cn/gttxy/szdw.htm
+- name: 张科
+  institution: 青海民族大学
+  title: 《青海民族研究》主编（民族学与社会学学院、青海民族研究所主办）
+  fields:
+  - 民族学
+  - 青藏高原民族研究
+  evidence:
+  - https://qje.qhmu.edu.cn/
+- name: 索南才让
+  institution: 西藏民族大学
+  title: 研究员/教授、硕博士生导师；民族研究院党委副书记、院长
+  fields:
+  - 藏学
+  - 民族学
+  evidence:
+  - http://www.tibetology.ac.cn/2021-10/13/content_41699465.htm
+- name: 郝时远
+  institution: 中国社会科学院民族学与人类学研究所
+  title: 研究员；民族学与人类学研究所所长（检索结果所示，任期时间未核）
+  fields:
+  - 民族理论
+  - 民族问题研究
+  evidence:
+  - http://iea.cssn.cn/
+  - https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6%E9%99%A2%E6%B0%91%E6%97%8F%E5%AD%A6%E4%B8%8E%E4%BA%BA%E7%B1%BB%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%89%80/7976115
+- name: 程京武
+  institution: 暨南大学
+  title: 教授；中华民族凝聚力研究院院长、铸牢中华民族共同体意识研究基地常务副主任
+  fields:
+  - 中华民族凝聚力
+  - 港澳台侨研究
+  - 中华民族共同体学
+  evidence:
+  - https://zhmznjl.jnu.edu.cn/
+  - https://www.neac.gov.cn/seac/c103657/202507/1180604.shtml
+- name: 杨洪林
+  institution: 湖北民族大学
+  title: 三级教授；民族学与社会学学院党总支副书记、院长，兼中华民族共同体学院院长
+  fields:
+  - 中华民族交往交流交融史
+  - 非物质文化遗产
+  evidence:
+  - https://www.hbmzu.edu.cn/mzyjy/info/1031/2325.htm
+- name: 罗康隆
+  institution: 湖北民族大学
+  title: 二级教授、博士生导师；民族学与社会学特设岗位教授
+  fields:
+  - 中国民族学
+  - 生态人类学
+  - 世界民族
+  evidence:
+  - https://www.hbmzu.edu.cn/mzyjy/info/1031/3637.htm
+- name: 陈心林
+  institution: 湖北民族大学
+  title: 教授（民族学与社会学学院）
+  fields:
+  - 马克思主义民族理论与政策
+  - 非物质文化遗产保护
+  - 民族历史文化
+  evidence:
+  - https://www.hbmzu.edu.cn/mzyjy/info/1031/3179.htm
+- name: 刘伦文
+  institution: 湖北民族大学
+  title: 教授（民族学与社会学学院，2004—2010年任院长）
+  fields:
+  - 民族学
+  - 社会学
+  evidence:
+  - https://www.hbmzu.edu.cn/mzyjy/info/1031/1134.htm
+- name: 纳日碧力戈
+  institution: 内蒙古师范大学
+  title: 民族学人类学学院师资（页面收录；具体职称以官网为准）
+  fields:
+  - 民族学
+  - 语言人类学
+  evidence:
+  - http://mr.imnu.edu.cn/info/1012/1584.htm
+- name: 常宝
+  institution: 内蒙古师范大学
+  title: 民族学人类学学院师资（页面收录；具体职称以官网为准）
+  fields:
+  - 民族学
+  - 蒙古族社会文化
+  evidence:
+  - http://mr.imnu.edu.cn/info/1012/1662.htm
+- name: 关凯
+  institution: 中央民族大学
+  title: 教授；民族学与社会学学院院长（2026-07 会议报道）
+  fields:
+  - 民族理论
+  - 中华民族共同体
+  evidence: []

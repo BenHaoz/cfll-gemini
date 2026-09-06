@@ -92,3 +92,23 @@ def test_guangxi_flag_ignores_journal_name():
     a = clf.annotate(Item(kind="paper", title="珠三角乡村都市化研究", source="广西民族研究"))
     b = clf.annotate(Item(kind="paper", title="京族哈节的海洋文化基因", source="民族研究"))
     assert a.guangxi_related is False and b.guangxi_related is True
+
+
+def test_theme_tags():
+    s = load_settings()
+    clf = Classifier(s.keywords)
+    a = clf.annotate(Item(kind="paper", title="民族地区现代化与共同富裕的路径研究", source="民族研究"))
+    b = clf.annotate(Item(kind="paper", title="Modernization and ethnic minorities in Southwest China", source="Asian Ethnicity", extra={"lang": "en"}))
+    c = clf.annotate(Item(kind="paper", title="Multispecies ethnography and the ontological turn", source="HAU", extra={"lang": "en", "source_theme": "国外理论前沿"}))
+    d = clf.annotate(Item(kind="paper", title="Modernization of banking systems", source="X", extra={"lang": "en"}))
+    assert "各民族共同现代化" in a.extra["themes"] and "各民族共同现代化" in b.extra["themes"]
+    assert "国外理论前沿" in c.extra["themes"] and d.extra["themes"] == []
+
+
+def test_theme_weak_keywords_need_ethnic_context():
+    s = load_settings()
+    clf = Classifier(s.keywords)
+    a = clf.annotate(Item(kind="paper", title="财会监督与政府信任促进税收治理现代化的协同机制研究", source="X"))
+    b = clf.annotate(Item(kind="paper", title="志在富民与共同富裕——费孝通的富民理论及其实践启示", source="X"))
+    c = clf.annotate(Item(kind="paper", title="边疆民族地区共同富裕的实现路径", source="X"))
+    assert a.extra["themes"] == [] and "各民族共同现代化" in b.extra["themes"] and "各民族共同现代化" in c.extra["themes"]

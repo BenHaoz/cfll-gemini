@@ -105,12 +105,22 @@ def probe_page(url: str) -> str:
                 for t in s2.find_all(["script", "style"]):
                     t.decompose()
                 txt = clean(s2.get_text(" "))
-                lines.append(f"  详情页 {host}: status={r2.status_code} bytes={len(r2.content)} 正文前600字: {txt[:600]!r}")
-                for kw in ("作者", "机构", "单位", "Author", "作者单位"):
-                    i = h2.find(kw)
+                lines.append(f"  详情页 {host}: status={r2.status_code} bytes={len(r2.content)} 正文长度={len(txt)}")
+                # 作者名附近的 HTML（作者串来自列表页 AddHandleCount 参数）
+                first_author = ""
+                ma = re.search(r"AddHandleCount\([^)]*?'([^']*\[\d\][^']*)'\s*,\s*'[^']*'\s*\)", html)
+                if ma:
+                    first_author = re.sub(r"\[\d+\].*", "", ma.group(1)).strip()
+                for kw in ([first_author] if first_author else []) + ["作者单位", "机构", "[1]", "单位"]:
+                    if not kw:
+                        continue
+                    i = h2.find(kw, 3000)  # 跳过导航区
                     if i != -1:
-                        lines.append(f"  详情页HTML@{kw}: " + re.sub(r"\s+", " ", h2[max(0, i - 200): i + 700]))
+                        lines.append(f"  详情页HTML@{kw}: " + re.sub(r"\s+", " ", h2[max(0, i - 300): i + 900]))
                         break
+                j = txt.find(first_author) if first_author else -1
+                if j != -1:
+                    lines.append(f"  详情页正文@作者: {txt[max(0, j - 100): j + 500]!r}")
             except Exception as exc:  # noqa: BLE001
                 lines.append(f"  详情页 {host} 失败: {str(exc)[:120]}")
     # 按年/期切换探测
@@ -155,6 +165,21 @@ def diagnose(settings) -> str:
         from datetime import date
         params = {k: (str(v).replace("{year}", str(date.today().year)) if isinstance(v, str) else v) for k, v in (sk.get("params") or {}).items()}
         out.append(_diag_url(sk["url"], params=dict(params, p=1)))
+        try:
+            r = fetch(sk["url"], params=params, timeout=25, retries=1)
+            sp = soup_of(fix_encoding(r))
+            rows = [tr for tr in sp.find_all("tr") if len(tr.find_all("td")) >= 6]
+            out.append(f"  数据行（td>=6）={len(rows)}；前 3 行：")
+            for tr in rows[:3]:
+                out.append("    | " + " | ".join(clean(td.get_text(" "))[:30] for td in tr.find_all("td")))
+            pg = [a for a in sp.find_all("a", href=True) if re.fullmatch(r"\d+|下一页|末页|>|>>", clean(a.get_text()))]
+            out.append("  分页链接样例: " + " | ".join(f"{clean(a.get_text())}->{a['href'][-80:]}" for a in pg[:5]))
+            onclicks = [t.get("onclick") for t in sp.find_all(attrs={"onclick": True})][:5]
+            out.append("  onclick 样例: " + " | ".join(str(o)[:100] for o in onclicks))
+            total = re.search(r"共\s*(\d+)\s*[条页]", clean(sp.get_text(" ")))
+            out.append(f"  总数提示: {total.group(0) if total else '未找到'}")
+        except Exception as exc:  # noqa: BLE001
+            out.append(f"  数据行探测失败: {str(exc)[:120]}")
     nc = src.get("ncpssd", {})
     out.append("\n## 国家哲学社会科学文献中心")
     out.append(_diag_url("https://www.ncpssd.cn/"))
@@ -180,6 +205,11 @@ def diagnose(settings) -> str:
                     name_hint = txt[i:i + 40] if i != -1 else ""
                     h = sp.find(["h1", "h3"])
                     head = clean(h.get_text(" "))[:40] if h else ""
+                    issn = re.search(r"ISSN[:：]?\s*([0-9]{4}-[0-9Xx]{4})", txt)
+                    zb = txt.find("主办")
+                    name_hint = (f"ISSN={issn.group(1)} " if issn else "") + (txt[zb: zb + 40] if zb != -1 else "")
+                    dt = sp.find(class_=re.compile("journal|qk|name|tit", re.I))
+                    head = head or (clean(dt.get_text(" "))[:40] if dt else "")
                     cat = sp.find("div", class_="catalog")
                     first = ""
                     if cat:

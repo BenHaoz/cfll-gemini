@@ -147,8 +147,14 @@ def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, 
     notes: list[str] = []
     if not any(s.ok and s.count for s in statuses if s.kind in ("journal", "llm")):
         notes.append("本周期刊类数据源均未返回条目：请检查 config/sources.yaml 中的期刊目录页/文献中心接口，或配置 LLM 密钥启用联网检索兜底。")
+    extra_md = ""
+    try:
+        from .sections import build_extra_sections
+        extra_md = build_extra_sections(today)
+    except Exception as exc:  # noqa: BLE001
+        log.error("build extra sections failed: %s", exc)
     ctx = ReportContext(period=period, today=today, window_days=settings.lookback_days, new_items=new_items, all_items=items,
-                        statuses=statuses, analysis_md=analysis_md, analysis_by=analysis_by, extra_notes=notes)
+                        statuses=statuses, analysis_md=analysis_md, analysis_by=analysis_by, extra_notes=notes, extra_sections_md=extra_md)
     md = render_markdown(ctx)
     html = to_html(md, f"民族学学科监测周报 {period}")
     md_path = report_dir / f"{slug}.md"

@@ -146,9 +146,17 @@ skygb:
   url: http://fz.people.com.cn/skygb/sk/index.php/Index/seach
   # 检索参数（若站点表单字段变化，请按实际调整）
   params:
-    xktype: 2
-    xkname: 民族问题研究
-    nianfa: "{year}"
+    xktype: 民族问题研究
+    lxtime: "{year}"
+    xmtype: 0
+    pznum: ""
+    xmname: ""
+    xmleader: ""
+    zyzw: 0
+    gzdw: ""
+    dwtype: 0
+    szdq: 0
+    ssxt: ""
   max_pages: 5
   # 下钻时用于判定"民族学相关"的名单行关键词
   row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 民族学]

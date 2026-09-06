@@ -52,10 +52,26 @@ def collect_all(settings: Settings, *, today: date, use_llm: bool, only: str | N
         it, st = collect_skygb(src.get("skygb", {}), today=today)
         items += it
         statuses.append(st)
+    theme_kw = {name: (spec.get("keywords_en", []) + spec.get("keywords_cn", []))
+                for name, spec in (settings.keywords.get("themes") or {}).items()}
     for feed in src.get("rss_feeds", []) or []:
         if want(feed.get("name", "")) or want("rss"):
-            it, st = collect_rss(feed, lookback_days=lb, today=today)
+            it, st = collect_rss(feed, lookback_days=lb, today=today, theme_keywords=theme_kw)
             items += it
+            statuses.append(st)
+    # 专题期刊（顶刊/985 学报）：只保留命中专题词的文章
+    for j in src.get("theme_journals", []) or []:
+        if want(j["name"]) or want("theme"):
+            it, st = collect_journal_toc(j, lookback_days=lb, today=today)
+            kws = theme_kw.get(j.get("source_theme", "各民族共同现代化"), [])
+            kept = [x for x in it if any(k in x.title for k in kws)]
+            for x in kept:
+                x.extra["source_theme"] = j.get("source_theme", "各民族共同现代化")
+                x.extra["theme_journal"] = True
+            st.name = f"专题期刊·{j['name']}"
+            st.message = f"目录 {len(it)} 篇，命中专题 {len(kept)} 篇"
+            st.count = len(kept)
+            items += kept
             statuses.append(st)
 
     lr = src.get("llm_research", {})
@@ -150,7 +166,7 @@ def run(settings: Settings, *, today: date | None = None, use_llm: bool = True, 
     extra_md = ""
     try:
         from .sections import build_extra_sections
-        extra_md = build_extra_sections(today)
+        extra_md = build_extra_sections(today, new_items)
     except Exception as exc:  # noqa: BLE001
         log.error("build extra sections failed: %s", exc)
     ctx = ReportContext(period=period, today=today, window_days=settings.lookback_days, new_items=new_items, all_items=items,

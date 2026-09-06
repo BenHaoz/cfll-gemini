@@ -48,7 +48,13 @@ ANALYSIS_PROMPT = """今天是 {today}，本期为第 {period} 期周报。以�
 从本周条目中挑选 5 条最值得精读或对标的论文/课题，各用 1–2 句话说明理由。
 
 ### 六、下周关注建议
-3–5 条：即将到来的申报节点、会议、专刊征稿或值得跟踪的主题。"""
+3–5 条：即将到来的申报节点、会议、专刊征稿或值得跟踪的主题。
+
+### 七、各民族共同现代化专题述评
+针对标注 [现代化专题] 的条目（含国内顶刊/985 高校学报与国外 [EN] 文献）：① 概括本周国内外关于民族地区现代化、共同富裕、少数民族/土著发展的研究进展与争论；② 指出中国式现代化研究院、985 高校相关成果的特点（如有）；③ 给出 2–3 个面向广西的专题选题方向。250–400 字。无相关条目时明确说明并给出一条跟踪建议。
+
+### 八、国外民族学人类学理论前沿动态
+针对标注 [国外理论] 的条目：按主题（如本体论与多物种、基础设施与技术、族群与民族主义理论、去殖民化与知识生产、方法论创新）归纳本周国外期刊的理论动向，各条注明期刊与文章；说明对国内民族学/中华民族共同体研究可借鉴之处。250–400 字。无相关条目时明确说明。"""
 
 
 def directions_text(settings: Settings) -> str:
@@ -66,7 +72,15 @@ def build_digest(items: list[Item], *, max_papers: int = 150, max_projects: int 
     out: list[str] = []
 
     def tag(i: Item) -> str:
-        return "" if i.verified else "[未核实]"
+        t = "" if i.verified else "[未核实]"
+        th = i.extra.get("themes") or []
+        if "各民族共同现代化" in th:
+            t += "[现代化专题]"
+        if "国外理论前沿" in th:
+            t += "[国外理论]"
+        if str(i.extra.get("lang", "zh")) != "zh":
+            t += "[EN]"
+        return t
 
     out.append(f"【新增论文 {len(papers)} 篇】")
     by_dir: dict[str, list[Item]] = defaultdict(list)

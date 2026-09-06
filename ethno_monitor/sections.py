@@ -150,6 +150,65 @@ def build_ranking_section(today: date, pubs_meta: dict[str, Any]) -> str:
     return "\n".join(L)
 
 
-def build_extra_sections(today: date) -> str:
+def _item_row(it: Any) -> str:
+    au = "、".join(it.authors[:3]) if it.authors else ""
+    link = f"[链接]({it.url})" if it.url else ""
+    flag = "" if it.verified else " ⚠未核实"
+    return f"| {it.title}{flag} | {au} | {it.source} {it.extra.get('issue', '') or it.date} | {(it.extra.get('summary') or '')[:80]} | {link} |"
+
+
+def build_theme_sections(new_items: list[Any], today: date) -> str:
+    """九、各民族共同现代化专题；十、国外民族学人类学理论前沿。输入为本周新增条目（含专题标签）。"""
+    mod = [i for i in new_items if "各民族共同现代化" in (i.extra.get("themes") or [])]
+    theory = [i for i in new_items if "国外理论前沿" in (i.extra.get("themes") or [])]
+    L: list[str] = []
+    L.append("### 九、各民族共同现代化专题（顶刊·985 高校·国外研究）")
+    L.append("")
+    L.append("口径：本周新增条目中命中“共同现代化/民族地区现代化/共同富裕”等专题词者（中文），或国外文献中同时含现代化/发展与民族/族群/土著语境者；另含专题期刊（中国社会科学、社会学研究、历史研究及 985 高校学报）目录中命中专题词的文章。中国式现代化研究院与 985 高校成果动态由每周会话联网检索补充（见分析部分）。")
+    L.append("")
+    cn = [i for i in mod if str(i.extra.get("lang", "zh")) == "zh"]
+    en = [i for i in mod if str(i.extra.get("lang", "zh")) != "zh"]
+    if not mod:
+        L.append("本周未监测到专题相关新增条目。")
+        L.append("")
+    if cn:
+        L.append(f"**国内（{len(cn)} 篇）**")
+        L.append("")
+        L.append("| 题目 | 作者 | 来源 / 期号 | 摘要 | 链接 |")
+        L.append("|---|---|---|---|---|")
+        for i in sorted(cn, key=lambda x: (x.source, x.date)):
+            L.append(_item_row(i))
+        L.append("")
+    if en:
+        L.append(f"**国外（{len(en)} 篇）**")
+        L.append("")
+        L.append("| Title | Authors | Journal / Date | Abstract | Link |")
+        L.append("|---|---|---|---|---|")
+        for i in sorted(en, key=lambda x: (x.source, x.date)):
+            L.append(_item_row(i))
+        L.append("")
+    L.append("### 十、国外民族学人类学理论前沿动态")
+    L.append("")
+    L.append("口径：American Anthropologist、Current Anthropology、HAU、Anthropological Theory、Annual Review of Anthropology、JRAI 等理论类期刊 RSS 的最新文章，以及族群/民族主义与中国研究类期刊中命中理论词的文章；按期刊分组，理论要点由每周会话在分析部分归纳。")
+    L.append("")
+    if not theory:
+        L.append("本周未获取到国外理论类期刊的新增文章（请查看数据源状态中的 RSS 条目）。")
+    else:
+        by_src: dict[str, list[Any]] = {}
+        for i in theory:
+            by_src.setdefault(i.source, []).append(i)
+        for src_name, lst in sorted(by_src.items(), key=lambda kv: -len(kv[1])):
+            L.append(f"**{src_name}**（{len(lst)}）")
+            L.append("")
+            for i in lst[:12]:
+                au = "、".join(i.authors[:3])
+                L.append(f"- [{i.title}]({i.url}) {('— ' + au) if au else ''}{(' · ' + i.date) if i.date else ''}")
+            L.append("")
+    return "\n".join(L)
+
+
+def build_extra_sections(today: date, new_items: list[Any] | None = None) -> str:
     pubs_md, meta = build_pubs_section(today)
-    return "\n".join([pubs_md, build_scholars_section(today), build_ranking_section(today, meta)])
+    parts = [pubs_md, build_scholars_section(today), build_ranking_section(today, meta)]
+    parts.append(build_theme_sections(new_items or [], today))
+    return "\n".join(parts)

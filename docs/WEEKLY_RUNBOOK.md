@@ -34,16 +34,22 @@ PY
 {"kind":"paper|project|notice","title":"...","url":"来源链接","source":"期刊名或资助机构","date":"YYYY-MM-DD 或 YYYY-MM","authors":["..."],"affiliation":"单位","verified":true,"evidence":["来源链接"],"extra":{"issue":"2026年第4期","funder":"国家社科基金","project_type":"一般项目","pi":"负责人","from_notice":"公告标题","summary":"一句话主题","via":"websearch"}}
 ```
 
+## 2b. 学者观点与专题动态检索（会话完成）
+- **主要学者最新观点**：读取 `config/institutions.yaml` 的 `scholars` 名录，对每位（或按单位轮换，每周至少覆盖 15 人）用 WebSearch 检索「姓名 单位 2026」「姓名 铸牢中华民族共同体意识 观点」「姓名 最新 论文/讲座/访谈」，只记录有链接、日期在近 60 天内的成果或观点，写入 `data/pubs/scholars_latest.json`：
+  `{"updated":"YYYY-MM-DD","items":[{"name":"","institution":"","viewpoint":"一句话观点或成果（不超过 80 字）","date":"YYYY-MM-DD","url":"","kind":"论文/讲座/访谈/著作"}]}`
+- **各民族共同现代化专题**：检索「中国式现代化研究院 民族」「985 高校 民族地区现代化 研究成果 2026」「共同富裕 民族地区 论文 2026 中国社会科学/社会学研究」以及国外「ethnic minorities modernization China 2026」，把有链接的成果作为条目写入 extra_items.json（extra.themes 含"各民族共同现代化"，英文条目 extra.lang="en"）。
+- **国外理论前沿**：RSS 已自动采集；会话在分析第八节归纳理论要点，必要时补检索「anthropological theory 2026 review」。
+
 ## 3. 生成分析提示词并撰写分析
 ```bash
 python -m ethno_monitor prompt --items-file /tmp/em/collected.json --items-file /tmp/em/extra_items.json --date $TODAY > /tmp/em/prompt.txt
 ```
-阅读 `/tmp/em/prompt.txt`（含本周新增条目摘要、四方向定义、广西知识库和写作要求），**由会话自己撰写**六节分析 Markdown（总评 / 四方向分述 / 立项态势与申报启示 / 12 个广西特色选题表 / 精读建议 / 下周关注），保存为 `/tmp/em/analysis.md`。要求：只引用监测数据中的条目；选题须为可直接投稿/申报的主副标题结构，并写明广西切入点与拟投期刊或项目类别。
+阅读 `/tmp/em/prompt.txt`（含本周新增条目摘要、四方向定义、广西知识库和写作要求），**由会话自己撰写**八节分析 Markdown（总评 / 四方向分述 / 立项态势与申报启示 / 12 个广西特色选题表 / 精读建议 / 下周关注 / 各民族共同现代化专题述评 / 国外理论前沿动态），保存为 `/tmp/em/analysis.md`。报告第五部分（博士点单位发文排名、学者观点、学科指数、专题条目、国外理论前沿条目）由程序根据 `data/pubs/` 与配置自动生成，无需撰写。要求：只引用监测数据中的条目；选题须为可直接投稿/申报的主副标题结构，并写明广西切入点与拟投期刊或项目类别。
 
 ## 4. 生成周报、网页并提交
 ```bash
 python -m ethno_monitor run --no-llm --no-email --collected-file /tmp/em/collected.json --items-file /tmp/em/extra_items.json --analysis-file /tmp/em/analysis.md --date $TODAY | tee /tmp/em/run.json
-git add reports data/state.json docs
+git add reports data/state.json data/pubs/scholars_latest.json docs
 git -c user.name="ethno-monitor" -c user.email="ethno-monitor@users.noreply.github.com" commit -m "chore(report): 民族学监测周报 $TODAY" || true
 git push origin main
 ```

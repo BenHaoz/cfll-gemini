@@ -102,3 +102,38 @@ def test_parse_toc_ncpssd():
     assert items[0].url == "https://www.ncpssd.cn/Literature/articleinfo?id=SJMZ2026003002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1"
     assert items[0].extra["article_id"] == "SJMZ2026003002"
     assert items[1].url.startswith("https://m.ncpssd.cn/journal/details")
+
+
+def test_nested_table_rows_and_header_detection():
+    """社科基金数据库页面：外层表格嵌套分页行+数据表，表头不在首行也应正确映射。"""
+    from ethno_monitor.collectors.base import parse_tables, rows_to_projects, soup_of
+    html = """
+    <table><tr><td>
+      <table>
+        <tr><td colspan="8">1 2 3 下一页</td></tr>
+        <tr><td>项目批准号</td><td>项目类别</td><td>学科分类</td><td>项目名称</td><td>立项时间</td><td>项目负责人</td><td>专业职务</td><td>工作单位</td></tr>
+        <tr><td>24XMZ092</td><td>西部项目</td><td>民族学</td><td>西方对新疆劳动力转移就业的负面叙事构建及应对研究</td><td>2024-01-01</td><td>张丽</td><td>教授</td><td>重庆邮电大学</td></tr>
+        <tr><td>25WMZB005</td><td>中华学术外译项目</td><td>民族学</td><td>中国图腾文化</td><td>2025-12-23</td><td>倪丹</td><td>教授</td><td>西南大学</td></tr>
+      </table>
+    </td></tr></table>"""
+    items = []
+    for rows in parse_tables(soup_of(html)):
+        items += rows_to_projects(rows, source="t", funder="国家社科基金", url="u", keywords=None)
+    by_title = {i.title: i for i in items}
+    assert "西方对新疆劳动力转移就业的负面叙事构建及应对研究" in by_title
+    it = by_title["西方对新疆劳动力转移就业的负面叙事构建及应对研究"]
+    assert it.extra["pi"] == "张丽" and it.affiliation == "重庆邮电大学"
+    assert it.extra["project_type"] == "西部项目" and it.extra["discipline"] == "民族学" and it.extra["project_no"] == "24XMZ092"
+    assert it.date.startswith("2024-01")
+    # 外层表格的巨型单元格不应被当作条目
+    assert all(len(t) < 80 for t in by_title)
+
+
+def test_skygb_next_page_href():
+    from ethno_monitor.collectors.base import soup_of
+    from ethno_monitor.collectors.skygb import next_page_href
+    soup = soup_of('<div><a href="//bp.people.com.cn/skygb/sk/index.php/index/seach/2?xktype=a&lxtime=2025">2</a>'
+                   '<a href="//bp.people.com.cn/skygb/sk/index.php/index/seach/2?xktype=a&lxtime=2025">下一页</a></div>')
+    assert next_page_href(soup, "http://fz.people.com.cn/skygb/sk/index.php/Index/seach") == \
+        "http://bp.people.com.cn/skygb/sk/index.php/index/seach/2?xktype=a&lxtime=2025"
+    assert next_page_href(soup_of("<p>无</p>"), "http://x/") == ""

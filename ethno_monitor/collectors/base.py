@@ -128,7 +128,8 @@ def parse_tables(soup: BeautifulSoup) -> list[list[list[str]]]:
     for t in soup.find_all("table"):
         rows: list[list[str]] = []
         for tr in t.find_all("tr"):
-            cells = [clean(td.get_text(" ")) for td in tr.find_all(["td", "th"])]
+            # 只取直接子单元格，避免嵌套表格的内容并入外层行
+            cells = [clean(td.get_text(" ")) for td in tr.find_all(["td", "th"], recursive=False)]
             if any(cells):
                 rows.append(cells)
         if len(rows) >= 2:
@@ -164,9 +165,14 @@ def rows_to_projects(rows: list[list[str]], *, source: str, funder: str, url: st
     """表格行 -> 课题条目。有表头则按表头映射，否则用启发式。"""
     if not rows:
         return []
-    header = rows[0]
-    idx = _map_header(header)
-    body = rows[1:] if "title" in idx or "pi" in idx else rows
+    # 表头可能不在首行（前面有分页/标题行）：在前 3 行内寻找可映射的表头
+    idx: dict[str, int] = {}
+    body = rows
+    for hi, header in enumerate(rows[:3]):
+        cand = _map_header(header)
+        if "title" in cand and len(cand) >= 2:
+            idx, body = cand, rows[hi + 1:]
+            break
     kws = list(keywords or [])
     items: list[Item] = []
     for r in body:
@@ -189,7 +195,7 @@ def rows_to_projects(rows: list[list[str]], *, source: str, funder: str, url: st
             for c in r:
                 if c == title:
                     continue
-                if NAME_RE.match(c) and not pi:
+                if NAME_RE.match(c) and not pi and not re.search(r"项目|课题|民族学|研究", c):
                     pi = c
                 elif UNIT_RE.search(c) and not unit:
                     unit = c

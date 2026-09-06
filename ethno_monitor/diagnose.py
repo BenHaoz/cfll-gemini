@@ -52,6 +52,9 @@ def _diag_url(url: str, *, params: dict[str, Any] | None = None, link_regex: str
         for f in forms[:2]:
             names = [i.get("name") for i in f.find_all(["input", "select"]) if i.get("name")]
             lines.append(f"  表单 action={f.get('action')} method={f.get('method')} 字段={names[:20]}")
+            for sel in f.find_all("select")[:6]:
+                opts = [f"{o.get('value')}={clean(o.get_text())[:12]}" for o in sel.find_all("option")[:30]]
+                lines.append(f"    select {sel.get('name')}: {' | '.join(opts)}")
     if not anchors:
         text = clean(soup.get_text(" "))
         lines.append(f"  页面正文前 300 字: {text[:300]!r}")
@@ -81,13 +84,53 @@ def probe_page(url: str) -> str:
     for name, args, body in fn[:6]:
         lines.append(f"  函数 {name}({args}): {clean(body)[:260]}")
     n = 0
+    detail_url = ""
     for a in soup.find_all("a", href=True):
         if a["href"].strip().lower().startswith("javascript") and len(clean(a.get_text())) >= 8:
-            li = a.find_parent(["li", "tr", "div"])
-            lines.append("  条目HTML: " + re.sub(r"\s+", " ", str(li or a))[:700])
+            li = a.find_parent(["p", "li", "tr", "div"])
+            lines.append("  条目HTML: " + re.sub(r"\s+", " ", str(li or a))[:500])
+            m = re.search(r"openDetail\('([^']+)'", a.get("onclick") or "")
+            if m and not detail_url:
+                detail_url = m.group(1).replace("&amp;", "&")
             n += 1
-            if n >= 2:
+            if n >= 1:
                 break
+    # 文献详情页：看作者/机构字段如何呈现
+    if detail_url:
+        for host in ("https://m.ncpssd.cn", "https://www.ncpssd.cn"):
+            try:
+                r2 = fetch(host + detail_url, timeout=25, retries=1)
+                h2 = fix_encoding(r2)
+                s2 = soup_of(h2)
+                for t in s2.find_all(["script", "style"]):
+                    t.decompose()
+                txt = clean(s2.get_text(" "))
+                lines.append(f"  详情页 {host}: status={r2.status_code} bytes={len(r2.content)} 正文前600字: {txt[:600]!r}")
+                for kw in ("作者", "机构", "单位", "Author", "作者单位"):
+                    i = h2.find(kw)
+                    if i != -1:
+                        lines.append(f"  详情页HTML@{kw}: " + re.sub(r"\s+", " ", h2[max(0, i - 200): i + 700]))
+                        break
+            except Exception as exc:  # noqa: BLE001
+                lines.append(f"  详情页 {host} 失败: {str(exc)[:120]}")
+    # 按年/期切换探测
+    m = re.search(r"gch=(\w+)", url)
+    if m:
+        for test in (f"https://m.ncpssd.cn/journal/details?gch={m.group(1)}&years=2025&num=6&nav=1&langType=1",
+                     f"https://m.ncpssd.cn/journal/details?gch={m.group(1)}&years=2025&num=1&nav=1&langType=1"):
+            try:
+                r3 = fetch(test, timeout=25, retries=1)
+                s3 = soup_of(fix_encoding(r3))
+                cat = s3.find("div", class_="catalog")
+                head = clean(cat.find("h2").get_text(" ")) if cat and cat.find("h2") else ""
+                cnt = len([x for x in s3.find_all("a", onclick=True) if "openDetail" in x.get("onclick", "")])
+                lines.append(f"  按期切换 {test[-45:]}: h2={head!r} 文章锚点={cnt}")
+            except Exception as exc:  # noqa: BLE001
+                lines.append(f"  按期切换失败: {str(exc)[:120]}")
+        # 期刊总录：年份/期号列表
+        tot = soup.find(id="journalTotal")
+        if tot:
+            lines.append("  期刊总录HTML: " + re.sub(r"\s+", " ", str(tot))[:900])
     return "\n".join(lines)
 
 

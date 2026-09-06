@@ -66,6 +66,25 @@ NAV_TITLES = {"国家哲学社会科学文献中心", "习近平新时代 中国
               "外部资源导航", "学术网站导航", "社科机构导航"}
 ISSUE_LOOSE_RE = re.compile(r"(20\d{2})\s*年?\s*第?\s*(\d{1,2})\s*期|(20\d{2})\s*/\s*(\d{1,2})\b")
 ID_RE = re.compile(r"\b([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{24,})\b")
+OPEN_DETAIL_RE = re.compile(r"openDetail\('([^']*?/Literature/articleinfo\?id=([A-Za-z0-9]+)[^']*)'")
+QUOTED_RE = re.compile(r"'((?:[^'\\]|\\.)*)'")   # AddHandleCount(...) 的引号参数：…, '题名', '作者串', '刊名')
+CATALOG_ISSUE_RE = re.compile(r"(20\d{2})\s*年\s*第\s*(\d{1,2})\s*期")
+
+
+def _authors_from_handle(container) -> list[str]:
+    """从同条目 AddHandleCount(...) 的第 9 个参数（形如 '马忠才[1];王媛[1]'）取作者。"""
+    if container is None:
+        return []
+    for tag in container.find_all(attrs={"onclick": True}):
+        oc = tag["onclick"]
+        if "AddHandleCount" not in oc:
+            continue
+        strs = QUOTED_RE.findall(oc)
+        if len(strs) >= 3:
+            raw = strs[-2]
+            names = [re.sub(r"\[\d+\]|\(\d+\)", "", x).strip() for x in re.split(r"[;；,，]", raw)]
+            return [n for n in names if 1 < len(n) <= 12]
+    return []
 
 
 def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
@@ -74,16 +93,25 @@ def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
     soup = soup_of(html)
     for tag in soup.find_all(["script", "style", "header", "nav", "footer"]):
         tag.decompose()
-    page_text = clean(soup.get_text(" "))
     issue = issue_date = ""
-    m = ISSUE_LOOSE_RE.search(page_text)
+    cat = soup.find("div", class_="catalog")
+    h2 = cat.find("h2") if cat else None
+    m = CATALOG_ISSUE_RE.search(clean(h2.get_text(" "))) if h2 else None
+    if not m:
+        page_text = clean(soup.get_text(" "))
+        m2 = ISSUE_LOOSE_RE.search(page_text)
+        if m2:
+            y, n = (m2.group(1), m2.group(2)) if m2.group(1) else (m2.group(3), m2.group(4))
+            m = (y, n)
     if m:
-        y, n = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
+        y, n = (m.group(1), m.group(2)) if hasattr(m, "group") else m
         issue, issue_date = f"{y}年第{int(n)}期", f"{y}-{max(1, min(12, int(n) * 2 - 1)):02d}"
     items: list[Item] = []
     seen: set[str] = set()
     for a in soup.find_all("a", href=True):
         if not a["href"].strip().lower().startswith("javascript"):
+            continue
+        if a.get("data-id") and not clean(a.get_text()):
             continue
         title = clean(a.get("title") or a.get_text(" "))
         if len(title) < 6 or not CJK.search(title) or title in NAV_TITLES or title in seen:
@@ -91,9 +119,9 @@ def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
         if re.search(r"(更多|下载|全文|摘要|返回|首页|登录|注册|查看分类表|精确|模糊)$", title) or "详细简介" in title:
             continue
         seen.add(title)
-        container = a.find_parent(["li", "tr", "dd", "div"])
-        authors: list[str] = []
-        if container is not None:
+        container = a.find_parent(["p", "li", "tr", "dd", "div"])
+        authors: list[str] = _authors_from_handle(container)
+        if not authors and container is not None:
             ctx = clean(container.get_text(" "))
             rest = ctx.split(title, 1)[1] if title in ctx else ""
             rest = re.split(r"(摘要|关键词|下载|全文|收藏|引用)", rest)[0]
@@ -105,12 +133,18 @@ def parse_toc_ncpssd(html: str, base_url: str, journal: str) -> list[Item]:
                 if len(authors) >= 6:
                     break
         link = base_url
-        attrs = " ".join(str(v) for k, v in a.attrs.items() if k != "href") + " " + (a.get("onclick") or "")
-        mid = ID_RE.search(attrs)
-        if mid:
-            link = f"https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id={mid.group(1)}"
+        art_id = ""
+        od = OPEN_DETAIL_RE.search(a.get("onclick") or "")
+        if od:
+            art_id = od.group(2)
+            link = "https://www.ncpssd.cn" + od.group(1).replace("&amp;", "&")
+        else:
+            attrs = " ".join(str(v) for k, v in a.attrs.items() if k != "href") + " " + (a.get("onclick") or "")
+            mid = ID_RE.search(attrs)
+            if mid:
+                link = f"https://www.ncpssd.cn/Literature/articleinfo?type=journalArticle&typename=期刊论文&id={mid.group(1)}"
         items.append(Item(kind="paper", title=title, url=link, source=journal, date=issue_date, authors=authors[:6],
-                          extra={"issue": issue, "via": "ncpssd_journal"}))
+                          extra={"issue": issue, "via": "ncpssd_journal", "article_id": art_id}))
     return items
 
 

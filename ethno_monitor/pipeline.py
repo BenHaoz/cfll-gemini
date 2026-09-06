@@ -59,6 +59,17 @@ def collect_all(settings: Settings, *, today: date, use_llm: bool, only: str | N
             it, st = collect_rss(feed, lookback_days=lb, today=today, theme_keywords=theme_kw)
             items += it
             statuses.append(st)
+    from .collectors.openalex import collect_foreign_journal, collect_foreign_topic
+    for j in src.get("foreign_journals", []) or []:
+        if want(j["name"]) or want("foreign"):
+            it, st = collect_foreign_journal(j, lookback_days=lb, today=today, theme_keywords=theme_kw)
+            items += it
+            statuses.append(st)
+    for qd in src.get("foreign_topics", []) or []:
+        if want(qd["name"]) or want("foreign"):
+            it, st = collect_foreign_topic(qd, lookback_days=lb, today=today)
+            items += it
+            statuses.append(st)
     # 专题期刊（顶刊/985 学报）：只保留命中专题词的文章
     for j in src.get("theme_journals", []) or []:
         if want(j["name"]) or want("theme"):

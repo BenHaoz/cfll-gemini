@@ -136,19 +136,36 @@ def probe_page(url: str) -> str:
                 if mid:
                     a0 = max(0, mid.start() - 400)
                     lines.append("  详情页脚本@id: " + re.sub(r"\s+", " ", inline2[a0: mid.end() + 400]))
+                # 内联脚本概览与路径字符串
+                sp2 = soup_of(h2)
+                inl = [sc.get_text() for sc in sp2.find_all("script") if not sc.get("src")]
+                lines.append(f"  详情页内联脚本 {len(inl)} 段；外链脚本 {len(sp2.find_all('script', src=True))} 个")
+                for k, sc in enumerate(inl[:12]):
+                    t = re.sub(r"\s+", " ", sc.strip())
+                    if len(t) > 40:
+                        lines.append(f"    内联#{k} len={len(t)}: {t[:240]}")
+                paths = sorted({m.group(1) for sc in inl for m in re.finditer(r"""['"](/[A-Za-z][A-Za-z0-9_]*/[A-Za-z0-9_/.]+)['"]""", sc)})
+                lines.append("  详情页内联路径: " + " | ".join(paths[:60]))
+                for k, mm in enumerate(re.finditer(r"\[1\]", h2)):
+                    if k >= 4:
+                        break
+                    lines.append("  详情页[1]上下文: " + re.sub(r"\s+", " ", h2[max(0, mm.start() - 250): mm.end() + 250]))
                 # 外链脚本中的接口地址（文章元数据接口多在外部 JS 中定义）
                 if host.startswith("https://www"):
                     from urllib.parse import urljoin
                     srcs2 = [urljoin(host + detail_url, sc["src"]) for sc in soup_of(h2).find_all("script", src=True)]
                     found: dict[str, str] = {}
-                    for su in srcs2[:14]:
-                        if "ncpssd.cn" not in su and not su.startswith("/"):
+                    lines.append("  详情页外链脚本: " + " | ".join(x[-60:] for x in srcs2[:20]))
+                    for su in srcs2[:20]:
+                        if "ncpssd.cn" not in su:
                             continue
                         try:
                             js = fix_encoding(fetch(su, timeout=20, retries=0))
-                        except Exception:  # noqa: BLE001
+                        except Exception as exc:  # noqa: BLE001
+                            lines.append(f"  外链脚本抓取失败 {su[-50:]}: {str(exc)[:60]}")
                             continue
-                        for mm in re.finditer(r"(/(?:Literature|journal|article|literature)/[A-Za-z0-9_/]+)", js):
+                        lines.append(f"  外链脚本 {su[-50:]} len={len(js)} Literature出现={js.count('Literature')} articleinfo出现={js.lower().count('articleinfo')}")
+                        for mm in re.finditer(r"(/(?:Literature|journal|article|literature|api)/[A-Za-z0-9_/]+)", js):
                             ep = mm.group(1)
                             if ep not in found:
                                 a0 = max(0, mm.start() - 120)

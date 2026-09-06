@@ -27,6 +27,8 @@ class Classifier:
             hit = False
             if lang == "zh":
                 hit = any(k in text for k in spec.get("keywords_cn", []))
+                if not hit and spec.get("keywords_cn_weak"):
+                    hit = any(k in text for k in spec["keywords_cn_weak"]) and any(k in text for k in spec.get("ethnic_context_cn", ["民族"]))
             else:
                 hit = any(k.lower() in low for k in spec.get("keywords_en", []))
                 if hit and spec.get("require_ethnic_context_en"):

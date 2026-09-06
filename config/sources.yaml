@@ -309,137 +309,96 @@ theme_journals:
       - url: "https://m.ncpssd.cn/journal/details?gch=83412X&nav=1&langType=1"
         parser: ncpssd_journal
 
-# 国外期刊 RSS（在 GitHub 运行器上抓取；theory 类全部保留并打“国外理论前沿”标签，ethnic_china 类按专题词过滤）
-rss_feeds:
+# 国外期刊：通过 OpenAlex / Crossref 开放 API 按 ISSN 取最近文献（出版社 RSS 对数据中心 IP 返回 403，已弃用）
+# theory 类全部保留并标“国外理论前沿”；ethnic_china 类按专题词过滤（题名+摘要）
+foreign_journals:
   - name: "American Anthropologist"
-    url: "https://onlinelibrary.wiley.com/feed/15481433/most-recent"
-    publisher: "Wiley"
-    kind: paper
-    lang: en
+    issn: ["0002-7294", "1548-1433"]
     source_theme: 国外理论前沿
   - name: "American Ethnologist"
-    url: "https://onlinelibrary.wiley.com/feed/15481425/most-recent"
-    publisher: "Wiley"
-    kind: paper
-    lang: en
+    issn: ["0094-0496", "1548-1425"]
     source_theme: 国外理论前沿
   - name: "Current Anthropology"
-    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ca"
-    publisher: "University of Chicago Press"
-    kind: paper
-    lang: en
+    issn: ["0011-3204", "1537-5382"]
     source_theme: 国外理论前沿
   - name: "Cultural Anthropology"
-    url: "https://journal.culanth.org/index.php/ca/gateway/plugin/WebFeedGatewayPlugin/rss2"
-    publisher: "Society for Cultural Anthropology"
-    kind: paper
-    lang: en
+    issn: ["0886-7356", "1548-1360"]
     source_theme: 国外理论前沿
   - name: "HAU: Journal of Ethnographic Theory"
-    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=hau"
-    publisher: "University of Chicago Press"
-    kind: paper
-    lang: en
+    issn: ["2575-1433", "2049-1115"]
     source_theme: 国外理论前沿
   - name: "Anthropological Theory"
-    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=ant"
-    publisher: "SAGE"
-    kind: paper
-    lang: en
+    issn: ["1463-4996", "1741-2641"]
     source_theme: 国外理论前沿
   - name: "Annual Review of Anthropology"
-    url: "https://www.annualreviews.org/action/showFeed?type=etoc&feed=rss&jc=anthro"
-    publisher: "Annual Reviews"
-    kind: paper
-    lang: en
+    issn: ["0084-6570", "1545-4290"]
     source_theme: 国外理论前沿
   - name: "Journal of the Royal Anthropological Institute"
-    url: "https://onlinelibrary.wiley.com/feed/14679655/most-recent"
-    publisher: "Wiley"
-    kind: paper
-    lang: en
+    issn: ["1359-0987", "1467-9655"]
+    source_theme: 国外理论前沿
+  - name: "Comparative Studies in Society and History"
+    issn: ["0010-4175", "1475-2999"]
     source_theme: 国外理论前沿
   - name: "Critique of Anthropology"
-    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=coa"
-    publisher: "SAGE"
-    kind: paper
-    lang: en
+    issn: ["0308-275X", "1460-3721"]
     source_theme: 国外理论前沿
   - name: "Anthropology Today"
-    url: "https://onlinelibrary.wiley.com/feed/14678322/most-recent"
-    publisher: "Wiley"
-    kind: paper
-    lang: en
+    issn: ["0268-540X", "1467-8322"]
     source_theme: 国外理论前沿
   - name: "Social Anthropology/Anthropologie Sociale"
-    url: "https://www.berghahnjournals.com/rss/journals/saas"
-    publisher: "Berghahn Journals"
-    kind: paper
-    lang: en
+    issn: ["0964-0282", "1469-8676"]
     source_theme: 国外理论前沿
   - name: "Ethnic and Racial Studies"
-    url: "https://www.tandfonline.com/feed/rss/rers20"
-    publisher: "Taylor & Francis"
-    kind: paper
-    lang: en
+    issn: ["0141-9870", "1466-4356"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Nations and Nationalism"
-    url: "https://onlinelibrary.wiley.com/feed/14698129/most-recent"
-    publisher: "Wiley"
-    kind: paper
-    lang: en
+    issn: ["1354-5078", "1469-8129"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Ethnicities"
-    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=etn"
-    publisher: "SAGE"
-    kind: paper
-    lang: en
+    issn: ["1468-7968", "1741-2706"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Journal of Ethnic and Migration Studies"
-    url: "https://www.tandfonline.com/feed/rss/cjms20"
-    publisher: "Taylor & Francis"
-    kind: paper
-    lang: en
+    issn: ["1369-183X", "1469-9451"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Asian Ethnicity"
-    url: "https://www.tandfonline.com/feed/rss/caet20"
-    publisher: "Taylor & Francis"
-    kind: paper
-    lang: en
+    issn: ["1463-1369", "1469-2953"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Inner Asia"
-    url: "https://brill.com/rss/journals/inas"
-    publisher: "Brill"
-    kind: paper
-    lang: en
+    issn: ["1464-8172", "2210-5018"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "The China Quarterly"
+    issn: ["0305-7410", "1468-2648"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "The China Journal"
-    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=tcj"
-    publisher: "University of Chicago Press"
-    kind: paper
-    lang: en
+    issn: ["1324-9347", "1835-8535"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Modern China"
-    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=mcx"
-    publisher: "SAGE"
-    kind: paper
-    lang: en
+    issn: ["0097-7004", "1552-6836"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "China Information"
-    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=cin"
-    publisher: "SAGE"
-    kind: paper
-    lang: en
+    issn: ["0920-203X", "1741-590X"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Journal of Contemporary China"
-    url: "https://www.tandfonline.com/feed/rss/cjcc20"
-    publisher: "Taylor & Francis"
-    kind: paper
-    lang: en
+    issn: ["1067-0564", "1469-9400"]
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "positions: asia critique"
+    issn: ["1067-9847", "1527-8271"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
   - name: "Chinese Sociological Review"
-    url: "https://www.tandfonline.com/feed/rss/mcsa20"
-    publisher: "Taylor & Francis"
-    kind: paper
-    lang: en
+    issn: ["2162-0555", "2162-0563"]
     theme_filter: [各民族共同现代化, 国外理论前沿]
+
+# OpenAlex 主题检索式（跨期刊）：国外少数民族/土著现代化与发展研究、中国民族问题研究
+foreign_topics:
+  - name: 少数民族与现代化（国外）
+    search: "(ethnic minorities OR indigenous peoples) AND (modernization OR development OR urbanization OR poverty)"
+    source_theme: 各民族共同现代化
+    max: 30
+  - name: 中国民族问题（国外）
+    search: "China AND (ethnic minority OR Tibet OR Xinjiang OR Inner Mongolia OR Yunnan OR Guangxi) AND (ethnic OR nationality)"
+    source_theme: 各民族共同现代化
+    max: 30
+  - name: 人类学理论前沿（国外）
+    search: "anthropological theory OR ontological turn OR multispecies ethnography OR decolonizing anthropology"
+    source_theme: 国外理论前沿
+    max: 25

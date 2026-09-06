@@ -160,7 +160,10 @@ guangxi_keywords: [广西, 桂, 南宁, 桂林, 柳州, 百色, 河池, 崇左, 
 themes:
   各民族共同现代化:
     description: 各民族共同走向社会主义现代化、民族地区现代化与共同富裕、中国式现代化的民族维度，以及国外少数民族/土著群体现代化与发展研究。
-    keywords_cn: [共同现代化, 中国式现代化, 民族地区现代化, 边疆现代化, 现代化与民族, 共同富裕, 民族地区高质量发展, 民族地区经济, 兴边富民, 乡村振兴与民族, 民族地区乡村振兴, 人口较少民族, 整体性脱贫, 区域协调发展与民族, 民族地区新型城镇化, 民族地区产业, 各民族共同, 现代化]
+    keywords_cn: [共同现代化, 民族地区现代化, 边疆现代化, 民族地区高质量发展, 民族地区经济, 兴边富民, 民族地区乡村振兴, 人口较少民族, 整体性脱贫, 民族地区新型城镇化, 民族地区产业, 各民族共同, 民族地区共同富裕, 边疆地区发展, 民族地区发展, 西部大开发与民族]
+    # 弱关键词：须同时出现民族语境词才计入（避免"税收治理现代化"之类误报）
+    keywords_cn_weak: [现代化, 共同富裕, 乡村振兴, 高质量发展, 城镇化, 区域协调发展, 脱贫, 发展经济学]
+    ethnic_context_cn: [民族, 边疆, 少数民族, 族群, 西部, 西藏, 新疆, 内蒙古, 宁夏, 广西, 云南, 贵州, 青海, 费孝通, 藏族, 壮族, 维吾尔, 蒙古族, 回族, 彝族, 苗族, 侗族, 瑶族, 土著]
     keywords_en: [modernization, modernisation, development and ethnic, indigenous development, minority development, rural transformation, urbanization, ethnic minorities in China, common prosperity, poverty alleviation, Xinjiang, Tibet, Inner Mongolia, Yunnan, Guangxi, borderland]
     require_ethnic_context_en: true   # 英文条目须同时含民族/族群/土著类词
     ethnic_context_en: [ethnic, minority, minorities, indigenous, nationalit, tribal, aboriginal, China, Chinese]

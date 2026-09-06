@@ -16,7 +16,7 @@ from .collectors.base import clean, soup_of
 from .collectors.journals import parse_toc_ncpssd
 from .config import CONFIG_DIR
 from .http import fetch, fix_encoding
-from .pubs import ARTICLES_PATH, PUBS_DIR, Article, InstitutionMatcher, article_key, load_articles, save_articles, upsert
+from .pubs import ARTICLES_PATH, PUBS_DIR, Article, InstitutionMatcher, article_key, issue_to_month, load_articles, save_articles, upsert
 
 log = logging.getLogger(__name__)
 STATE_PATH = PUBS_DIR / "harvest_state.json"
@@ -181,7 +181,8 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
                 new_arts = []
                 for it in items:
                     new_arts.append(Article(key=article_key(j["name"], y, num, it.title), title=it.title, journal=j["name"], year=y, issue=num,
-                                            date=it.date, authors=it.authors, url=it.url, tier=j.get("tier", ""),
+                                            date=f"{y}-{issue_to_month(num, j.get('frequency', '双月刊')):02d}",
+                                            authors=it.authors, url=it.url, tier=j.get("tier", ""),
                                             institutions=[]))
                 added = upsert(arts, new_arts)
                 done[key] = {"status": "ok", "count": len(items), "added": added, "at": today.isoformat()}
@@ -218,8 +219,11 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
             detail_fail += 1
         time.sleep(sleep_s)
 
-    # 3) 重新匹配（单位名录可能更新）
+    # 3) 重新匹配（单位名录可能更新）；并按刊期重算年月（目录页不含出版月份）
+    freq_of = {j["name"]: j.get("frequency", "双月刊") for j in core.get("journals", [])}
     for a in arts.values():
+        if a.issue and a.journal in freq_of:
+            a.date = f"{a.year}-{issue_to_month(a.issue, freq_of[a.journal]):02d}"
         if a.affiliations and a.affiliations != ["(未解析)"]:
             a.institutions = matcher.match_all(a.affiliations)
     save_articles(arts)

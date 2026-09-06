@@ -30,8 +30,13 @@ def collect_skygb(cfg: dict[str, Any], *, today: date | None = None, year: int |
         for disc in disciplines:
             prev_first = ""
             for p in range(1, int(cfg.get("max_pages", 3)) + 1):
-                params = dict(base_params, xktype=disc, **{page_param: p})
-                html = fetch_text(cfg["url"], params=params, snapshot=f"skygb_{disc}_p{p}")
+                params = dict(base_params, xktype=disc)
+                if cfg.get("page_mode", "path") == "path":       # ThinkPHP 路径式翻页：/index/seach/2?...
+                    url = cfg["url"] if p == 1 else f"{cfg['url'].rstrip('/')}/{p}"
+                else:
+                    url = cfg["url"]
+                    params[page_param] = p
+                html = fetch_text(url, params=params, snapshot=f"skygb_{disc}_p{p}")
                 tables = parse_tables(soup_of(html))
                 got = 0
                 first_title = ""

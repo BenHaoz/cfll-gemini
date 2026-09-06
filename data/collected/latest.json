@@ -2498,6 +2498,121 @@
     "via": "ncpssd_journal",
     "article_id": "QHMZYJ2026002025"
    }
+  },
+  {
+   "kind": "paper",
+   "title": "从江村到中国式现代化：费孝通的社区研究脉络及其当代启示",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?id=SHXYJ2026004001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1",
+   "source": "社会学研究",
+   "date": "2026-07",
+   "authors": [
+    "李培林"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal",
+    "article_id": "SHXYJ2026004001",
+    "source_theme": "各民族共同现代化",
+    "theme_journal": true
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "财会监督与政府信任促进税收治理现代化的协同机制研究",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?id=ZGRMDXXB2026004005&type=journalArticle&typename=中文期刊文章&nav=1&langType=1",
+   "source": "中国人民大学学报",
+   "date": "2026-07",
+   "authors": [
+    "高宏宇",
+    "张博文",
+    "张茜茜",
+    "代志新"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal",
+    "article_id": "ZGRMDXXB2026004005",
+    "source_theme": "各民族共同现代化",
+    "theme_journal": true
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "城市之学：中国城市治理现代化的文明意蕴与范式创新",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?id=BJDXXBZXSHKXB2026004014&type=journalArticle&typename=中文期刊文章&nav=1&langType=1",
+   "source": "北京大学学报（哲学社会科学版）",
+   "date": "2026-07",
+   "authors": [
+    "张树华",
+    "邵宏伟"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal",
+    "article_id": "BJDXXBZXSHKXB2026004014",
+    "source_theme": "各民族共同现代化",
+    "theme_journal": true
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "志在富民与共同富裕——费孝通的富民理论及其实践启示",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?id=BJDXXBZXSHKXB2026004016&type=journalArticle&typename=中文期刊文章&nav=1&langType=1",
+   "source": "北京大学学报（哲学社会科学版）",
+   "date": "2026-07",
+   "authors": [
+    "陆益龙"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal",
+    "article_id": "BJDXXBZXSHKXB2026004016",
+    "source_theme": "各民族共同现代化",
+    "theme_journal": true
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "中国式现代化与中国文化现代转型的历史逻辑",
+   "url": "https://www.ncpssd.cn/Literature/articleinfo?id=WHDXXBZXSHKXB2026004001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1",
+   "source": "武汉大学学报（哲学社会科学版）",
+   "date": "2026-07",
+   "authors": [
+    "傅才武",
+    "齐千里"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "issue": "2026年第4期",
+    "via": "ncpssd_journal",
+    "article_id": "WHDXXBZXSHKXB2026004001",
+    "source_theme": "各民族共同现代化",
+    "theme_journal": true
+   }
   }
  ],
  "statuses": [
@@ -2506,7 +2621,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 1.834691047668457,
+   "elapsed": 2.788439989089966,
    "kind": "journal"
   },
   {
@@ -2522,7 +2637,7 @@
    "ok": true,
    "count": 14,
    "message": "目录解析 14 篇",
-   "elapsed": 0.832561731338501,
+   "elapsed": 0.9483294486999512,
    "kind": "journal"
   },
   {
@@ -2546,7 +2661,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 0.7824254035949707,
+   "elapsed": 1.0985989570617676,
    "kind": "journal"
   },
   {
@@ -2554,7 +2669,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 0.6834030151367188,
+   "elapsed": 0.7961981296539307,
    "kind": "journal"
   },
   {
@@ -2562,7 +2677,7 @@
    "ok": true,
    "count": 17,
    "message": "目录解析 17 篇",
-   "elapsed": 0.9523742198944092,
+   "elapsed": 0.8126723766326904,
    "kind": "journal"
   },
   {
@@ -2570,7 +2685,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 0.43236613273620605,
+   "elapsed": 0.4418652057647705,
    "kind": "journal"
   },
   {
@@ -2578,7 +2693,7 @@
    "ok": true,
    "count": 25,
    "message": "目录解析 25 篇",
-   "elapsed": 0.7242307662963867,
+   "elapsed": 0.9895553588867188,
    "kind": "journal"
   },
   {
@@ -2594,7 +2709,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.3369197845458984,
+   "elapsed": 1.3086144924163818,
    "kind": "project"
   },
   {
@@ -2602,7 +2717,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.7188198566436768,
+   "elapsed": 0.8199360370635986,
    "kind": "project"
   },
   {
@@ -2610,7 +2725,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.6841602325439453,
+   "elapsed": 0.5898773670196533,
    "kind": "project"
   },
   {
@@ -2618,7 +2733,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.38765645027160645,
+   "elapsed": 0.40937352180480957,
    "kind": "project"
   },
   {
@@ -2626,7 +2741,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 12.63596773147583,
+   "elapsed": 2.4940574169158936,
    "kind": "project"
   },
   {
@@ -2634,7 +2749,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.5461392402648926,
+   "elapsed": 2.7179107666015625,
    "kind": "project"
   },
   {
@@ -2642,8 +2757,320 @@
    "ok": true,
    "count": 0,
    "message": "检索 1 页",
-   "elapsed": 2.190007448196411,
+   "elapsed": 2.548976421356201,
    "kind": "project"
+  },
+  {
+   "name": "RSS·American Anthropologist",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/feed/15481433/most-recent",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·American Ethnologist",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/feed/15481425/most-recent",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Current Anthropology",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ca",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Cultural Anthropology",
+   "ok": false,
+   "count": 0,
+   "message": "404 Client Error: Not Found for url: https://journal.culanth.org/index.php/ca/gateway/plugin/WebFeedGatewayPlugin/rss2",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·HAU: Journal of Ethnographic Theory",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=hau",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Anthropological Theory",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=ant",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Annual Review of Anthropology",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.annualreviews.org/action/showFeed?type=etoc&feed=rss&jc=anthro",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Journal of the Royal Anthropological Institute",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/feed/14679655/most-recent",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Critique of Anthropology",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=coa",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Anthropology Today",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/feed/14678322/most-recent",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Social Anthropology/Anthropologie Sociale",
+   "ok": false,
+   "count": 0,
+   "message": "405 Client Error: Not Allowed for url: https://www.berghahnjournals.com/rss/journals/saas",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Ethnic and Racial Studies",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.tandfonline.com/feed/rss/rers20",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Nations and Nationalism",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/feed/14698129/most-recent",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Ethnicities",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=etn",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Journal of Ethnic and Migration Studies",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.tandfonline.com/feed/rss/cjms20",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Asian Ethnicity",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.tandfonline.com/feed/rss/caet20",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Inner Asia",
+   "ok": false,
+   "count": 0,
+   "message": "405 Client Error: Not Allowed for url: https://brill.com/rss/journals/inas",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·The China Journal",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=tcj",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Modern China",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=mcx",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·China Information",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=cin",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Journal of Contemporary China",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.tandfonline.com/feed/rss/cjcc20",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "RSS·Chinese Sociological Review",
+   "ok": false,
+   "count": 0,
+   "message": "403 Client Error: Forbidden for url: https://www.tandfonline.com/feed/rss/mcsa20",
+   "elapsed": 0.0,
+   "kind": "notice"
+  },
+  {
+   "name": "专题期刊·中国社会科学",
+   "ok": true,
+   "count": 0,
+   "message": "目录 11 篇，命中专题 0 篇",
+   "elapsed": 2.107130527496338,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·社会学研究",
+   "ok": true,
+   "count": 1,
+   "message": "目录 10 篇，命中专题 1 篇",
+   "elapsed": 0.47482752799987793,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·历史研究",
+   "ok": true,
+   "count": 0,
+   "message": "目录 10 篇，命中专题 0 篇",
+   "elapsed": 0.7619762420654297,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·政治学研究",
+   "ok": true,
+   "count": 0,
+   "message": "目录 12 篇，命中专题 0 篇",
+   "elapsed": 0.7924022674560547,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·学术月刊",
+   "ok": true,
+   "count": 0,
+   "message": "目录 18 篇，命中专题 0 篇",
+   "elapsed": 0.8018507957458496,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·开放时代",
+   "ok": true,
+   "count": 0,
+   "message": "目录 15 篇，命中专题 0 篇",
+   "elapsed": 0.7465925216674805,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·探索与争鸣",
+   "ok": true,
+   "count": 0,
+   "message": "目录 12 篇，命中专题 0 篇",
+   "elapsed": 1.2168550491333008,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·中国人民大学学报",
+   "ok": true,
+   "count": 1,
+   "message": "目录 14 篇，命中专题 1 篇",
+   "elapsed": 0.4564783573150635,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·北京大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 2,
+   "message": "目录 17 篇，命中专题 2 篇",
+   "elapsed": 0.761284351348877,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·清华大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 18 篇，命中专题 0 篇",
+   "elapsed": 0.8054163455963135,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·复旦学报（社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 19 篇，命中专题 0 篇",
+   "elapsed": 0.7699997425079346,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·浙江大学学报（人文社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 13 篇，命中专题 0 篇",
+   "elapsed": 2.1253204345703125,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·武汉大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 1,
+   "message": "目录 15 篇，命中专题 1 篇",
+   "elapsed": 0.8081269264221191,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·中山大学学报（社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 19 篇，命中专题 0 篇",
+   "elapsed": 0.7775046825408936,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·四川大学学报（哲学社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 21 篇，命中专题 0 篇",
+   "elapsed": 0.7654299736022949,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·兰州大学学报（社会科学版）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 13 篇，命中专题 0 篇",
+   "elapsed": 0.49865293502807617,
+   "kind": "journal"
+  },
+  {
+   "name": "专题期刊·南京大学学报（哲学·人文科学·社会科学）",
+   "ok": true,
+   "count": 0,
+   "message": "目录 13 篇，命中专题 0 篇",
+   "elapsed": 0.7290787696838379,
+   "kind": "journal"
   }
  ]
 }

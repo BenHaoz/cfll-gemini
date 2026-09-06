@@ -58,6 +58,39 @@ def _diag_url(url: str, *, params: dict[str, Any] | None = None, link_regex: str
     return "\n".join(lines)
 
 
+def probe_page(url: str) -> str:
+    """深度探测：脚本地址、内联脚本中的接口地址、文章条目原始 HTML（用于发现数据接口与字段）。"""
+    lines = [f"### PROBE {url}"]
+    try:
+        resp = fetch(url, timeout=25, retries=1)
+    except Exception as exc:  # noqa: BLE001
+        lines.append(f"  !! 请求失败: {str(exc)[:200]}")
+        return "\n".join(lines)
+    html = fix_encoding(resp)
+    soup = soup_of(html)
+    srcs = [s.get("src") for s in soup.find_all("script", src=True)]
+    lines.append("  script src: " + " | ".join(str(x)[:100] for x in srcs[:15]))
+    inline = "\n".join(s.get_text() for s in soup.find_all("script") if not s.get("src"))
+    hits = re.findall(r"""(?:url|ajax|axios|fetch|post|get)\s*[:(]\s*['"`]([^'"`]{4,140})['"`]""", inline, flags=re.I)
+    uniq = []
+    for h in hits:
+        if h not in uniq:
+            uniq.append(h)
+    lines.append("  内联接口候选: " + " | ".join(uniq[:30]))
+    fn = re.findall(r"""function\s+(\w*(?:detail|Detail|article|Article|list|List|search|Search)\w*)\s*\(([^)]*)\)\s*\{(.{0,300})""", inline, flags=re.S)
+    for name, args, body in fn[:6]:
+        lines.append(f"  函数 {name}({args}): {clean(body)[:260]}")
+    n = 0
+    for a in soup.find_all("a", href=True):
+        if a["href"].strip().lower().startswith("javascript") and len(clean(a.get_text())) >= 8:
+            li = a.find_parent(["li", "tr", "div"])
+            lines.append("  条目HTML: " + re.sub(r"\s+", " ", str(li or a))[:700])
+            n += 1
+            if n >= 2:
+                break
+    return "\n".join(lines)
+
+
 def diagnose(settings) -> str:
     src = settings.sources
     out = ["", "================ 数据源诊断 ================"]
@@ -65,10 +98,14 @@ def diagnose(settings) -> str:
         out.append(f"\n## 公告源：{ns['name']}")
         for u in ns.get("urls", []):
             out.append(_diag_url(u, link_regex=ns.get("link_regex", "")))
+    probed = 0
     for j in src.get("journals", []):
         for pg in j.get("toc_pages") or []:
             out.append(f"\n## 期刊目录：{j['name']}")
             out.append(_diag_url(pg["url"]))
+            if probed < 2:
+                out.append(probe_page(pg["url"]))
+                probed += 1
     sk = src.get("skygb", {})
     if sk.get("enabled", True):
         out.append("\n## 国家社科基金项目数据库")

@@ -121,8 +121,43 @@ def probe_page(url: str) -> str:
                 j = txt.find(first_author) if first_author else -1
                 if j != -1:
                     lines.append(f"  详情页正文@作者: {txt[max(0, j - 100): j + 500]!r}")
+                # 详情页内联脚本中的接口地址与请求参数（文章元数据多为 AJAX 加载）
+                inline2 = "\n".join(sc.get_text() for sc in soup_of(h2).find_all("script") if not sc.get("src"))
+                cands = []
+                for mm in re.finditer(r"""(?:url|post|get|axios\.\w+|\$\.\w+)\s*[:(]\s*['"`]([^'"`]{4,140})['"`]""", inline2, flags=re.I):
+                    if mm.group(1) not in cands:
+                        cands.append(mm.group(1))
+                lines.append("  详情页内联接口候选: " + " | ".join(cands[:40]))
+                for mm in list(re.finditer(r"(articleinfo|ArticleInfo|getArticle|articleHandler|literature)\w*", inline2))[:8]:
+                    a0 = max(0, mm.start() - 160)
+                    lines.append("  详情页脚本片段: " + re.sub(r"\s+", " ", inline2[a0: mm.end() + 240]))
+                # 打印含 id 参数的脚本片段
+                mid = re.search(r"id\s*[:=]\s*['\"]?" + re.escape(re.search(r"id=([A-Za-z0-9]+)", detail_url).group(1) if re.search(r"id=([A-Za-z0-9]+)", detail_url) else "XXXX"), inline2)
+                if mid:
+                    a0 = max(0, mid.start() - 400)
+                    lines.append("  详情页脚本@id: " + re.sub(r"\s+", " ", inline2[a0: mid.end() + 400]))
+                break  # 只探测一个 host 即可（m 站脚本更短）
             except Exception as exc:  # noqa: BLE001
                 lines.append(f"  详情页 {host} 失败: {str(exc)[:120]}")
+    # 候选元数据接口直连尝试
+    aid = re.search(r"id=([A-Za-z0-9]+)", detail_url or "")
+    if aid:
+        art_id = aid.group(1)
+        tries = [
+            ("POST", "https://www.ncpssd.cn/Literature/articleinfoHandler", {"id": art_id, "type": "journalArticle"}),
+            ("POST", "https://www.ncpssd.cn/Literature/articleHandler", {"id": art_id, "type": "journalArticle"}),
+            ("POST", "https://www.ncpssd.cn/Literature/getArticleInfo", {"id": art_id, "type": "journalArticle"}),
+            ("GET", "https://www.ncpssd.cn/Literature/getArticleInfo", {"id": art_id, "type": "journalArticle"}),
+            ("POST", "https://www.ncpssd.cn/Literature/articleinfo", {"id": art_id, "type": "journalArticle"}),
+        ]
+        for method, u, params in tries:
+            try:
+                r4 = fetch(u, method=method, data=params if method == "POST" else None, params=params if method == "GET" else None,
+                           timeout=20, retries=0, headers={"X-Requested-With": "XMLHttpRequest", "Referer": "https://www.ncpssd.cn/"})
+                body = fix_encoding(r4)
+                lines.append(f"  接口尝试 {method} {u}: status={r4.status_code} len={len(body)} ctype={r4.headers.get('content-type','')[:40]} head={body[:300]!r}")
+            except Exception as exc:  # noqa: BLE001
+                lines.append(f"  接口尝试 {method} {u}: 失败 {str(exc)[:80]}")
     # 按年/期切换探测
     m = re.search(r"gch=(\w+)", url)
     if m:

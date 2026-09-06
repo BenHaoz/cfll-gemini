@@ -2,7 +2,8 @@ versions:
   cssci: CSSCI 来源期刊目录（2025-2026），民族学与文化学：来源15种、扩展版15种；2025年9月发布
   pku: 北京大学《中文核心期刊要目总览》2023年版（2024年4月出版），民族学类（C95）
   ami: 中国人文社会科学期刊AMI综合评价报告（2022年）
-notes: 等级依据搜索摘要整理，unknown 表示未能核实；gch 为国家哲学社会科学文献中心期刊页编号，candidate_gch 待核验。统计口径：tier 为 CSSCI来源/CSSCI扩展/北大核心 之一者计入“核心期刊”。
+notes: 等级依据搜索摘要整理，unknown 表示未能核实；gch 为国家哲学社会科学文献中心期刊页编号，candidate_gch 待核验。统计口径：tier 为 CSSCI来源/CSSCI扩展/北大核心 之一者计入“核心期刊”。 2026-09-06 核验：83491X=西北民族研究；81328X=中央社会主义学院学报、87657A=百色学院学报、82910X=民族艺术研究（均非目标刊，已弃用）；60145X
+  为中国藏学藏文版。
 journals:
 - name: 民族研究
   tier: CSSCI来源
@@ -10,7 +11,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 80294X
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -22,7 +23,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 96982A
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://www.muc.edu.cn/info/1052/42838.htm
@@ -45,8 +46,8 @@ journals:
   pku_core: false
   frequency: 双月刊
   gch: ''
-  gch_confidence: low
-  candidate_gch: 81328X
+  gch_confidence: 待查（候选编号经核验为其他期刊）
+  candidate_gch: ''
   evidence:
   - https://news.muc.edu.cn/info/1011/54214.htm
   - https://www.neac.gov.cn/seac/xwzx/202509/1182887.shtml
@@ -56,8 +57,8 @@ journals:
   cssci: 扩展
   pku_core: true
   frequency: 双月刊
-  gch: ''
-  gch_confidence: low
+  gch: 83491X
+  gch_confidence: high（ISSN 1001-5558 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -69,8 +70,8 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: ''
-  gch_confidence: low
-  candidate_gch: 87657A
+  gch_confidence: 待查（候选编号经核验为其他期刊）
+  candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -81,7 +82,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 91489X
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -93,7 +94,7 @@ journals:
   pku_core: true
   frequency: 季刊
   gch: 82637X
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -104,7 +105,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 96988A
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -115,8 +116,8 @@ journals:
   pku_core: unknown
   frequency: 月刊
   gch: ''
-  gch_confidence: low
-  candidate_gch: 83491X
+  gch_confidence: 待查
+  candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
   - https://m.ncpssd.cn/journal/details?gch=83491X&years=2025&num=4&nav=1&langType=1
@@ -126,7 +127,7 @@ journals:
   pku_core: unknown
   frequency: 月刊
   gch: 81468A
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -150,7 +151,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 82413A
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -162,7 +163,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 91398X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -174,7 +175,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 91327A
-  gch_confidence: low
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -185,7 +186,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 80350A
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -196,16 +197,16 @@ journals:
   pku_core: unknown
   frequency: 季刊
   gch: 82820A
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence: []
-- name: 中国藏学
-  tier: CSSCI来源
+- name: 中国藏学（藏文版）
+  tier: 待核实
   cssci: 来源
   pku_core: unknown
   frequency: 季刊
   gch: 60145X
-  gch_confidence: medium
+  gch_confidence: high（60145X 为藏文版，中文版编号待查）
   candidate_gch: ''
   evidence:
   - https://m.sohu.com/a/1008249153_121106994/
@@ -216,7 +217,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 97843X
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -237,7 +238,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 89433X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -248,7 +249,7 @@ journals:
   pku_core: false
   frequency: 双月刊
   gch: 82545X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -259,7 +260,7 @@ journals:
   pku_core: true
   frequency: 季刊
   gch: 83005X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -270,7 +271,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 83397B
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -281,7 +282,7 @@ journals:
   pku_core: true
   frequency: 双月刊
   gch: 91381A
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
@@ -302,7 +303,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 91439X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://www.ncpssd.cn/journal/details?gch=91439X
@@ -312,7 +313,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 80601X
-  gch_confidence: medium
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://www.ncpssd.cn/journal/details?gch=80601X
@@ -323,7 +324,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: 85505X
-  gch_confidence: high
+  gch_confidence: high（页面刊名/ISSN 核验）
   candidate_gch: ''
   evidence:
   - https://m.ncpssd.cn/journal/details?gch=85505X&nav=1&langType=1
@@ -333,7 +334,7 @@ journals:
   pku_core: unknown
   frequency: 双月刊
   gch: ''
-  gch_confidence: low
-  candidate_gch: 82910X
+  gch_confidence: 待查（候选编号经核验为其他期刊）
+  candidate_gch: ''
   evidence:
   - https://www.ncpssd.cn/journal/details?gch=82910X

@@ -24,8 +24,8 @@ def _raw_indicators(inst: dict[str, Any], stats: InstStats | None, projects: lis
     major = [p for p in own_projects if any(k in (p.get("type") or "") + (p.get("funder") or "") for k in ("重大", "专项"))]
     talents = inst.get("talents")
     return {
-        "ethnology_phd": 1.0 if inst.get("ethnology_phd") else 0.0,
-        "community_phd": 1.0 if inst.get("community_phd") else 0.0,
+        "ethnology_phd": 1.0 if inst.get("ethnology_phd") is True else 0.0,
+        "community_phd": 1.0 if inst.get("community_phd") is True else 0.0,
         "national_bases": float(len(nat)),
         "other_bases": float(len(bases) - len(nat) + len(inst.get("other_bases") or [])),
         "nsf_projects": float(len(own_projects)) if projects else None,

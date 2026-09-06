@@ -155,3 +155,16 @@ ethnology_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 各�
 
 # 广西相关性标签
 guangxi_keywords: [广西, 桂, 南宁, 桂林, 柳州, 百色, 河池, 崇左, 防城港, 北海, 钦州, 玉林, 贺州, 梧州, 来宾, 贵港, 南岭, 壮族, 瑶族, 京族, 仫佬, 毛南, 左右江, 红水河, 北部湾, 中越边境, 花山, 铜鼓, 刘三姐, 三月三, 壮锦, 东兴, 凭祥, 平陆运河, 桂西, 桂北, 壮侗, 骆越, 西瓯, 东盟, 东南亚, 越南]
+
+# 专题（跨方向标签）：命中即打上 themes 标签，用于专题板块
+themes:
+  各民族共同现代化:
+    description: 各民族共同走向社会主义现代化、民族地区现代化与共同富裕、中国式现代化的民族维度，以及国外少数民族/土著群体现代化与发展研究。
+    keywords_cn: [共同现代化, 中国式现代化, 民族地区现代化, 边疆现代化, 现代化与民族, 共同富裕, 民族地区高质量发展, 民族地区经济, 兴边富民, 乡村振兴与民族, 民族地区乡村振兴, 人口较少民族, 整体性脱贫, 区域协调发展与民族, 民族地区新型城镇化, 民族地区产业, 各民族共同, 现代化]
+    keywords_en: [modernization, modernisation, development and ethnic, indigenous development, minority development, rural transformation, urbanization, ethnic minorities in China, common prosperity, poverty alleviation, Xinjiang, Tibet, Inner Mongolia, Yunnan, Guangxi, borderland]
+    require_ethnic_context_en: true   # 英文条目须同时含民族/族群/土著类词
+    ethnic_context_en: [ethnic, minority, minorities, indigenous, nationalit, tribal, aboriginal, China, Chinese]
+  国外理论前沿:
+    description: 国外民族学人类学的理论与方法前沿（本体论转向、多物种民族志、基础设施人类学、去殖民化、数字人类学、族群与民族主义理论等）。
+    keywords_en: [ontolog, multispecies, more-than-human, decolon, infrastructure, ethnograph, theory, anthropocene, kinship, ritual, cosmopolit, nationalism, ethnicity, indigeneity, sovereignty, care, affect, temporality, value, exchange, personhood, digital anthropology, posthuman]
+    keywords_cn: [人类学理论, 本体论转向, 多物种, 去殖民, 后人类, 基础设施人类学, 数字人类学, 海外民族志, 世界人类学]

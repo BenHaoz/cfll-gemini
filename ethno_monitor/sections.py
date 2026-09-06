@@ -132,8 +132,8 @@ def build_ranking_section(today: date, pubs_meta: dict[str, Any]) -> str:
     stats = pubs_meta.get("stats") or {}
     rows, meta = compute_ranking(institutions, stats, load_projects(), rank_cfg, have_articles=bool(stats))
     cats = list(rank_cfg.get("categories", {}).keys())
-    L.append("方法：参照软科"中国最好学科排名"的指标体系，设人才培养、平台基地、科研项目、学术论文、高端人才五类指标，各指标按参评单位最大值归一化为 0–100 分后加权汇总；权重与指标定义见 `config/ranking.yaml`，可自行调整。"
-             f"本期可用类别：{'、'.join(meta['categories_used'])}；数据缺失的指标不计分并在下表以"—"标示。")
+    L.append("方法：参照软科“中国最好学科排名”的指标体系，设人才培养、平台基地、科研项目、学术论文、高端人才五类指标，各指标按参评单位最大值归一化为 0–100 分后加权汇总；权重与指标定义见 `config/ranking.yaml`，可自行调整。"
+             f"本期可用类别：{'、'.join(meta['categories_used'])}；数据缺失的指标不计分并在下表以“—”标示。")
     L.append("")
     L.append("| 排名 | 单位 | 综合得分 | " + " | ".join(f"{c}({rank_cfg['categories'][c]['weight']})" for c in cats) + " | 民族学博士点 | 共同体学博士点 |")
     L.append("|" + "---|" * (len(cats) + 5))
@@ -141,11 +141,11 @@ def build_ranking_section(today: date, pubs_meta: dict[str, Any]) -> str:
     for i, r in enumerate(rows, 1):
         inst = inst_map.get(r.name, {})
         L.append(f"| {i} | {r.name} | {r.total:.1f} | " + " | ".join(_fmt(r.categories.get(c, float('nan'))) for c in cats)
-                 + f" | {'✔' if inst.get('ethnology_phd') else '—'} | {'✔' if inst.get('community_phd') else '—'} |")
+                 + f" | {'✔' if inst.get('ethnology_phd') is True else ('?' if inst.get('ethnology_phd') == 'unknown' else '—')} | {'✔' if inst.get('community_phd') is True else ('?' if inst.get('community_phd') == 'unknown' else '—')} |")
     L.append("")
     missing_inds = [k for k, v in meta["indicators_available"].items() if not v]
     if missing_inds:
-        L.append(f"> 暂缺数据的指标：{'、'.join(missing_inds)}。指标口径与来源标注见 `config/ranking.yaml`；单位属性（博士点、基地、人才）来自 `config/institutions.yaml`，均附来源链接，欢迎校正。")
+        L.append(f"> “?”表示博士点信息未能核实（按无计分）。暂缺数据的指标：{'、'.join(missing_inds)}。指标口径与来源标注见 `config/ranking.yaml`；单位属性（博士点、基地、人才）来自 `config/institutions.yaml`，均附来源链接，欢迎校正。")
         L.append("")
     return "\n".join(L)
 

@@ -52,10 +52,11 @@ META_API = "https://www.ncpssd.cn/articleinfoHandler/getjournalarticletable"
 
 def fetch_article_meta(art_id: str) -> dict[str, Any]:
     """文献中心文章元数据接口（详情页 articleinfo.js 所用）：返回 data 字典，含 showwriter / showorgan / titlec / mediac 等。"""
+    from urllib.parse import quote
     body = {"lngid": art_id, "type": "中文期刊文章", "pageType": 1}
+    referer = f"https://www.ncpssd.cn/Literature/articleinfo?id={art_id}&type=journalArticle&typename={quote('中文期刊文章')}&nav=1&langType=1"
     resp = fetch(META_API, method="POST", json=body, timeout=25, retries=1,
-                 headers={"Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
-                          "Referer": f"https://www.ncpssd.cn/Literature/articleinfo?id={art_id}&type=journalArticle&typename=中文期刊文章&nav=1&langType=1"})
+                 headers={"Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest", "Referer": referer})
     data = resp.json()
     d = data.get("data") if isinstance(data, dict) else None
     return d if isinstance(d, dict) else {}

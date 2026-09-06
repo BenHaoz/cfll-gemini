@@ -1678,6 +1678,13 @@
    "detail_ok": 1271,
    "detail_fail": 29,
    "articles": 4407
+  },
+  {
+   "date": "2026-09-06",
+   "issue_pages_used": 0,
+   "detail_ok": 396,
+   "detail_fail": 4,
+   "articles": 4407
   }
  ]
 }

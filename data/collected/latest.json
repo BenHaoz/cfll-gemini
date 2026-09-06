@@ -2506,7 +2506,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 2.1318345069885254,
+   "elapsed": 1.834691047668457,
    "kind": "journal"
   },
   {
@@ -2522,7 +2522,7 @@
    "ok": true,
    "count": 14,
    "message": "目录解析 14 篇",
-   "elapsed": 0.9729492664337158,
+   "elapsed": 0.832561731338501,
    "kind": "journal"
   },
   {
@@ -2546,7 +2546,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 2.8438327312469482,
+   "elapsed": 0.7824254035949707,
    "kind": "journal"
   },
   {
@@ -2554,7 +2554,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 0.736508846282959,
+   "elapsed": 0.6834030151367188,
    "kind": "journal"
   },
   {
@@ -2562,7 +2562,7 @@
    "ok": true,
    "count": 17,
    "message": "目录解析 17 篇",
-   "elapsed": 0.7756736278533936,
+   "elapsed": 0.9523742198944092,
    "kind": "journal"
   },
   {
@@ -2570,7 +2570,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 0.4634697437286377,
+   "elapsed": 0.43236613273620605,
    "kind": "journal"
   },
   {
@@ -2578,7 +2578,7 @@
    "ok": true,
    "count": 25,
    "message": "目录解析 25 篇",
-   "elapsed": 0.9821107387542725,
+   "elapsed": 0.7242307662963867,
    "kind": "journal"
   },
   {
@@ -2594,7 +2594,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.4172124862670898,
+   "elapsed": 1.3369197845458984,
    "kind": "project"
   },
   {
@@ -2602,7 +2602,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.695349931716919,
+   "elapsed": 0.7188198566436768,
    "kind": "project"
   },
   {
@@ -2610,7 +2610,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.7583334445953369,
+   "elapsed": 0.6841602325439453,
    "kind": "project"
   },
   {
@@ -2618,7 +2618,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.3679957389831543,
+   "elapsed": 0.38765645027160645,
    "kind": "project"
   },
   {
@@ -2626,7 +2626,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 3.054455041885376,
+   "elapsed": 12.63596773147583,
    "kind": "project"
   },
   {
@@ -2634,7 +2634,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 2.6169488430023193,
+   "elapsed": 1.5461392402648926,
    "kind": "project"
   },
   {
@@ -2642,7 +2642,7 @@
    "ok": true,
    "count": 0,
    "message": "检索 1 页",
-   "elapsed": 4.631903171539307,
+   "elapsed": 2.190007448196411,
    "kind": "project"
   }
  ]

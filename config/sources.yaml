@@ -167,11 +167,6 @@ drilldown:
   max_pages: 12
   row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 各民族, 少数民族, 民族地区, 民族学]
 
-# RSS / Atom 订阅（可选，任何支持 RSS 的学术资讯站均可加入）
-rss_feeds: []
-#  - name: 示例
-#    url: https://example.com/feed.xml
-#    kind: notice
 
 # ---------------------------------------------------------------------------
 # 三、LLM 联网检索兜底（Gemini google_search grounding / Claude web_search）
@@ -189,3 +184,262 @@ llm_research:
     - "国家民委民族研究项目 {year}年度 课题 立项名单"
     - "{year}年 教育部哲学社会科学研究重大课题攻关项目 立项 民族"
     - "{year}年 国家社科基金 冷门绝学 后期资助 立项 民族 人类学"
+
+# ---------------------------------------------------------------------------
+# 四、专题期刊（顶刊 / 985 高校学报）：只保留命中专题词的文章（source_theme）；编号置信度见 gch_confidence，待核验
+# ---------------------------------------------------------------------------
+theme_journals:
+  - name: "中国社会科学"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81908X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "社会学研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80772X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "历史研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81900X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "政治学研究"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=82131X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "学术月刊"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=97001X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "开放时代"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81581X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "探索与争鸣"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=97673X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "中国人民大学学报"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=96478X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "北京大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81274X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "清华大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81449X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "复旦学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81270X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "浙江大学学报（人文社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81269X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "武汉大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=91357A&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "中山大学学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "low"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=81463X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "四川大学学报（哲学社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80165X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "兰州大学学报（社会科学版）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "medium"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=80756X&nav=1&langType=1"
+        parser: ncpssd_journal
+  - name: "南京大学学报（哲学·人文科学·社会科学）"
+    source_theme: 各民族共同现代化
+    gch_confidence: "high"
+    frequency: "双月刊"
+    toc_pages:
+      - url: "https://m.ncpssd.cn/journal/details?gch=83412X&nav=1&langType=1"
+        parser: ncpssd_journal
+
+# 国外期刊 RSS（在 GitHub 运行器上抓取；theory 类全部保留并打“国外理论前沿”标签，ethnic_china 类按专题词过滤）
+rss_feeds:
+  - name: "American Anthropologist"
+    url: "https://onlinelibrary.wiley.com/feed/15481433/most-recent"
+    publisher: "Wiley"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "American Ethnologist"
+    url: "https://onlinelibrary.wiley.com/feed/15481425/most-recent"
+    publisher: "Wiley"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Current Anthropology"
+    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ca"
+    publisher: "University of Chicago Press"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Cultural Anthropology"
+    url: "https://journal.culanth.org/index.php/ca/gateway/plugin/WebFeedGatewayPlugin/rss2"
+    publisher: "Society for Cultural Anthropology"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "HAU: Journal of Ethnographic Theory"
+    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=hau"
+    publisher: "University of Chicago Press"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Anthropological Theory"
+    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=ant"
+    publisher: "SAGE"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Annual Review of Anthropology"
+    url: "https://www.annualreviews.org/action/showFeed?type=etoc&feed=rss&jc=anthro"
+    publisher: "Annual Reviews"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Journal of the Royal Anthropological Institute"
+    url: "https://onlinelibrary.wiley.com/feed/14679655/most-recent"
+    publisher: "Wiley"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Critique of Anthropology"
+    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=coa"
+    publisher: "SAGE"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Anthropology Today"
+    url: "https://onlinelibrary.wiley.com/feed/14678322/most-recent"
+    publisher: "Wiley"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Social Anthropology/Anthropologie Sociale"
+    url: "https://www.berghahnjournals.com/rss/journals/saas"
+    publisher: "Berghahn Journals"
+    kind: paper
+    lang: en
+    source_theme: 国外理论前沿
+  - name: "Ethnic and Racial Studies"
+    url: "https://www.tandfonline.com/feed/rss/rers20"
+    publisher: "Taylor & Francis"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Nations and Nationalism"
+    url: "https://onlinelibrary.wiley.com/feed/14698129/most-recent"
+    publisher: "Wiley"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Ethnicities"
+    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=etn"
+    publisher: "SAGE"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Journal of Ethnic and Migration Studies"
+    url: "https://www.tandfonline.com/feed/rss/cjms20"
+    publisher: "Taylor & Francis"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Asian Ethnicity"
+    url: "https://www.tandfonline.com/feed/rss/caet20"
+    publisher: "Taylor & Francis"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Inner Asia"
+    url: "https://brill.com/rss/journals/inas"
+    publisher: "Brill"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "The China Journal"
+    url: "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=tcj"
+    publisher: "University of Chicago Press"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Modern China"
+    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=mcx"
+    publisher: "SAGE"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "China Information"
+    url: "https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=cin"
+    publisher: "SAGE"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Journal of Contemporary China"
+    url: "https://www.tandfonline.com/feed/rss/cjcc20"
+    publisher: "Taylor & Francis"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]
+  - name: "Chinese Sociological Review"
+    url: "https://www.tandfonline.com/feed/rss/mcsa20"
+    publisher: "Taylor & Francis"
+    kind: paper
+    lang: en
+    theme_filter: [各民族共同现代化, 国外理论前沿]

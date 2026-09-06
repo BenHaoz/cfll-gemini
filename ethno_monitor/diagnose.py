@@ -97,7 +97,7 @@ def probe_page(url: str) -> str:
                 break
     # 文献详情页：看作者/机构字段如何呈现
     if detail_url:
-        for host in ("https://m.ncpssd.cn", "https://www.ncpssd.cn"):
+        for host in ("https://www.ncpssd.cn", "https://m.ncpssd.cn"):
             try:
                 r2 = fetch(host + detail_url, timeout=25, retries=1)
                 h2 = fix_encoding(r2)
@@ -136,7 +136,27 @@ def probe_page(url: str) -> str:
                 if mid:
                     a0 = max(0, mid.start() - 400)
                     lines.append("  详情页脚本@id: " + re.sub(r"\s+", " ", inline2[a0: mid.end() + 400]))
-                break  # 只探测一个 host 即可（m 站脚本更短）
+                # 外链脚本中的接口地址（文章元数据接口多在外部 JS 中定义）
+                if host.startswith("https://www"):
+                    from urllib.parse import urljoin
+                    srcs2 = [urljoin(host + detail_url, sc["src"]) for sc in soup_of(h2).find_all("script", src=True)]
+                    found: dict[str, str] = {}
+                    for su in srcs2[:14]:
+                        if "ncpssd.cn" not in su and not su.startswith("/"):
+                            continue
+                        try:
+                            js = fix_encoding(fetch(su, timeout=20, retries=0))
+                        except Exception:  # noqa: BLE001
+                            continue
+                        for mm in re.finditer(r"(/(?:Literature|journal|article|literature)/[A-Za-z0-9_/]+)", js):
+                            ep = mm.group(1)
+                            if ep not in found:
+                                a0 = max(0, mm.start() - 120)
+                                found[ep] = f"{su.rsplit('/', 1)[-1]}: " + re.sub(r"\s+", " ", js[a0: mm.end() + 160])
+                    for ep, ctx in list(found.items())[:40]:
+                        lines.append(f"  外链脚本接口 {ep} <= {ctx[:320]}")
+                    continue
+                break  # m 站探测完成后继续探测 www 站的外链脚本
             except Exception as exc:  # noqa: BLE001
                 lines.append(f"  详情页 {host} 失败: {str(exc)[:120]}")
     # 候选元数据接口直连尝试
@@ -224,8 +244,14 @@ def diagnose(settings) -> str:
         import yaml
         from .config import CONFIG_DIR
         core = yaml.safe_load(open(CONFIG_DIR / "journals_core.yaml", encoding="utf-8")) or {}
-        out.append("\n## 核心期刊编号核验（journals_core.yaml）")
-        for j in core.get("journals", []):
+        out.append("\n## 核心期刊编号核验（journals_core.yaml + theme_journals）")
+        to_check = list(core.get("journals", []))
+        for tj in src.get("theme_journals", []) or []:
+            for pg in tj.get("toc_pages") or []:
+                mm = re.search(r"gch=(\w+)", pg["url"])
+                if mm:
+                    to_check.append({"name": f"[专题]{tj['name']}", "gch": mm.group(1)})
+        for j in to_check:
             for code, kind in ((j.get("gch"), "gch"), (j.get("candidate_gch"), "candidate")):
                 if not code:
                     continue

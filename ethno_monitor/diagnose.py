@@ -172,6 +172,24 @@ def probe_page(url: str) -> str:
                                 found[ep] = f"{su.rsplit('/', 1)[-1]}: " + re.sub(r"\s+", " ", js[a0: mm.end() + 160])
                     for ep, ctx in list(found.items())[:40]:
                         lines.append(f"  外链脚本接口 {ep} <= {ctx[:320]}")
+                    try:
+                        js = fix_encoding(fetch("https://www.ncpssd.cn/js/web/Literature/articleinfo.js", timeout=20, retries=0))
+                        handlers = sorted({m.group(1) for m in re.finditer(r"""['"]([^'"\s]*Handler[^'"\s]*)['"]""", js)})
+                        lines.append("  articleinfo.js Handler字串: " + " | ".join(handlers[:40]))
+                        urls = sorted({m.group(1) for m in re.finditer(r"""url\s*:\s*['"]([^'"]+)['"]""", js)})
+                        lines.append("  articleinfo.js url: " + " | ".join(urls[:40]))
+                        calls = [re.sub(r"\s+", " ", js[max(0, m.start() - 200): m.end() + 500]) for m in re.finditer(r"""(?:\$\.(?:ajax|post|get)|axios\.(?:post|get)|axios)\s*\(""", js)]
+                        for c in calls[:6]:
+                            lines.append("  articleinfo.js 调用: " + c[:700])
+                        m0 = re.search(r"jsons\s*=", js) or re.search(r"jsons\[0\]", js)
+                        if m0:
+                            lines.append("  articleinfo.js jsons上下文: " + re.sub(r"\s+", " ", js[max(0, m0.start() - 900): m0.end() + 300]))
+                        for kw in ("organ", "unit", "dw", "affili", "机构", "单位"):
+                            i2 = js.find(kw)
+                            if i2 != -1:
+                                lines.append(f"  articleinfo.js @{kw}: " + re.sub(r"\s+", " ", js[max(0, i2 - 300): i2 + 300]))
+                    except Exception as exc:  # noqa: BLE001
+                        lines.append(f"  articleinfo.js 抓取失败: {str(exc)[:80]}")
                     continue
                 break  # m 站探测完成后继续探测 www 站的外链脚本
             except Exception as exc:  # noqa: BLE001
@@ -253,6 +271,15 @@ def diagnose(settings) -> str:
                 hid = [(i.get("name"), i.get("value")) for i in f.find_all("input", type="hidden")]
                 if hid:
                     out.append(f"  表单隐藏字段: {hid[:10]}")
+            for combo in ({"xktype": "民族问题研究", "lxtime": "2024"}, {"xktype": "0", "lxtime": "2024"}, {"xktype": "民族问题研究", "lxtime": "0"}, {"xktype": "民族问题研究"}):
+                try:
+                    rc = fetch(sk["url"], params=dict(params, **combo), timeout=25, retries=0)
+                    spc = soup_of(fix_encoding(rc))
+                    rowsc = [tr for tr in spc.find_all("tr") if len(tr.find_all("td")) >= 6]
+                    first = clean(rowsc[1].get_text(" "))[:120] if len(rowsc) > 1 else ""
+                    out.append(f"  组合 {combo}: 字节={len(rc.content)} 数据行={len(rowsc)} 首行={first!r}")
+                except Exception as exc:  # noqa: BLE001
+                    out.append(f"  组合 {combo}: 失败 {str(exc)[:80]}")
             r2 = fetch(sk["url"], params=dict(params_prev, p=2), timeout=25, retries=1)
             sp2 = soup_of(fix_encoding(r2))
             rows2 = [tr for tr in sp2.find_all("tr") if len(tr.find_all("td")) >= 6]

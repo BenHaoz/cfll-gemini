@@ -38,3 +38,9 @@ def test_compute_ranking_handles_missing_indicators():
     assert rows[0].name == "A大学" and rows[0].total > rows[1].total
     assert meta["indicators_available"]["nsf_projects"] is False and "科研项目" not in meta["categories_used"]
     assert "senior_talents" in rows[0].missing
+
+
+def test_split_organ():
+    from ethno_monitor.harvest import split_organ
+    assert split_organ("[1]中央民族大学民族学与社会学学院;[2]广西民族大学") == ["中央民族大学民族学与社会学学院", "广西民族大学"]
+    assert split_organ("[1]不详") == []

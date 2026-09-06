@@ -158,6 +158,9 @@ skygb:
     szdq: 0
     ssxt: ""
   max_pages: 5
+  max_pages_harvest: 40
+  disciplines: [民族学, 民族问题研究]   # 2024 年起学科名疑改为“民族学”，两者都查
+  page_param: p
   # 下钻时用于判定"民族学相关"的名单行关键词
   row_keywords: [民族, 铸牢, 共同体, 人类学, 边疆, 族群, 民族学]
 

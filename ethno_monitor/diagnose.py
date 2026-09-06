@@ -271,7 +271,8 @@ def diagnose(settings) -> str:
                 hid = [(i.get("name"), i.get("value")) for i in f.find_all("input", type="hidden")]
                 if hid:
                     out.append(f"  表单隐藏字段: {hid[:10]}")
-            for combo in ({"xktype": "民族问题研究", "lxtime": "2024"}, {"xktype": "0", "lxtime": "2024"}, {"xktype": "民族问题研究", "lxtime": "0"}, {"xktype": "民族问题研究"}):
+            for combo in ({"xktype": "民族学", "lxtime": "2024"}, {"xktype": "民族学", "lxtime": "2025"}, {"xktype": "民族学", "lxtime": "2026"},
+                          {"xktype": "民族学", "lxtime": "2025", "p": "2"}, {"xktype": "民族学", "lxtime": "2025", "page": "2"}, {"xktype": "民族学", "lxtime": "2025", "pageNum": "2"}):
                 try:
                     rc = fetch(sk["url"], params=dict(params, **combo), timeout=25, retries=0)
                     spc = soup_of(fix_encoding(rc))

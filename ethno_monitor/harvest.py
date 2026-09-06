@@ -47,6 +47,25 @@ def issue_url(gch: str, year: int, num: int) -> str:
     return f"https://m.ncpssd.cn/journal/details?gch={gch}&years={year}&num={num}&nav=1&langType=1"
 
 
+META_API = "https://www.ncpssd.cn/articleinfoHandler/getjournalarticletable"
+
+
+def fetch_article_meta(art_id: str) -> dict[str, Any]:
+    """文献中心文章元数据接口（详情页 articleinfo.js 所用）：返回 data 字典，含 showwriter / showorgan / titlec / mediac 等。"""
+    body = {"lngid": art_id, "type": "中文期刊文章", "pageType": 1}
+    resp = fetch(META_API, method="POST", json=body, timeout=25, retries=1,
+                 headers={"Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
+                          "Referer": f"https://www.ncpssd.cn/Literature/articleinfo?id={art_id}&type=journalArticle&typename=中文期刊文章&nav=1&langType=1"})
+    data = resp.json()
+    d = data.get("data") if isinstance(data, dict) else None
+    return d if isinstance(d, dict) else {}
+
+
+def split_organ(showorgan: str) -> list[str]:
+    parts = [re.sub(r"^\[\d+\]\s*", "", x).strip() for x in re.split(r"[;；]", showorgan or "") if x.strip()]
+    return [p for p in parts if p and p != "不详"][:10]
+
+
 def parse_detail_affiliations(html: str) -> list[str]:
     """从文献详情页抽取作者单位：优先结构化标签，其次 [n] 单位 形式。"""
     soup = soup_of(html)
@@ -168,31 +187,33 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
                 log_rows.append(f"{j['name']} {y}年第{num}期: {len(items)} 篇（新增 {added}）")
                 time.sleep(sleep_s)
 
-    # 2) 详情页：补作者单位（优先近期、未处理的）
-    pending = [a for a in arts.values() if not a.affiliations and a.url and "articleinfo" in a.url and not a.institutions
-               and a.year in years and not (a.authors == [])]
+    # 2) 元数据接口：补作者单位（优先近期、未处理的）
+    pending = [a for a in arts.values() if not a.affiliations and a.url and "articleinfo?id=" in a.url and a.year in years]
     pending.sort(key=lambda a: (-a.year, -a.issue))
     detail_ok = detail_fail = 0
     for a in pending:
         if detail_budget <= 0:
             break
         detail_budget -= 1
-        try:
-            html = fix_encoding(fetch(a.url.replace("https://www.ncpssd.cn", "https://m.ncpssd.cn"), timeout=25, retries=1))
-            affs = parse_detail_affiliations(html)
-            if not affs:
-                html2 = fix_encoding(fetch(a.url, timeout=25, retries=1))
-                affs = parse_detail_affiliations(html2)
-        except Exception as exc:  # noqa: BLE001
-            log.warning("detail %s failed: %s", a.url, exc)
-            detail_fail += 1
+        m_id = re.search(r"id=([A-Za-z0-9]+)", a.url)
+        if not m_id:
             continue
+        try:
+            meta = fetch_article_meta(m_id.group(1))
+        except Exception as exc:  # noqa: BLE001
+            log.warning("meta %s failed: %s", a.url, exc)
+            detail_fail += 1
+            time.sleep(sleep_s * 2)
+            continue
+        affs = split_organ(str(meta.get("showorgan") or ""))
+        if not a.authors and meta.get("showwriter"):
+            a.authors = [re.sub(r"\[\d+\]", "", x).strip() for x in re.split(r"[;；]", str(meta["showwriter"])) if x.strip()][:8]
         if affs:
             a.affiliations = affs
             a.institutions = matcher.match_all(affs)
             detail_ok += 1
         else:
-            a.affiliations = ["(未解析)"]
+            a.affiliations = ["(未解析)"] if meta else ["(接口无数据)"]
             detail_fail += 1
         time.sleep(sleep_s)
 

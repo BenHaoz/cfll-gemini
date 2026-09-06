@@ -27,8 +27,9 @@ def _abstract(inv: dict[str, list[int]] | None) -> str:
     return " ".join(pos[i] for i in sorted(pos))[:1500]
 
 
-def _openalex_items(params: dict[str, Any], *, source_name: str, source_theme: str, per_page: int = 50) -> list[Item]:
-    params = dict(params, **{"per-page": per_page, "mailto": MAILTO, "sort": "publication_date:desc"})
+def _openalex_items(params: dict[str, Any], *, source_name: str, source_theme: str, per_page: int = 50,
+                    sort: str = "publication_date:desc") -> list[Item]:
+    params = dict(params, **{"per-page": per_page, "mailto": MAILTO, "sort": sort})
     data = fetch(OPENALEX, params=params, timeout=40, retries=1, headers={"Accept": "application/json"}).json()
     items: list[Item] = []
     for w in data.get("results", []):
@@ -115,8 +116,12 @@ def collect_foreign_topic(q: dict[str, Any], *, lookback_days: int, today: date 
     since = (today - timedelta(days=lookback_days)).isoformat()
     t0 = time.time()
     try:
-        params = {"search": q["search"], "filter": f"from_publication_date:{since},type:article,language:en"}
-        items = _openalex_items(params, source_name=q["name"], source_theme=q.get("source_theme", ""), per_page=int(q.get("max", 30)))
+        # 只检索题名+摘要，限定社会科学域（domain 2），排除超前日期的预印/占位记录
+        until = (today + timedelta(days=7)).isoformat()
+        params = {"filter": f"title_and_abstract.search:{q['search']},from_publication_date:{since},to_publication_date:{until},"
+                            f"type:article,language:en,primary_topic.domain.id:{q.get('domain', 2)}"}
+        items = _openalex_items(params, source_name=q["name"], source_theme=q.get("source_theme", ""), per_page=int(q.get("max", 30)),
+                                sort=q.get("sort", "relevance_score:desc"))
     except Exception as exc:  # noqa: BLE001
         return [], SourceStatus(name=f"国外主题检索·{q['name']}", ok=False, message=str(exc)[:150], elapsed=time.time() - t0, kind="journal")
     return items, SourceStatus(name=f"国外主题检索·{q['name']}", ok=True, count=len(items), message=f"openalex 近 {lookback_days} 天 {len(items)} 篇",

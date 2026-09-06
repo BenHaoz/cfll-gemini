@@ -394,14 +394,14 @@ foreign_journals:
 # OpenAlex 主题检索式（跨期刊）：国外少数民族/土著现代化与发展研究、中国民族问题研究
 foreign_topics:
   - name: 少数民族与现代化（国外）
-    search: "(ethnic minorities OR indigenous peoples) AND (modernization OR development OR urbanization OR poverty)"
+    search: '("ethnic minority" OR "ethnic minorities" OR "indigenous peoples" OR "indigenous communities") AND (modernization OR modernisation OR "rural development" OR urbanization OR "poverty alleviation" OR "common prosperity")'
     source_theme: 各民族共同现代化
     max: 30
   - name: 中国民族问题（国外）
-    search: "China AND (ethnic minority OR Tibet OR Xinjiang OR Inner Mongolia OR Yunnan OR Guangxi) AND (ethnic OR nationality)"
+    search: 'China AND ("ethnic minority" OR "ethnic minorities" OR "ethnic policy" OR Tibet OR Tibetan OR Xinjiang OR Uyghur OR "Inner Mongolia" OR Yunnan OR Guangxi OR Zhuang OR "Yi people" OR Hui)'
     source_theme: 各民族共同现代化
     max: 30
   - name: 人类学理论前沿（国外）
-    search: "anthropological theory OR ontological turn OR multispecies ethnography OR decolonizing anthropology"
+    search: '"anthropological theory" OR "ontological turn" OR "multispecies ethnography" OR "decolonizing anthropology" OR "decolonial anthropology" OR "ethnographic theory"'
     source_theme: 国外理论前沿
     max: 25

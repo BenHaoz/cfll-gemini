@@ -553,7 +553,7 @@ institutions:
 scholars:
 - name: 麻国庆
   institution: 中央民族大学
-  title: 教授、博士生导师；校党委常委、副校长；民族学与社会学学院院长；《中华民族共同体研究》主编；中国民族学学会常务副会长
+  title: 教授、博士生导师；中国民族学学会执行会长；《中华民族共同体研究》主编（民族学与社会学学院院长现为关凯）
   fields:
   - 社会人类学
   - 中华民族共同体理论
@@ -563,7 +563,7 @@ scholars:
   - https://www.cssn.cn/mzx/202403/t20240325_5741089.shtml
 - name: 强世功
   institution: 中央民族大学
-  title: 校党委常委、副校长；中华民族共同体学院院长
+  title: 教授；中央民族大学校长；中国民族学学会会长（2026-07 会议报道）
   fields:
   - 中华民族共同体学
   - 法理学与政治哲学
@@ -755,7 +755,7 @@ scholars:
   - https://mzls.nxu.edu.cn/
 - name: 马忠才
   institution: 西北民族大学
-  title: 教授、博士生导师；中华民族共同体学院院长
+  title: 教授、博士生导师；西北民族大学党委常委、副校长（原中华民族共同体学院院长）
   fields:
   - 民族社会学
   - 民间文化
@@ -870,3 +870,10 @@ scholars:
   - 蒙古族社会文化
   evidence:
   - http://mr.imnu.edu.cn/info/1012/1662.htm
+- name: 关凯
+  institution: 中央民族大学
+  title: 教授；民族学与社会学学院院长（2026-07 会议报道）
+  fields:
+  - 民族理论
+  - 中华民族共同体
+  evidence: []

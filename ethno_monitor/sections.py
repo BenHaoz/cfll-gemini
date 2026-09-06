@@ -99,9 +99,30 @@ def build_scholars_section(today: date) -> str:
     if not scholars:
         L.append("学者名录尚未建立（config/institutions.yaml → scholars）。")
         return "\n".join(L)
-    L.append(f"名录共 {len(scholars)} 位学者（来自 config/institutions.yaml），本周检索到 {len(latest)} 条最新观点。观点摘要由 Claude 会话依据来源网页整理，仅收录有链接可核的内容。")
+    # 文章库中学者近期论文（作者名精确匹配，近两年）
+    arts = load_articles()
+    names = {s["name"]: s for s in scholars}
+    papers: list[tuple[str, Any]] = []
+    for a in arts.values():
+        if a.year >= today.year - 1:
+            for au in a.authors:
+                if au in names:
+                    papers.append((au, a))
+    papers.sort(key=lambda x: (-x[1].year, -x[1].issue))
+    L.append(f"名录共 {len(scholars)} 位学者（来自 config/institutions.yaml）。本期：文章库中匹配到学者论文 {len(papers)} 篇（近两年，按作者名精确匹配，同名风险请留意）；联网检索到有链接可核的最新观点/动态 {len(latest)} 条（由 Claude 会话整理）。")
     L.append("")
+    if papers:
+        L.append("**学者近期论文（文章库匹配）**")
+        L.append("")
+        L.append("| 学者 | 单位 | 论文 | 期刊 / 期号 | 链接 |")
+        L.append("|---|---|---|---|---|")
+        for au, a in papers[:40]:
+            link = f"[链接]({a.url})" if a.url else ""
+            L.append(f"| {au} | {names[au].get('institution','')} | {a.title} | {a.journal} {a.year}年第{a.issue}期 | {link} |")
+        L.append("")
     if latest:
+        L.append("**学者最新观点与动态（联网检索）**")
+        L.append("")
         L.append("| 学者 | 单位 | 最新观点 / 成果 | 日期 | 来源 |")
         L.append("|---|---|---|---|---|")
         for it in sorted(latest, key=lambda x: x.get("date", ""), reverse=True):

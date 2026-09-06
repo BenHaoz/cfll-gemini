@@ -281,6 +281,27 @@ def diagnose(settings) -> str:
                     out.append(f"  组合 {combo}: 字节={len(rc.content)} 数据行={len(rowsc)} 首行={first!r}")
                 except Exception as exc:  # noqa: BLE001
                     out.append(f"  组合 {combo}: 失败 {str(exc)[:80]}")
+            # 翻页机制：列出所有数字/下一页锚点（不限中文）、含 onclick 的元素、以及 ThinkPHP 路径式翻页尝试
+            rp = fetch(sk["url"], params={"xktype": "民族学", "lxtime": "2025"}, timeout=25, retries=0)
+            spp = soup_of(fix_encoding(rp))
+            pagers = [(clean(a.get_text()), a.get("href")) for a in spp.find_all("a") if re.fullmatch(r"\d{1,3}|下一页|末页|>|>>|»", clean(a.get_text()) or "")]
+            out.append("  翻页锚点(全部): " + " | ".join(f"{t}->{str(h)[-100:]}" for t, h in pagers[:12]))
+            oc = [(t.name, t.get("onclick")) for t in spp.find_all(attrs={"onclick": True})][:8]
+            out.append("  onclick元素: " + " | ".join(f"{n}:{str(o)[:90]}" for n, o in oc))
+            frm = [(f.get("action"), f.get("method"), [(i.get("name"), i.get("value")) for i in f.find_all("input", type="hidden")]) for f in spp.find_all("form")]
+            out.append(f"  表单: {frm[:3]}")
+            scripts = "\n".join(sc.get_text() for sc in spp.find_all("script") if not sc.get("src"))
+            for mm in list(re.finditer(r"(page|/p/|seach)", scripts))[:5]:
+                out.append("  脚本片段: " + re.sub(r"\s+", " ", scripts[max(0, mm.start() - 150): mm.end() + 150]))
+            for variant in (sk["url"].rstrip("/") + "/p/2", sk["url"].rstrip("/") + "/p/2.html"):
+                try:
+                    rv = fetch(variant, params={"xktype": "民族学", "lxtime": "2025"}, timeout=25, retries=0)
+                    spv = soup_of(fix_encoding(rv))
+                    rowsv = [tr for tr in spv.find_all("tr") if len(tr.find_all("td")) >= 6]
+                    firstv = clean(rowsv[1].get_text(" "))[:100] if len(rowsv) > 1 else ""
+                    out.append(f"  路径翻页 {variant[-30:]}: 数据行={len(rowsv)} 首行={firstv!r}")
+                except Exception as exc:  # noqa: BLE001
+                    out.append(f"  路径翻页 {variant[-30:]}: 失败 {str(exc)[:80]}")
             r2 = fetch(sk["url"], params=dict(params_prev, p=2), timeout=25, retries=1)
             sp2 = soup_of(fix_encoding(r2))
             rows2 = [tr for tr in sp2.find_all("tr") if len(tr.find_all("td")) >= 6]

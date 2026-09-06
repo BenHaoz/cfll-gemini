@@ -51,6 +51,7 @@ def main(argv: list[str] | None = None) -> int:
     p_h.add_argument("--max-details", type=int, default=300, help="本次最多抓取的详情页数")
     p_h.add_argument("--journal", help="只抓名称包含该字符串的期刊")
     p_h.add_argument("--sleep", type=float, default=0.6)
+    p_h.add_argument("--projects", action="store_true", help="同时抓取国家社科基金项目数据库近三年民族问题研究立项")
 
     sub.add_parser("stats", help="根据文章库输出博士点单位发文排名、学科指数（Markdown）")
 
@@ -95,6 +96,9 @@ def main(argv: list[str] | None = None) -> int:
         for row in res.pop("log", []):
             print(row)
         print(json.dumps(res, ensure_ascii=False))
+        if a.projects:
+            from .harvest import harvest_projects
+            print(json.dumps(harvest_projects(years_back=a.years), ensure_ascii=False))
         return 0
     if a.cmd == "stats":
         from .sections import build_extra_sections

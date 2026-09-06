@@ -43,7 +43,7 @@ jobs:
         run: |
           ARGS="--max-issues ${{ inputs.max_issues || '80' }} --max-details ${{ inputs.max_details || '400' }}"
           if [ -n "${{ inputs.journal }}" ]; then ARGS="$ARGS --journal ${{ inputs.journal }}"; fi
-          python -m ethno_monitor harvest $ARGS 2>&1 | tee harvest.log
+          python -m ethno_monitor harvest $ARGS --projects 2>&1 | tee harvest.log
           python -m ethno_monitor stats > data/pubs/stats_preview.md || true
       - name: 上传日志
         if: always()

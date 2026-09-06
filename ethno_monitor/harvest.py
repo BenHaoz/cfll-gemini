@@ -78,6 +78,43 @@ def parse_detail_affiliations(html: str) -> list[str]:
     return []
 
 
+PROJECTS_PATH = PUBS_DIR / "projects.jsonl"
+
+
+def harvest_projects(*, today: date | None = None, years_back: int = 3) -> dict[str, Any]:
+    """国家社科基金项目数据库：学科“民族问题研究”近三年立项，匹配单位后写入 data/pubs/projects.jsonl。"""
+    from .collectors.skygb import collect_skygb
+    today = today or date.today()
+    src = yaml.safe_load(open(CONFIG_DIR / "sources.yaml", encoding="utf-8")) or {}
+    insts = yaml.safe_load(open(CONFIG_DIR / "institutions.yaml", encoding="utf-8")) or {}
+    matcher = InstitutionMatcher(insts.get("institutions", []))
+    cfg = dict(src.get("skygb", {}))
+    cfg["max_pages"] = int(cfg.get("max_pages_harvest", 40))
+    cfg["row_keywords"] = None
+    existing: dict[str, dict[str, Any]] = {}
+    if PROJECTS_PATH.exists():
+        for line in open(PROJECTS_PATH, encoding="utf-8"):
+            if line.strip():
+                d = json.loads(line)
+                existing[d["key"]] = d
+    stat: dict[str, Any] = {}
+    for y in range(today.year - years_back + 1, today.year + 1):
+        items, status = collect_skygb(cfg, today=today, year=y)
+        stat[str(y)] = {"ok": status.ok, "count": len(items), "message": status.message}
+        for it in items:
+            key = f"{y}|{it.title}"
+            unit = it.affiliation
+            existing[key] = {"key": key, "title": it.title, "pi": it.extra.get("pi", ""), "unit": unit,
+                             "institutions": matcher.match_all([unit]), "funder": "国家社科基金", "type": it.extra.get("project_type", ""),
+                             "discipline": it.extra.get("discipline", ""), "year": y, "no": it.extra.get("project_no", ""), "url": it.url}
+        time.sleep(1.0)
+    PROJECTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(PROJECTS_PATH, "w", encoding="utf-8") as f:
+        for d in sorted(existing.values(), key=lambda x: (x["year"], x["title"])):
+            f.write(json.dumps(d, ensure_ascii=False) + "\n")
+    return {"projects": len(existing), "by_year": stat}
+
+
 def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: int = 60, max_detail_pages: int = 300,
             sleep_s: float = 0.6, journals_filter: str | None = None) -> dict[str, Any]:
     today = today or date.today()

@@ -15,18 +15,19 @@ log = logging.getLogger(__name__)
 SOURCE = "国家社科基金项目数据库"
 
 
-def collect_skygb(cfg: dict[str, Any], *, today: date | None = None) -> tuple[list[Item], SourceStatus]:
+def collect_skygb(cfg: dict[str, Any], *, today: date | None = None, year: int | None = None) -> tuple[list[Item], SourceStatus]:
     t0 = time.time()
     if not cfg.get("enabled", True):
         return [], SourceStatus(name=SOURCE, ok=True, message="disabled", kind="project")
-    year = (today or date.today()).year
+    year = year or (today or date.today()).year
     base_params = {k: (str(v).replace("{year}", str(year)) if isinstance(v, str) else v)
                    for k, v in (cfg.get("params") or {}).items()}
     items: list[Item] = []
     pages = 0
+    page_param = cfg.get("page_param", "p")
     try:
         for p in range(1, int(cfg.get("max_pages", 3)) + 1):
-            params = dict(base_params, p=p)
+            params = dict(base_params, **{page_param: p})
             html = fetch_text(cfg["url"], params=params, snapshot=f"skygb_p{p}")
             tables = parse_tables(soup_of(html))
             if not tables or len(html) < 200:
@@ -48,4 +49,6 @@ def collect_skygb(cfg: dict[str, Any], *, today: date | None = None) -> tuple[li
     for it in items:
         uniq.setdefault(it.key(), it)
     out = list(uniq.values())
-    return out, SourceStatus(name=SOURCE, ok=True, count=len(out), message=f"检索 {pages} 页", elapsed=time.time() - t0, kind="project")
+    for it in out:
+        it.extra.setdefault("year", year)
+    return out, SourceStatus(name=f"{SOURCE}·{year}", ok=True, count=len(out), message=f"检索 {pages} 页", elapsed=time.time() - t0, kind="project")

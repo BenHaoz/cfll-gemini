@@ -221,9 +221,26 @@ def diagnose(settings) -> str:
         params = {k: (str(v).replace("{year}", str(date.today().year)) if isinstance(v, str) else v) for k, v in (sk.get("params") or {}).items()}
         out.append(_diag_url(sk["url"], params=dict(params, p=1)))
         try:
-            r = fetch(sk["url"], params=params, timeout=25, retries=1)
+            params_prev = dict(params, lxtime=str(date.today().year - 1))   # 上一年度有数据，便于观察分页
+            r = fetch(sk["url"], params=params_prev, timeout=25, retries=1)
             sp = soup_of(fix_encoding(r))
             rows = [tr for tr in sp.find_all("tr") if len(tr.find_all("td")) >= 6]
+            out.append(f"  [{params_prev['lxtime']} 年] 页面字节={len(r.content)}")
+            pag = sp.find_all(string=re.compile(r"下一页|末页|共\s*\d+"))
+            out.append("  分页文本: " + " | ".join(clean(str(x))[:40] for x in pag[:6]))
+            for a in sp.find_all("a", href=True)[:60]:
+                t = clean(a.get_text())
+                if re.fullmatch(r"\d{1,3}|下一页|末页|>|>>", t):
+                    out.append(f"  分页锚点 {t} -> {a['href'][-120:]}")
+            for f in sp.find_all("form")[:3]:
+                hid = [(i.get("name"), i.get("value")) for i in f.find_all("input", type="hidden")]
+                if hid:
+                    out.append(f"  表单隐藏字段: {hid[:10]}")
+            r2 = fetch(sk["url"], params=dict(params_prev, p=2), timeout=25, retries=1)
+            sp2 = soup_of(fix_encoding(r2))
+            rows2 = [tr for tr in sp2.find_all("tr") if len(tr.find_all("td")) >= 6]
+            same = (rows and rows2 and clean(rows[1].get_text()) == clean(rows2[1].get_text())) if (len(rows) > 1 and len(rows2) > 1) else None
+            out.append(f"  p=2 数据行={len(rows2)} 与第一页首行相同={same}")
             out.append(f"  数据行（td>=6）={len(rows)}；前 3 行：")
             for tr in rows[:3]:
                 out.append("    | " + " | ".join(clean(td.get_text(" "))[:30] for td in tr.find_all("td")))

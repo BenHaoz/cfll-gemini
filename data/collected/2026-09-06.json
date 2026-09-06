@@ -7563,7 +7563,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 2.4195189476013184,
+   "elapsed": 5.930900812149048,
    "kind": "journal"
   },
   {
@@ -7579,7 +7579,7 @@
    "ok": true,
    "count": 14,
    "message": "目录解析 14 篇",
-   "elapsed": 0.7578921318054199,
+   "elapsed": 0.9813125133514404,
    "kind": "journal"
   },
   {
@@ -7603,7 +7603,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 1.4041154384613037,
+   "elapsed": 1.0551159381866455,
    "kind": "journal"
   },
   {
@@ -7611,7 +7611,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 0.890779972076416,
+   "elapsed": 1.7735583782196045,
    "kind": "journal"
   },
   {
@@ -7619,7 +7619,7 @@
    "ok": true,
    "count": 17,
    "message": "目录解析 17 篇",
-   "elapsed": 1.546144962310791,
+   "elapsed": 0.9623987674713135,
    "kind": "journal"
   },
   {
@@ -7627,7 +7627,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 0.6606588363647461,
+   "elapsed": 1.342792272567749,
    "kind": "journal"
   },
   {
@@ -7635,7 +7635,7 @@
    "ok": true,
    "count": 25,
    "message": "目录解析 25 篇",
-   "elapsed": 0.7227022647857666,
+   "elapsed": 1.4028425216674805,
    "kind": "journal"
   },
   {
@@ -7651,7 +7651,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.4841501712799072,
+   "elapsed": 1.560734510421753,
    "kind": "project"
   },
   {
@@ -7659,7 +7659,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.681072473526001,
+   "elapsed": 0.6802840232849121,
    "kind": "project"
   },
   {
@@ -7667,7 +7667,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.5272443294525146,
+   "elapsed": 0.6029677391052246,
    "kind": "project"
   },
   {
@@ -7675,7 +7675,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.6089847087860107,
+   "elapsed": 0.6348772048950195,
    "kind": "project"
   },
   {
@@ -7683,7 +7683,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 2.8886215686798096,
+   "elapsed": 3.35142183303833,
    "kind": "project"
   },
   {
@@ -7691,7 +7691,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 2.7355809211730957,
+   "elapsed": 1.8842055797576904,
    "kind": "project"
   },
   {
@@ -7699,7 +7699,7 @@
    "ok": true,
    "count": 0,
    "message": "检索 1 页",
-   "elapsed": 1.900294303894043,
+   "elapsed": 4.4170308113098145,
    "kind": "project"
   },
   {
@@ -7707,7 +7707,7 @@
    "ok": true,
    "count": 2,
    "message": "openalex: 近 30 天 2 篇",
-   "elapsed": 0.5991706848144531,
+   "elapsed": 0.21176648139953613,
    "kind": "journal"
   },
   {
@@ -7715,7 +7715,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇",
-   "elapsed": 0.13949966430664062,
+   "elapsed": 0.08335423469543457,
    "kind": "journal"
   },
   {
@@ -7723,7 +7723,7 @@
    "ok": true,
    "count": 3,
    "message": "openalex: 近 30 天 3 篇",
-   "elapsed": 0.23088765144348145,
+   "elapsed": 0.2648642063140869,
    "kind": "journal"
   },
   {
@@ -7731,7 +7731,7 @@
    "ok": true,
    "count": 11,
    "message": "openalex: 近 30 天 11 篇",
-   "elapsed": 0.25743842124938965,
+   "elapsed": 0.17130255699157715,
    "kind": "journal"
   },
   {
@@ -7739,7 +7739,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇",
-   "elapsed": 0.12681984901428223,
+   "elapsed": 0.09473514556884766,
    "kind": "journal"
   },
   {
@@ -7747,7 +7747,7 @@
    "ok": true,
    "count": 5,
    "message": "openalex: 近 30 天 5 篇",
-   "elapsed": 0.22277283668518066,
+   "elapsed": 0.1665787696838379,
    "kind": "journal"
   },
   {
@@ -7755,7 +7755,7 @@
    "ok": true,
    "count": 3,
    "message": "openalex: 近 30 天 3 篇",
-   "elapsed": 0.1907658576965332,
+   "elapsed": 0.14387869834899902,
    "kind": "journal"
   },
   {
@@ -7763,7 +7763,7 @@
    "ok": true,
    "count": 11,
    "message": "openalex: 近 30 天 11 篇",
-   "elapsed": 0.21627521514892578,
+   "elapsed": 0.17133188247680664,
    "kind": "journal"
   },
   {
@@ -7771,7 +7771,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇",
-   "elapsed": 0.1385953426361084,
+   "elapsed": 0.06542277336120605,
    "kind": "journal"
   },
   {
@@ -7779,7 +7779,7 @@
    "ok": true,
    "count": 12,
    "message": "openalex: 近 30 天 12 篇",
-   "elapsed": 0.2754476070404053,
+   "elapsed": 0.15314340591430664,
    "kind": "journal"
   },
   {
@@ -7787,7 +7787,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇",
-   "elapsed": 0.11432242393493652,
+   "elapsed": 0.06664180755615234,
    "kind": "journal"
   },
   {
@@ -7795,7 +7795,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇",
-   "elapsed": 0.10182499885559082,
+   "elapsed": 0.07572627067565918,
    "kind": "journal"
   },
   {
@@ -7803,7 +7803,7 @@
    "ok": true,
    "count": 13,
    "message": "openalex: 近 30 天 33 篇，命中专题 13 篇",
-   "elapsed": 0.24529361724853516,
+   "elapsed": 0.23613190650939941,
    "kind": "journal"
   },
   {
@@ -7811,7 +7811,7 @@
    "ok": true,
    "count": 5,
    "message": "openalex: 近 30 天 8 篇，命中专题 5 篇",
-   "elapsed": 0.2644329071044922,
+   "elapsed": 0.15120935440063477,
    "kind": "journal"
   },
   {
@@ -7819,7 +7819,7 @@
    "ok": true,
    "count": 3,
    "message": "openalex: 近 30 天 3 篇，命中专题 3 篇",
-   "elapsed": 0.24574828147888184,
+   "elapsed": 0.12836718559265137,
    "kind": "journal"
   },
   {
@@ -7827,7 +7827,7 @@
    "ok": true,
    "count": 14,
    "message": "openalex: 近 30 天 26 篇，命中专题 14 篇",
-   "elapsed": 0.36115193367004395,
+   "elapsed": 0.24942326545715332,
    "kind": "journal"
   },
   {
@@ -7835,7 +7835,7 @@
    "ok": true,
    "count": 4,
    "message": "openalex: 近 30 天 4 篇，命中专题 4 篇",
-   "elapsed": 0.20978593826293945,
+   "elapsed": 0.09513092041015625,
    "kind": "journal"
   },
   {
@@ -7843,7 +7843,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 0 篇，命中专题 0 篇",
-   "elapsed": 0.1228630542755127,
+   "elapsed": 0.06806540489196777,
    "kind": "journal"
   },
   {
@@ -7851,7 +7851,7 @@
    "ok": true,
    "count": 1,
    "message": "openalex: 近 30 天 3 篇，命中专题 1 篇",
-   "elapsed": 0.20957040786743164,
+   "elapsed": 0.12216067314147949,
    "kind": "journal"
   },
   {
@@ -7859,7 +7859,7 @@
    "ok": true,
    "count": 1,
    "message": "openalex: 近 30 天 1 篇，命中专题 1 篇",
-   "elapsed": 0.13944387435913086,
+   "elapsed": 0.07187271118164062,
    "kind": "journal"
   },
   {
@@ -7867,7 +7867,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 1 篇，命中专题 0 篇",
-   "elapsed": 0.1294856071472168,
+   "elapsed": 0.07577872276306152,
    "kind": "journal"
   },
   {
@@ -7875,7 +7875,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 30 天 1 篇，命中专题 0 篇",
-   "elapsed": 0.1712048053741455,
+   "elapsed": 0.09738421440124512,
    "kind": "journal"
   },
   {
@@ -7883,7 +7883,7 @@
    "ok": true,
    "count": 2,
    "message": "openalex: 近 30 天 5 篇，命中专题 2 篇",
-   "elapsed": 0.19416570663452148,
+   "elapsed": 0.10414004325866699,
    "kind": "journal"
   },
   {
@@ -7891,7 +7891,7 @@
    "ok": true,
    "count": 1,
    "message": "openalex: 近 30 天 6 篇，命中专题 1 篇",
-   "elapsed": 0.20282626152038574,
+   "elapsed": 0.1323251724243164,
    "kind": "journal"
   },
   {
@@ -7899,7 +7899,7 @@
    "ok": true,
    "count": 2,
    "message": "openalex: 近 30 天 2 篇，命中专题 2 篇",
-   "elapsed": 0.1405181884765625,
+   "elapsed": 0.09610652923583984,
    "kind": "journal"
   },
   {
@@ -7907,7 +7907,7 @@
    "ok": true,
    "count": 30,
    "message": "openalex 近 30 天 30 篇",
-   "elapsed": 0.5939614772796631,
+   "elapsed": 0.5052855014801025,
    "kind": "journal"
   },
   {
@@ -7915,7 +7915,7 @@
    "ok": true,
    "count": 30,
    "message": "openalex 近 30 天 30 篇",
-   "elapsed": 0.703834056854248,
+   "elapsed": 0.37337231636047363,
    "kind": "journal"
   },
   {
@@ -7923,7 +7923,7 @@
    "ok": true,
    "count": 25,
    "message": "openalex 近 30 天 25 篇",
-   "elapsed": 0.5830888748168945,
+   "elapsed": 0.6978938579559326,
    "kind": "journal"
   },
   {
@@ -7931,7 +7931,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 11 篇，命中专题 0 篇",
-   "elapsed": 0.8850908279418945,
+   "elapsed": 1.1692509651184082,
    "kind": "journal"
   },
   {
@@ -7939,7 +7939,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 10 篇，命中专题 0 篇",
-   "elapsed": 1.3582515716552734,
+   "elapsed": 1.657132863998413,
    "kind": "journal"
   },
   {
@@ -7947,7 +7947,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 10 篇，命中专题 0 篇",
-   "elapsed": 0.6581146717071533,
+   "elapsed": 2.878483772277832,
    "kind": "journal"
   },
   {
@@ -7955,7 +7955,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 12 篇，命中专题 0 篇",
-   "elapsed": 1.330061435699463,
+   "elapsed": 2.001551389694214,
    "kind": "journal"
   },
   {
@@ -7963,7 +7963,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 18 篇，命中专题 0 篇",
-   "elapsed": 1.6422650814056396,
+   "elapsed": 1.54203462600708,
    "kind": "journal"
   },
   {
@@ -7971,7 +7971,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 15 篇，命中专题 0 篇",
-   "elapsed": 0.8914918899536133,
+   "elapsed": 1.0812833309173584,
    "kind": "journal"
   },
   {
@@ -7979,7 +7979,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 12 篇，命中专题 0 篇",
-   "elapsed": 0.9712092876434326,
+   "elapsed": 0.8152873516082764,
    "kind": "journal"
   },
   {
@@ -7987,7 +7987,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 14 篇，命中专题 0 篇",
-   "elapsed": 0.9153451919555664,
+   "elapsed": 1.1995820999145508,
    "kind": "journal"
   },
   {
@@ -7995,7 +7995,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 17 篇，命中专题 0 篇",
-   "elapsed": 1.8785014152526855,
+   "elapsed": 2.0121562480926514,
    "kind": "journal"
   },
   {
@@ -8003,7 +8003,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 18 篇，命中专题 0 篇",
-   "elapsed": 1.5474591255187988,
+   "elapsed": 0.9941728115081787,
    "kind": "journal"
   },
   {
@@ -8011,7 +8011,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 19 篇，命中专题 0 篇",
-   "elapsed": 1.3769125938415527,
+   "elapsed": 3.080866813659668,
    "kind": "journal"
   },
   {
@@ -8019,7 +8019,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.7063782215118408,
+   "elapsed": 0.7899124622344971,
    "kind": "journal"
   },
   {
@@ -8027,7 +8027,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 15 篇，命中专题 0 篇",
-   "elapsed": 1.2988088130950928,
+   "elapsed": 1.3911967277526855,
    "kind": "journal"
   },
   {
@@ -8035,7 +8035,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 19 篇，命中专题 0 篇",
-   "elapsed": 2.0235416889190674,
+   "elapsed": 1.1528968811035156,
    "kind": "journal"
   },
   {
@@ -8043,7 +8043,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 21 篇，命中专题 0 篇",
-   "elapsed": 0.9936478137969971,
+   "elapsed": 1.5840420722961426,
    "kind": "journal"
   },
   {
@@ -8051,7 +8051,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.9959926605224609,
+   "elapsed": 1.5175085067749023,
    "kind": "journal"
   },
   {
@@ -8059,7 +8059,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.7326791286468506,
+   "elapsed": 0.78916335105896,
    "kind": "journal"
   }
  ]

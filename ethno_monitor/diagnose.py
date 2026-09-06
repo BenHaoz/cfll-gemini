@@ -159,5 +159,39 @@ def diagnose(settings) -> str:
     out.append("\n## 国家哲学社会科学文献中心")
     out.append(_diag_url("https://www.ncpssd.cn/"))
     out.append(_diag_url(nc.get("search_url", "https://www.ncpssd.cn/Literature/articlelist")))
+    # 核心期刊编号核验：抓取每个 gch / candidate_gch 的期刊页，打印页面刊名与首篇文章
+    try:
+        import yaml
+        from .config import CONFIG_DIR
+        core = yaml.safe_load(open(CONFIG_DIR / "journals_core.yaml", encoding="utf-8")) or {}
+        out.append("\n## 核心期刊编号核验（journals_core.yaml）")
+        for j in core.get("journals", []):
+            for code, kind in ((j.get("gch"), "gch"), (j.get("candidate_gch"), "candidate")):
+                if not code:
+                    continue
+                u = f"https://m.ncpssd.cn/journal/details?gch={code}&nav=1&langType=1"
+                try:
+                    r = fetch(u, timeout=25, retries=1)
+                    sp = soup_of(fix_encoding(r))
+                    for t in sp.find_all(["script", "style"]):
+                        t.decompose()
+                    txt = clean(sp.get_text(" "))
+                    i = txt.find("刊名")
+                    name_hint = txt[i:i + 40] if i != -1 else ""
+                    h = sp.find(["h1", "h3"])
+                    head = clean(h.get_text(" "))[:40] if h else ""
+                    cat = sp.find("div", class_="catalog")
+                    first = ""
+                    if cat:
+                        a = cat.find("a", onclick=True)
+                        first = clean(a.get_text())[:40] if a else ""
+                        issue = clean(cat.find("h2").get_text(" "))[:20] if cat.find("h2") else ""
+                    else:
+                        issue = ""
+                    out.append(f"  {j['name']} [{kind}={code}] head={head!r} 刊名字段={name_hint!r} 当期={issue!r} 首篇={first!r}")
+                except Exception as exc:  # noqa: BLE001
+                    out.append(f"  {j['name']} [{kind}={code}] 失败: {str(exc)[:100]}")
+    except Exception as exc:  # noqa: BLE001
+        out.append(f"  核验跳过: {exc}")
     out.append("============================================")
     return "\n".join(out)

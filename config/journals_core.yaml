@@ -1,0 +1,339 @@
+versions:
+  cssci: CSSCI 来源期刊目录（2025-2026），民族学与文化学：来源15种、扩展版15种；2025年9月发布
+  pku: 北京大学《中文核心期刊要目总览》2023年版（2024年4月出版），民族学类（C95）
+  ami: 中国人文社会科学期刊AMI综合评价报告（2022年）
+notes: 等级依据搜索摘要整理，unknown 表示未能核实；gch 为国家哲学社会科学文献中心期刊页编号，candidate_gch 待核验。统计口径：tier 为 CSSCI来源/CSSCI扩展/北大核心 之一者计入“核心期刊”。
+journals:
+- name: 民族研究
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 双月刊
+  gch: 80294X
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.muc.edu.cn/info/1052/21278.htm
+- name: 中央民族大学学报（哲学社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 96982A
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://www.muc.edu.cn/info/1052/42838.htm
+  - https://www.muc.edu.cn/info/1052/21278.htm
+  - https://www.ncpssd.cn/journal/details?gch=96982A
+- name: 民族教育研究
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://www.muc.edu.cn/info/1052/42838.htm
+  - https://m.ncpssd.cn/Literature/articleinfo?id=MZJYYJ2024004004&synUpdateType=&type=journalArticle&nav=1&langType=1
+- name: 中华民族共同体研究
+  tier: CSSCI扩展
+  cssci: 扩展
+  pku_core: false
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: 81328X
+  evidence:
+  - https://news.muc.edu.cn/info/1011/54214.htm
+  - https://www.neac.gov.cn/seac/xwzx/202509/1182887.shtml
+  - https://m.ncpssd.cn/journal/details?gch=81328X&nav=1&langType=1
+- name: 西北民族研究
+  tier: CSSCI扩展
+  cssci: 扩展
+  pku_core: true
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://rwskc.zust.edu.cn/info/1044/1471.htm
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 广西民族研究
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: 87657A
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://m.ncpssd.cn/journal/details?gch=87657A&langType=1
+- name: 贵州民族研究
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 双月刊
+  gch: 91489X
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=91489X&nav=1&langType=1
+- name: 青海民族研究
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 季刊
+  gch: 82637X
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 世界民族
+  tier: CSSCI扩展
+  cssci: 扩展
+  pku_core: true
+  frequency: 双月刊
+  gch: 96988A
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 中南民族大学学报（人文社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: 83491X
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://m.ncpssd.cn/journal/details?gch=83491X&years=2025&num=4&nav=1&langType=1
+- name: 西南民族大学学报（人文社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 月刊
+  gch: 81468A
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://m.ncpssd.cn/journal/details?gch=81468A
+  - https://www.ncpssd.cn/journal/details?gch=81468X&nav=1&langType=1
+- name: 民族学刊
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://www.neac.gov.cn/seac/c103490/202309/1168011.shtml
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 北方民族大学学报（哲学社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 双月刊
+  gch: 82413A
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.muc.edu.cn/info/1052/21278.htm
+- name: 湖北民族大学学报（哲学社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: true
+  frequency: 双月刊
+  gch: 91398X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=91398X
+- name: 云南民族大学学报（哲学社会科学版）
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 91327A
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://www.ncpssd.cn/journal/details?gch=91327A
+- name: 广西民族大学学报（哲学社会科学版）
+  tier: CSSCI扩展
+  cssci: 扩展
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 80350A
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://www.muc.edu.cn/info/1052/21278.htm
+- name: 青海民族大学学报（社会科学版）
+  tier: 待核实
+  cssci: unknown
+  pku_core: unknown
+  frequency: 季刊
+  gch: 82820A
+  gch_confidence: high
+  candidate_gch: ''
+  evidence: []
+- name: 中国藏学
+  tier: CSSCI来源
+  cssci: 来源
+  pku_core: unknown
+  frequency: 季刊
+  gch: 60145X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://m.sohu.com/a/1008249153_121106994/
+  - https://www.ncpssd.cn/journal/details?gch=60145X
+- name: 西藏研究
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 双月刊
+  gch: 97843X
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=97843X
+- name: 黑龙江民族丛刊
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 原生态民族文化学刊
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 双月刊
+  gch: 89433X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=89433X
+- name: 民族论坛
+  tier: 待核实
+  cssci: unknown
+  pku_core: false
+  frequency: 双月刊
+  gch: 82545X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=82545X&nav=1&langType=1
+- name: 西藏大学学报（社会科学版）
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 季刊
+  gch: 83005X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=83005X
+- name: 新疆大学学报（哲学社会科学版）
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 双月刊
+  gch: 83397B
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=83397B&nav=1&langType=1
+- name: 西北民族大学学报（哲学社会科学版）
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 双月刊
+  gch: 91381A
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+  - https://www.ncpssd.cn/journal/details?gch=91381A
+- name: 民族学论丛
+  tier: 北大核心
+  cssci: unknown
+  pku_core: true
+  frequency: 季刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: ''
+  evidence:
+  - https://lib.hrbmu.edu.cn/zhongwenhexinqikanyaomuzonglan2023.pdf
+- name: 内蒙古社会科学
+  tier: 待核实
+  cssci: unknown
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 91439X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://www.ncpssd.cn/journal/details?gch=91439X
+- name: 民族语文
+  tier: 待核实
+  cssci: unknown
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 80601X
+  gch_confidence: medium
+  candidate_gch: ''
+  evidence:
+  - https://www.ncpssd.cn/journal/details?gch=80601X
+  - https://m.ncpssd.cn/journal/details.aspx?gch=80601X&nav=1&langType=1
+- name: 民族文学研究
+  tier: 待核实
+  cssci: unknown
+  pku_core: unknown
+  frequency: 双月刊
+  gch: 85505X
+  gch_confidence: high
+  candidate_gch: ''
+  evidence:
+  - https://m.ncpssd.cn/journal/details?gch=85505X&nav=1&langType=1
+- name: 民族艺术
+  tier: 待核实
+  cssci: unknown
+  pku_core: unknown
+  frequency: 双月刊
+  gch: ''
+  gch_confidence: low
+  candidate_gch: 82910X
+  evidence:
+  - https://www.ncpssd.cn/journal/details?gch=82910X

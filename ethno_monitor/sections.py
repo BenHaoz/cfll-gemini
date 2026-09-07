@@ -59,6 +59,13 @@ def build_pubs_section(today: date, *, top_n: int = 30) -> tuple[str, dict[str, 
     L.append("### 六、博士点单位发文排名（北核/南核民族学类期刊）")
     L.append("")
     L.append(f"统计口径：{years[0]}—{years[-1]} 年，`config/journals_core.yaml` 中等级为 CSSCI 来源/扩展或北大核心的民族学类期刊；按作者单位匹配到博士点单位（含所属院系），多单位合作各计 1 篇；文章库共 {len(arts)} 篇，其中匹配到博士点单位 {sum(1 for a in arts.values() if a.institutions)} 篇。")
+    # 作者单位解析进度（按年）：元数据自最新一期起回填，早年份未完成时该年计数偏低
+    prog = []
+    for y in years:
+        tot = sum(1 for a in arts.values() if a.year == y)
+        done_n = sum(1 for a in arts.values() if a.year == y and a.affiliations and a.affiliations not in (["(未解析)"], ["(接口无数据)"]))
+        prog.append(f"{y} 年 {done_n}/{tot}（{(100 * done_n // tot) if tot else 0}%）")
+    L.append(f"作者单位解析进度：{'；'.join(prog)}。解析自最新一期起逐周回填，解析率低的年份计数偏低，排名以解析完成年份为准。")
     L.append("")
     head = "| 排名 | 单位 | 近三年合计 | " + " | ".join(str(y) for y in years) + " | 共同体主题 | 顶级刊 | 主要发文期刊 |"
     L.append(head)

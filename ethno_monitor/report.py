@@ -51,7 +51,10 @@ def _flag(it: Item) -> str:
 
 
 def render_markdown(ctx: ReportContext) -> str:
-    papers = [i for i in ctx.new_items if i.kind == "paper"]
+    # 中文论文进入“按方向”板块；英文文献（OpenAlex/Crossref）只进入专题与国外前沿板块（九、十）
+    all_papers = [i for i in ctx.new_items if i.kind == "paper"]
+    papers = [i for i in all_papers if str(i.extra.get("lang", "zh")) != "en"]
+    foreign = [i for i in all_papers if str(i.extra.get("lang", "zh")) == "en"]
     projects = [i for i in ctx.new_items if i.kind == "project"]
     notices = [i for i in ctx.new_items if i.kind == "notice"]
     unverified = [i for i in ctx.new_items if not i.verified]
@@ -65,7 +68,8 @@ def render_markdown(ctx: ReportContext) -> str:
     L.append("")
     L.append("| 指标 | 数量 |")
     L.append("|---|---|")
-    L.append(f"| 新增论文 | {len(papers)} |")
+    L.append(f"| 新增论文（中文期刊） | {len(papers)} |")
+    L.append(f"| 国外文献（专题/理论前沿） | {len(foreign)} |")
     L.append(f"| 新增课题立项 | {len(projects)} |")
     L.append(f"| 相关公告 | {len(notices)} |")
     L.append(f"| 涉桂成果/课题 | {len(gx)} |")
@@ -79,6 +83,9 @@ def render_markdown(ctx: ReportContext) -> str:
 
     L.append("## 二、论文监测（按方向）")
     L.append("")
+    if foreign:
+        L.append(f"国外文献 {len(foreign)} 篇不计入方向统计，见“九、各民族共同现代化专题”“十、国外民族学人类学理论前沿动态”。")
+        L.append("")
     by_dir: dict[str, list[Item]] = defaultdict(list)
     for p in papers:
         by_dir[p.direction].append(p)
@@ -229,16 +236,21 @@ def render_site(report_dir, docs_dir, settings) -> str:
         if src.exists():
             shutil.copyfile(src, docs_dir / "reports" / f"{s}.html")
     latest = slugs[0] if slugs else ""
-    stats = {"paper": 0, "project": 0, "notice": 0, "gx": 0, "unverified": 0}
+    stats = {"paper": 0, "foreign": 0, "project": 0, "notice": 0, "gx": 0, "unverified": 0}
     by_dir = {d: 0 for d in DIRECTIONS}
     if latest and (report_dir / f"{latest}.items.json").exists():
         for d in json.loads((report_dir / f"{latest}.items.json").read_text(encoding="utf-8")):
-            stats[d.get("kind", "paper")] = stats.get(d.get("kind", "paper"), 0) + 1
-            if d.get("guangxi_related") and d.get("kind") != "notice":
+            is_en = str((d.get("extra") or {}).get("lang", "zh")) == "en"
+            kind = d.get("kind", "paper")
+            if kind == "paper" and is_en:
+                stats["foreign"] += 1
+            else:
+                stats[kind] = stats.get(kind, 0) + 1
+            if d.get("guangxi_related") and kind != "notice":
                 stats["gx"] += 1
             if not d.get("verified", True):
                 stats["unverified"] += 1
-            if d.get("direction") in by_dir and d.get("kind") != "notice":
+            if d.get("direction") in by_dir and kind != "notice" and not is_en:
                 by_dir[d["direction"]] += 1
     latest_html = ""
     if latest:
@@ -264,7 +276,8 @@ def render_site(report_dir, docs_dir, settings) -> str:
 </div></header>
 <div class="wrap">
 <div class="tiles">
-<div class="tile"><b>{stats['paper']}</b><span>本期新增论文</span></div>
+<div class="tile"><b>{stats['paper']}</b><span>本期新增论文（中文期刊）</span></div>
+<div class="tile"><b>{stats['foreign']}</b><span>国外文献（专题 / 前沿）</span></div>
 <div class="tile"><b>{stats['project']}</b><span>本期新增课题立项</span></div>
 <div class="tile"><b>{stats['notice']}</b><span>相关公告</span></div>
 <div class="tile gx"><b>{stats['gx']}</b><span>涉桂成果 / 课题</span></div>

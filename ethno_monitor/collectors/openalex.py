@@ -76,8 +76,9 @@ def _crossref_items(issn: str, since: str, *, source_name: str, source_theme: st
 
 
 def collect_foreign_journal(j: dict[str, Any], *, lookback_days: int, today: date | None = None,
-                            theme_keywords: dict[str, list[str]] | None = None) -> tuple[list[Item], SourceStatus]:
-    """j: {name, issn: [..], source_theme, theme_filter: [...]}。"""
+                            theme_keywords: dict[str, list[str]] | None = None,
+                            theme_tagger: Any = None) -> tuple[list[Item], SourceStatus]:
+    """j: {name, issn: [..], source_theme, theme_filter: [...]}。theme_tagger(text) -> [专题名]（优先，含民族语境判定）。"""
     today = today or date.today()
     since = (today - timedelta(days=lookback_days)).isoformat()
     t0 = time.time()
@@ -97,11 +98,15 @@ def collect_foreign_journal(j: dict[str, Any], *, lookback_days: int, today: dat
         except Exception as exc2:  # noqa: BLE001
             return [], SourceStatus(name=f"国外期刊·{j['name']}", ok=False, message=f"openalex/crossref 均失败: {str(exc2)[:120]}", elapsed=time.time() - t0, kind="journal")
     filters = j.get("theme_filter") or []
-    if filters and theme_keywords:
+    if filters and (theme_tagger or theme_keywords):
         kept = []
         for it in items:
-            text = f"{it.title} {it.extra.get('summary', '')}".lower()
-            if any(any(k.lower() in text for k in theme_keywords.get(f, [])) for f in filters):
+            text = f"{it.title} {it.extra.get('summary', '')}"
+            if theme_tagger is not None:
+                hit = bool(set(theme_tagger(text)) & set(filters))
+            else:
+                hit = any(any(k.lower() in text.lower() for k in (theme_keywords or {}).get(f, [])) for f in filters)
+            if hit:
                 kept.append(it)
         msg = f"{via}: 近 {lookback_days} 天 {len(items)} 篇，命中专题 {len(kept)} 篇"
         items = kept
@@ -110,8 +115,10 @@ def collect_foreign_journal(j: dict[str, Any], *, lookback_days: int, today: dat
     return items, SourceStatus(name=f"国外期刊·{j['name']}", ok=True, count=len(items), message=msg, elapsed=time.time() - t0, kind="journal")
 
 
-def collect_foreign_topic(q: dict[str, Any], *, lookback_days: int, today: date | None = None) -> tuple[list[Item], SourceStatus]:
-    """OpenAlex 主题检索式：q = {name, search, source_theme}（跨期刊，抓国外少数民族/土著现代化研究等）。"""
+def collect_foreign_topic(q: dict[str, Any], *, lookback_days: int, today: date | None = None,
+                         theme_tagger: Any = None) -> tuple[list[Item], SourceStatus]:
+    """OpenAlex 主题检索式：q = {name, search, source_theme}（跨期刊，抓国外少数民族/土著现代化研究等）。
+    只保留期刊文章；若给定 theme_tagger，则要求题名/摘要本身命中该专题词（source_theme 只作提示，不再无条件打标签）。"""
     today = today or date.today()
     since = (today - timedelta(days=lookback_days)).isoformat()
     t0 = time.time()
@@ -119,10 +126,14 @@ def collect_foreign_topic(q: dict[str, Any], *, lookback_days: int, today: date 
         # 只检索题名+摘要，限定社会科学域（domain 2），排除超前日期的预印/占位记录
         until = (today + timedelta(days=7)).isoformat()
         params = {"filter": f"title_and_abstract.search:{q['search']},from_publication_date:{since},to_publication_date:{until},"
-                            f"type:article,language:en,primary_topic.domain.id:{q.get('domain', 2)}"}
+                            f"type:article,language:en,primary_topic.domain.id:{q.get('domain', 2)},primary_location.source.type:journal"}
         items = _openalex_items(params, source_name=q["name"], source_theme=q.get("source_theme", ""), per_page=int(q.get("max", 30)),
                                 sort=q.get("sort", "relevance_score:desc"))
     except Exception as exc:  # noqa: BLE001
         return [], SourceStatus(name=f"国外主题检索·{q['name']}", ok=False, message=str(exc)[:150], elapsed=time.time() - t0, kind="journal")
-    return items, SourceStatus(name=f"国外主题检索·{q['name']}", ok=True, count=len(items), message=f"openalex 近 {lookback_days} 天 {len(items)} 篇",
-                               elapsed=time.time() - t0, kind="journal")
+    fetched = len(items)
+    theme = q.get("source_theme", "")
+    if theme_tagger is not None and theme:
+        items = [it for it in items if theme in theme_tagger(f"{it.title} {it.extra.get('summary', '')}")]
+    msg = f"openalex 近 {lookback_days} 天 {fetched} 篇" + (f"，命中专题 {len(items)} 篇" if fetched != len(items) or theme_tagger else "")
+    return items, SourceStatus(name=f"国外主题检索·{q['name']}", ok=True, count=len(items), message=msg, elapsed=time.time() - t0, kind="journal")

@@ -60,14 +60,16 @@ def collect_all(settings: Settings, *, today: date, use_llm: bool, only: str | N
             items += it
             statuses.append(st)
     from .collectors.openalex import collect_foreign_journal, collect_foreign_topic
+    en_tagger = Classifier(settings.keywords).theme_tags
+    tagger = lambda t: en_tagger(t, lang="en")  # noqa: E731
     for j in src.get("foreign_journals", []) or []:
         if want(j["name"]) or want("foreign"):
-            it, st = collect_foreign_journal(j, lookback_days=lb, today=today, theme_keywords=theme_kw)
+            it, st = collect_foreign_journal(j, lookback_days=lb, today=today, theme_keywords=theme_kw, theme_tagger=tagger)
             items += it
             statuses.append(st)
     for qd in src.get("foreign_topics", []) or []:
         if want(qd["name"]) or want("foreign"):
-            it, st = collect_foreign_topic(qd, lookback_days=lb, today=today)
+            it, st = collect_foreign_topic(qd, lookback_days=lb, today=today, theme_tagger=tagger)
             items += it
             statuses.append(st)
     # 专题期刊（顶刊/985 学报）：只保留命中专题词的文章
@@ -108,11 +110,16 @@ def filter_and_merge(items: list[Item], settings: Settings) -> list[Item]:
     journal_names = {j["name"] for j in settings.sources.get("journals", [])}
     for j in settings.sources.get("journals", []):
         journal_names.update(j.get("aliases", []))
+    foreign_names = {j["name"] for j in settings.sources.get("foreign_journals", []) or []}
     merged: dict[str, Item] = {}
     for it in items:
         it.title = it.title.strip()
         if len(it.title) < 4:
             continue
+        # 英文条目：非配置期刊（主题检索所得）须由题名/摘要本身命中专题词，否则视为噪声丢弃
+        if it.kind == "paper" and str(it.extra.get("lang", "zh")) == "en" and it.source not in foreign_names:
+            if not clf.theme_tags(f"{it.title} {it.extra.get('summary', '')}", lang="en"):
+                continue
         text = f"{it.title} {it.source} {it.extra.get('funder', '')} {it.extra.get('from_notice', '')} {it.extra.get('discipline', '')}"
         if it.kind == "project" and not clf.is_ethnology(text):
             continue

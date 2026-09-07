@@ -224,6 +224,8 @@ def build_theme_sections(new_items: list[Any], today: date) -> str:
             for i in lst[:12]:
                 au = "、".join(i.authors[:3])
                 L.append(f"- [{i.title}]({i.url}) {('— ' + au) if au else ''}{(' · ' + i.date) if i.date else ''}")
+            if len(lst) > 12:
+                L.append(f"- …另 {len(lst) - 12} 篇略")
             L.append("")
     return "\n".join(L)
 

@@ -112,3 +112,38 @@ def test_theme_weak_keywords_need_ethnic_context():
     b = clf.annotate(Item(kind="paper", title="志在富民与共同富裕——费孝通的富民理论及其实践启示", source="X"))
     c = clf.annotate(Item(kind="paper", title="边疆民族地区共同富裕的实现路径", source="X"))
     assert a.extra["themes"] == [] and "各民族共同现代化" in b.extra["themes"] and "各民族共同现代化" in c.extra["themes"]
+
+
+def test_english_items_excluded_from_direction_section():
+    from datetime import date
+    from ethno_monitor.models import Item
+    from ethno_monitor.report import ReportContext, render_markdown
+    cn = Item(kind="paper", title="铸牢中华民族共同体意识的法治保障研究", url="http://a", source="民族研究", date="2026-05",
+              direction="中华民族共同体学", extra={"issue": "2026年第3期"})
+    en = Item(kind="paper", title="Inaugurated ideology: An anthropological theory of state identity", url="http://b",
+              source="Anthropological Theory", date="2026-09-03", direction="中华民族学", extra={"lang": "en", "themes": ["国外理论前沿"]})
+    ctx = ReportContext(period="t", today=date(2026, 9, 6), window_days=14, new_items=[cn, en], all_items=[cn, en], statuses=[],
+                        analysis_md="x", analysis_by="rule")
+    md = render_markdown(ctx)
+    assert "| 新增论文（中文期刊） | 1 |" in md and "| 国外文献（专题/理论前沿） | 1 |" in md
+    assert "| 中华民族学 | 0 | 0 |" in md
+    sec2 = md.split("## 二、")[1].split("## 三、")[0]
+    assert "Inaugurated ideology" not in sec2 and "铸牢中华民族共同体意识的法治保障研究" in sec2
+
+
+def test_filter_drops_untagged_english_topic_search_items():
+    from ethno_monitor.config import load_settings
+    from ethno_monitor.models import Item
+    from ethno_monitor.pipeline import filter_and_merge
+    s = load_settings()
+    noise = Item(kind="paper", title="Establishment of pediatric reference intervals for myocardial enzymes in Beijing", url="http://n",
+                 source="BMC Pediatrics", extra={"lang": "en", "source_theme": "各民族共同现代化", "summary": "children in Beijing hospitals"})
+    hit = Item(kind="paper", title="Ethnic minority modernization and poverty alleviation in Yunnan", url="http://h",
+               source="Journal of Rural Studies", extra={"lang": "en", "source_theme": "各民族共同现代化", "summary": "ethnic minority villages development"})
+    theory = Item(kind="paper", title="God Knows Best", url="http://t", source="American Anthropologist",
+                  extra={"lang": "en", "source_theme": "国外理论前沿", "summary": ""})
+    out = filter_and_merge([noise, hit, theory], s)
+    titles = {i.title for i in out}
+    assert "God Knows Best" in titles and "Ethnic minority modernization and poverty alleviation in Yunnan" in titles
+    assert not any("pediatric" in t for t in titles)
+    assert "各民族共同现代化" in [i for i in out if i.url == "http://h"][0].extra["themes"]

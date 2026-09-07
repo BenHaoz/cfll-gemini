@@ -164,10 +164,12 @@ themes:
     # 弱关键词：须同时出现民族语境词才计入（避免"税收治理现代化"之类误报）
     keywords_cn_weak: [现代化, 共同富裕, 乡村振兴, 高质量发展, 城镇化, 区域协调发展, 脱贫, 发展经济学]
     ethnic_context_cn: [民族, 边疆, 少数民族, 族群, 西部, 西藏, 新疆, 内蒙古, 宁夏, 广西, 云南, 贵州, 青海, 费孝通, 藏族, 壮族, 维吾尔, 蒙古族, 回族, 彝族, 苗族, 侗族, 瑶族, 土著]
-    keywords_en: [modernization, modernisation, development and ethnic, indigenous development, minority development, rural transformation, urbanization, ethnic minorities in China, common prosperity, poverty alleviation, Xinjiang, Tibet, Inner Mongolia, Yunnan, Guangxi, borderland]
+    # 英文：须“发展/现代化/政策类词”+“民族/族群/民族地区语境词”同时出现（地名单独出现不计）
+    keywords_en: [modernization, modernisation, modernity, development, developmental, rural revitaliz, rural transformation, common prosperity, poverty alleviation, poverty reduction, livelihood, urbanization, urbanisation, industrializ, economic growth, income, well-being, wellbeing, welfare, social policy, education policy, ethnic policy, integration policy, national identity, border region, borderland, resettlement, relocation]
     require_ethnic_context_en: true   # 英文条目须同时含民族/族群/土著类词
-    ethnic_context_en: [ethnic, minority, minorities, indigenous, nationalit, tribal, aboriginal, China, Chinese]
+    ethnic_context_en: [ethnic, minority, minorities, indigenous, nationalit, tribal, aboriginal, Tibet, Xinjiang, Uyghur, Inner Mongolia, Mongol, Yunnan, Guangxi, Ningxia, Qinghai, Zhuang, Miao, Yao, Kazakh, Hui people]
   国外理论前沿:
     description: 国外民族学人类学的理论与方法前沿（本体论转向、多物种民族志、基础设施人类学、去殖民化、数字人类学、族群与民族主义理论等）。
-    keywords_en: [ontolog, multispecies, more-than-human, decolon, infrastructure, ethnograph, theory, anthropocene, kinship, ritual, cosmopolit, nationalism, ethnicity, indigeneity, sovereignty, care, affect, temporality, value, exchange, personhood, digital anthropology, posthuman]
+    # 只保留理论/方法取向明确的词，避免把移民、卫生等一般社科文章误判为理论前沿
+    keywords_en: [anthropolog, ethnograph, ontolog, multispecies, more-than-human, decolon, anthropocene, posthuman, indigeneity, personhood, cosmopolit, ethnic boundar, boundary making, boundary-making, ethnogenesis, primordial, constructivis, nationalism studies, theory of nationalism, theories of ethnicity, kinship theory, ritual theory, structuralis, poststructural, actor-network, assemblage theory]
     keywords_cn: [人类学理论, 本体论转向, 多物种, 去殖民, 后人类, 基础设施人类学, 数字人类学, 海外民族志, 世界人类学]

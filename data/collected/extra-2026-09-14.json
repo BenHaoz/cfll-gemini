@@ -1,0 +1,123 @@
+[
+ {
+  "kind": "notice",
+  "title": "《宁夏回族自治区民族团结进步促进条例》9月1日起施行——全国首个配套上位法出台的民族团结进步地方性法规",
+  "url": "https://www.neac.gov.cn/seac/xwzx/202607/1193279.shtml",
+  "source": "国家民委",
+  "date": "2026-09-01",
+  "authors": [],
+  "affiliation": "宁夏回族自治区",
+  "verified": true,
+  "evidence": [
+   "https://www.neac.gov.cn/seac/xwzx/202607/1193279.shtml"
+  ],
+  "extra": {
+   "summary": "废旧立新、与《民族团结进步促进法》配套的首部地方性法规，2026-09-01 起施行",
+   "via": "websearch",
+   "lang": "zh"
+  }
+ },
+ {
+  "kind": "notice",
+  "title": "中国民族学学会2026年高层论坛“构建民族学自主知识体系 推进中华民族共同体学学科建设”已于9月上旬在林芝举行（民族所网站 9 月 10 日条目）",
+  "url": "http://iea.cssn.cn/",
+  "source": "中国社会科学院民族学与人类学研究所",
+  "date": "2026-09-10",
+  "authors": [],
+  "affiliation": "中国民族学学会",
+  "verified": false,
+  "evidence": [
+   "http://iea.cssn.cn/",
+   "https://www.cea-ch.org.cn/web/12/202607/1159.html"
+  ],
+  "extra": {
+   "summary": "仅见网站条目，会议报道正文与具体链接未获取",
+   "via": "websearch",
+   "lang": "zh"
+  }
+ },
+ {
+  "kind": "notice",
+  "title": "《民族学刊》2026年第6期已在中国知网期刊门户上线（含铸牢中华民族共同体意识宣传话语“和—合—融”演进逻辑研究）",
+  "url": "https://mzxk.cbpt.cnki.net/",
+  "source": "《民族学刊》",
+  "date": "2026-09",
+  "authors": [],
+  "affiliation": "西南民族大学",
+  "verified": true,
+  "evidence": [
+   "https://mzxk.cbpt.cnki.net/"
+  ],
+  "extra": {
+   "issue": "2026年第6期",
+   "summary": "篇目无法读取，待补录",
+   "via": "websearch",
+   "lang": "zh"
+  }
+ },
+ {
+  "kind": "notice",
+  "title": "国家民委新闻发布会：力争到2030年推动铸牢中华民族共同体意识取得更大成效，各民族共同迈向现代化",
+  "url": "https://www.chinanews.com.cn/txy/2026/09-09/10693145.shtml",
+  "source": "国家民委（中国新闻网报道）",
+  "date": "2026-09-09",
+  "authors": [],
+  "affiliation": "国家民族事务委员会",
+  "verified": true,
+  "evidence": [
+   "https://www.chinanews.com.cn/txy/2026/09-09/10693145.shtml"
+  ],
+  "extra": {
+   "summary": "提出用五年时间到 2030 年推动铸牢工作取得更大成效，重点包括加快民族地区高质量发展、推进民族事务治理现代化、各民族共同迈向现代化",
+   "via": "websearch",
+   "themes": [
+    "各民族共同现代化"
+   ],
+   "lang": "zh"
+  }
+ },
+ {
+  "kind": "notice",
+  "title": "关凯：准确把握中华民族共有精神家园的深刻内涵",
+  "url": "https://www.neac.gov.cn/seac/c103488/list_article_zhongyang.shtml",
+  "source": "国家民委网站·中央民族大学工作动态",
+  "date": "2026-09-02",
+  "authors": [
+   "关凯"
+  ],
+  "affiliation": "中央民族大学",
+  "verified": true,
+  "evidence": [
+   "https://www.neac.gov.cn/seac/c103488/list_article_zhongyang.shtml"
+  ],
+  "extra": {
+   "summary": "阐释中华民族共有精神家园的内涵（来源为栏目列表页，具体文章链接未获取）",
+   "via": "websearch",
+   "lang": "zh"
+  }
+ },
+ {
+  "kind": "paper",
+  "title": "What does anthropology do now?",
+  "url": "https://rai.onlinelibrary.wiley.com/doi/10.1111/1467-8322.70085",
+  "source": "Anthropology Today",
+  "date": "2026-08",
+  "authors": [
+   "Agustín Fuentes"
+  ],
+  "affiliation": "Princeton University",
+  "verified": true,
+  "evidence": [
+   "https://rai.onlinelibrary.wiley.com/doi/10.1111/1467-8322.70085"
+  ],
+  "extra": {
+   "issue": "Vol. 42, No. 4",
+   "summary": "回应 2026 年 4 月 Boghossian 委员会人文学科报告对人类学的批评，讨论学科当下的定位",
+   "via": "websearch",
+   "themes": [
+    "国外理论前沿"
+   ],
+   "lang": "en"
+  }
+ }
+]

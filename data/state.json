@@ -1359,6 +1359,106 @@
    "first_seen": "2026-09-14",
    "title": "关凯：准确把握中华民族共有精神家园的深刻内涵",
    "kind": "notice"
+  },
+  "a289e13c660a33f3": {
+   "first_seen": "2026-09-21",
+   "title": "Negotiating Gender and Justice",
+   "kind": "paper"
+  },
+  "bf7352dc1edc2f03": {
+   "first_seen": "2026-09-21",
+   "title": "The Diaspora of Pre-Columbian Objects from Atacama into a Global Network of Goods, Collectors, and Museums between 1850 ",
+   "kind": "paper"
+  },
+  "1c0a2f69badd3d73": {
+   "first_seen": "2026-09-21",
+   "title": "An Archaeology of Redress",
+   "kind": "paper"
+  },
+  "07884065140524ae": {
+   "first_seen": "2026-09-21",
+   "title": "Reciprocity in critical anthropological practice",
+   "kind": "paper"
+  },
+  "3a10ce5377d79884": {
+   "first_seen": "2026-09-21",
+   "title": "Middle-class locations: emplacements and displacements of habitus among the French in London",
+   "kind": "paper"
+  },
+  "8902fb00fc4b9261": {
+   "first_seen": "2026-09-21",
+   "title": "Nationalism, Balance of Power, and World Order: Untangling Neorealism's Troubled Relationship With Nationalism",
+   "kind": "paper"
+  },
+  "6b82e95fa0535fb5": {
+   "first_seen": "2026-09-21",
+   "title": "Infrastructure nationalism and sovereignty by settlement in Tibet: The case of xiaokang border villages",
+   "kind": "paper"
+  },
+  "abfd2dc526b2f972": {
+   "first_seen": "2026-09-21",
+   "title": "Globalizing the Tribal Culture, Landscapes and Customary Practices Through Indigenous Tourism",
+   "kind": "paper"
+  },
+  "14f917cfaa3f49ef": {
+   "first_seen": "2026-09-21",
+   "title": "A culturally tailored Zhuang embroidery intervention for psychological well-being among Zhuang adults in the retirement ",
+   "kind": "paper"
+  },
+  "98913a5dc600ad50": {
+   "first_seen": "2026-09-21",
+   "title": "Coupling Mechanism and Driving Paths of the Spatial Differentiation of Tourism Attractions from the Perspective of Touri",
+   "kind": "paper"
+  },
+  "5c58dab1e5a0ee79": {
+   "first_seen": "2026-09-21",
+   "title": "Climate Extremes, Demographic Restructuring, and Population Exposure in Xinjiang: Potential Socio-Cultural Implications ",
+   "kind": "paper"
+  },
+  "e2d1495387af1b50": {
+   "first_seen": "2026-09-21",
+   "title": "Built Heritage Perception and Spatial Patterns of Tourist Affect in Dali Bai Autonomous Prefecture, China: A Social Medi",
+   "kind": "paper"
+  },
+  "af4ef4f63722f992": {
+   "first_seen": "2026-09-21",
+   "title": "The spatio-temporal pattern and influencing factors of toponymic cultural heritage in Ningxia",
+   "kind": "paper"
+  },
+  "3ecdb269e57d1573": {
+   "first_seen": "2026-09-21",
+   "title": "首个民族团结进步宣传周活动将在全国开展（9月21日至27日）",
+   "kind": "notice"
+  },
+  "527d6613e3157b77": {
+   "first_seen": "2026-09-21",
+   "title": "二〇二六年“铸牢共同体 中华一家亲”主题宣传活动启动",
+   "kind": "notice"
+  },
+  "5348152486cadfca": {
+   "first_seen": "2026-09-21",
+   "title": "西藏社科界召开学习贯彻《中华人民共和国民族团结进步促进法》座谈会",
+   "kind": "notice"
+  },
+  "fd91b84c9d926da0": {
+   "first_seen": "2026-09-21",
+   "title": "中国佛学院成功举办佛教与中华民族共同体学术研讨会",
+   "kind": "notice"
+  },
+  "688594806b4dcb55": {
+   "first_seen": "2026-09-21",
+   "title": "地区生产总值增至8.66万亿！民族地区发展“成绩单”来了",
+   "kind": "notice"
+  },
+  "359b111a44970c75": {
+   "first_seen": "2026-09-21",
+   "title": "习近平总书记指引民族团结进步事业高质量发展",
+   "kind": "notice"
+  },
+  "cffb2ad882c9f59a": {
+   "first_seen": "2026-09-21",
+   "title": "Dialogues: decolonizing anthropology – complicating centres and margins",
+   "kind": "paper"
   }
  },
  "runs": [
@@ -1387,6 +1487,16 @@
    "period": "2026年第38周",
    "items": 171,
    "new": 74,
+   "mailed": false,
+   "analysis_by": "Claude 会话分析",
+   "sources_ok": 64,
+   "sources_total": 64
+  },
+  {
+   "date": "2026-09-21",
+   "period": "2026年第39周",
+   "items": 156,
+   "new": 20,
    "mailed": false,
    "analysis_by": "Claude 会话分析",
    "sources_ok": 64,

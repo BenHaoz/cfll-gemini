@@ -1706,6 +1706,13 @@
    "detail_ok": 202,
    "detail_fail": 5,
    "articles": 4407
+  },
+  {
+   "date": "2026-09-27",
+   "issue_pages_used": 0,
+   "detail_ok": 0,
+   "detail_fail": 0,
+   "articles": 4407
   }
  ]
 }

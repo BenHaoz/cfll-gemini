@@ -1,15 +1,15 @@
 # 民族学学科监测周报 · 2026年第40周
-生成时间：2026-09-28 00:52　监测窗口：近 14 天　分析引擎：Claude 会话分析
+生成时间：2026-09-28 00:55　监测窗口：近 14 天　分析引擎：Claude 会话分析
 
 ## 一、本周概览
 
 | 指标 | 数量 |
 |---|---|
 | 新增论文（中文期刊） | 0 |
-| 国外文献（专题/理论前沿） | 0 |
+| 国外文献（专题/理论前沿） | 23 |
 | 新增课题立项 | 0 |
-| 相关公告 | 0 |
-| 涉桂成果/课题 | 0 |
+| 相关公告 | 9 |
+| 涉桂成果/课题 | 1 |
 | 待核实条目 | 0 |
 
 | 方向 | 论文 | 课题 |
@@ -21,10 +21,24 @@
 
 ## 二、论文监测（按方向）
 
+国外文献 23 篇不计入方向统计，见“九、各民族共同现代化专题”“十、国外民族学人类学理论前沿动态”。
+
 本周未监测到新增论文（请查看文末数据源状态）。
 ## 三、课题立项监测（按资助机构）
 
 本周未监测到新增民族学相关立项。
+### 相关公告 / 通知
+
+- 2026-09-24 【吉林新闻网】[延吉市扎实开展首个全国民族团结进步宣传周活动](http://www.jl.chinanews.com.cn/jltz/2026-09-24/261806.html) 
+- 2026-09-23 【中新网】[《中华民族交往交流交融史》出版座谈会在京召开](https://www.chinanews.com.cn/gn/2026/09-23/10702427.shtml) 
+- 2026-09-22 【光明网】[民族团结进步宣传周正式启动 天山南北掀起同心筑梦热潮](https://politics.gmw.cn/2026-09/22/content_39015368.htm) 
+- 2026-09-21 【中新网】[2026年民族团结进步宣传周正式启动（9月21日-27日，主场活动在北京举行）](https://www.chinanews.com.cn/txy/2026/09-21/10700542.shtml) 
+- 2026-09-21 【腾讯新闻（求是网/中国青年报/凤凰网转载）】[在日常生活中铸牢中华民族共同体意识](https://news.qq.com/rain/a/20260921A01X6Q00) 
+- 2026-09-19 【中国新闻网】[中华一家亲！让各族群众共享改革发展成果](https://www.chinanews.com.cn/gn/2026/09-19/10699528.shtml) 
+- 2026-09-18 【新华网/人民网】[2026年“铸牢共同体 中华一家亲”主题宣传活动启动](https://www.news.cn/politics/20260917/97af7595b49947c2bd23d52df567fa8d/c.html) 
+- 2026-09-09 【国家民委（中国新闻网报道）】[国家民委新闻发布会：力争到2030年推动铸牢工作取得更大成效，各民族共同迈向现代化](https://www.chinanews.com.cn/txy/2026/09-09/10693145.shtml) 
+- 2026-09 【国家民委·政府信息公开】[国家民委办公厅关于申报2026年度国家民委民族研究后期资助项目的通知](https://www.neac.gov.cn/seac/xxgk/202609/1195349.shtml) 
+
 ## 四、研究分析与广西特色选题策划
 
 ### 一、本周学术动态总评
@@ -289,13 +303,62 @@
 
 口径：本周新增条目中命中“共同现代化/民族地区现代化/共同富裕”等专题词者（中文），或国外文献中同时含现代化/发展与民族/族群/土著语境者；另含专题期刊（中国社会科学、社会学研究、历史研究及 985 高校学报）目录中命中专题词的文章。中国式现代化研究院与 985 高校成果动态由每周会话联网检索补充（见分析部分）。
 
-本周未监测到专题相关新增条目。
+**国内（2 篇）**
+
+| 题目 | 作者 | 来源 / 期号 | 摘要 | 链接 |
+|---|---|---|---|---|
+| 中华一家亲！让各族群众共享改革发展成果 |  | 中国新闻网 2026-09-19 | 报道青海西宁“共富工坊”等民族地区共同富裕实践案例，呼应宣传周主题。 | [链接](https://www.chinanews.com.cn/gn/2026/09-19/10699528.shtml) |
+| 国家民委新闻发布会：力争到2030年推动铸牢工作取得更大成效，各民族共同迈向现代化 |  | 国家民委（中国新闻网报道） 2026-09-09 | 提出到2030年加快民族地区高质量发展、推进民族事务治理现代化、各民族共同迈向现代化的阶段性目标。 | [链接](https://www.chinanews.com.cn/txy/2026/09-09/10693145.shtml) |
+
+**国外（8 篇）**
+
+| Title | Authors | Journal / Date | Abstract | Link |
+|---|---|---|---|---|
+| Multi-dimensional impacts of rural tourism on poverty in China’s post-poverty era: a sustainable livelihoods approach | Henglu Zhang、Nor Malina Malek | Development in Practice 2026-09-22 | After China declared victory over absolute poverty in 2020, the question shifted | [链接](https://doi.org/10.1080/09614524.2026.2731096) |
+| Can Intangible Cultural Heritage Resources Stimulate Regional Entrepreneurial Activity?—Empirical Evidence from the Guangxi Zhuang Autonomous Region | Xiaoyu Zhang、Min Zhao、Yan Liu | Ecological Economics and Management 2026-09-21 | In line with the world’s goals of sustainable development, cultural resources ar | [链接](https://doi.org/10.53941/eem.2026.100015) |
+| A culturally tailored Zhuang embroidery intervention for psychological well-being among Zhuang adults in the retirement transition in Guangxi | Junfeng Li、Junzi Xiang | Frontiers in Public Health 2026-09-17 | 壮绣文化干预对广西壮族退休老年人心理福祉影响的准实验研究，属涉桂英文文献。 | [链接](https://doi.org/10.3389/fpubh.2026.1945265) |
+| Prevalence and associated factors of functional disability among middle-aged and older adults: evidence from 12 ethnic groups in Yunnan, China | Jun Zhang、Heng Bai、Rong Li | International Journal for Equity in Health 2026-09-21 | Functional disability is a growing public health concern in aging populations wo | [链接](https://doi.org/10.1186/s12939-026-03039-y) |
+| A Century of Population Dynamics in Arid Xinjiang, China: County-Level Change, Demographic Structure, and Spatial Patterns, 1909–2020 | Jiahui Shi、Li Zhang、Sifan Zhou | Land 2026-09-19 | Reconstructing long-term population dynamics contributes to understanding the pr | [链接](https://doi.org/10.3390/land15091749) |
+| Borderland extraterritoriality: The Yunnan-Burma frontier meetings (1902–1949) | Li Wan | Modern Asian Studies 2026-09-22 | Abstract Britain exercised a distinctive form of extraterritorial jurisdiction a | [链接](https://doi.org/10.1017/s0026749x26102133) |
+| From Gastfreundschaft to Überfremdung : National Identity and the Origins of Right‐Wing Migration Politics in West Germany, 1973–1983 | Simon Ahrens | Nations and Nationalism 2026-09-25 | ABSTRACT This article contributes a historical perspective to scholarship on mig | [链接](https://doi.org/10.1111/nana.70122) |
+| Tripartite Evolutionary Game and Simulation Analysis of Regulating Service Value Realization: A Case Study of Yunnan Province, China | Guifeng Gu、Xiufeng Ren | Sustainability 2026-09-21 | The sustainable provision of regulating services—such as climate regulation, wat | [链接](https://doi.org/10.3390/su18189658) |
 
 ### 十、国外民族学人类学理论前沿动态
 
 口径：American Anthropologist、Current Anthropology、HAU、Anthropological Theory、Annual Review of Anthropology、JRAI 等理论类期刊 RSS 的最新文章，以及族群/民族主义与中国研究类期刊中命中理论词的文章；按期刊分组，理论要点由每周会话在分析部分归纳。
 
-本周未获取到国外理论类期刊的新增文章（请查看数据源状态中的 RSS 条目）。
+**Journal of the Royal Anthropological Institute**（6）
+
+- [Staging friendship: towards an anthropology of everyday geopolitics in South Asia](https://doi.org/10.1111/1467-9655.70208) — Sahana Ghosh · 2026-09-25
+- [Introduction: On the fickleness of friendship](https://doi.org/10.1111/1467-9655.70210) — Simon Coleman · 2026-09-24
+- [Mandala logic: mytho‐praxis as vernacular political theory in Myanmar](https://doi.org/10.1111/1467-9655.70205) — Michael R. Dunford · 2026-09-24
+- [Knots in the weave: female friendship, ritual tension, and the religious other](https://doi.org/10.1111/1467-9655.70209) — Ghazal Asif Farrukhi · 2026-09-24
+- [False kings and imagined protestants: why schismogenesis does not explain variation in inequality among Indigenous societies of the Pacific Coast](https://doi.org/10.1111/1467-9655.70202) — Eric Alden Smith、Brian F. Codding · 2026-09-21
+- [The reckoning: ethnographic explorations of the ending of a friendship](https://doi.org/10.1111/1467-9655.70207) — Katherine Smith · 2026-09-20
+
+**American Anthropologist**（5）
+
+- [Beyond the Dichotomy of Success and Failure: Making Activism Meaningful in South Korea and France](https://doi.org/10.1111/aman.70115) — Guilherme Fians、Sera Yeong Seo Park · 2026-09-26
+- [Four Questions for Ethnographers Under Trumpian Authoritarianism](https://doi.org/10.1111/aman.70117) — Elizabeth Hanna Rubio · 2026-09-24
+- [The Anthropocene and the End of Nuclear Disaster: Normalizing the Fukushima Nuclear Accident](https://doi.org/10.1111/aman.70116) — Maxime Polleri · 2026-09-23
+- [How Anthropology Can Harm Students During a Genocide](https://doi.org/10.1111/aman.70118) — Girish Daswani · 2026-09-22
+- [Burying Futures: Artisanal Mining Deaths and the Politics of Negligence in Zimbabwe](https://doi.org/10.1111/aman.70120) — Melusi Nkomo · 2026-09-22
+
+**Comparative Studies in Society and History**（1）
+
+- [Coerced Labor, Caste, and Aspirations for Liberty in Early Nineteenth-Century Bengal: Revisiting the Antislavery Debate from South Asia](https://doi.org/10.1017/s001041752610067x) — Anirban Karak · 2026-09-22
+
+**Ethnic and Racial Studies**（1）
+
+- [Bourdieusian conception of the state, migrants and radical democracy in the reflexive sociology of Abdelmalek Sayad](https://doi.org/10.1080/01419870.2026.2724584) — Andrea Girometti · 2026-09-25
+
+**Asian Ethnicity**（1）
+
+- [Epistemic injustice and the Meitei revivalist movement in Manipur, India](https://doi.org/10.1080/14631369.2026.2737962) — Prakash Khundrakpam、Nameirakpam Bijen Meetei · 2026-09-22
+
+**The Historical Journal**（1）
+
+- [Contesting Collecting: Indigenous Material Cultures](https://doi.org/10.1017/s0018246x26101848) — James Poskett、Lynette Russell · 2026-09-23
 
 ## 六、数据源状态
 

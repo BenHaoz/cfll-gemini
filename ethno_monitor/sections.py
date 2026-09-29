@@ -88,7 +88,10 @@ def build_pubs_section(today: date, *, top_n: int = 30) -> tuple[str, dict[str, 
     cov = coverage(arts.values(), journal_meta, years)
     covered = [c for c in cov if c["total"] > 0]
     missing = [c["journal"] for c in cov if c["total"] == 0]
-    L.append(f"> 覆盖说明：已入库 {len(covered)} 种期刊；未入库 {len(missing)} 种（{('、'.join(missing[:12]) + ('…' if len(missing) > 12 else '')) if missing else '无'}）。作者单位来自文献中心详情页，匹配率见附录。")
+    n_cnki = sum(1 for a in arts.values() if a.source == "cnki")
+    L.append(f"> 覆盖说明：已入库 {len(covered)} 种期刊；未入库 {len(missing)} 种（{('、'.join(missing[:12]) + ('…' if len(missing) > 12 else '')) if missing else '无'}）。"
+             f"作者单位来自国家哲学社会科学文献中心详情页" + (f"，另有 {n_cnki} 篇来自知网导出文件（data/pubs/cnki/）" if n_cnki else "")
+             + "；文献中心未收录的期刊可按 data/pubs/cnki/README.md 从知网导出后补入。")
     L.append("")
     return "\n".join(L), {"stats": stats, "years": years, "ranked": ranked}
 

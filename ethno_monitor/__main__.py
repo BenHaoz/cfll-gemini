@@ -55,6 +55,14 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("stats", help="根据文章库输出博士点单位发文排名、学科指数（Markdown）")
 
+    p_imp = sub.add_parser("import-cnki", help="导入知网导出文件（RefWorks/EndNote/NoteExpress/Excel/CSV）到文章库")
+    p_imp.add_argument("files", nargs="*", help="导出文件；缺省为 data/pubs/cnki/ 下全部文件")
+
+    p_au = sub.add_parser("authors", help="某单位在文章库中的作者发文排名（Markdown）")
+    p_au.add_argument("--institution", required=True, help="单位标准名，如 广西民族大学")
+    p_au.add_argument("--years", type=int, default=3)
+    p_au.add_argument("--top", type=int, default=30)
+
     sub.add_parser("test-email", help="发送一封测试邮件验证 SMTP 配置")
 
     a = ap.parse_args(argv)
@@ -103,6 +111,23 @@ def main(argv: list[str] | None = None) -> int:
     if a.cmd == "stats":
         from .sections import build_extra_sections
         print(build_extra_sections(date.today()))
+        return 0
+    if a.cmd == "import-cnki":
+        from .cnki_import import import_cnki
+        print(json.dumps(import_cnki([Path(f) for f in a.files] or None), ensure_ascii=False, indent=1))
+        return 0
+    if a.cmd == "authors":
+        from .pubs import author_ranking, load_articles
+        y1 = date.today().year
+        years = list(range(y1 - a.years + 1, y1 + 1))
+        rows = author_ranking(load_articles().values(), a.institution, years)
+        print(f"### {a.institution} 作者发文排名（{years[0]}—{years[-1]}，文章库口径）\n")
+        print("| 排名 | 作者 | 篇数 | 第一作者 | 含跨单位合作 | 论文 |")
+        print("|---|---|---|---|---|---|")
+        for i, r in enumerate(rows[:a.top], 1):
+            papers = "；".join(f"《{p.title}》（{p.journal} {p.year}年第{p.issue or '?'}期）" for p in r["papers"])
+            print(f"| {i} | {r['author']} | {r['total']} | {r['first']} | {r['cross']} | {papers} |")
+        print(f"\n共 {len(rows)} 位作者。跨单位合作论文中的外单位合作者也会计入，“含跨单位合作”列供甄别。")
         return 0
     if a.cmd == "site":
         from .config import DOCS_DIR, REPORT_DIR

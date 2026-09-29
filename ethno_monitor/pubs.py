@@ -15,6 +15,42 @@ PUBS_DIR = DATA_DIR / "pubs"
 ARTICLES_PATH = PUBS_DIR / "articles.jsonl"
 
 COMMUNITY_KW = ["中华民族共同体", "铸牢", "共同体意识", "民族团结进步", "交往交流交融", "三交", "互嵌", "共有精神家园", "五个认同", "中华民族现代文明"]
+CORE_TIERS = ("CSSCI来源", "CSSCI扩展", "北大核心")
+PLACEHOLDER_AFFS = (["(未解析)"], ["(接口无数据)"])
+
+_FOOTNOTE = re.compile(r"\[[^\[\]]*\]|［[^［］]*］")
+
+
+def clean_author_names(names: Iterable[str]) -> list[str]:
+    """去掉作者名后的单位序号脚注，并修复按逗号误拆出的残片（'郝国强[1'、'2]' → '郝国强'）。"""
+    merged: list[str] = []
+    buf: str | None = None
+    for tok in names or []:
+        tok = str(tok)
+        if buf is not None:
+            buf += "," + tok
+            if "]" in tok:
+                merged.append(buf)
+                buf = None
+            continue
+        if "[" in tok and "]" not in tok:
+            buf = tok
+        else:
+            merged.append(tok)
+    if buf is not None:
+        merged.append(buf)
+    out: list[str] = []
+    for n in merged:
+        n = re.sub(r"\[[^\]]*\]?|\([\d,，、\s]+\)", "", n).strip(" ,，;；")
+        if n and not re.fullmatch(r"[\d,，、\s\]]+", n) and n not in out:
+            out.append(n)
+    return out
+
+
+def split_author_field(raw: str) -> list[str]:
+    """'郝国强[1,2];李星莹[1]' / '郝国强;包蕾' → ['郝国强', '李星莹']。"""
+    raw = _FOOTNOTE.sub("", raw or "")
+    return clean_author_names(x for x in re.split(r"[;；,，、]", raw) if x.strip())
 
 
 @dataclass
@@ -116,6 +152,7 @@ def load_articles(path: Path | None = None) -> dict[str, Article]:
             d = json.loads(line)
             allowed = {k: v for k, v in d.items() if k in Article.__dataclass_fields__}
             a = Article(**allowed)
+            a.authors = clean_author_names(a.authors)
             out[a.key] = a
     return out
 
@@ -128,20 +165,47 @@ def save_articles(arts: dict[str, Article], path: Path | None = None) -> None:
             f.write(json.dumps(a.to_dict(), ensure_ascii=False) + "\n")
 
 
+def title_index_key(journal: str, title: str) -> str:
+    return f"{norm(journal)}|{norm(title)[:60]}"
+
+
+def _same_title_key(arts: dict[str, Article], idx: dict[str, list[str]], a: Article) -> str | None:
+    """同刊同题且同一期，或一方尚无期号（网络首发）时视为同一篇；栏目导语等跨期同名条目不合并。"""
+    for k in idx.get(title_index_key(a.journal, a.title), []):
+        o = arts.get(k)
+        if o and (not o.issue or not a.issue or (o.year, o.issue) == (a.year, a.issue)):
+            return k
+    return None
+
+
 def upsert(arts: dict[str, Article], new: Iterable[Article]) -> int:
+    """按去重键合并；键不同但属同一篇（网络首发稿后补正式期号、不同来源标点差异）也合并。"""
+    idx: dict[str, list[str]] = defaultdict(list)
+    for k, a in arts.items():
+        idx[title_index_key(a.journal, a.title)].append(k)
     added = 0
     for a in new:
-        if a.key in arts:
-            old = arts[a.key]
-            old.authors = old.authors or a.authors
-            old.affiliations = old.affiliations or a.affiliations
-            old.institutions = old.institutions or a.institutions
-            old.url = old.url or a.url
-            old.date = old.date or a.date
-            old.tier = old.tier or a.tier
-        else:
+        tkey = title_index_key(a.journal, a.title)
+        k = a.key if a.key in arts else _same_title_key(arts, idx, a)
+        if k is None:
             arts[a.key] = a
+            idx[tkey].append(a.key)
             added += 1
+            continue
+        old = arts[k]
+        old.authors = old.authors or a.authors
+        if a.affiliations and (not old.affiliations or old.affiliations in PLACEHOLDER_AFFS):
+            old.affiliations = a.affiliations
+            old.institutions = a.institutions or old.institutions
+        old.institutions = old.institutions or a.institutions
+        old.url = old.url or a.url
+        old.date = old.date or a.date
+        old.tier = old.tier or a.tier
+        if not old.issue and a.issue and a.key not in arts:
+            del arts[k]
+            old.key, old.year, old.issue, old.date = a.key, a.year, a.issue, a.date or old.date
+            arts[old.key] = old
+            idx[tkey] = [old.key if x == k else x for x in idx[tkey]]
     return added
 
 
@@ -201,6 +265,26 @@ def quarter_ranking(stats: dict[str, InstStats], quarter: str) -> list[tuple[str
 def latest_quarters(stats: dict[str, InstStats], n: int = 4) -> list[str]:
     qs = sorted({q for s in stats.values() for q in s.by_quarter if not q.endswith("?")})
     return qs[-n:]
+
+
+def author_ranking(arts: Iterable[Article], institution: str, years: Iterable[int]) -> list[dict[str, Any]]:
+    """某单位论文的作者发文排名。文献只给出论文层面的单位列表，故跨单位合作论文中的外单位合作者也会计入（cross 列标出）。"""
+    years = set(years)
+    rows: dict[str, dict[str, Any]] = {}
+    for a in arts:
+        if a.year not in years or institution not in a.institutions:
+            continue
+        cross = len(a.institutions) > 1
+        names = clean_author_names(a.authors)
+        for au in names:
+            r = rows.setdefault(au, {"author": au, "total": 0, "first": 0, "cross": 0, "papers": []})
+            r["total"] += 1
+            r["first"] += int(names[0] == au)
+            r["cross"] += int(cross)
+            r["papers"].append(a)
+    for r in rows.values():
+        r["papers"].sort(key=lambda p: (-p.year, -p.issue))
+    return sorted(rows.values(), key=lambda r: (-r["total"], -r["first"], r["author"]))
 
 
 def coverage(arts: Iterable[Article], journal_meta: dict[str, dict[str, Any]], years: Iterable[int]) -> list[dict[str, Any]]:

@@ -16,7 +16,8 @@ from .collectors.base import clean, soup_of
 from .collectors.journals import parse_toc_ncpssd
 from .config import CONFIG_DIR
 from .http import fetch, fix_encoding
-from .pubs import ARTICLES_PATH, PUBS_DIR, Article, InstitutionMatcher, article_key, issue_to_month, load_articles, save_articles, upsert
+from .pubs import (ARTICLES_PATH, CORE_TIERS, PLACEHOLDER_AFFS, PUBS_DIR, Article, InstitutionMatcher, article_key, issue_to_month,
+                   load_articles, save_articles, split_author_field, upsert)
 
 log = logging.getLogger(__name__)
 STATE_PATH = PUBS_DIR / "harvest_state.json"
@@ -148,7 +149,7 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
     issue_budget, detail_budget = max_issue_pages, max_detail_pages
     log_rows: list[str] = []
 
-    journals = [j for j in core.get("journals", []) if j.get("gch") and j.get("tier") in ("CSSCI来源", "CSSCI扩展", "北大核心")]
+    journals = [j for j in core.get("journals", []) if j.get("gch") and j.get("tier") in CORE_TIERS]
     if journals_filter:
         journals = [j for j in journals if journals_filter in j["name"]]
 
@@ -209,7 +210,7 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
             continue
         affs = split_organ(str(meta.get("showorgan") or ""))
         if not a.authors and meta.get("showwriter"):
-            a.authors = [re.sub(r"\[\d+\]", "", x).strip() for x in re.split(r"[;；]", str(meta["showwriter"])) if x.strip()][:8]
+            a.authors = split_author_field(str(meta["showwriter"]))[:8]
         if affs:
             a.affiliations = affs
             a.institutions = matcher.match_all(affs)
@@ -224,7 +225,7 @@ def harvest(*, today: date | None = None, years_back: int = 3, max_issue_pages: 
     for a in arts.values():
         if a.issue and a.journal in freq_of:
             a.date = f"{a.year}-{issue_to_month(a.issue, freq_of[a.journal]):02d}"
-        if a.affiliations and a.affiliations != ["(未解析)"]:
+        if a.affiliations and a.affiliations not in PLACEHOLDER_AFFS:
             a.institutions = matcher.match_all(a.affiliations)
     save_articles(arts)
     st["runs"].append({"date": today.isoformat(), "issue_pages_used": max_issue_pages - issue_budget, "detail_ok": detail_ok,

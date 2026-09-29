@@ -40,6 +40,9 @@ PY
 - **各民族共同现代化专题**：检索「中国式现代化研究院 民族」「985 高校 民族地区现代化 研究成果 2026」「共同富裕 民族地区 论文 2026 中国社会科学/社会学研究」以及国外「ethnic minorities modernization China 2026」，把有链接的成果作为条目写入 extra_items.json（extra.themes 含"各民族共同现代化"，英文条目 extra.lang="en"）。
 - **国外理论前沿**：RSS 已自动采集；会话在分析第八节归纳理论要点，必要时补检索「anthropological theory 2026 review」。
 
+## 2c. 知网导出文件（文章库补充，可选）
+文献中心没有收录《广西民族研究》《中南民族大学学报》《民族学刊》《中华民族共同体研究》等核心期刊。用户提供的知网导出文件（RefWorks/EndNote/NoteExpress/Excel）放入 `data/pubs/cnki/`，运行 `python -m ethno_monitor import-cnki` 并连同 `data/pubs/` 一起提交；采集工作流每周也会自动导入。步骤见 `data/pubs/cnki/README.md`。
+
 ## 3. 生成分析提示词并撰写分析
 ```bash
 python -m ethno_monitor prompt --items-file /tmp/em/collected.json --items-file /tmp/em/extra_items.json --date $TODAY > /tmp/em/prompt.txt

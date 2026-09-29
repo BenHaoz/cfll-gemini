@@ -11,6 +11,7 @@ from bs4 import Tag
 
 from ..http import fetch, fetch_text
 from ..models import Item, SourceStatus
+from ..pubs import split_author_field
 from .base import CJK, clean, parse_date, soup_of, within_lookback
 
 log = logging.getLogger(__name__)
@@ -81,9 +82,7 @@ def _authors_from_handle(container) -> list[str]:
             continue
         strs = QUOTED_RE.findall(oc)
         if len(strs) >= 3:
-            raw = strs[-2]
-            names = [re.sub(r"\[\d+\]|\(\d+\)", "", x).strip() for x in re.split(r"[;；,，]", raw)]
-            return [n for n in names if 1 < len(n) <= 12]
+            return [n for n in split_author_field(strs[-2]) if 1 < len(n) <= 12]
     return []
 
 

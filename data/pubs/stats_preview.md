@@ -45,11 +45,11 @@
 | 2026Q1 | 中央民族大学 39；中国社会科学院大学（中国社会科学院民族学与人类学研究所） 18；西南民族大学 17；四川大学 16；云南大学 14；中国人民大学 13；西藏大学 12；中山大学 11；云南民族大学 9；兰州大学 9 |
 | 2025Q4 | 中央民族大学 28；中国社会科学院大学（中国社会科学院民族学与人类学研究所） 13；西藏大学 12；西南民族大学 11；云南大学 9；四川大学 9；北方民族大学 8；兰州大学 7；青海民族大学 7；中山大学 5 |
 
-> 覆盖说明：已入库 16 种期刊；未入库 14 种（民族教育研究、中华民族共同体研究、广西民族研究、中南民族大学学报（人文社会科学版）、民族学刊、青海民族大学学报（社会科学版）、中国藏学（藏文版）、黑龙江民族丛刊、民族论坛、民族学论丛、内蒙古社会科学、民族语文…）。作者单位来自文献中心详情页，匹配率见附录。
+> 覆盖说明：已入库 16 种期刊；未入库 14 种（民族教育研究、中华民族共同体研究、广西民族研究、中南民族大学学报（人文社会科学版）、民族学刊、青海民族大学学报（社会科学版）、中国藏学（藏文版）、黑龙江民族丛刊、民族论坛、民族学论丛、内蒙古社会科学、民族语文…）。作者单位来自国家哲学社会科学文献中心详情页；文献中心未收录的期刊可按 data/pubs/cnki/README.md 从知网导出后补入。
 
 ### 七、博士点单位主要学者最新观点
 
-名录共 39 位学者（来自 config/institutions.yaml）。本期：文章库中匹配到学者论文 52 篇（近两年，按作者名精确匹配，同名风险请留意）；联网检索到有链接可核的最新观点/动态 13 条（由 Claude 会话整理）。
+名录共 39 位学者（来自 config/institutions.yaml）。本期：文章库中匹配到学者论文 64 篇（近两年，按作者名精确匹配，同名风险请留意）；联网检索到有链接可核的最新观点/动态 13 条（由 Claude 会话整理）。
 
 **学者近期论文（文章库匹配）**
 
@@ -59,10 +59,14 @@
 | 励轩 | 四川大学 | 建设性爱国主义：印尼亚齐民众的国家认同实践 | 世界民族 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=SJMZ2026003007&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 严庆 | 中央民族大学 | 体育赛事铸牢中华民族共同体意识之机理探析 | 云南民族大学学报（哲学社会科学版） 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=YNMZDXXBZXSHKXB2026003004&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 严庆 | 中央民族大学 | 从“族类”概念演化看中国民族学自主知识体系建设 | 北方民族大学学报（哲学社会科学版） 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=BFMZDXXBZXSHKXB2026003001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 张科 | 青海民族大学 | 共酿·共运·共饮：清至民国时期青海青稞酒与多民族日常交往研究 | 原生态民族文化学刊 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=YSTMZWHXK2026003002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 马忠才 | 西北民族大学 | 青藏高原特色优势企业与民族互嵌结构共进机制研究 | 民族研究 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=MZYJ2026003001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 陈心林 | 湖北民族大学 | 新时代非遗系统性保护探赜：理论逻辑与实践路径 | 湖北民族大学学报（哲学社会科学版） 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=HBMZDXXBZXSHKXB2026003008&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 段颖 | 中山大学 | 超越人类的边境聚合：中老边境跨境野生亚洲象群、监测技术与日常治理研究 | 西北民族研究 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2026003009&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 崔榕 | 中南民族大学 | “坚持中国特色解决民族问题的正确道路”专题研究 | 贵州民族研究 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2026003004&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 崔榕 | 中南民族大学 | 新中国成立初期中国共产党民族团结话语体系建设的实践与经验 | 贵州民族研究 2026年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2026003005&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 何明 | 云南大学 | 僧伽罗佛教民族主义的话语体系生成：基于《大史》的认同建构、政治逻辑与暴力辩护 | 世界民族 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=SJMZ2026002009&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 纳日碧力戈 | 内蒙古师范大学 | 中华民族共同体的泥土性和日常性——基于本土知识与民间智慧的探讨 | 云南民族大学学报（哲学社会科学版） 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=YNMZDXXBZXSHKXB2026002003&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 马忠才 | 西北民族大学 | 构筑中华民族共有精神家园的理论逻辑与地方实践 | 西北民族大学学报（哲学社会科学版） 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZDXXBZXSHKXB2026002005&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 麻国庆 | 中央民族大学 | 从铸铁到“打文化”——冀南小堤村的城乡关系变迁 | 西北民族研究 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2026002007&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 纳日碧力戈 | 内蒙古师范大学 | 民族与民族概念三辨正 | 西北民族研究 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2026002003&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
@@ -71,8 +75,11 @@
 | 徐黎丽 | 兰州大学 | 论协同推进中华民族共同体与周边命运共同体建设 | 青海民族研究 2026年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=QHMZYJ2026002006&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 赵利生 | 兰州大学 | 冲突还是互鉴？——当代文化互构及其取向研究 | 世界民族 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=SJMZ2026001002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 周建新 | 广西民族大学 | 由“人”及“物”：人类学离散与回归理论的范式拓展 | 云南民族大学学报（哲学社会科学版） 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=YNMZDXXBZXSHKXB2026001006&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 何明 | 云南大学 | 论中华民族构成结构的复合性 | 广西民族大学学报（哲学社会科学版） 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GXMZDXXBZXSHKXB2026001005&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 赵利生 | 兰州大学 | 中华民族和中华文明一体互构论 | 西北民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2026001002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 严庆 | 中央民族大学 | 铸牢中华民族共同体意识：超越西方民族建构困境的中国式凝聚力锻造之道 | 西北民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2026001001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 常宝 | 内蒙古师范大学 | “跨国界”与“融族界”：新时代民族关系的“边界”思考 | 贵州民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2026001003&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 纳日碧力戈 | 内蒙古师范大学 | 中华民族共同体建设理论与实践专题研究 | 贵州民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2026001001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 纳日碧力戈 | 内蒙古师范大学 | 探寻生活中的“铸牢”之道：从非遗传承到共同体意识 | 贵州民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2026001002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 霍巍 | 四川大学 | “秦昆仑采药刻石”与“青海道”的初通 | 青海民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=QHMZYJ2026001001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 周建新 | 广西民族大学 | 泰国清迈“云南市场”族裔景观形成与发展的历史文化逻辑 | 青海民族研究 2026年第1期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=QHMZYJ2026001011&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
@@ -80,21 +87,14 @@
 | 周建新 | 广西民族大学 | 从多元叙事到一体表达：中南半岛“云南人” 认同的形成及其特征 | 世界民族 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=SJMZ2025005004&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 黄彩文 | 云南民族大学 | 中国式现代化进程中农村幼儿隔代抚育研究——基于云南元阳县新街镇的人类学考察 | 广西民族大学学报（哲学社会科学版） 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GXMZDXXBZXSHKXB2025005003&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 徐黎丽 | 兰州大学 | 论中国特色边疆治理理论的时空演变 | 广西民族大学学报（哲学社会科学版） 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GXMZDXXBZXSHKXB2025005008&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 励轩 | 四川大学 | 全民族抗战时期西康地区中华民族观念的认同与传播——以《康导月刊》为中心的研究 | 民族研究 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=MZYJ2025005001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 严庆 | 中央民族大学 | 以言取效：“石榴籽”的符号意涵与话语表意 | 湖北民族大学学报（哲学社会科学版） 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=HBMZDXXBZXSHKXB2025005001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 何明 | 云南大学 | 论中华民族共同体的整体涌现性 | 西北民族大学学报（哲学社会科学版） 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZDXXBZXSHKXB2025005001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 励轩 | 四川大学 | 文物展陈与边疆治理——1936年的西北文物展览会研究 | 西北民族研究 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2025005009&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 马忠才 | 西北民族大学 | 民族互嵌在日常生活空间中何以生成——中华民族共同体建设的微观社会基础探赜 | 西北民族研究 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2025005002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 周传斌 | 兰州大学 | 以“中华民族”为价值轴心：抗日战争前后马鹤天的边疆教育考察 | 贵州民族研究 2025年第5期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025005008&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 | 严庆 | 中央民族大学 | 交叉与聚力：中华民族共同体学学科建设刍议 | 云南民族大学学报（哲学社会科学版） 2025年第4期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=YNMZDXXBZXSHKXB2025004001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 徐黎丽 | 兰州大学 | “兴边富民”专题研究 | 贵州民族研究 2025年第4期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025004011&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 徐黎丽 | 兰州大学 | 中蒙边境贸易发展问题探析 | 贵州民族研究 2025年第4期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025004012&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 黄彩文 | 云南民族大学 | 以瓷为媒：铸牢中华民族共同体意识视域下永胜瓷的多重意蕴 | 贵州民族研究 2025年第4期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025004006&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 纳日碧力戈 | 内蒙古师范大学 | 草根里生出的地方感：达斡尔民间植物文化三元/三性互动论研究 | 中央民族大学学报（哲学社会科学版） 2025年第3期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=ZYMZDXXBZXSHKXB2025003007&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 徐黎丽 | 兰州大学 | 民国时期滇商入康作用及启示 | 北方民族大学学报（哲学社会科学版） 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=BFMZDXXBZXSHKXB2025002009&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 何明 | 云南大学 | 边疆民族地区学校推广使用国家通用语言文字研究——基于吉林延边朝鲜族自治州的调查 | 北方民族大学学报（哲学社会科学版） 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=BFMZDXXBZXSHKXB2025002018&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 陈祥军 | 中南民族大学 | 地方社会中的资源观念与生态秩序——一项基于主体性表达的民族志研究 | 湖北民族大学学报（哲学社会科学版） 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=HBMZDXXBZXSHKXB2025002005&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 严庆 | 中央民族大学 | 话语与指向：“一个民族也不能少”的意涵与价值 | 西南民族大学学报（人文社会科学版） 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XNMZDXXBRWSHKXB2025002002&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 索南才让 | 西藏民族大学 | 济咙呼图克图的历史事迹对当代西藏铸牢中华民族共同体意识的启示 | 西藏大学学报（社会科学版） 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XCDXXBSHKXB2025002023&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 严庆 | 中央民族大学 | “文明与民族、国家”专题研究 | 贵州民族研究 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025002001&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
-| 麻国庆 | 中央民族大学 | 传统的延续：傣族村寨的传统文化价值与社会治理共同体 | 贵州民族研究 2025年第2期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=GZMZYJ2025002013&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
+| 张亚辉 | 厦门大学 | 英雄、知识与地形学：再论傅斯年的《夷夏东西说》 | 西北民族研究 2025年第4期 | [链接](https://www.ncpssd.cn/Literature/articleinfo?id=XBMZYJ2025004003&type=journalArticle&typename=中文期刊文章&nav=1&langType=1) |
 
 **学者最新观点与动态（联网检索）**
 

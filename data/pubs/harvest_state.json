@@ -1655,6 +1655,24 @@
    "count": 0,
    "added": 0,
    "at": "2026-09-06"
+  },
+  "82637X|2026|4": {
+   "status": "ok",
+   "count": 0,
+   "added": 0,
+   "at": "2026-10-04"
+  },
+  "81468A|2026|10": {
+   "status": "ok",
+   "count": 0,
+   "added": 0,
+   "at": "2026-10-04"
+  },
+  "83005X|2026|4": {
+   "status": "ok",
+   "count": 0,
+   "added": 0,
+   "at": "2026-10-04"
   }
  },
  "runs": [
@@ -1717,6 +1735,13 @@
   {
    "date": "2026-09-28",
    "issue_pages_used": 0,
+   "detail_ok": 0,
+   "detail_fail": 0,
+   "articles": 4407
+  },
+  {
+   "date": "2026-10-04",
+   "issue_pages_used": 3,
    "detail_ok": 0,
    "detail_fail": 0,
    "articles": 4407

@@ -2434,6 +2434,88 @@
   },
   {
    "kind": "notice",
+   "title": "2026年国家社会科学基金年度项目立项名单公示",
+   "url": "http://www.nopss.gov.cn/n1/2026/1008/c431027-40810871.html",
+   "source": "全国哲学社会科学工作办公室·年度项目",
+   "date": "2026-10-08",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金",
+    "attachments": [
+     "https://download.people.com.cn/yunying2/twentyfive17914600301.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914600601.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914600921.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914601111.pdf"
+    ],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "2026年国家社会科学基金年度项目立项名单公示",
+   "url": "http://www.nopss.gov.cn/n1/2026/1008/c431027-40810871.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-10-08",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金",
+    "attachments": [
+     "https://download.people.com.cn/yunying2/twentyfive17914600301.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914600601.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914600921.pdf",
+     "https://download.people.com.cn/yunying2/twentyfive17914601111.pdf"
+    ],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "2026年国家社科基金教育学年度项目立项名单公示",
+   "url": "http://www.nopss.gov.cn/n1/2026/1010/c431038-40812128.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-10-10",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金",
+    "attachments": [],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
+   "title": "2026年国家社科基金艺术学年度项目立项名单公示",
+   "url": "http://www.nopss.gov.cn/n1/2026/1010/c431038-40812103.html",
+   "source": "全国哲学社会科学工作办公室·通知公告",
+   "date": "2026-10-10",
+   "authors": [],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "funder": "国家社科基金",
+    "attachments": [],
+    "projects_found": 0
+   }
+  },
+  {
+   "kind": "notice",
    "title": "关于国家民委民族研究项目2026年度第二批课题结项的公示",
    "url": "https://www.neac.gov.cn/seac/xxgk/202609/1195514.shtml",
    "source": "国家民委·政府信息公开",
@@ -2470,6 +2552,87 @@
   },
   {
    "kind": "paper",
+   "title": "Stitches and Phantom Conversations: Three Flags (Elizabeth Chin) and The Ghost Ship Captain (An AI Presence) (Scott A. Lukas and George E. Marcus)",
+   "url": "https://doi.org/10.1111/aman.70125",
+   "source": "American Anthropologist",
+   "date": "2026-10-09",
+   "authors": [
+    "Brian Young"
+   ],
+   "affiliation": "University of California, Los Angeles",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Anthropological Studies and Insights",
+     "Cybernetics and Technology in Society",
+     "Art, Technology, and Culture"
+    ],
+    "journal_query": "American Anthropologist"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Invisible Anthropology",
+   "url": "https://doi.org/10.1111/aman.70123",
+   "source": "American Anthropologist",
+   "date": "2026-10-09",
+   "authors": [
+    "Max Bowens"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "This article is part of the special section of American Anthropologist titled \"Spectral Remix: Group Commentaries on a Group Installation \" All rights reserved, including rights for text and data mining and training of artificial intelligence technologies or similar technologies.",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Anthropological Studies and Insights",
+     "Anthropology: Ethics, History, Culture",
+     "Qualitative Research Methods and Ethics"
+    ],
+    "journal_query": "American Anthropologist"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Spectral Remix: A Group Commentary on a Group Installation",
+   "url": "https://doi.org/10.1111/aman.70124",
+   "source": "American Anthropologist",
+   "date": "2026-10-06",
+   "authors": [
+    "David Syring"
+   ],
+   "affiliation": "University of San Diego",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Sound Studies and Aurality",
+     "Arts and Performance Studies",
+     "Art, Technology, and Culture"
+    ],
+    "journal_query": "American Anthropologist"
+   }
+  },
+  {
+   "kind": "paper",
    "title": "Customer Support Analysts, UX Researchers, and Directors of Storytelling: A Systematic Analysis of Job Advertisements for Anthropologists",
    "url": "https://doi.org/10.1111/aman.70122",
    "source": "American Anthropologist",
@@ -2489,9 +2652,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
+     "Higher Education and Employability",
      "Anthropology: Ethics, History, Culture",
-     "Social Power and Status Dynamics",
-     "International Student and Expatriate Challenges"
+     "Doctoral Education Challenges and Solutions"
     ],
     "journal_query": "American Anthropologist"
    }
@@ -2516,147 +2679,123 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Agriculture, Land Use, Rural Development",
-     "Land Rights and Reforms",
-     "Global Maritime and Colonial Histories"
-    ],
-    "journal_query": "American Anthropologist"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Beyond the Dichotomy of Success and Failure: Making Activism Meaningful in South Korea and France",
-   "url": "https://doi.org/10.1111/aman.70115",
-   "source": "American Anthropologist",
-   "date": "2026-09-26",
-   "authors": [
-    "Guilherme Fians",
-    "Sera Yeong Seo Park"
-   ],
-   "affiliation": "University of Manchester; London School of Economics and Political Science",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "ABSTRACT First deployed in the 1970s, prefiguration has recently gained traction among ethnographers of political action as a descriptor for activist practices that foreground participatory democracy, horizontality, and direct action, as seen in social movements like Occupy Wall Street. Notably, ethnographers have come to understand these prefigurative‐inspired, present‐oriented movements as departures from “traditional” social movements, which are often institutionalized via trade unions, associations, and cooperatives, and primarily driven by preestablished, future‐oriented goals. We suggest that this dichotomy, unintentionally reinforced by anthropological scholarship, has a broader analytical implication: It prevents ethnographers from seeing both goal‐oriented and prefigurative practices as equally constitutive of any form of activism. We draw on ethnographies of two seemingly future‐oriented movements typically read as failures: activism led by families bereaved by the Sewŏl Ferry disaster in South Korea and by Esperanto speakers in France. We propose that, while these movements’ long‐term goals remain indefinitely out of reach, their activists have found additional sources of meaning that sustain their long‐term commitment. Understanding activism as a continuous meaning‐making process, rather than a means to an end, would allow ethnographers to understand why such engagements persist. This requires, we argue, venturing beyond the dichotomies of success–failure and pref",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Anthropology: Ethics, History, Culture",
      "Anthropological Studies and Insights",
-     "Korean Peninsula Historical and Political Studies"
+     "African history and culture studies",
+     "Agriculture, Land Use, Rural Development"
     ],
     "journal_query": "American Anthropologist"
    }
   },
   {
    "kind": "paper",
-   "title": "Four Questions for Ethnographers Under Trumpian Authoritarianism",
-   "url": "https://doi.org/10.1111/aman.70117",
-   "source": "American Anthropologist",
-   "date": "2026-09-24",
+   "title": "Monsters of finance",
+   "url": "https://doi.org/10.1111/amet.70141",
+   "source": "American Ethnologist",
+   "date": "2026-10-07",
    "authors": [
-    "Elizabeth Hanna Rubio"
+    "Caroline E. Schuster"
    ],
-   "affiliation": "University of California, Riverside",
+   "affiliation": "Australian National University",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "ABSTRACT This article examines evolving challenges and ethical dilemmas facing ethnographers working under intensifying authoritarianism in the United States. Because very little of what the United States is experiencing is new, my work here is primarily curatorial in nature, drawing upon the lessons offered by scholars across disciplines in the United States and beyond for whom ethnographic research in authoritarian contexts has always been the norm. Following my recent decision to withdraw a manuscript from publication due to potential repercussions to activist interlocutors, I outline four questions for U.S.‐based ethnographers navigating heightened surveillance, repression, and vulnerability to state violence. These questions focus on (1) how to listen differently in the field and make sense of silence amid eroding public trust, (2) how to look differently and use ethnography to refuse authoritarian chrononormalization of violence, (3) how to question one's own assumptions that exposure via research and publication will necessarily lead to change, and conversely (4) how unexamined refusal to publish may constitute acquiescence in advance. Through this work, I invite scholars to engage in a disciplined hesitation as we rethink the stakes, strategies, and limits of ethnographic work in this political moment.",
+    "summary": "Abstract An anthropology of horror can serve as a vernacular critique of financial speculation. Drawing on fieldwork in San Pedro, Paraguay, I track horror across three registers: pombero tricksters; plata yvyguy (buried money) as a founding myth of postwar finance; and obligations binding sesame farmers to monsters, patrones , and creditors. Horror—a critical ontology and distinctive wonder—arises when obligation becomes undecidable: when one cannot tell whether the forces manipulating time and the future are persons who stand in relation, or how far the liability extends. Paraguay has produced this condition twice, first under the Stroessner dictatorship (1954–89), with its network of civilian informants, and later under climate finance running through the same clientelist orders. As Martha Blache's 1982 study of Guarani folklore helps us understand, finance bears rather than subsumes the moral arrangements of prestation, and horror is a native theorization of speculation rather than a response to an external capitalist threat.",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Anthropology: Ethics, History, Culture",
+     "Anthropological Studies and Insights",
+     "Politics and Society in Latin America",
+     "Geographies of human-animal interactions"
+    ],
+    "journal_query": "American Ethnologist"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "To flirt, or not to flirt, that is the ethnographic question",
+   "url": "https://doi.org/10.1111/amet.70139",
+   "source": "American Ethnologist",
+   "date": "2026-10-07",
+   "authors": [
+    "Katarzyna Wojnicka"
+   ],
+   "affiliation": "University of Gothenburg",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Despite the title suggesting a focus on contemporary dating practices, this commentary is not yet another take on (post)#MeToo dating practices. Instead, it is an attempt to add my two cents to the discussion on flirting as a methodological strategy in ethnographic, anthropological, and sociological research, which is the focus of Anna Jochymek's “I Got Caught in My Own Trap.” In this highly engaging article, the author reflects on her fieldwork experiences as part of a research project in the UK on far-right activists with a migration background. Many of them are of Polish origin, and so is the author. This made her a perfect person to conduct the interviews, since she was immediately defined as a specific type of insider, which in research involving migrants is usually (but not always) considered an asset (e.g., Pustulka et al., 2019). Moreover, most far-right activists in the UK (and elsewhere) are cismen (Ralph-Morrow, 2022), and the author is a ciswoman. Their gender identities played a pivotal role in the fieldwork dynamic, in which the flirtation, initiated by one of the research participants, is the main plot of the article, touching on questions of agency, risk, and security during fieldwork, emotional labor, and ethics, as well as on third-wave feminism. In other words, the article adds some new perspectives to the ongoing discussions on the positionality of female (and male) academics in research on masculinities and (with) men, developed over three decades within ",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
      "Qualitative Research Methods and Ethics",
-     "Anthropological Studies and Insights"
-    ],
-    "journal_query": "American Anthropologist"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "The Anthropocene and the End of Nuclear Disaster: Normalizing the Fukushima Nuclear Accident",
-   "url": "https://doi.org/10.1111/aman.70116",
-   "source": "American Anthropologist",
-   "date": "2026-09-23",
-   "authors": [
-    "Maxime Polleri"
-   ],
-   "affiliation": "Université Laval",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "ABSTRACT This article places the concept of disaster in critical dialogue with that of the Anthropocene, which introduces new imaginaries that negatively affect the governance of crises like nuclear accidents. I argue that tropes surrounding the Anthropocene can depict certain events as apocalyptic calamities while also portraying other events as mere “incidents” that do not warrant such labeling. I explore how specific narratives around the Anthropocene legitimize some forms of environmental harm as more important than other threats. This process creates a hierarchization of catastrophes and normalizes certain hazards as less important than others. More specifically, I claim that the very concept of a nuclear catastrophe is at risk of “disappearing” within the Anthropocene. Using ethnographic data based on the 2011 Fukushima nuclear disaster, which happened in Japan, I focus on three popular tropes associated with the Anthropocene that normalize the consequences of nuclear accidents: the figure of the global threat, the disappearance of the idea of pristine nature, and the promotion of resilience and adaptation to new realities. I conclude by reflecting on the broader implications of how Anthropocene discourse shapes which disasters matter and which are relegated to the status of distant, forgettable accidents.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Ecocriticism and Environmental Literature",
-     "Geographies of human-animal interactions",
-     "Nuclear Issues and Defense"
-    ],
-    "journal_query": "American Anthropologist"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "How Anthropology Can Harm Students During a Genocide",
-   "url": "https://doi.org/10.1111/aman.70118",
-   "source": "American Anthropologist",
-   "date": "2026-09-22",
-   "authors": [
-    "Girish Daswani"
-   ],
-   "affiliation": "University of Toronto; University of Toronto Scarborough",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "ABSTRACT This essay is about the harm that is committed in the name of care. More specifically, it is about student requests for support during the ongoing genocide in Palestine and an anthropology department's use and weaponization of the language of “care” to do the exact opposite: to cause harm. I examine how the language of care for students and the exception of Palestine are weaponized by administrators—including anthropologists—to silence and shut down conversations about, and support for, Palestine. I demonstrate how the “permission to narrate” stems from certain methods of attention that speak to the university's alignment with settler colonialism, neoliberal capitalism, and anti‐Palestinian racism, even as the university officially acknowledges settler land relations and shares statements about “Diversity, Equity, Inclusion” (DEI). Indeed, such acts of care are often based on the condition that settler‐colonial and capitalist relations remain unchanged—that colonial whiteness remains unchanged—and any attempts to unsettle these liberal, institutional‐settler relations will be met with purposeful occlusion and harm.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Jewish and Middle Eastern Studies",
      "Anthropology: Ethics, History, Culture",
-     "Anthropological Studies and Insights"
+     "Feminist Epistemology and Gender Studies"
     ],
-    "journal_query": "American Anthropologist"
+    "journal_query": "American Ethnologist"
    }
   },
   {
    "kind": "paper",
-   "title": "Burying Futures: Artisanal Mining Deaths and the Politics of Negligence in Zimbabwe",
-   "url": "https://doi.org/10.1111/aman.70120",
-   "source": "American Anthropologist",
-   "date": "2026-09-22",
+   "title": "The power of reflexivity and the uneasiness it provokes",
+   "url": "https://doi.org/10.1111/amet.70129",
+   "source": "American Ethnologist",
+   "date": "2026-10-06",
    "authors": [
-    "Melusi Nkomo"
+    "Maddalena Gretel Cammelli"
    ],
-   "affiliation": "Princeton University",
+   "affiliation": "",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "ABSTRACT In the gold‐mining town of Kwekwe, central Zimbabwe, injury and death are a constant presence. Collapsing shafts, sudden explosions, gang fights, and neglected health infrastructure characterize the everyday lives of the town's impoverished residents. This article, based on ethnographic research conducted between 2019 and 2023 in Zimbabwe's artisanal and small‐scale mining regions, examines how young miners, their families, and township communities navigate a landscape where untimely deaths and near misses shape political subjectivity and reveal broader modes of state power. By examining how the state and its local enforcers respond to devastation in impoverished communities—and how these communities endure and interpret such recurring losses—the article shows that negligence is not just an absence but an active political repertoire. It contributes to anthropological debates on crisis, necropolitics, and state sovereignty in mineral‐extraction frontiers by showing how authority persists less through outright domination than through calibrated neglect: a mode of rule in which timely intervention is withheld, and the state reemerges selectively during moments of injury, death, or mourning to absorb loss as a political occasion.",
+    "summary": "",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Mining and Resource Management",
-     "African studies and sociopolitical issues",
-     "Archaeology and Rock Art Studies"
+     "Qualitative Research Methods and Ethics",
+     "Anthropological Studies and Insights",
+     "Posthumanist Ethics and Activism"
     ],
-    "journal_query": "American Anthropologist"
+    "journal_query": "American Ethnologist"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "The politics of evidence making",
+   "url": "https://doi.org/10.1111/amet.70128",
+   "source": "American Ethnologist",
+   "date": "2026-10-06",
+   "authors": [
+    "Courtney Addison",
+    "Sameena Mulla",
+    "Susanna Helen Trnka",
+    "Lisa L. Wynn",
+    "Jesse Hession Grayman"
+   ],
+   "affiliation": "Victoria University of Wellington; New Zealand Law Society; Emory University; University of Auckland",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Abstract What is evidence, and how is it constituted across different scientific, legal, political and social domains? Courts, medical clinics, scientific enterprises, public constituencies, as well as academic journals, come to define, adjudicate, and thus constitute evidence through a variety of openly and covertly political processes, as Sameena Mulla and Courtney Addison discuss. Reflecting on fieldwork they have conducted on a range of topics—including sexual assault intervention, forensic evidence collection, court sentencing, genomic medicine, and conservation—they suggest what kinds of questions anthropologists might want to ask in thinking through not only the nature of evidence making but also its impact on social communities. They also highlight what is at stake in the shaping and contestation of evidence, including justice, social cohesion and environmental futures.",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Anthropological Studies and Insights",
+     "Anthropology: Ethics, History, Culture",
+     "Legal processes and jurisprudence"
+    ],
+    "journal_query": "American Ethnologist"
    }
   },
   {
@@ -2679,9 +2818,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Qualitative Research Methods and Ethics",
-     "Interdisciplinary Cultural and Social Studies",
-     "Decolonial Thought and Epistemologies"
+     "Populism, Right-Wing Movements",
+     "Gender and Feminist Studies",
+     "Gender, Feminism, and Media"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2706,9 +2845,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
+     "Anthropological Studies and Insights",
      "History of Emotions Research",
-     "Emotions and Moral Behavior",
-     "Interdisciplinary Cultural and Social Studies"
+     "Cross-Cultural and Social Analysis"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2734,8 +2873,8 @@
     "via": "openalex",
     "topics": [
      "Anthropology: Ethics, History, Culture",
-     "Anthropological Studies and Insights",
-     "Race, Genetics, and Society"
+     "Qualitative Research Methods and Ethics",
+     "Anthropological Studies and Insights"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2761,8 +2900,8 @@
     "via": "openalex",
     "topics": [
      "Qualitative Research Methods and Ethics",
-     "Information Systems Theories and Implementation",
-     "Posthumanist Ethics and Activism"
+     "Anthropology: Ethics, History, Culture",
+     "Anthropological Studies and Insights"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2787,9 +2926,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Anthropology: Ethics, History, Culture",
-     "Oral History, Memory, Narrative Analysis",
-     "Anthropological Studies and Insights"
+     "Anthropological Studies and Insights",
+     "Qualitative Research Methods and Ethics",
+     "Cross-Cultural and Social Analysis"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2815,8 +2954,8 @@
     "via": "openalex",
     "topics": [
      "Qualitative Research Methods and Ethics",
-     "Anthropological Studies and Insights",
-     "Focus Groups and Qualitative Methods"
+     "Feminist Epistemology and Gender Studies",
+     "Anthropology: Ethics, History, Culture"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2841,9 +2980,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Social Science and Policy Research",
-     "Health and Conflict Studies",
-     "Cyprus History, Politics, Society"
+     "Anthropological Studies and Insights",
+     "Indigenous Cultures and History",
+     "Cross-Cultural and Social Analysis"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2868,9 +3007,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Interdisciplinary Cultural and Social Studies",
      "Anthropological Studies and Insights",
-     "Feminism, Gender, and Intersectionality"
+     "Sociology and Norbert Elias",
+     "Cross-Cultural and Social Analysis"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2895,9 +3034,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Gender Roles and Identity Studies",
      "Qualitative Research Methods and Ethics",
-     "Historical Gender and Feminism Studies"
+     "Gender and Feminist Studies",
+     "Feminist Epistemology and Gender Studies"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2922,9 +3061,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Philosophical Ethics and Theory",
-     "Epistemology, Ethics, and Metaphysics",
-     "Feminist Epistemology and Gender Studies"
+     "Anthropological Studies and Insights",
+     "Qualitative Research Methods and Ethics",
+     "Anthropology: Ethics, History, Culture"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2949,9 +3088,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Balkans: History, Politics, Society",
-     "Populism, Right-Wing Movements",
-     "Law in Society and Culture"
+     "International Law and Human Rights",
+     "War, Law, and Justice",
+     "Freedom of Expression and Defamation"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -2978,7 +3117,7 @@
     "topics": [
      "Jewish and Middle Eastern Studies",
      "Anthropological Studies and Insights",
-     "Jewish Identity and Society"
+     "Social Movements and Cultural Identity"
     ],
     "journal_query": "American Ethnologist"
    }
@@ -3004,204 +3143,20 @@
     "via": "openalex",
     "topics": [
      "Simone de Beauvoir and Sartre",
-     "Phenomenology and Existential Philosophy",
-     "Feminist Epistemology and Gender Studies"
+     "Qualitative Research Methods and Ethics",
+     "Posthumanist Ethics and Activism"
     ],
     "journal_query": "Anthropological Theory"
    }
   },
   {
    "kind": "paper",
-   "title": "What is Theory (Again)? Thinking Thresholds by the River",
-   "url": "https://doi.org/10.21428/4566d66c.7fac738f",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
+   "title": "Petschelies, Erik.Ascensão e declínio da etnologia alemã (1884‐1950). 624 pp., bibliogr. Campinas, SP: Editora da Unicamp, 2022. R99 (paper).",
+   "url": "https://doi.org/10.1111/1467-9655.70239",
+   "source": "Journal of the Royal Anthropological Institute",
+   "date": "2026-10-07",
    "authors": [
-    "Michael L. Edwards",
-    "Malini Sur",
-    "Daniel Tranter-Santoso"
-   ],
-   "affiliation": "The University of Sydney; Western Sydney University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Posthumanist Ethics and Activism",
-     "Wittgensteinian philosophy and applications",
-     "Phenomenology and Existential Philosophy"
-    ],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Sovereign theory and shit theory",
-   "url": "https://doi.org/10.21428/4566d66c.d8ad5902",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Danielle Celermajer"
-   ],
-   "affiliation": "The University of Sydney",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "International Relations and Foreign Policy",
-     "Political Philosophy and Ethics",
-     "Political Conflict and Governance"
-    ],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "On Theorizing",
-   "url": "https://doi.org/10.21428/4566d66c.306e61af",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Brett Neilson"
-   ],
-   "affiliation": "Western Sydney University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Inherited Vision: Comics and the Construction of Ethnographic Concepts",
-   "url": "https://doi.org/10.21428/4566d66c.23abdadb",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Chitra Venkataramani",
-    "Caroline E. Schuster"
-   ],
-   "affiliation": "Australian National University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Comics and Graphic Narratives",
-     "Cultural Identity and Representation",
-     "Study and Philosophy of Religion"
-    ],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Tension: A theory of distress",
-   "url": "https://doi.org/10.21428/4566d66c.25ea5edc",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Nikita Simpson"
-   ],
-   "affiliation": "SOAS University of London",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Psychotherapy Techniques and Applications",
-     "Counseling, Therapy, and Family Dynamics",
-     "Phenomenology and Existential Philosophy"
-    ],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Crafting Theory at an Islamic Art Workshop in Istanbul",
-   "url": "https://doi.org/10.21428/4566d66c.d725502c",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Banu Şenay"
-   ],
-   "affiliation": "Macquarie University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Architecture and Cultural Influences",
-     "Crafts, Textile, and Design",
-     "History and Cultural Heritage"
-    ],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Why Theorize?",
-   "url": "https://doi.org/10.21428/4566d66c.10551f12",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Sonja van Wichelen"
-   ],
-   "affiliation": "The University of Sydney",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [],
-    "journal_query": "Anthropological Theory"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "‘What is this thing?’",
-   "url": "https://doi.org/10.21428/4566d66c.0279ac69",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
-   "authors": [
-    "Daniel Tranter-Santoso"
+    "Diego Villar"
    ],
    "affiliation": "",
    "direction": "",
@@ -3209,28 +3164,28 @@
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "",
+    "summary": "Far exceeding the scope of a mere institutional chronicle, Erik Petschelies's new book is a profound dissection of how German ethnological thought shaped the understanding of alterity within Lowland South America.Petschelies argues that German ethnology was not a byproduct of late-stage colonialism but a maturation of Enlightenment and Romantic philosophies, specifically rooted in the Humboldtian premise of 'recognizing unity within multiplicity'.Influenced by Leibniz's linguistic-historical programme, this tradition prioritized language and material culture over biological reductionism or craniometry, seeking to comprehend the universal dimensions of the human psyche rather than proving racial inferiority.A significant milestone in this lineage is Johann Gottfried von Herder, whose concept of the Volk allowed for the valuation of non-European cultures on their own merits, viewing Indigenous peoples as unique, contemporary manifestations of creativity rather than 'living fossils'.This perspective was later solidified by the Humboldt brothers, who provided the empirical rigor and linguistic tools necessary to classify Brazil's Indigenous groups through a critical nexus between culture and environment.",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "South Asian Cinema and Culture",
+     "European Linguistics and Anthropology",
      "Anthropological Studies and Insights",
-     "Interdisciplinary Cultural and Social Studies"
+     "German Social Sciences and History"
     ],
-    "journal_query": "Anthropological Theory"
+    "journal_query": "Journal of the Royal Anthropological Institute"
    }
   },
   {
    "kind": "paper",
-   "title": "Theory in Suspension?",
-   "url": "https://doi.org/10.21428/4566d66c.da49af0a",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
+   "title": "Mason, Arthur (ed.). Arctic abstractive industry: assembling the valuable and vulnerable north. 192 pp., illus., bibliogr. New York: Berghahn, 2024. $29.95 (paper)",
+   "url": "https://doi.org/10.1111/1467-9655.70228",
+   "source": "Journal of the Royal Anthropological Institute",
+   "date": "2026-10-07",
    "authors": [
-    "Warwick Anderson"
+    "John P. Ziker"
    ],
-   "affiliation": "The University of Sydney",
+   "affiliation": "Boise State University",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
@@ -3241,23 +3196,50 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Wittgensteinian philosophy and applications",
-     "Epistemology, Ethics, and Metaphysics",
-     "Critical Realism in Sociology"
+     "Anthropological Studies and Insights",
+     "Indigenous Studies and Ecology",
+     "Mining and Resource Management"
     ],
-    "journal_query": "Anthropological Theory"
+    "journal_query": "Journal of the Royal Anthropological Institute"
    }
   },
   {
    "kind": "paper",
-   "title": "Re-reading Edward Said in a time of genocide: On theory and ‘mandatory Zionism’",
-   "url": "https://doi.org/10.21428/4566d66c.19faea49",
-   "source": "Anthropological Theory",
-   "date": "2026-09-23",
+   "title": "Puccio‐Den, Deborah. Mafiacraft: an ethnography of deadly silence. 294 pp., bibliogr. Chicago: Hau Books, 2022. $32.00 (paper)",
+   "url": "https://doi.org/10.1111/1467-9655.70249",
+   "source": "Journal of the Royal Anthropological Institute",
+   "date": "2026-10-07",
    "authors": [
-    "Ihab Shalbak"
+    "Lene Faust"
    ],
-   "affiliation": "The University of Sydney",
+   "affiliation": "University of Siegen",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Deborah Puccio-Den's book Mafiacraft is an attempt to approach the (Sicilian) Mafia through their silences.Compared to much of the existing scholarship, the study represents an innovative contribution to the anthropology of the Mafia, taking a fresh perspective on this notoriously opaque phenomenon.A key reason for this lies in the conceptual shift away from viewing the Mafia as a clearly bounded social organization and towards understanding it as a phenomenon fundamentally constituted through silence, ambiguity, and unspeakability.Puccio-Den coins the term 'Mafiacraft' to capture this novel ethnographic approach and analytical framework.Drawing explicitly on anthropological studies of witchcrafttraditionally linked to the power of words -she inverts this comparison to emphasize the lethal power of silence.She understands silence not as mere absence of words but as a productive force, a form of agency, and a regime of action that sustains the Mafia's social and political realities.Silence, in Puccio-Den's account, is central to the Mafia's existence, its practices and forms of communication, and dealing with this silence by legal actors and anti-Mafia movements has also promoted forms of knowledge production and public discourse on the subject.",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Anthropological Studies and Insights",
+     "Crime, Illicit Activities, and Governance",
+     "Urban and sociocultural dynamics"
+    ],
+    "journal_query": "Journal of the Royal Anthropological Institute"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Kulick, Don. A death in the rainforest: how a language and a way of life came to an end in Papua New Guinea. 288 pp., bibliogr. New York: Algonquin Books, 2019. $26.95 (hardback)",
+   "url": "https://doi.org/10.1111/1467-9655.70236",
+   "source": "Journal of the Royal Anthropological Institute",
+   "date": "2026-10-07",
+   "authors": [
+    "Anders Norge"
+   ],
+   "affiliation": "Uppsala University; Aarhus University",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
@@ -3268,11 +3250,11 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Jewish and Middle Eastern Studies",
-     "Philosophy, Ethics, and Existentialism",
-     "North African History and Literature"
+     "Indigenous Cultures and History",
+     "Pacific and Southeast Asian Studies",
+     "Linguistic and Sociocultural Studies"
     ],
-    "journal_query": "Anthropological Theory"
+    "journal_query": "Journal of the Royal Anthropological Institute"
    }
   },
   {
@@ -3293,9 +3275,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Critical Realism in Sociology",
-     "Jewish Identity and Society",
-     "Sociology and Norbert Elias"
+     "Anthropological Studies and Insights",
+     "Cross-Cultural and Social Analysis",
+     "Anthropology: Ethics, History, Culture"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
    }
@@ -3322,7 +3304,7 @@
     "via": "openalex",
     "topics": [
      "Pleistocene-Era Hominins and Archaeology",
-     "Primate Behavior and Ecology",
+     "Language and cultural evolution",
      "Evolution and Paleontology Studies"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
@@ -3348,9 +3330,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Attachment and Relationship Dynamics",
-     "Counseling, Therapy, and Family Dynamics",
-     "Cultural Differences and Values"
+     "Anthropological Studies and Insights",
+     "Cross-Cultural and Social Analysis",
+     "Qualitative Research Methods and Ethics"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
    }
@@ -3378,7 +3360,7 @@
     "via": "openalex",
     "topics": [
      "Pleistocene-Era Hominins and Archaeology",
-     "Primate Behavior and Ecology",
+     "Language and cultural evolution",
      "Evolution and Paleontology Studies"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
@@ -3402,9 +3384,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Feminist Epistemology and Gender Studies",
      "Anthropological Studies and Insights",
-     "African Sexualities and LGBTQ+ Issues"
+     "Anthropology: Ethics, History, Culture",
+     "Cross-Cultural and Social Analysis"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
    }
@@ -3429,147 +3411,38 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
+     "Humanities and Social Sciences",
      "Anthropological Studies and Insights",
-     "Geographies of human-animal interactions",
-     "Humanities and Social Sciences"
+     "Urban and sociocultural dynamics"
     ],
     "journal_query": "Journal of the Royal Anthropological Institute"
    }
   },
   {
    "kind": "paper",
-   "title": "Staging friendship: towards an anthropology of everyday geopolitics in South Asia",
-   "url": "https://doi.org/10.1111/1467-9655.70208",
-   "source": "Journal of the Royal Anthropological Institute",
-   "date": "2026-09-25",
+   "title": "Shady Intentions, Cumbersome Cargoes: Sovereignty Through Privateering’s Fractured Prism",
+   "url": "https://doi.org/10.1017/s0010417526100747",
+   "source": "Comparative Studies in Society and History",
+   "date": "2026-10-08",
    "authors": [
-    "Sahana Ghosh"
+    "Nathan Perl-Rosenthal"
    ],
-   "affiliation": "National University of Singapore",
+   "affiliation": "Centre National de la Recherche Scientifique",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "This article studies Indian‐Bangladeshi friendship ethnographically, as a contested political imaginary, claim, and relation, from the vantage of its shared borderlands. Staging friendship, I show, is a geopolitical project that engages equally the highest echelons of the Indian and Bangladeshi states and ordinary residents of its marginalized borderlands. In conversation with the anthropological and interdisciplinary scholarship on friendship and the political aesthetics of nationalism, I develop an ethnographic frame to study friendship in and as geopolitics. Zooming in on friendship as political aesthetic and ethical practice allows us to grapple with the hegemonies and hierarchies, the elasticity and the power of such histories, and the everyday practices that constitute the geopolitical as a lively horizon. Moving beyond a traditional conception of geopolitics, this article is an invitation to imagine instead a geopolitics of friendship that centres and takes seriously the difficult work of living solidarity through differences, that many communities are not only engaged in, not as occasional, but as everyday acts of making a liveable world.",
+    "summary": "Abstract This paper is a response to Lauren Benton’s 2025 Thrupp Lecture.",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Bangladesh Politics, Society, and Development",
-     "South Asian Studies and Conflicts",
-     "Anthropological Studies and Insights"
+     "Maritime Security and History",
+     "Legal and cultural studies analysis",
+     "Colonialism, slavery, and trade"
     ],
-    "journal_query": "Journal of the Royal Anthropological Institute"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Introduction: On the fickleness of friendship",
-   "url": "https://doi.org/10.1111/1467-9655.70210",
-   "source": "Journal of the Royal Anthropological Institute",
-   "date": "2026-09-24",
-   "authors": [
-    "Simon Coleman"
-   ],
-   "affiliation": "University of Toronto",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "In this Introduction to the special section, I provide a brief overview of the anthropology of friendship, particularly from the 1960s to the present, before focusing on the four articles that form the main body of the section. I argue that anthropologists who do not regard themselves as specialists in friendship will still find much to gain from reflecting on the topic. In addition, I highlight the significance of friendship in pointing to the significance of the fickle in human relations.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Anthropological Studies and Insights",
-     "Sociology and Norbert Elias",
-     "Diaspora, migration, transnational identity"
-    ],
-    "journal_query": "Journal of the Royal Anthropological Institute"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Mandala logic: mytho‐praxis as vernacular political theory in Myanmar",
-   "url": "https://doi.org/10.1111/1467-9655.70205",
-   "source": "Journal of the Royal Anthropological Institute",
-   "date": "2026-09-24",
-   "authors": [
-    "Michael R. Dunford"
-   ],
-   "affiliation": "National University of Singapore",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "This article argues that myth‐making is a form of vernacular social theory, a way of producing conceptual arguments about how social formations work and what is at stake in them. I focus on a myth from Myanmar, the Myth of the Tea Seeds, and its attendant ritual complex, which culminates in an annual religious festival in the highland town of Namhsan. Drawing on the so‐called ‘mandala model’, a classic historiographic approach for the study of Southeast Asia, I show how Ta'ang and Burmese people navigate sedimented trans‐regional power relations, and how highlanders and lowlanders alike engage in acts of retelling, exegesis, and critique that test the limits of the myth as a theoretical tool. What emerges is a picture of core‐periphery politics that looks less like a dialectic of coercion and evasion, and more like a system of antagonistic mutual dependence. Here, mythology is contested ground, a site for interrogating the relationship between abstract social theorization and lived social relations amidst long local histories of accommodation and struggle.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Asian Geopolitics and Ethnography",
-     "Southeast Asian Sociopolitical Studies",
-     "Asian Studies and History"
-    ],
-    "journal_query": "Journal of the Royal Anthropological Institute"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Knots in the weave: female friendship, ritual tension, and the religious other",
-   "url": "https://doi.org/10.1111/1467-9655.70209",
-   "source": "Journal of the Royal Anthropological Institute",
-   "date": "2026-09-24",
-   "authors": [
-    "Ghazal Asif Farrukhi"
-   ],
-   "affiliation": "Lahore University of Management Sciences",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "This article explores the possibility of inter‐religious friendship in a context where the norms of secular citizenship are not necessarily available to form the grounds of community. Hindu and Muslim girls met every day to learn to sew together in a sewing class located inside a Hindu temple compound in a small town in Pakistan. Ritual tensions arose in this space from the shared effort to maintain conviviality across social and theological differences, which were managed through the embodied labour of sewing. Knowledge of the religious other as friend necessitates continually retracing the fuzzy line between intimate familiarity and potential danger. The article argues that the careful management of ritual rivalries and boundaries engendered tenuous forms of friendship grounded in norms of feminine domestic discipline.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Anthropological Studies and Insights",
-     "Indian and Buddhist Studies",
-     "Interdisciplinary Cultural and Social Studies"
-    ],
-    "journal_query": "Journal of the Royal Anthropological Institute"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "False kings and imagined protestants: why schismogenesis does not explain variation in inequality among Indigenous societies of the Pacific Coast",
-   "url": "https://doi.org/10.1111/1467-9655.70202",
-   "source": "Journal of the Royal Anthropological Institute",
-   "date": "2026-09-21",
-   "authors": [
-    "Eric Alden Smith",
-    "Brian F. Codding"
-   ],
-   "affiliation": "University of Washington; University of California, Santa Barbara",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Indigenous societies along the temperate Pacific coast of North America embody diverse cultural institutions. This variation is conventionally classified into two distinct cultural areas: the Northwest Coast (NWC) and California (CAL). Discussion of the environmental, material, social, and ideological variation in these societies has a long and continuing history in anthropology. In the last few years, two divergent accounts of this variation have appeared. One, proposed by Wengrow and Graeber, drawing on the concept of schismogenesis – ‘progressive differentiation’ at points of culture contact – posits a sharp contrast between Northwest Coast ‘Fisher‐kings’ and Californian ‘Protestant foragers’. The second views variation across the region as more continuous, focusing on how differential resource control and patron‐client dynamics can generate asymmetries in wealth and power. Our review of Wengrow and Graeber's proposal identifies several flaws: it portrays NWC culture in an over‐simplified and reductive manner, exaggerates the differences between CAL and NWC societies (particularly in the boundary region), and fails to provide convincing evidence that those differences result from oppositional differentiation (schismogenesis). We then explain why we believe opportunities for resource control offer a more empirically valid and theoretically coherent explanation for variation in political economy across these two culture areas.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Archaeology and ancient environmental studies",
-     "Indigenous Health, Education, and Rights",
-     "Indigenous Studies and Ecology"
-    ],
-    "journal_query": "Journal of the Royal Anthropological Institute"
+    "journal_query": "Comparative Studies in Society and History"
    }
   },
   {
@@ -3592,9 +3465,9 @@
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Communism, Protests, Social Movements",
-     "Italian Fascism and Post-war Society",
-     "Historical Geopolitical and Social Dynamics"
+     "Italian Social Issues and Migration",
+     "Migration, Refugees, and Integration",
+     "Soviet and Russian History"
     ],
     "journal_query": "Comparative Studies in Society and History"
    }
@@ -3620,8 +3493,8 @@
     "via": "openalex",
     "topics": [
      "Maritime Security and History",
-     "Asian American and Pacific Histories",
-     "Colonial History and Postcolonial Studies"
+     "Historical Studies in Latin America",
+     "Legal and cultural studies analysis"
     ],
     "journal_query": "Comparative Studies in Society and History"
    }
@@ -3648,34 +3521,7 @@
     "topics": [
      "African Studies and Geopolitics",
      "Global Maritime and Colonial Histories",
-     "Anthropological Studies and Insights"
-    ],
-    "journal_query": "Comparative Studies in Society and History"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Coerced Labor, Caste, and Aspirations for Liberty in Early Nineteenth-Century Bengal: Revisiting the Antislavery Debate from South Asia",
-   "url": "https://doi.org/10.1017/s001041752610067x",
-   "source": "Comparative Studies in Society and History",
-   "date": "2026-09-22",
-   "authors": [
-    "Anirban Karak"
-   ],
-   "affiliation": "University of Chicago",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Abstract This article revisits the debate on the relationship between capitalism and abolition from the perspective of South Asia. It argues that bringing the antislavery debate into conversation with the extensive literature on caste opens up new comparative possibilities. Commercial slavery in the early modern Indian Ocean world is now well established, but global histories of slavery have rarely inspired global histories of antislavery. The dominant interpretation of abolition in South Asia remains focused on the contingent requirements of colonial governance. Through an analysis of legal conflicts over the status of slavery in the eastern Indian province of Bengal in the 1820s and 1830s, I argue that this approach obscures the ethical-political significance of abolition in a context shaped by caste and agrarian slavery. The emancipatory potential of abolition, however, was undermined by a colonial state committed to revenue extraction and social order, as well as by the global capitalist context of counter-revolution. By situating the colonial archive within this wider historical conjuncture, the essay shows how both the possibilities and limits of abolition emerged from the contradictions of liberalism and global capitalism. It thereby puts the South Asian case in conversation with broader histories of revolution and counter-revolution.",
-    "lang": "en",
-    "source_theme": "国外理论前沿",
-    "via": "openalex",
-    "topics": [
-     "Colonial History and Postcolonial Studies",
-     "Global Maritime and Colonial Histories",
-     "Colonialism, slavery, and trade"
+     "Legal and cultural studies analysis"
     ],
     "journal_query": "Comparative Studies in Society and History"
    }
@@ -3701,37 +3547,64 @@
     "via": "openalex",
     "topics": [
      "Anthropological Studies and Insights",
-     "Amazonian Archaeology and Ethnohistory",
-     "Race, Genetics, and Society"
+     "Anthropology: Ethics, History, Culture",
+     "Qualitative Research Methods and Ethics"
     ],
     "journal_query": "Critique of Anthropology"
    }
   },
   {
    "kind": "paper",
-   "title": "Bourdieusian conception of the state, migrants and radical democracy in the reflexive sociology of Abdelmalek Sayad",
-   "url": "https://doi.org/10.1080/01419870.2026.2724584",
+   "title": "The paradox of violent sanctuary: rethinking the concept of sanctuary in protracted refugee camp contexts",
+   "url": "https://doi.org/10.1080/01419870.2026.2740692",
    "source": "Ethnic and Racial Studies",
-   "date": "2026-09-25",
+   "date": "2026-10-09",
    "authors": [
-    "Andrea Girometti"
+    "Gordon Ogutu"
    ],
-   "affiliation": "University of Urbino; University of Florence",
+   "affiliation": "Dublin City University",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "Abdelmalek Sayad’s sociology of migration can be interpreted as an eminent form of reflexive political sociology and has more than one connection with Bourdieu’s conception of the state as state thought and the sociological-political approach outlined by the French sociologist. Firstly, by placing migrants as the unthought limit of the state, Sayad questions and challenges the classifications of state thought that present it as a homogeneous reality almost ontologically linked to the nation. On the other hand, it will be shown how the restructuring of national political fields around the national/non-national opposition, already noted by Bourdieu in the 1990s, reintroduces the theme of reformulation, in contrast to the current trend, of a radical-democratic approach. Finally, the latter should be able to deconstruct the non-essential link between state and nation from a juridical point of view (as Hans Kelsen pointed out) and thus render the discriminatory prerogatives imprinted in traditional national sovereignty unfounded.",
+    "summary": "Refugee camps have been depicted as spaces that adversely affect refugees by, among other things, exposing them to psychosocial problems, violence, exploitation, and material deprivation. In Kakuma, the prevalence of violence inside and around the camp, which involves serious injuries, is high. Yet, with all its challenges, the camp is a near-cosmopolitan site where multiple cultures interact, generate livelihoods, and find protection from conflicts and hardships that forced their displacement. Drawing on qualitative fieldwork conducted in 2023 in Kenya’s Kakuma refugee camp, this article challenges that binary by developing the concept of a violent sanctuary to explain the camp’s paradoxical character. It argues that the camp simultaneously offers refuge from external violence and generates new forms of struggle within its boundaries. This article makes a theoretical as well as empirical contribution by extending sanctuary scholarship into camp studies and showing how sanctuary can be understood as a relational and uneven condition.",
     "lang": "en",
     "source_theme": "",
     "via": "openalex",
     "topics": [
-     "Multiculturalism, Politics, Migration, Gender",
-     "Social and Cultural Dynamics",
-     "Emile Durkheim and Sociology"
+     "Migration and Exile Studies",
+     "Migration, Refugees, and Integration",
+     "Migration, Racism, and Human Rights"
     ],
     "journal_query": "Ethnic and Racial Studies"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Dual Cuisine Nationalism: Food, Identity and the Making of the Nation in the United Arab Emirates",
+   "url": "https://doi.org/10.1111/nana.70129",
+   "source": "Nations and Nationalism",
+   "date": "2026-10-08",
+   "authors": [
+    "Hamdullah Baycar"
+   ],
+   "affiliation": "Karadeniz Technical University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "ABSTRACT The United Arab Emirates (UAE) presents a distinctive case of nation‐building, as its citizens constitute a demographic minority. Nation‐building in the UAE involves accommodating non‐citizens while maintaining a distinct citizen‐centred national identity. This study argues that the UAE constructs national identity through a dual process of culinary nationalism, in which food serves both as a symbol of indigeneity and a marker of cosmopolitan inclusion. Drawing on theories of nationalism, including the invention of tradition, banal nationalism, imagined communities and ethnocracy, the article develops the concept of dual cuisine nationalism to explain how the Emirati state combines ethnocratic and multicultural cuisines, incorporating migrant‐derived foods while preserving citizen primacy. The first, an ethnocratic cuisine, is to reinforce citizenship‐based belonging and national unity and emphasises Bedouin heritage and pre‐oil authenticity through foods such as camel meat, dates and coffee. The second, a multicultural cuisine, incorporates migrant‐derived dishes such as karak tea and biryani, symbolically recognising expatriate contributions while reaffirming distinctions between contribution, ownership and citizenship. This study is based on analyses of heritage festivals, popular media and everyday food practices. The article suggests that while migrant‐derived foods are incorporated into representations of the UAE, their contribution is not one of ownership but ",
+    "lang": "en",
+    "source_theme": "",
+    "via": "openalex",
+    "topics": [
+     "National Identity and Symbolism",
+     "Cultural Identity and Heritage",
+     "Food, Nutrition, and Cultural Practices"
+    ],
+    "journal_query": "Nations and Nationalism"
    }
   },
   {
@@ -3755,35 +3628,8 @@
     "via": "openalex",
     "topics": [
      "Migration, Refugees, and Integration",
-     "New Caledonia Indigenous Studies",
-     "Political Systems and Governance"
-    ],
-    "journal_query": "Nations and Nationalism"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "From Gastfreundschaft to Überfremdung : National Identity and the Origins of Right‐Wing Migration Politics in West Germany, 1973–1983",
-   "url": "https://doi.org/10.1111/nana.70122",
-   "source": "Nations and Nationalism",
-   "date": "2026-09-25",
-   "authors": [
-    "Simon Ahrens"
-   ],
-   "affiliation": "University of Cambridge",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "ABSTRACT This article contributes a historical perspective to scholarship on migration and right‐wing politics in Germany. By examining legal texts, party programmes and parliamentary debates, it traces how West German national identity discourses shaped immigration and foreigner policies between the guest worker recruitment stop in 1973 and the federal elections of 1983. In this crucial but oft‐neglected period, political parties renegotiated national membership criteria amid economic crisis and an emerging multicultural society. Ethnocentric conceptions of German identity by influential right‐wing politicians entrenched an understanding of immigration as a national security threat. After the so‐called refugee crisis of 2015, the far‐right Alternative für Deutschland ( AfD ) mobilised these ideals of ethnic homogeneity in narratives about eroding German sovereignty and citizenship since the guest worker era. The article highlights the importance of analysing such historical constructions and political continuities of the ‘foreigner problem’ to make sense of resurging far‐right politics across Europe today.",
-    "lang": "en",
-    "source_theme": "",
-    "via": "openalex",
-    "topics": [
-     "Communism, Protests, Social Movements",
-     "German legal, social, and political studies",
-     "German History and Society"
+     "Diaspora, migration, transnational identity",
+     "Migration, Health, Geopolitics, Historical Geography"
     ],
     "journal_query": "Nations and Nationalism"
    }
@@ -3809,10 +3655,118 @@
     "via": "openalex",
     "topics": [
      "Asian American and Pacific Histories",
-     "Cinema and Media Studies",
-     "Hong Kong and Taiwan Politics"
+     "Cultural Identity and Representation",
+     "Cinema History and Criticism"
     ],
     "journal_query": "Ethnicities"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "A pool of living water: managed circulation and migrant suspension along the China–Myanmar border",
+   "url": "https://doi.org/10.1080/1369183x.2026.2743365",
+   "source": "Journal of Ethnic and Migration Studies",
+   "date": "2026-10-06",
+   "authors": [
+    "Zhuo Niu"
+   ],
+   "affiliation": "Freie Universität Berlin",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Contemporary migration regimes often admit migrants into labour markets while withholding full social and legal incorporation. Building on this insight, this article introduces the concept of managed circulation to capture a compressed temporal configuration of inclusion and exclusion, in which admission and potential removal are organised within the same governing framework and often within a remarkably short time horizon. Drawing on ethnographic research among Myanmar migrants at the China–Myanmar border, this research shows how mobility is governed through administrative temporal windows defined by the validity and renewal requirements of border passes. Migrants are recruited into local labour markets while simultaneously remaining vulnerable to document expiration and repatriation. The article further develops the concept of migrant suspension to describe the lived condition produced by managed circulation. Temporal urgency embedded in managed circulation compels repeated, often involuntary movement as migrants seek to maintain legal presence and secure livelihoods. By examining two distinct temporal windows and migrants’ strategies for navigating them, the article demonstrates how mobility itself becomes a condition of suspension rather than incorporation. It also argues that Myanmar border-pass holders constitute a significant and enduring component of China’s cross-border labour regime rather than an exception to it.",
+    "lang": "en",
+    "source_theme": "",
+    "via": "openalex",
+    "topics": [
+     "Migration and Labor Dynamics",
+     "Migration, Refugees, and Integration",
+     "Asian Geopolitics and Ethnography"
+    ],
+    "journal_query": "Journal of Ethnic and Migration Studies"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "The politics of exhaustion: temporal whiplash, collective depletion, and the governance of immigrant life",
+   "url": "https://doi.org/10.1080/1369183x.2026.2742032",
+   "source": "Journal of Ethnic and Migration Studies",
+   "date": "2026-10-04",
+   "authors": [
+    "Lauren Heidbrink"
+   ],
+   "affiliation": "California State University System",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "This article enlists the politics of exhaustion as a framework for understanding U.S. immigration governance. Drawing on ethnographic research with undocumented students and their families, community organisations in Southern California, and communities of migration and return in Guatemala, I argue that immigration enforcement wears people down through temporal whiplash: the forced oscillation between prolonged uncertainty and sudden demands for action. Exhaustion begins in the body but moves outward into collective depletion, as families, communities, organisations, and social movements absorb the costs of survival and repair. Exhaustion is also a strategy of governance that extracts labour, money, data, and care from communities denied stability while generating profit from their precarity. Across contexts, I show how temporal whiplash produces instability, collective depletion spreads its costs, and extractive capitalism profits from the exhaustion that follows. The article concludes by proposing a praxis of replenishment as a commitment to building systems that sustain life, renew the commons of care, value reciprocal learning, and imagine futures otherwise.",
+    "lang": "en",
+    "source_theme": "",
+    "via": "openalex",
+    "topics": [
+     "Migration, Refugees, and Integration",
+     "Migration and Exile Studies",
+     "Migration, Racism, and Human Rights"
+    ],
+    "journal_query": "Journal of Ethnic and Migration Studies"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "“Can there be Southeast Asians in Southeast Asian Studies” redux",
+   "url": "https://doi.org/10.1080/14631369.2026.2745173",
+   "source": "Asian Ethnicity",
+   "date": "2026-10-08",
+   "authors": [
+    "Thiti Jamkajornkeiat"
+   ],
+   "affiliation": "University of Victoria",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "This article revisits Ariel Heryanto’s seminal essay ‘Can there be Southeast Asians in Southeast Asian Studies’ to investigate the forms of coloniality and exteriority specific to the disciplinary formation of Southeast Asian Studies. It argues that the relevant problematics for Southeast Asian Southeast Asianists (SASAs) today involve identifying the intellectual parameters of and, subsequently, giving form to ‘Southeast Asian Studies by and for Southeast Asians.’ To counteract the coloniality of the field, this decolonial configuration starts with collaboration to produce trans-local knowledge specific to the history and geography of Southeast Asia. To make Southeast Asian Studies relevant to Southeast Asians, the new framework adopts a public humanities direction that collaborates with communities to generate research inquiries driven by the needs and livelihoods of Southeast Asians. The article contributes to the accelerating momentum of the decolonizing Southeast Asian studies movement worldwide.",
+    "lang": "en",
+    "source_theme": "",
+    "via": "openalex",
+    "topics": [
+     "Cultural Studies and Colonialism",
+     "Diaspora, migration, transnational identity",
+     "Southeast Asian Sociopolitical Studies"
+    ],
+    "journal_query": "Asian Ethnicity"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Vitalizing Indigenous cultural practices through the Akha ‘Farm Ritual’ and ‘Coffee Festival’ in Mae Jan Tai village in the highlands of Northern Thailand",
+   "url": "https://doi.org/10.1080/14631369.2026.2737980",
+   "source": "Asian Ethnicity",
+   "date": "2026-10-04",
+   "authors": [
+    "Po-Tao Chang"
+   ],
+   "affiliation": "University of Wisconsin–Madison",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "As Thailand’s domestic coffee market has expanded over the past two decades, the agricultural landscape in the northern highlands has shifted from opium to Arabica coffee. Drawing on an ethnographic study in an ethnic Akha village, I propose the theoretical framework of ‘Indigenous Cultural Vitalization’ to illustrate the continuous renewal of cultural practices when certain practices do not exhibit a clear intergenerational gap. I argue that the vitalization of the coffee ‘Farm Ritual’ signifies the significance of their ancestral land ethics, whereas the vitalization of the ‘New Spring Ritual’ by adding the ‘Coffee Festival’ to it embodies the socio-economic performativity of both the pride of being Akha and the identity of being a specialty coffee-producing community.",
+    "lang": "en",
+    "source_theme": "",
+    "via": "openalex",
+    "topics": [
+     "Southeast Asian Sociopolitical Studies",
+     "Indigenous Studies in Latin America",
+     "Cultural Identity and Heritage"
+    ],
+    "journal_query": "Asian Ethnicity"
    }
   },
   {
@@ -3837,35 +3791,7 @@
     "topics": [
      "Bangladesh Politics, Society, and Development",
      "South Asian Studies and Conflicts",
-     "South Asian Studies and Diaspora"
-    ],
-    "journal_query": "Asian Ethnicity"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Epistemic injustice and the Meitei revivalist movement in Manipur, India",
-   "url": "https://doi.org/10.1080/14631369.2026.2737962",
-   "source": "Asian Ethnicity",
-   "date": "2026-09-22",
-   "authors": [
-    "Prakash Khundrakpam",
-    "Nameirakpam Bijen Meetei"
-   ],
-   "affiliation": "Manipur University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Extant scholarship has largely overlooked the epistemic dimensions of the Meiteis’ religious transformation from Sanamahism to Hinduism and the subsequent emergence of Meitei revivalism. In this article, we argue that we can understand both developments better through Miranda Fricker’s framework of epistemic injustice. Fricker conceptualizes epistemic injustice as a form of existential injustice that compromises an individual’s or group’s ‘capacity as a knower’ and undermines their ability to produce knowledge. We use a multi-modal qualitative method that combines initial autoethnographic insights with triangulated secondary sources to argue that the religious transformation of Manipur inflicted epistemic injuries in the form of testimonial injustice and a deeper hermeneutical injury. Finally, we position Meitei revivalism as a consequent project of epistemic recovery, examine its internal challenges, and consider its future in light of Manipur’s extant politics.",
-    "lang": "en",
-    "source_theme": "",
-    "via": "openalex",
-    "topics": [
-     "South Asian Studies and Conflicts",
-     "South Asian Studies and Diaspora",
-     "Bangladesh Politics, Society, and Development"
+     "Indigenous Cultures and History"
     ],
     "journal_query": "Asian Ethnicity"
    }
@@ -3892,8 +3818,8 @@
     "source_theme": "",
     "via": "openalex",
     "topics": [
-     "Dispute Resolution and Class Actions",
-     "Law in Society and Culture",
+     "Judicial and Constitutional Studies",
+     "Artificial Intelligence in Law",
      "Education, Law, and Society"
     ],
     "journal_query": "China Information"
@@ -3901,205 +3827,91 @@
   },
   {
    "kind": "paper",
-   "title": "Chasing Shadows: Gender, Tourism, and Everyday Corruption in Vietnam’s Northern Borderlands",
-   "url": "https://doi.org/10.1177/00027642261484360",
-   "source": "American Behavioral Scientist",
-   "date": "2026-09-24",
+   "title": "Beyond resistance: Indigenous counter-narratives on embedded extractivism in Indonesia",
+   "url": "https://doi.org/10.1080/09614524.2026.2740121",
+   "source": "Development in Practice",
+   "date": "2026-10-05",
    "authors": [
-    "Kristy Kelly"
+    "Candra Dewi",
+    "Sadar Ginting"
    ],
-   "affiliation": "Columbia University",
+   "affiliation": "EngenderHealth",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "This article examines corruption in Vietnam’s northern borderlands as transparency reforms reshape ethnic minority livelihoods in tourism and state modernization. Drawing on multi-sited feminist ethnography (2017–2024) in Lào Cai province and Sa Pa, findings reveal corruption as an intersectional, gendered institution—practices through which access is negotiated under shifting rules, discretionary enforcement, and unequal legitimacy. Clean tourism and anti-corruption campaigns can curb visible bribery yet also multiply licenses, inspections, paperwork, and language tests that heighten surveillance for those least able to comply, especially ethnic minority women. Women trekking guides, vendors, and homestay operators shoulder navigation as carework, using calibrated gifts, envelopes, detours, and relational labor to prevent delays, fines, humiliation, or livelihood restrictions. Some call this “our clean”: a local ethics of integrity and harm reduction that protects households and community standing. The article reframes anti-corruption as distributive governance and advances a feminist ethics of transparency attentive to uneven development and local agency.",
+    "summary": "This study examines Indonesia’s extractive development paradigm as both an economic model and a discursive framework through which land, nature, and Indigenous life are governed. Since the New Order era, extractivism has been embedded in state narratives of growth and modernisation, presenting resource exploitation as a national obligation and moral imperative. This discourse frames land as “idle”, forests as “state assets”, and extraction as “national development” or “progress”. These terms circulate through state institutions, corporate actors, legal-permit systems, spatial planning, and policy documents, legitimising extraction and reinforcing the state-corporate nexus while marginalising Indigenous epistemologies. Using critical discourse analysis, this study finds that extractive logic persists across regimes, often concealed by the language of progress. Beyond material dispossession, extractivism operates as epistemic and ontological violence by erasing Indigenous ways of knowing land. The study shows how Indigenous peoples, including the Dayak, Awyu, and Moi, construct counter-narratives that reframe resistance as both discursive and epistemic.",
     "lang": "en",
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Diverse Aspects of Tourism Research",
-     "Southeast Asian Sociopolitical Studies",
-     "Mining and Resource Management"
+     "Extractivism and Socioeconomic Issues",
+     "Mining and Resource Management",
+     "Agriculture, Land Use, Rural Development"
     ],
     "journal_query": "少数民族与现代化（国外）"
    }
   },
   {
    "kind": "paper",
-   "title": "‘Dark, buried, and very Indian’: Indigenous urban inhabitation and fluvial epistemic alternatives",
-   "url": "https://doi.org/10.1080/13604813.2026.2675823",
-   "source": "City",
-   "date": "2026-09-25",
-   "authors": [
-    "Olivia Casagrande"
-   ],
-   "affiliation": "University of Sheffield",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "In Latin America, urbanization is deeply linked to the dispossession of Indigenous people, and to processes of racialization that constructed the city as ‘white’ in antithesis to their territories and forms of life. Yet, the majority of Indigenous people now live in urban areas. In a context of racial inequalities and epistemic violence, how are Indigenous practices of urban inhabitation produced and given meaning? How is Indigenous knowledge shaped by the urban, and how does this shape the urban in turn?. To answer these questions, the article focuses on the Mapocho river running through Santiago, Chile. A key element of Indigenous geographies, the river is at the same time the border-line that shapes the city into segregated areas—with class and race historically defining this exclusionary urbanism. Moving from the collaborative research project MapsUrbe (2017-2021), the article addresses the relational engagement with this river in order to rethink urban inhabitation as multiple, frictional, and creative, marked by loss and dispossession as well as endurance. Centered on Mapuche knowledge making and territorial imagination, the paper takes seriously fluvial epistemics to reframe urban inhabitation as the entanglement of acts of traversing, subterranean streams and silent flowing, and sudden overflooding.",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Water Governance and Infrastructure",
-     "Geographies of human-animal interactions",
-     "Urban Planning and Governance"
-    ],
-    "journal_query": "少数民族与现代化（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Lamban Gedung Kuning as a Cultural Heritage of the Lampung People",
-   "url": "https://al-afkar.com/index.php/Afkar_Journal/article/view/2365",
-   "source": "al-Afkar Journal For Islamic Studies",
-   "date": "2026-09-24",
-   "authors": [
-    "Abdul Halim",
-    "Hikmah Nur Azizah",
-    "Feni Sundari",
-    "Susiati",
-    "Anggraenie Inka Amsyairi"
-   ],
-   "affiliation": "",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Epresenting the Lampung community, rich in architectural, symbolic, social, and cultural values. This traditional house not only reflects the identity and honor of the local indigenous community but also functions as a center of cultural activities and traditional education. This study aims to examine the symbolic meanings, social functions, and preservation strategies of Lamban Gedung Kuning amid the wave of modernization. The research was conducted using a descriptive qualitative method through data collection in the form of literature review, direct observation, and in-depth interviews with traditional leaders and cultural managers. The findings indicate that Lamban Gedung Kuning plays a vital role as a residence, a center for preserving traditional values, and a medium for character education based on local culture. The preservation efforts involve active community participation, implementation of traditional rituals and ceremonies, documentation of cultural heritage objects, and education for younger generations. This study emphasizes that preserving Lamban Gedung Kuning is a crucial effort to safeguard the cultural identity of the Lampung people so that it remains sustainable and relevant in facing contemporary challenges.",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Architecture and Cultural Influences",
-     "Cultural and Artistic Studies",
-     "Architectural and Urban Studies"
-    ],
-    "journal_query": "少数民族与现代化（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Can Intangible Cultural Heritage Resources Stimulate Regional Entrepreneurial Activity?—Empirical Evidence from the Guangxi Zhuang Autonomous Region",
-   "url": "https://doi.org/10.53941/eem.2026.100015",
-   "source": "Ecological Economics and Management",
-   "date": "2026-09-21",
-   "authors": [
-    "Xiaoyu Zhang",
-    "Min Zhao",
-    "Yan Liu",
-    "Nuoyan Liu",
-    "Cherng Fair Li"
-   ],
-   "affiliation": "Nanning University; Fujian Normal University; Universiti Putra Malaysia; Northern University of Malaysia",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "In line with the world’s goals of sustainable development, cultural resources are now being used to promote both cultural inheritance and regional economic revitalisation. This paper studies whether intangible cultural heritage (ICH) resources can promote regional entrepreneurial activity by analyzing panel data from 14 prefecture-level cities in the Guangxi Zhuang Autonomous Region, China, from 2007 to 2023. The empirical results indicate that ICH resources significantly promote entrepreneurial activity in Guangxi; specifically, both the stock of ICH projects and the stock of inheritors show significantly positive effects, and the findings remain robust after a series of tests. The results suggest that ICH can be used to carry cultural values and serve as a resource for place-based development that supports entrepreneurship through heritage commercialisation, cultural consumption and local industrial integration. This study incorporates ICH into the regional entrepreneurship analysis framework, providing new empirical evidence for the economic value of cultural heritage and its role in innovation-driven development.",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Cultural Heritage Management and Preservation",
-     "Cultural Industries and Urban Development",
-     "Diverse Aspects of Tourism Research"
-    ],
-    "journal_query": "中国民族问题（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Prevalence and associated factors of functional disability among middle-aged and older adults: evidence from 12 ethnic groups in Yunnan, China",
-   "url": "https://doi.org/10.1186/s12939-026-03039-y",
-   "source": "International Journal for Equity in Health",
-   "date": "2026-09-21",
-   "authors": [
-    "Jun Zhang",
-    "Heng Bai",
-    "Rong Li",
-    "Yidan Wang",
-    "Jiaru Ma",
-    "Yujie Li"
-   ],
-   "affiliation": "Kunming Medical University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Functional disability is a growing public health concern in aging populations worldwide, particularly in low- and middle-income countries. In China, rapid population aging and substantial ethnic and cultural diversity further complicate this issue, yet evidence focusing on functional disability among ethnic minority groups remains limited and overlooks intragroup heterogeneity. Thus, this study aims to investigate the prevalence and determinants of functional disability among middle-aged and older adults across different ethnic groups in a multi-ethnic setting. A cross-sectional study was conducted among 5,180 middle-aged and older adults from 12 ethnic groups in Yunnan. Sociodemographic characteristics and health conditions were collected through structured questionnaires. Functional disability was assessed using the functional assessment framework, comprising Physical Self-Maintenance Scale (PSMS) and Instrumental Activities of Daily Living (IADL) scale. Standardized prevalence rates for the 11 minority ethnic groups were calculated using the age distribution of the Han population as the standard. Multivariable logistic regression were applied to identify factors associated with functional disability, with results reported as odds ratios ( OR ) and 95% confidence intervals ( 95%CI ). The overall prevalence of functional disability was 36.41%, while the prevalence of basic ADL and IADL disability were 4.27% and 35.58%, respectively. After standardization, the Bulang (IADL 59",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Health disparities and outcomes",
-     "Frailty in Older Adults",
-     "Assistive Technology in Communication and Mobility"
-    ],
-    "journal_query": "中国民族问题（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Tripartite Evolutionary Game and Simulation Analysis of Regulating Service Value Realization: A Case Study of Yunnan Province, China",
-   "url": "https://doi.org/10.3390/su18189658",
+   "title": "The Nyandeni Smart Village Initiative: Towards an Indigenous Knowledge-Led Model of Rural Transformation in South Africa",
+   "url": "https://doi.org/10.3390/su181910129",
    "source": "Sustainability",
-   "date": "2026-09-21",
+   "date": "2026-10-04",
    "authors": [
-    "Guifeng Gu",
-    "Xiufeng Ren"
+    "Mziwoxolo Sirayi",
+    "Sibusiso Clifford Ndlangamandla",
+    "Luvo Sirayi",
+    "Mcebisi Junior Mabuza"
    ],
-   "affiliation": "Southwest Forestry University",
+   "affiliation": "University of the Witwatersrand; University of South Africa; University of Pretoria",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "The sustainable provision of regulating services—such as climate regulation, water purification, and soil conservation—is fundamental to both ecological integrity and human well-being, yet the market mechanisms required to sustain their value remain critically underdeveloped. To explore the sustainable process of realizing the value of regulating services, this study introduces three stakeholders—environmental protection enterprises, the government, and residents—and constructs an evolutionary game model to analyze the behavioral decisions of each stakeholder and the key factors influencing system equilibrium. To validate the theoretical model, we further employed MATLAB R2023a to conduct simulation analyses using a real-world case study and data from Yunnan Province, examining the impact of various variables on the outcomes of the evolutionary game. The following results were obtained: (1) Multiple equilibrium solutions exist within the evolutionary game system, indicating that there is no single path to realizing the value of regulating services. Among these, full government support is key to realizing the value of regulating services. (2) A critical parameter exists in the multi-party game for realizing the value of regulating services, and this parameter exhibits a significant threshold effect; once the threshold is exceeded, the behavioral decisions of the participating actors will change. (3) The long-term sustainable realization of the value of regulating services requ",
+    "summary": "An increasing number of decolonial scholars have challenged the presumed superiority of Western and technocratic approaches to development, highlighting their limitations in understanding African contexts, particularly in South Africa. Despite its historical marginalisation, Indigenous Knowledge has sustained Indigenous communities through adaptive, context-specific and resilient practices. This paper argues that repositioning Indigenous Knowledge as a foundational principle of smart village development can provide an alternative pathway to rural transformation that is culturally grounded, socially responsive and locally relevant. The argument is illustrated through the Indigenous Knowledge-led Smart Village Pilot Project in Nyandeni, Eastern Cape, initiated by the Department of Science, Technology and Innovation (DSTI) in 2021. Drawing on a Southern decolonial co-creation approach, the project seeks to bridge theory and praxis by bringing Indigenous Knowledge, community participation, co-creation, Indigenous governance and multi-stakeholder collaboration into the planning and implementation of rural transformation. The paper illustrates how Indigenous Knowledge can inform spatial, socio-economic, cultural and technological development and provide a potential basis for strengthening local capacities, economic resilience and accountable governance. It concludes that an Indigenous Knowledge-led smart village approach offers a potentially transformative alternative to technology",
     "lang": "en",
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Game Theory and Applications",
-     "Auction Theory and Applications",
-     "Water resources management and optimization"
+     "African cultural and philosophical studies",
+     "Local Economic Development and Planning",
+     "ICT in Developing Communities"
     ],
-    "journal_query": "中国民族问题（国外）"
+    "journal_query": "少数民族与现代化（国外）"
    }
   },
   {
    "kind": "paper",
-   "title": "Borderland extraterritoriality: The Yunnan-Burma frontier meetings (1902–1949)",
-   "url": "https://doi.org/10.1017/s0026749x26102133",
-   "source": "Modern Asian Studies",
-   "date": "2026-09-22",
+   "title": "Financial inclusion as a pathway to sustainability goals for marginalized communities in India",
+   "url": "https://doi.org/10.1007/s43621-026-04749-7",
+   "source": "Discover Sustainability",
+   "date": "2026-10-09",
    "authors": [
-    "Li Wan"
+    "Ram B. Ramachandran",
+    "Chabi Gupta",
+    "Shashank Shenoy",
+    "Mahek Saket Shah",
+    "Hector Saye Lah"
    ],
-   "affiliation": "East China University of Political Science and Law",
+   "affiliation": "O. P. Jindal Global University; Amity University; University of Liberia",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "Abstract Britain exercised a distinctive form of extraterritorial jurisdiction around the Yunnan-Burma border before 1949. In 1902, Chinese and British officials established a joint trial system under the 1902 Manai Agreement. From then on, Chinese, British, and Burmese officials convened temporary frontier meetings each winter in border areas, including in Manai, Nawngma, and Sima. These meetings adjudicated disputes involving theft, injuries, and trans-frontier cultivation pursuant to tribal customary law. The frontier meetings normally issued four distinct types of judgments and awarded a uniform remedy in the form of damages. This system served the practical needs of border tribes by delivering swift justice to prevent blood feuds and maintain law and order. These meetings developed a case law for resolving borderland cases that diverged from the national laws of both China and Britain. This system was jointly administered by Chinese, British, and Burmese officials under ostensibly reciprocal terms, though Britain’s exercise of extraterritorial jurisdiction in China ultimately placed a heavier burden on the Chinese side. The joint trial system came to an end after Burma officially gained independence in 1948. British extraterritorial jurisdiction in China was not absolute but operated through distinct jurisdictional systems in the interior and in the borderlands.",
+    "summary": "India has made remarkable strides over the past two decades in expanding financial access through digital payment systems, mobile banking, and ambitious government programs. Yet this journey toward universal financial inclusion reveals a sobering paradox: as we bring more people into the formal financial system, reaching those still left behind becomes increasingly challenging. This struggle has profound implications for India’s commitment to the Sustainable Development Goals (SDGs), particularly in eliminating poverty (SDG 1), creating decent work opportunities (SDG 8), and reducing inequalities (SDG 10). This study examines the complex realities of financial inclusion in India, focusing specifically on the experiences of marginalized and indigenous communities who remain on the periphery of mainstream financial services. Drawing from existing research, government data, and real-world case studies, we explore how financial exclusion is associated with barriers to achieving SDG targets while identifying practical pathways toward more inclusive development. The research reveals persistent challenges including geographical remoteness, cultural barriers, and financial illiteracy that are associated with limited participation in formal financial systems. Through analysis of government initiatives like the Pradhan Mantri Jan Dhan Yojana and examination of grassroots organizations like the Centre for Tribal and Rural Development Trust, we identify both successes and limitations in ",
     "lang": "en",
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Asian Geopolitics and Ethnography",
-     "Southeast Asian Sociopolitical Studies",
-     "Chinese history and philosophy"
+     "Microfinance and Financial Inclusion",
+     "Innovation and Socioeconomic Development",
+     "FinTech, Crowdfunding, Digital Finance"
     ],
-    "journal_query": "中国民族问题（国外）"
+    "journal_query": "少数民族与现代化（国外）"
    }
   },
   {
@@ -4124,9 +3936,39 @@
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Diverse Aspects of Tourism Research",
-     "Wildlife-Road Interactions and Conservation",
-     "Cross-Border Cooperation and Integration"
+     "Urbanism, Landscape, and Tourism Studies",
+     "Cultural Heritage Management and Preservation",
+     "Archaeology and Cultural Heritage"
+    ],
+    "journal_query": "中国民族问题（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "The Strategy Research on Improving the Innovative Behavior of Young Teachers in Public Vocational Colleges in Yunnan Province",
+   "url": "https://so03.tci-thaijo.org/index.php/jeir/article/view/293928",
+   "source": "Journal of Educational Innovation and Research",
+   "date": "2026-09-30",
+   "authors": [
+    "Yannan Zhu",
+    "Bongkochmas Ek-lem",
+    "Somkid Kaewtip",
+    "Chalermchai Panyadee"
+   ],
+   "affiliation": "Maejo University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "This article aims to study (1) the current situation of innovative behavior among young teachers in public vocational colleges in Yunnan Province, China, and (2) propose appropriate development strategies to enhance their innovative behavior. The sample consisted of 375 young teachers from 37 public vocational colleges in Yunnan, using a systematic random sampling approach. Data were collected through structured questionnaires and in-depth interviews, and analyzed using descriptive statistics and content analysis. The findings of the study were as follows: The level of innovative behavior among young teachers in Yunnan was high, with a mean score of 3.71 for idea generation and 3.54 for idea championing, indicating room for improvement, especially in the areas of generating and championing new ideas in teaching. Organizational factors, such as perceived organizational innovation climate, organizational support and knowledge sharing , had a significant positive impact on teachers' innovative behavior. Individual factors, including self-efficacy, work engagement and job satisfaction also contributed positively to innovation. However, barriers such as limited resources, institutional constraints were identified as significant inhibitors of innovation. This study provides a comprehensive analysis of the current state of innovative behavior among young teachers in Yunnan's vocational colleges and offers corresponding strategies to improve it.",
+    "lang": "en",
+    "source_theme": "各民族共同现代化",
+    "via": "openalex",
+    "topics": [
+     "Educational and Organizational Development",
+     "Teacher Education and Leadership Studies",
+     "School Leadership and Teacher Performance"
     ],
     "journal_query": "中国民族问题（国外）"
    }
@@ -4144,7 +3986,7 @@
     "Chalermchai Panyadee",
     "Jariya Koment"
    ],
-   "affiliation": "",
+   "affiliation": "Maejo University",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
@@ -4155,9 +3997,97 @@
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Evaluation of Teaching Practices",
-     "Higher Education Governance and Development",
-     "Higher Education and Teaching Methods"
+     "Job Satisfaction and Organizational Behavior",
+     "Teacher Professional Development and Motivation",
+     "School Leadership and Teacher Performance"
+    ],
+    "journal_query": "中国民族问题（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Coordination Between Agricultural New-Quality Productive Forces and Rural Revitalization in Northwest China",
+   "url": "https://doi.org/10.3390/economies14100462",
+   "source": "Economies",
+   "date": "2026-10-08",
+   "authors": [
+    "Jingyi Song",
+    "Jiarui Li",
+    "Rong Gao",
+    "Junhong Du"
+   ],
+   "affiliation": "Xinjiang University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Rural revitalization plays an important role in reducing urban–rural disparities and promoting inclusive regional development in China. This study appraises the coordinated development of agricultural new-quality productive forces and rural revitalization across five provincial-level regions in Northwest China—Shaanxi, Gansu, Qinghai, Ningxia, and Xinjiang—from 2013 to 2022. Thirty-two indicators (16 in each subsystem) are weighted by the entropy method and evaluated using TOPSIS, grey relational analysis, a coupling coordination degree model, an overall Dagum Gini coefficient (without within- or between-group decomposition), and an obstacle degree model. The empirical results show a clear regional hierarchy: the mean coupling coordination degree (D) is 0.977 in Shaanxi, 0.882 in Xinjiang, 0.854 in Gansu, 0.707 in Ningxia, and 0.700 in Qinghai. In Xinjiang, the agricultural new-quality productive-forces score fell from 0.984 in 2013 to 0.748 in 2022, the rural-revitalization score fell from 0.721 to 0.705, and D fell from 0.918 to 0.852, showing a fluctuating relative trajectory rather than steady improvement. Agricultural means of production remain the largest criterion-level obstacle (37.74% on average across the five regions), while agricultural science and technology personnel constitute Xinjiang’s largest indicator-level obstacle (17.50%). The results support differentiated regional strategies and demonstrate that composite-index findings should be interpreted as descrip",
+    "lang": "en",
+    "source_theme": "各民族共同现代化",
+    "via": "openalex",
+    "topics": [
+     "Regional Development and Environment",
+     "Digitalization and Economic Development in Agriculture",
+     "Agricultural economics and policies"
+    ],
+    "journal_query": "中国民族问题（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "The Effectiveness of a School-Based Book Reading Intervention for Dai–Mandarin Young Bilingual Children in China: A Pilot Study",
+   "url": "https://doi.org/10.1044/2026_lshss-25-00135",
+   "source": "Language Speech and Hearing Services in Schools",
+   "date": "2026-10-09",
+   "authors": [
+    "Songting Yang",
+    "Taiying Lee",
+    "Anthony Pak‐Hin Kong"
+   ],
+   "affiliation": "Education University of Hong Kong; University of Hong Kong; Western Sydney University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "Purpose: Bilingual children from ethnic minority backgrounds in China often face challenges acquiring Mandarin Chinese as their second language (L2). This study aimed to (a) evaluate the effectiveness of a school-based book reading intervention (BRI) on the bilingual language development of Dai–Mandarin young bilingual children in China and (b) examine how demographic and language environment factors were associated with the intervention outcomes. Method: A cluster-level randomized controlled trial design was employed. Fifty-one Dai–Mandarin bilingual children aged 4;1 (years;months) to 5;1 were randomized at the class level into a treatment or control group. The treatment group ( n = 26) participated in the BRI spanned across 6 weeks with daily 25-min sessions. The sessions focused on shared book reading, explicit vocabulary instruction, and sentence structure activities. The control group ( n = 25) followed their regular curriculum without intervention. Vocabulary, narrative skills, and general language skills were assessed using four standardized, criterion-referenced or researcher-developed measures at pre-intervention and immediate postintervention; the researcher-developed measures were also administered at midintervention. Demographic information and language learning environments were collected through a parental questionnaire. Results: The treatment group showed significant improvements in Mandarin (L2) curriculum-specific receptive and expressive vocabulary, and nar",
+    "lang": "en",
+    "source_theme": "各民族共同现代化",
+    "via": "openalex",
+    "topics": [
+     "Language Development and Disorders",
+     "Reading and Literacy Development",
+     "Multilingual Education and Policy"
+    ],
+    "journal_query": "中国民族问题（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Corporate Social Responsibility Fulfillment on the Performance of Chinese Enterprises Overseas: An Empirical Study",
+   "url": "https://doi.org/10.1002/csr.71064",
+   "source": "Corporate Social Responsibility and Environmental Management",
+   "date": "2026-10-08",
+   "authors": [
+    "Ying Chen",
+    "Jiecan Li",
+    "Kuakua Wu"
+   ],
+   "affiliation": "Yunnan University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "ABSTRACT In increasingly complex international business environments, how multinational enterprises use corporate social responsibility (CSR) to gain host‐country legitimacy and improve performance has become an important issue in international business and CSR research. Drawing on stakeholder theory and the 2018 Overseas Chinese Enterprises and Employees Survey (OCEES) conducted by Yunnan University, this study distinguishes external CSR from internal CSR and examines their differential performance effects, mechanisms, and boundary conditions among overseas Chinese enterprises. The results show that external CSR significantly improves firm performance, mainly through enhanced corporate reputation and pricing capability. In contrast, internal CSR has a less stable performance effect and does not generate the expected positive mechanisms through employee job satisfaction and engagement. Heterogeneity analyses show that external CSR returns are stronger for firms primarily serving host‐country markets and for those operating in low‐income host countries or countries with lower institutional quality than China. Further analysis indicates that, under CSR resource constraints, increasing the share of external CSR in the overall CSR portfolio improves firm performance.",
+    "lang": "en",
+    "source_theme": "各民族共同现代化",
+    "via": "openalex",
+    "topics": [
+     "Corporate Social Responsibility Reporting",
+     "International Business and FDI",
+     "Corporate Identity and Reputation"
     ],
     "journal_query": "中国民族问题（国外）"
    }
@@ -4185,9 +4115,41 @@
     "source_theme": "各民族共同现代化",
     "via": "openalex",
     "topics": [
-     "Diverse Aspects of Tourism Research",
-     "Place Attachment and Urban Studies",
-     "Cultural Heritage Management and Preservation"
+     "Cultural Heritage Management and Preservation",
+     "Cultural Identity and Heritage",
+     "Diverse Aspects of Tourism Research"
+    ],
+    "journal_query": "中国民族问题（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "A Bibliometric Analysis of Research on Ischemic Stroke Treatment Based on Chinese Multiethnic Medicine Theories",
+   "url": "https://doi.org/10.1159/ced/accag032",
+   "source": "Cerebrovascular Diseases",
+   "date": "2026-10-02",
+   "authors": [
+    "Dula Man",
+    "La Na",
+    "Qingchun Ling",
+    "Xia Chun",
+    "Runa A",
+    "Hairihan Bao"
+   ],
+   "affiliation": "",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "INTRODUCTION: To perform a bibliometric analysis that comprehensively evaluates the status of Chinese multiethnic medicine research, knowledge structure, and the developmental trajectory of ischemic stroke prevention and treatment and provide scientific insights for future advancements. METHODS: CiteSpace, VOSviewer, and Scimago Graphica were used to analyze studies retrieved from the Web of Science Core Collection (WoSCC) and China National Knowledge Infrastructure (CNKI) databases. Multidimensional evaluations included keyword co-occurrences, author networks, international and institutional collaborations, and publishing patterns. RESULTS: Publication output exhibited a phased increase, accelerating after 2020, with CNKI publications substantially outnumbering those in WoSCC. China dominated the global collaboration network, led by institutions such as the Beijing University of Chinese Medicine. Research focus has gradually shifted from investigations of pathophysiological mechanisms to clinical applications of integrated Chinese and Western medicine, with increasing attention being paid concurrently to fundamental mechanistic research and clinical translation. Traditional Chinese medicine's \"Qi deficiency, blood stasis, and phlegm-dampness obstructing the orifices\" theory, Mongolian medicine's \"Sa disease\" theory, and Tibetan medicine's \"pathogenic factors related to stars and planets\" theory represent distinct theoretical frameworks and intervention approaches developed w",
+    "lang": "en",
+    "source_theme": "各民族共同现代化",
+    "via": "openalex",
+    "topics": [
+     "scientometrics and bibliometrics research",
+     "Traditional Chinese Medicine Studies",
+     "Medical Research and Treatments"
     ],
     "journal_query": "中国民族问题（国外）"
    }
@@ -4216,151 +4178,120 @@
     "via": "openalex",
     "topics": [
      "Regional resilience and development",
-     "Sustainability and Ecological Systems Analysis",
-     "Coastal and Marine Management"
+     "Regional Economic and Spatial Analysis",
+     "Fisheries and Aquaculture Studies"
     ],
     "journal_query": "中国民族问题（国外）"
    }
   },
   {
    "kind": "paper",
-   "title": "Balancing Security, Development, and Ecology in Border Land Governance: An SDET Diagnostic Framework and Flexible Authorization Pathway for Advancing the SDGs in China",
-   "url": "https://doi.org/10.3390/land15101859",
+   "title": "Ethnography Is Contemporary History",
+   "url": "https://doi.org/10.1177/08912416261486991",
+   "source": "Journal of Contemporary Ethnography",
+   "date": "2026-10-08",
+   "authors": [
+    "Yao Zhang"
+   ],
+   "affiliation": "Zhejiang University",
+   "direction": "",
+   "guangxi_related": false,
+   "verified": true,
+   "evidence": [],
+   "extra": {
+    "summary": "The claim that “ethnography is contemporary history” is often dismissed as a truism. Yet this seemingly obvious proposition has been profoundly destabilized by postmodern critiques that expose ethnography’s inherent “fabrication”—its poetics and politics. This article argues that acknowledging such fabrication does not invalidate but rather enriches ethnography’s status as contemporary history. I trace ethnography’s evolution through three eras—amateur, scientific, and reflexive—and engage with canonical works from Malinowski to Fei Xiaotong alongside contemporary innovations such as multi-sited, digital, and multispecies ethnography. I demonstrate that every ethnographic text, precisely through its situated production and perspectival honesty, constitutes an irreplaceable form of contemporary history. The Writing Culture critique, I contend, ultimately reveals not ethnography’s disqualification from historical knowledge but the deeper truth that all historical knowledge is perspectival. By rendering its own perspectives visible, ethnography offers a more honest—and therefore more valuable—mode of contemporary history writing.",
+    "lang": "en",
+    "source_theme": "国外理论前沿",
+    "via": "openalex",
+    "topics": [
+     "Qualitative Research Methods and Ethics",
+     "Anthropological Studies and Insights",
+     "Posthumanist Ethics and Activism"
+    ],
+    "journal_query": "人类学理论前沿（国外）"
+   }
+  },
+  {
+   "kind": "paper",
+   "title": "Mountains in the Making: Multispecies Montology in a Changing Himalayan Climate",
+   "url": "https://doi.org/10.3390/land15101833",
    "source": "Land",
-   "date": "2026-10-02",
+   "date": "2026-09-29",
    "authors": [
-    "Duanxiong Wan",
-    "Zhimao Lai",
-    "Yuchong Wang",
-    "Kai Qi",
-    "Yuwan Li"
+    "Bo Yang"
    ],
-   "affiliation": "Guangdong Police College; China People's Police University",
+   "affiliation": "Shandong University; University College London",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "Border regions are where sovereign security, economic development, and ecological protection collide most acutely. These competing demands often stall progress toward the Sustainable Development Goals (SDGs). However, most land governance frameworks are built for inland agricultural or urban settings. They rarely address how rigid security constraints reshape institutional arrangements for SDG-aligned land use in border regions. Addressing this gap requires both diagnosis and institutional design. This study develops a framework that combines a Security-Development-Ecology Triad (SDET) diagnostic model with a customized Sustainability Impact Assessment (SIA) system. The framework is applied to China’s border collaborative spatial legislation. This study draws on 47 policy and legal documents (2012–2025), three internal legislative consultation minutes, and nine semi-structured interviews. Three imbalanced cases—the Lancang River basin in Yunnan, Pingxiang Port in Guangxi, and the Northeast China Tiger and Leopard National Park (Jilin–Heilongjiang)—are compared with a balanced reference case of black soil protection in Northeast China. The SDET model uses three measurable indicators: agenda-setting veto power, clause-weight tilt, and preset legality-review thresholds. These capture how security priorities reshape the organizational-legal prerequisites of land governance: actor eligibility, authority boundaries, and entry-into-force rules. Three imbalance patterns emerge: devel",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Cross-Border Cooperation and Integration",
-     "Transboundary Water Resource Management",
-     "Water Resources and Sustainability"
-    ],
-    "journal_query": "中国民族问题（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Heterogeneous preferences for rural road investments and willingness to contribute",
-   "url": "https://doi.org/10.1080/00036846.2026.2740197",
-   "source": "Applied Economics",
-   "date": "2026-09-28",
-   "authors": [
-    "Yintu Bao",
-    "Gumula Wuri",
-    "Ligao Bao"
-   ],
-   "affiliation": "Inner Mongolia Open University; Tokyo University of Agriculture and Technology; Daito Bunka University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "Rural road plays a crucial role in improving market access, labour mobility, and public service delivery in remote regions. However, limited evidence exists on how rural residents evaluate alternative road investment designs and how household characteristics shape their preferences. This study investigates rural residents’ preferences for road development using a discrete choice experiment conducted in Inner Mongolia, China. The experiment presented respondents with hypothetical road investment scenarios characterized by variations in road quality, maintenance obligations, financing arrangements, construction employment opportunities, travel time reduction, expected income impacts, and household costs. The results show that improvements in road quality and reductions in travel time significantly increase the probability that a project is selected, highlighting the importance of accessibility improvements for rural households. In contrast, institutional features such as financing arrangements and projected income gains exert comparatively weaker influence on decision-making. The estimates further reveal heterogeneity in preferences for high-quality road upgrades and connectivity improvements. Willingness-to-pay estimates indicate that households place considerable value on substantial improvements in road quality but assign relatively modest value to subsidy incentives or financing mechanisms. These findings suggest that participatory planning and flexible infrastructure desig",
-    "lang": "en",
-    "source_theme": "各民族共同现代化",
-    "via": "openalex",
-    "topics": [
-     "Economic and Environmental Valuation",
-     "Urban Transport and Accessibility",
-     "Transportation Planning and Optimization"
-    ],
-    "journal_query": "中国民族问题（国外）"
-   }
-  },
-  {
-   "kind": "paper",
-   "title": "Contesting Collecting: Indigenous Material Cultures",
-   "url": "https://doi.org/10.1017/s0018246x26101848",
-   "source": "The Historical Journal",
-   "date": "2026-09-23",
-   "authors": [
-    "James Poskett",
-    "Lynette Russell"
-   ],
-   "affiliation": "University of Warwick; Monash University",
-   "direction": "",
-   "guangxi_related": false,
-   "verified": true,
-   "evidence": [],
-   "extra": {
-    "summary": "This dialogue explores how we understand and contest the collecting of Indigenous material cultures.Poskett, using several case studies explores how Indigenous and non-Indigenous perspectives can complicate fixed notions of materiality.Russell, drawing on her own heritage and interdisciplinary research, emphasizes crosscontextualization and the agency of Indigenous communities in shaping how cultural materials are interpreted.Together, they ask how Indigenous and non-Indigenous perspectives can reshape the history of science and museums. James PoskettIn my opening remarks, I want to suggest how we can think beyond 'material culture' in the history of science.In particular, I want to argue that the 'ontological turn' in anthropology -as well as critiques of that turn -can usefully inform methods in the history of science.More pointedly, I argue that any meaningful attempt at 'cross-contextualization', in the sense advocated by Sujit Sivasundaram, requires rethinking our understanding of material culture itself.To keep things brief, I'm going to make three points, illustrated by three exhibits and three quotations.Here is my first quote: 'What would an artefact-oriented anthropology look like if it were not about material culture?' 1 It recently surprised me to learn that back in 2007 material culture was old news.No self-respecting anthropologist would talk about it.This was not something I was informed of, working next door at the Department of History and Philosophy of Scien",
+    "summary": "What makes a mountain a mountain? Recent mountain scholarship has challenged the treatment of mountains as static topographic formations, approaching them instead as dynamic socio-ecological systems. Yet the multispecies processes through which mountains continually become mountainous, particularly under climate change, remain insufficiently theorized. Drawing on long-term multispecies ethnography and anthropological inquiries in Kham Tibet, China, this article proposes multispecies montology as a relational approach to mountain becoming. It traces how barley and turnips cultivate slopes, grasslands orient pastoral mobility, caterpillar fungi seasonally mobilize communities, and yaks and wildlife differentiate mountain spaces. Rather than treating these lives as biological components or indicators of environmental change, I approach them as constitutive participants with human communities together in remaking mountains. The article develops three dimensions of mountain becoming: verticality, temporality, and ferality, through which multispecies relations continually constitute and reshape mountain worlds. Mountains, I argue, are not merely inhabited by multiple species; they emerge through their changing relations. Multispecies montology contributes to mountain studies by reframing mountain sustainability as the ongoing capacity of heterogeneous multispecies relations to maintain, adjust, and remake conditions of mountain livability amid environmental change. It suggests that",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Conservation Techniques and Studies",
-     "Museums and Cultural Heritage",
-     "Art History and Market Analysis"
+     "Geographies of human-animal interactions",
+     "Environmental and Cultural Studies in Latin America and Beyond",
+     "Posthumanist Ethics and Activism"
     ],
     "journal_query": "人类学理论前沿（国外）"
    }
   },
   {
    "kind": "paper",
-   "title": "Donating me!? Donor fear and the difficult entanglements of clothes and persons in the transition towards a circular economy of textile reuse",
-   "url": "https://doi.org/10.1177/14695405261488351",
-   "source": "Journal of Consumer Culture",
-   "date": "2026-09-30",
+   "title": "Feminist anthropologies in the contemporary world: A conversation on theory, praxis, and politics",
+   "url": "https://doi.org/10.1002/fea2.70078",
+   "source": "Feminist Anthropology",
+   "date": "2026-10-10",
    "authors": [
-    "Mette My Madsen"
+    "María Lis Baiocchi",
+    "April Petillo",
+    "Allison Bloom",
+    "Srimati Basu",
+    "Florence E. Babb"
    ],
-   "affiliation": "National Museum of Denmark",
+   "affiliation": "University of Pittsburgh; Northern Arizona University; Moravian University; University of North Carolina at Chapel Hill",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "Textile waste is estimated to reach 134 mill tons per year globally by 2030, if a circular transition is not managed. Illuminating aspects of consumer culture that prevent circular clothes reuse is thus of critical environmental importance. While management and consumer scholars have continuously investigated how reuse can be furthered through donation and circulation systems, few have looked at the reasons people may have for refusing to donate their discarded clothes for reuse. This paper investigates reasonings for refusing to donate clothes for reuse even when information, technical and political support is in place. Through qualitative analysis of detailed ethnographic accounts from users of a Danish reuse and recycling station, the article provides a nuanced understanding of the social rationales that govern deliberate decisions not to donate for reuse. Drawing on sociological and anthropological theory on the intimate entanglements of clothes and wearer, I advance the concept of donor fear to unfold how clothes become controversial if not downright (socially) dangerous to donate. Showing how clothes donation constitutes complex social risks and dangers, this study is relevant to both scholars and practitioners who want to understand and manage socio-cultural obstacles to the circular economy of textile reuse.",
+    "summary": "Abstract This article brings together the voices of members of three major feminist anthropological associations to discuss the state of feminist anthropology as a distinct subfield of anthropology, as well as its state of affairs as an increasingly expanding, as well as increasingly threatened, approach to anthropological theory and praxis worldwide. Composed as a conversation, it is based on a roundtable discussion that took place at the 2022 American Anthropological Association (AAA) Annual Meeting, which followed in the footsteps of an important roundtable discussion on Latin American feminist anthropologies that was held at the International Union of Anthropological and Ethnological Sciences (IUAES) 2021 Congress. Topics discussed included definitions of feminist anthropology, feminist anthropological genealogies, the feminist anthropological canon, the contributions of feminist anthropology, the relationship between feminist scholarship and feminist activism, and the major theoretical, ethnographic, political, ethical, methodological, topical, and pedagogical challenges facing feminist anthropology and feminist anthropologists globally today. Participants included members of the Association for Feminist Anthropology section of the AAA, the IUAES Commission on Global Feminisms and Queer Politics, and the Society for Applied Anthropology Gender‐Based Violence Topical Interest Group.",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Sustainable Supply Chain Management",
-     "Environmental Sustainability in Business",
-     "Fashion and Cultural Textiles"
+     "Anthropology: Ethics, History, Culture",
+     "Anthropological Studies and Insights",
+     "Gender and Feminist Studies"
     ],
     "journal_query": "人类学理论前沿（国外）"
    }
   },
   {
    "kind": "paper",
-   "title": "BEYOND INDIANIZATION: BUDDHIST KNOWLEDGE CIRCULATION IN SOUTH AND SOUTHEAST ASIA",
-   "url": "https://so04.tci-thaijo.org/index.php/JSBA/article/view/288981",
-   "source": "Journal of Buddhist Anthropology",
-   "date": "2026-09-25",
+   "title": "Between Secrecy and Ostentation: Shrines and Rites for the Barbarous Relic",
+   "url": "https://doi.org/10.1002/sea2.70053",
+   "source": "Economic Anthropology",
+   "date": "2026-10-06",
    "authors": [
-    "Stanley Khu",
-    "Iwan Pranoto"
+    "Arnaud Manas"
    ],
-   "affiliation": "",
+   "affiliation": "Banque de France; Université Paris 1 Panthéon-Sorbonne",
    "direction": "",
    "guangxi_related": false,
    "verified": true,
    "evidence": [],
    "extra": {
-    "summary": "Background and Objectives: The concept of \"Indianization\" has long shaped scholarly understandings of cultural exchange between South and Southeast Asia as a largely unidirectional process through which Indian religious, political, linguistic, and cultural forms spread into a receptive Southeast Asian periphery. Although this framework has contributed significantly to the study of early Asian history, it has also encouraged hierarchical representations in which India appears primarily as a source of civilization and Southeast Asia as a recipient. Such a framework can obscure the historical agency of Southeast Asian societies in selecting, transforming, and circulating cultural and religious knowledge. This study has three objectives. First, to reassess the concept of \"Indianization\" and the diffusionist assumptions that have historically shaped interpretations of cultural exchange between South and Southeast Asia. Second, to examine how Buddhist knowledge in Southeast Asia was transmitted, localized, and transformed through processes of adaptation, reinterpretation, and materialization. Third, to propose a framework of multidirectional knowledge circulation to explain how religious and technical forms of knowledge moved across interconnected regional networks in early Asia. Methodology: The study employed an interdisciplinary integrative literature review drawing on scholarship from history, archaeology, epigraphy, Buddhist studies, anthropology, and art history. The literatu",
+    "summary": "ABSTRACT Central bank gold vaults occupy a paradoxical position in contemporary monetary systems: They are among the most symbolically charged and institutionally significant spaces of modern finance, yet they have received almost no scholarly attention. This article argues that gold vaults cannot be understood solely as technical infrastructures for the safekeeping of bullion. Rather, they are hybrid spaces that oscillate between secrecy and ostentation, fortress and shrine, rational security apparatus and ritual site. Drawing on historical analysis, semiotics, and anthropological theories of value, I show how vaults materialize political imaginaries of sovereignty, embody cosmologies of value, and perform ritual functions that anchor collective belief in monetary order. The first part traces the evolution of vault architecture in France, the United Kingdom, Spain, and the United States, demonstrating how their militarization responded to shifting geopolitical and technological threats while simultaneously projecting state power. The second part examines the latent ritual and apotropaic dimensions of vaults in the post–Bretton Woods era, when gold's monetary role diminished even as its symbolic potency intensified. By foregrounding the dual nature of vaults as both defensive infrastructures and sacred repositories, the article reveals how these spaces help produce confidence, authenticate value, and sustain the mythic foundations of contemporary capitalism.",
     "lang": "en",
     "source_theme": "国外理论前沿",
     "via": "openalex",
     "topics": [
-     "Indian and Buddhist Studies",
-     "Asian Studies and History",
-     "Southeast Asian Sociopolitical Studies"
+     "National Identity and Symbolism",
+     "Spatial and Cultural Studies",
+     "Housing, Finance, and Neoliberalism"
     ],
     "journal_query": "人类学理论前沿（国外）"
    }
@@ -4372,7 +4303,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 2.0405988693237305,
+   "elapsed": 1.6931953430175781,
    "kind": "journal"
   },
   {
@@ -4388,7 +4319,7 @@
    "ok": true,
    "count": 16,
    "message": "目录解析 16 篇",
-   "elapsed": 0.8967959880828857,
+   "elapsed": 0.670250654220581,
    "kind": "journal"
   },
   {
@@ -4412,7 +4343,7 @@
    "ok": true,
    "count": 19,
    "message": "目录解析 19 篇",
-   "elapsed": 0.8374269008636475,
+   "elapsed": 0.800588846206665,
    "kind": "journal"
   },
   {
@@ -4420,7 +4351,7 @@
    "ok": true,
    "count": 22,
    "message": "目录解析 22 篇",
-   "elapsed": 0.9946727752685547,
+   "elapsed": 0.426422119140625,
    "kind": "journal"
   },
   {
@@ -4428,7 +4359,7 @@
    "ok": true,
    "count": 16,
    "message": "目录解析 16 篇",
-   "elapsed": 1.41202712059021,
+   "elapsed": 0.5032153129577637,
    "kind": "journal"
   },
   {
@@ -4436,7 +4367,7 @@
    "ok": true,
    "count": 10,
    "message": "目录解析 10 篇",
-   "elapsed": 0.7398626804351807,
+   "elapsed": 0.5253496170043945,
    "kind": "journal"
   },
   {
@@ -4444,7 +4375,7 @@
    "ok": true,
    "count": 25,
    "message": "目录解析 25 篇",
-   "elapsed": 1.0299279689788818,
+   "elapsed": 0.642449140548706,
    "kind": "journal"
   },
   {
@@ -4458,9 +4389,9 @@
   {
    "name": "全国哲学社会科学工作办公室·年度项目",
    "ok": true,
-   "count": 0,
-   "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 1.8960938453674316,
+   "count": 1,
+   "message": "通知 1 条，下钻得课题 0 条",
+   "elapsed": 3.2905499935150146,
    "kind": "project"
   },
   {
@@ -4468,7 +4399,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.6805286407470703,
+   "elapsed": 0.8447177410125732,
    "kind": "project"
   },
   {
@@ -4476,15 +4407,15 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.5784900188446045,
+   "elapsed": 0.5874419212341309,
    "kind": "project"
   },
   {
    "name": "全国哲学社会科学工作办公室·通知公告",
    "ok": true,
-   "count": 0,
-   "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 0.6099703311920166,
+   "count": 3,
+   "message": "通知 3 条，下钻得课题 0 条",
+   "elapsed": 1.4526305198669434,
    "kind": "project"
   },
   {
@@ -4492,7 +4423,7 @@
    "ok": true,
    "count": 2,
    "message": "通知 2 条，下钻得课题 0 条",
-   "elapsed": 3.4801087379455566,
+   "elapsed": 3.2724809646606445,
    "kind": "project"
   },
   {
@@ -4500,7 +4431,7 @@
    "ok": true,
    "count": 0,
    "message": "通知 0 条，下钻得课题 0 条",
-   "elapsed": 4.1952290534973145,
+   "elapsed": 1.6447813510894775,
    "kind": "project"
   },
   {
@@ -4508,23 +4439,23 @@
    "ok": false,
    "count": 0,
    "message": "403 Client Error: Forbidden for url: http://fz.people.com.cn/skygb/sk/index.php/Index/seach?xktype=%E6%B0%91%E6%97%8F%E5%AD%A6&lxtime=2026&xmtype=0&pznum=&xmname=&xmleader=&zyzw=0&gzdw=&dwtype=0&szdq=0&ssxt=",
-   "elapsed": 11.913052558898926,
+   "elapsed": 10.612661838531494,
    "kind": "project"
   },
   {
    "name": "国外期刊·American Anthropologist",
    "ok": true,
-   "count": 7,
-   "message": "openalex: 近 14 天 7 篇",
-   "elapsed": 0.462291955947876,
+   "count": 5,
+   "message": "openalex: 近 14 天 5 篇",
+   "elapsed": 0.3393735885620117,
    "kind": "journal"
   },
   {
    "name": "国外期刊·American Ethnologist",
    "ok": true,
-   "count": 12,
-   "message": "openalex: 近 14 天 12 篇",
-   "elapsed": 0.3297576904296875,
+   "count": 16,
+   "message": "openalex: 近 14 天 16 篇",
+   "elapsed": 0.24420976638793945,
    "kind": "journal"
   },
   {
@@ -4532,7 +4463,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.12726759910583496,
+   "elapsed": 0.12198138236999512,
    "kind": "journal"
   },
   {
@@ -4540,7 +4471,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.08092808723449707,
+   "elapsed": 0.11881780624389648,
    "kind": "journal"
   },
   {
@@ -4548,15 +4479,15 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.06295657157897949,
+   "elapsed": 0.13869285583496094,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Anthropological Theory",
    "ok": true,
-   "count": 11,
-   "message": "openalex: 近 14 天 11 篇",
-   "elapsed": 0.0994415283203125,
+   "count": 1,
+   "message": "openalex: 近 14 天 1 篇",
+   "elapsed": 0.12523865699768066,
    "kind": "journal"
   },
   {
@@ -4564,15 +4495,15 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.0653843879699707,
+   "elapsed": 0.12290692329406738,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Journal of the Royal Anthropological Institute",
    "ok": true,
-   "count": 11,
-   "message": "openalex: 近 14 天 11 篇",
-   "elapsed": 0.10168218612670898,
+   "count": 10,
+   "message": "openalex: 近 14 天 10 篇",
+   "elapsed": 0.32240962982177734,
    "kind": "journal"
   },
   {
@@ -4580,7 +4511,7 @@
    "ok": true,
    "count": 4,
    "message": "openalex: 近 14 天 4 篇",
-   "elapsed": 0.0866997241973877,
+   "elapsed": 0.2506890296936035,
    "kind": "journal"
   },
   {
@@ -4588,7 +4519,7 @@
    "ok": true,
    "count": 1,
    "message": "openalex: 近 14 天 1 篇",
-   "elapsed": 0.06705570220947266,
+   "elapsed": 0.12248110771179199,
    "kind": "journal"
   },
   {
@@ -4596,7 +4527,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.05709552764892578,
+   "elapsed": 0.10802698135375977,
    "kind": "journal"
   },
   {
@@ -4604,47 +4535,47 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇",
-   "elapsed": 0.055227041244506836,
+   "elapsed": 0.10582613945007324,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Ethnic and Racial Studies",
    "ok": true,
    "count": 1,
-   "message": "openalex: 近 14 天 12 篇，命中专题 1 篇",
-   "elapsed": 0.10518312454223633,
+   "message": "openalex: 近 14 天 6 篇，命中专题 1 篇",
+   "elapsed": 0.2447497844696045,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Nations and Nationalism",
    "ok": true,
    "count": 2,
-   "message": "openalex: 近 14 天 8 篇，命中专题 2 篇",
-   "elapsed": 0.10892415046691895,
+   "message": "openalex: 近 14 天 9 篇，命中专题 2 篇",
+   "elapsed": 0.2779524326324463,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Ethnicities",
    "ok": true,
    "count": 1,
-   "message": "openalex: 近 14 天 5 篇，命中专题 1 篇",
-   "elapsed": 0.0836646556854248,
+   "message": "openalex: 近 14 天 8 篇，命中专题 1 篇",
+   "elapsed": 0.15146374702453613,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Journal of Ethnic and Migration Studies",
    "ok": true,
-   "count": 0,
-   "message": "openalex: 近 14 天 7 篇，命中专题 0 篇",
-   "elapsed": 0.1363379955291748,
+   "count": 2,
+   "message": "openalex: 近 14 天 10 篇，命中专题 2 篇",
+   "elapsed": 0.25743842124938965,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Asian Ethnicity",
    "ok": true,
-   "count": 2,
-   "message": "openalex: 近 14 天 2 篇，命中专题 2 篇",
-   "elapsed": 0.06191611289978027,
+   "count": 3,
+   "message": "openalex: 近 14 天 3 篇，命中专题 3 篇",
+   "elapsed": 0.13783049583435059,
    "kind": "journal"
   },
   {
@@ -4652,7 +4583,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇，命中专题 0 篇",
-   "elapsed": 0.06346774101257324,
+   "elapsed": 0.10841941833496094,
    "kind": "journal"
   },
   {
@@ -4660,7 +4591,7 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 1 篇，命中专题 0 篇",
-   "elapsed": 0.06795620918273926,
+   "elapsed": 0.17385244369506836,
    "kind": "journal"
   },
   {
@@ -4668,31 +4599,31 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇，命中专题 0 篇",
-   "elapsed": 0.0526127815246582,
+   "elapsed": 0.10673737525939941,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Modern China",
    "ok": true,
    "count": 0,
-   "message": "openalex: 近 14 天 1 篇，命中专题 0 篇",
-   "elapsed": 0.07017922401428223,
+   "message": "openalex: 近 14 天 3 篇，命中专题 0 篇",
+   "elapsed": 0.14185619354248047,
    "kind": "journal"
   },
   {
    "name": "国外期刊·China Information",
    "ok": true,
    "count": 1,
-   "message": "openalex: 近 14 天 1 篇，命中专题 1 篇",
-   "elapsed": 0.06472611427307129,
+   "message": "openalex: 近 14 天 2 篇，命中专题 1 篇",
+   "elapsed": 0.18513774871826172,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Journal of Contemporary China",
    "ok": true,
    "count": 0,
-   "message": "openalex: 近 14 天 3 篇，命中专题 0 篇",
-   "elapsed": 0.06647133827209473,
+   "message": "openalex: 近 14 天 4 篇，命中专题 0 篇",
+   "elapsed": 0.13532638549804688,
    "kind": "journal"
   },
   {
@@ -4700,15 +4631,15 @@
    "ok": true,
    "count": 0,
    "message": "openalex: 近 14 天 0 篇，命中专题 0 篇",
-   "elapsed": 0.05641531944274902,
+   "elapsed": 0.10961151123046875,
    "kind": "journal"
   },
   {
    "name": "国外期刊·Chinese Sociological Review",
    "ok": true,
    "count": 0,
-   "message": "openalex: 近 14 天 2 篇，命中专题 0 篇",
-   "elapsed": 0.07483696937561035,
+   "message": "openalex: 近 14 天 1 篇，命中专题 0 篇",
+   "elapsed": 0.11135697364807129,
    "kind": "journal"
   },
   {
@@ -4716,23 +4647,23 @@
    "ok": true,
    "count": 3,
    "message": "openalex 近 14 天 3 篇，命中专题 3 篇",
-   "elapsed": 0.13211703300476074,
+   "elapsed": 0.4042816162109375,
    "kind": "journal"
   },
   {
    "name": "国外主题检索·中国民族问题（国外）",
    "ok": true,
-   "count": 10,
-   "message": "openalex 近 14 天 30 篇，命中专题 10 篇",
-   "elapsed": 1.8785147666931152,
+   "count": 9,
+   "message": "openalex 近 14 天 30 篇，命中专题 9 篇",
+   "elapsed": 2.0941407680511475,
    "kind": "journal"
   },
   {
    "name": "国外主题检索·人类学理论前沿（国外）",
    "ok": true,
-   "count": 3,
-   "message": "openalex 近 14 天 3 篇，命中专题 3 篇",
-   "elapsed": 0.11567139625549316,
+   "count": 4,
+   "message": "openalex 近 14 天 4 篇，命中专题 4 篇",
+   "elapsed": 0.2629711627960205,
    "kind": "journal"
   },
   {
@@ -4740,7 +4671,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 11 篇，命中专题 0 篇",
-   "elapsed": 1.0077416896820068,
+   "elapsed": 2.104301691055298,
    "kind": "journal"
   },
   {
@@ -4748,7 +4679,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 10 篇，命中专题 0 篇",
-   "elapsed": 0.9425361156463623,
+   "elapsed": 1.8315215110778809,
    "kind": "journal"
   },
   {
@@ -4756,7 +4687,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 10 篇，命中专题 0 篇",
-   "elapsed": 0.8965003490447998,
+   "elapsed": 1.3185834884643555,
    "kind": "journal"
   },
   {
@@ -4764,7 +4695,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.7353308200836182,
+   "elapsed": 1.340803623199463,
    "kind": "journal"
   },
   {
@@ -4772,7 +4703,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 16 篇，命中专题 0 篇",
-   "elapsed": 1.2136683464050293,
+   "elapsed": 0.8743493556976318,
    "kind": "journal"
   },
   {
@@ -4780,7 +4711,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 15 篇，命中专题 0 篇",
-   "elapsed": 1.2705731391906738,
+   "elapsed": 0.8579311370849609,
    "kind": "journal"
   },
   {
@@ -4788,7 +4719,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 12 篇，命中专题 0 篇",
-   "elapsed": 1.7830405235290527,
+   "elapsed": 1.0018205642700195,
    "kind": "journal"
   },
   {
@@ -4796,7 +4727,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 14 篇，命中专题 0 篇",
-   "elapsed": 1.4579744338989258,
+   "elapsed": 0.6219468116760254,
    "kind": "journal"
   },
   {
@@ -4804,7 +4735,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 17 篇，命中专题 0 篇",
-   "elapsed": 1.7323548793792725,
+   "elapsed": 0.6959784030914307,
    "kind": "journal"
   },
   {
@@ -4812,7 +4743,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 19 篇，命中专题 0 篇",
-   "elapsed": 0.8523361682891846,
+   "elapsed": 0.634615421295166,
    "kind": "journal"
   },
   {
@@ -4820,7 +4751,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 19 篇，命中专题 0 篇",
-   "elapsed": 1.0856802463531494,
+   "elapsed": 1.14387845993042,
    "kind": "journal"
   },
   {
@@ -4828,7 +4759,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.6160316467285156,
+   "elapsed": 0.8407080173492432,
    "kind": "journal"
   },
   {
@@ -4836,7 +4767,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 17 篇，命中专题 0 篇",
-   "elapsed": 0.9148967266082764,
+   "elapsed": 0.9070980548858643,
    "kind": "journal"
   },
   {
@@ -4844,7 +4775,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 19 篇，命中专题 0 篇",
-   "elapsed": 0.8484249114990234,
+   "elapsed": 1.8163998126983643,
    "kind": "journal"
   },
   {
@@ -4852,7 +4783,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 21 篇，命中专题 0 篇",
-   "elapsed": 1.1539347171783447,
+   "elapsed": 0.8363046646118164,
    "kind": "journal"
   },
   {
@@ -4860,7 +4791,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.6024007797241211,
+   "elapsed": 0.6333277225494385,
    "kind": "journal"
   },
   {
@@ -4868,7 +4799,7 @@
    "ok": true,
    "count": 0,
    "message": "目录 13 篇，命中专题 0 篇",
-   "elapsed": 0.5269713401794434,
+   "elapsed": 0.9990334510803223,
    "kind": "journal"
   }
  ]
